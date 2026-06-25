@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S05",
+  "scenarioTitle": "민감정보 필터링",
+  "modelId": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:52:40.708Z",
+  "finishedAt": "2026-06-25T07:52:53.158Z",
+  "totalMs": 12450.257599999895,
+  "charCount": 2192,
+  "estimatedTokens": 624,
+  "estimatedTps": 50.119444918152155,
+  "eventCount": 1085
+}

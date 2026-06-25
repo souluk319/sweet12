@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S03",
+  "scenarioTitle": "Tool Plan JSON",
+  "modelId": "gemma4-e4b",
+  "displayName": "Gemma 4 E4B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:53:48.591Z",
+  "finishedAt": "2026-06-25T07:53:54.589Z",
+  "totalMs": 5998.0481000000145,
+  "charCount": 1434,
+  "estimatedTokens": 448,
+  "estimatedTps": 74.69096488239215,
+  "eventCount": 533
+}

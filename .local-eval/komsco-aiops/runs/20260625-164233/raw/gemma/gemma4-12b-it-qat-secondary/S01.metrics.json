@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S01",
+  "scenarioTitle": "한국어 운영 질의",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:42:50.210Z",
+  "finishedAt": "2026-06-25T07:43:09.807Z",
+  "totalMs": 19596.866499999996,
+  "charCount": 2195,
+  "estimatedTokens": 758,
+  "estimatedTps": 38.67965319863765,
+  "eventCount": 956
+}

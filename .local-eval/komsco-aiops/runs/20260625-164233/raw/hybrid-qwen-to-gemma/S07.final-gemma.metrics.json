@@ -1,0 +1,8 @@
+{
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "ttftMs": 749.8391999999294,
+  "totalMs": 14847.770499999984,
+  "charCount": 1689,
+  "estimatedTokens": 575
+}

@@ -1,0 +1,775 @@
+{"atMs":229.83730000001378,"event":"thinking","data":{"text":"\nAlright"}}
+{"atMs":240.34389999997802,"event":"thinking","data":{"text":","}}
+{"atMs":251.436299999943,"event":"thinking","data":{"text":" I"}}
+{"atMs":262.8956000000471,"event":"thinking","data":{"text":" need"}}
+{"atMs":273.97789999993984,"event":"thinking","data":{"text":" to"}}
+{"atMs":285.08909999998286,"event":"thinking","data":{"text":" help"}}
+{"atMs":296.0990999999922,"event":"thinking","data":{"text":" the"}}
+{"atMs":307.1757000000216,"event":"thinking","data":{"text":" user"}}
+{"atMs":318.9002999999793,"event":"thinking","data":{"text":" by"}}
+{"atMs":332.0978999999352,"event":"thinking","data":{"text":" creating"}}
+{"atMs":343.0681999999797,"event":"thinking","data":{"text":" two"}}
+{"atMs":354.0431000000099,"event":"thinking","data":{"text":" result"}}
+{"atMs":365.3956000000471,"event":"thinking","data":{"text":" items"}}
+{"atMs":387.7463999999454,"event":"thinking","data":{"text":" based"}}
+{"atMs":388.7045999999391,"event":"thinking","data":{"text":" on"}}
+{"atMs":399.80689999996684,"event":"thinking","data":{"text":" the"}}
+{"atMs":411.3998000000138,"event":"thinking","data":{"text":" given"}}
+{"atMs":422.4460999999428,"event":"thinking","data":{"text":" scenario"}}
+{"atMs":433.8712999999989,"event":"thinking","data":{"text":"."}}
+{"atMs":445.2402999999467,"event":"thinking","data":{"text":" The"}}
+{"atMs":456.7920999999624,"event":"thinking","data":{"text":" first"}}
+{"atMs":468.468899999978,"event":"thinking","data":{"text":" is"}}
+{"atMs":480.11800000001676,"event":"thinking","data":{"text":" a"}}
+{"atMs":491.22789999993984,"event":"thinking","data":{"text":" detailed"}}
+{"atMs":502.1616999999387,"event":"thinking","data":{"text":" RCA"}}
+{"atMs":513.3950999999652,"event":"thinking","data":{"text":" ("}}
+{"atMs":524.4174999999814,"event":"thinking","data":{"text":"Root"}}
+{"atMs":535.5353999999352,"event":"thinking","data":{"text":" Cause"}}
+{"atMs":546.8379000000423,"event":"thinking","data":{"text":" Analysis"}}
+{"atMs":558.3896999999415,"event":"thinking","data":{"text":")"}}
+{"atMs":569.7003999999724,"event":"thinking","data":{"text":" and"}}
+{"atMs":580.9349999999395,"event":"thinking","data":{"text":" the"}}
+{"atMs":592.156500000041,"event":"thinking","data":{"text":" second"}}
+{"atMs":603.358600000036,"event":"thinking","data":{"text":" is"}}
+{"atMs":614.6859000000404,"event":"thinking","data":{"text":" a"}}
+{"atMs":626.203899999964,"event":"thinking","data":{"text":" "}}
+{"atMs":637.3552999999374,"event":"thinking","data":{"text":"5"}}
+{"atMs":648.6060000000289,"event":"thinking","data":{"text":"-line"}}
+{"atMs":660.2558000000427,"event":"thinking","data":{"text":" summary"}}
+{"atMs":671.5587999999989,"event":"thinking","data":{"text":" for"}}
+{"atMs":682.7454000000143,"event":"thinking","data":{"text":" monitoring"}}
+{"atMs":694.2256000000052,"event":"thinking","data":{"text":" reports"}}
+{"atMs":705.3865000000224,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":716.560999999987,"event":"thinking","data":{"text":"Starting"}}
+{"atMs":727.719299999997,"event":"thinking","data":{"text":" with"}}
+{"atMs":739.2569000000367,"event":"thinking","data":{"text":" the"}}
+{"atMs":750.4893000000156,"event":"thinking","data":{"text":" detailed"}}
+{"atMs":761.6591999999946,"event":"thinking","data":{"text":" RCA"}}
+{"atMs":772.8847999999998,"event":"thinking","data":{"text":":"}}
+{"atMs":784.0394000000088,"event":"thinking","data":{"text":" I"}}
+{"atMs":795.3429000000469,"event":"thinking","data":{"text":" should"}}
+{"atMs":821.5000999999465,"event":"thinking","data":{"text":" consider"}}
+{"atMs":821.5035999999382,"event":"thinking","data":{"text":" each"}}
+{"atMs":829.6326000000117,"event":"thinking","data":{"text":" issue"}}
+{"atMs":842.6626000000397,"event":"thinking","data":{"text":" mentioned"}}
+{"atMs":863.3924999999581,"event":"thinking","data":{"text":"—"}}
+{"atMs":877.5481999999611,"event":"thinking","data":{"text":"payment"}}
+{"atMs":889.3839999999618,"event":"thinking","data":{"text":"-api"}}
+{"atMs":903.6557999999495,"event":"thinking","data":{"text":" deployment"}}
+{"atMs":918.7717999999877,"event":"thinking","data":{"text":" failure"}}
+{"atMs":933.5853999999817,"event":"thinking","data":{"text":","}}
+{"atMs":948.2752000000328,"event":"thinking","data":{"text":" DB"}}
+{"atMs":963.1709000000264,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":975.6603999999352,"event":"thinking","data":{"text":" failure"}}
+{"atMs":988.7129999999888,"event":"thinking","data":{"text":" logs"}}
+{"atMs":1000.0775999999605,"event":"thinking","data":{"text":","}}
+{"atMs":1010.9126999999862,"event":"thinking","data":{"text":" secret"}}
+{"atMs":1022.3379000000423,"event":"thinking","data":{"text":" changes"}}
+{"atMs":1033.5113999999594,"event":"thinking","data":{"text":" history"}}
+{"atMs":1044.3512999999803,"event":"thinking","data":{"text":","}}
+{"atMs":1055.2389999999432,"event":"thinking","data":{"text":" temporary"}}
+{"atMs":1066.2643999999855,"event":"thinking","data":{"text":" rollback"}}
+{"atMs":1077.4614000000292,"event":"thinking","data":{"text":","}}
+{"atMs":1088.3064999999478,"event":"thinking","data":{"text":" and"}}
+{"atMs":1099.1182999999728,"event":"thinking","data":{"text":" pre"}}
+{"atMs":1110.0047000000486,"event":"thinking","data":{"text":"-de"}}
+{"atMs":1120.9333999999799,"event":"thinking","data":{"text":"ployment"}}
+{"atMs":1131.9740999999922,"event":"thinking","data":{"text":" secret"}}
+{"atMs":1142.9601999999722,"event":"thinking","data":{"text":" validation"}}
+{"atMs":1154.0002000000095,"event":"thinking","data":{"text":" measures"}}
+{"atMs":1165.3260999999475,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":1176.3993000000482,"event":"thinking","data":{"text":"For"}}
+{"atMs":1187.6025000000373,"event":"thinking","data":{"text":" the"}}
+{"atMs":1198.6611000000266,"event":"thinking","data":{"text":" payment"}}
+{"atMs":1209.6369000000414,"event":"thinking","data":{"text":"-api"}}
+{"atMs":1220.4910999999847,"event":"thinking","data":{"text":" issue"}}
+{"atMs":1231.689000000013,"event":"thinking","data":{"text":","}}
+{"atMs":1242.6298999999417,"event":"thinking","data":{"text":" it"}}
+{"atMs":1253.4766999999993,"event":"thinking","data":{"text":"'s"}}
+{"atMs":1264.5231999999378,"event":"thinking","data":{"text":" likely"}}
+{"atMs":1275.6494999999413,"event":"thinking","data":{"text":" that"}}
+{"atMs":1286.7391000000061,"event":"thinking","data":{"text":" the"}}
+{"atMs":1297.575599999982,"event":"thinking","data":{"text":" API"}}
+{"atMs":1308.4904000000097,"event":"thinking","data":{"text":" was"}}
+{"atMs":1319.3985999999568,"event":"thinking","data":{"text":" not"}}
+{"atMs":1330.3384000000078,"event":"thinking","data":{"text":" properly"}}
+{"atMs":1341.7793999999994,"event":"thinking","data":{"text":" integrated"}}
+{"atMs":1352.9422999999952,"event":"thinking","data":{"text":" or"}}
+{"atMs":1363.863400000031,"event":"thinking","data":{"text":" there"}}
+{"atMs":1374.8077999999514,"event":"thinking","data":{"text":" were"}}
+{"atMs":1385.8221999999369,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":1399.5422999999719,"event":"thinking","data":{"text":" errors"}}
+{"atMs":1412.8018999999622,"event":"thinking","data":{"text":"."}}
+{"atMs":1425.3007999999681,"event":"thinking","data":{"text":" The"}}
+{"atMs":1436.3096999999834,"event":"thinking","data":{"text":" DB"}}
+{"atMs":1447.4516000000294,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":1458.8885999999475,"event":"thinking","data":{"text":" failure"}}
+{"atMs":1469.9011000000173,"event":"thinking","data":{"text":" suggests"}}
+{"atMs":1481.1633000000147,"event":"thinking","data":{"text":" either"}}
+{"atMs":1492.1762999999337,"event":"thinking","data":{"text":" an"}}
+{"atMs":1503.2976999999955,"event":"thinking","data":{"text":" issue"}}
+{"atMs":1514.3379000000423,"event":"thinking","data":{"text":" with"}}
+{"atMs":1525.4325999999419,"event":"thinking","data":{"text":" the"}}
+{"atMs":1536.3959999999497,"event":"thinking","data":{"text":" credentials"}}
+{"atMs":1547.4242000000086,"event":"thinking","data":{"text":" or"}}
+{"atMs":1558.799800000037,"event":"thinking","data":{"text":" the"}}
+{"atMs":1570.2571000000462,"event":"thinking","data":{"text":" database"}}
+{"atMs":1581.3092000000179,"event":"thinking","data":{"text":" connection"}}
+{"atMs":1592.4536999999546,"event":"thinking","data":{"text":" setup"}}
+{"atMs":1603.4786999999778,"event":"thinking","data":{"text":"."}}
+{"atMs":1614.4668999999994,"event":"thinking","data":{"text":" Since"}}
+{"atMs":1625.4945000000298,"event":"thinking","data":{"text":" a"}}
+{"atMs":1636.7055999999866,"event":"thinking","data":{"text":" secret"}}
+{"atMs":1647.637800000026,"event":"thinking","data":{"text":" was"}}
+{"atMs":1658.669899999979,"event":"thinking","data":{"text":" changed"}}
+{"atMs":1669.9246000000276,"event":"thinking","data":{"text":","}}
+{"atMs":1681.0191999999806,"event":"thinking","data":{"text":" I"}}
+{"atMs":1691.985299999942,"event":"thinking","data":{"text":" should"}}
+{"atMs":1703.0501999999397,"event":"thinking","data":{"text":" check"}}
+{"atMs":1714.0448000000324,"event":"thinking","data":{"text":" if"}}
+{"atMs":1724.9642000000458,"event":"thinking","data":{"text":" this"}}
+{"atMs":1736.3674999999348,"event":"thinking","data":{"text":" change"}}
+{"atMs":1747.3503999999957,"event":"thinking","data":{"text":" affected"}}
+{"atMs":1758.3908999999985,"event":"thinking","data":{"text":" the"}}
+{"atMs":1769.4934999999823,"event":"thinking","data":{"text":" API"}}
+{"atMs":1780.4980000000214,"event":"thinking","data":{"text":" or"}}
+{"atMs":1791.6273999999976,"event":"thinking","data":{"text":" DB"}}
+{"atMs":1802.4636000000173,"event":"thinking","data":{"text":" access"}}
+{"atMs":1813.454299999983,"event":"thinking","data":{"text":"."}}
+{"atMs":1824.7145999999484,"event":"thinking","data":{"text":" The"}}
+{"atMs":1838.1570000000065,"event":"thinking","data":{"text":" temporary"}}
+{"atMs":1849.1025000000373,"event":"thinking","data":{"text":" rollback"}}
+{"atMs":1860.1456999999937,"event":"thinking","data":{"text":" indicates"}}
+{"atMs":1871.3813000000082,"event":"thinking","data":{"text":" that"}}
+{"atMs":1882.4788000000408,"event":"thinking","data":{"text":" restoring"}}
+{"atMs":1893.956600000034,"event":"thinking","data":{"text":" the"}}
+{"atMs":1904.9777999999933,"event":"thinking","data":{"text":" previous"}}
+{"atMs":1916.3822999999393,"event":"thinking","data":{"text":" state"}}
+{"atMs":1927.9971000000369,"event":"thinking","data":{"text":" is"}}
+{"atMs":1938.9516000000294,"event":"thinking","data":{"text":" necessary"}}
+{"atMs":1949.8780999999726,"event":"thinking","data":{"text":" but"}}
+{"atMs":1961.158199999947,"event":"thinking","data":{"text":" might"}}
+{"atMs":1972.250800000038,"event":"thinking","data":{"text":" have"}}
+{"atMs":1983.2225999999791,"event":"thinking","data":{"text":" exposed"}}
+{"atMs":1994.5084999999963,"event":"thinking","data":{"text":" sensitive"}}
+{"atMs":2005.8427000000374,"event":"thinking","data":{"text":" data"}}
+{"atMs":2016.9164999999339,"event":"thinking","data":{"text":" during"}}
+{"atMs":2027.8003000000026,"event":"thinking","data":{"text":" the"}}
+{"atMs":2038.8700999999419,"event":"thinking","data":{"text":" process"}}
+{"atMs":2049.8902000000235,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":2060.7667000000365,"event":"thinking","data":{"text":"I"}}
+{"atMs":2072.0734999999404,"event":"thinking","data":{"text":" need"}}
+{"atMs":2083.1260000000475,"event":"thinking","data":{"text":" to"}}
+{"atMs":2094.2926000000443,"event":"thinking","data":{"text":" structure"}}
+{"atMs":2105.5481000000145,"event":"thinking","data":{"text":" each"}}
+{"atMs":2116.466299999971,"event":"thinking","data":{"text":" finding"}}
+{"atMs":2127.656799999997,"event":"thinking","data":{"text":" clearly"}}
+{"atMs":2138.557599999942,"event":"thinking","data":{"text":","}}
+{"atMs":2149.6230000000214,"event":"thinking","data":{"text":" explaining"}}
+{"atMs":2160.6448999999557,"event":"thinking","data":{"text":" what"}}
+{"atMs":2171.951299999957,"event":"thinking","data":{"text":" happened"}}
+{"atMs":2182.90419999999,"event":"thinking","data":{"text":" and"}}
+{"atMs":2194.12639999995,"event":"thinking","data":{"text":" why"}}
+{"atMs":2205.130899999989,"event":"thinking","data":{"text":" it"}}
+{"atMs":2216.40830000001,"event":"thinking","data":{"text":" occurred"}}
+{"atMs":2227.3181999999797,"event":"thinking","data":{"text":"."}}
+{"atMs":2238.3456000000006,"event":"thinking","data":{"text":" For"}}
+{"atMs":2249.4934000000358,"event":"thinking","data":{"text":" example"}}
+{"atMs":2260.6720000000205,"event":"thinking","data":{"text":","}}
+{"atMs":2271.5446999999695,"event":"thinking","data":{"text":" under"}}
+{"atMs":2282.510499999975,"event":"thinking","data":{"text":" payment"}}
+{"atMs":2293.4976000000024,"event":"thinking","data":{"text":"-api"}}
+{"atMs":2304.5244999999413,"event":"thinking","data":{"text":","}}
+{"atMs":2315.714200000046,"event":"thinking","data":{"text":" I"}}
+{"atMs":2327.2641000000294,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":2338.3608999999706,"event":"thinking","data":{"text":" outline"}}
+{"atMs":2349.332199999946,"event":"thinking","data":{"text":" possible"}}
+{"atMs":2360.398999999976,"event":"thinking","data":{"text":" reasons"}}
+{"atMs":2371.485100000049,"event":"thinking","data":{"text":" like"}}
+{"atMs":2382.531799999997,"event":"thinking","data":{"text":" mis"}}
+{"atMs":2393.466999999946,"event":"thinking","data":{"text":"configuration"}}
+{"atMs":2404.458100000047,"event":"thinking","data":{"text":" or"}}
+{"atMs":2415.7262999999803,"event":"thinking","data":{"text":" integration"}}
+{"atMs":2426.880899999989,"event":"thinking","data":{"text":" issues"}}
+{"atMs":2437.801499999943,"event":"thinking","data":{"text":"."}}
+{"atMs":2450.864500000025,"event":"thinking","data":{"text":" Under"}}
+{"atMs":2462.525200000033,"event":"thinking","data":{"text":" DB"}}
+{"atMs":2473.5337999999756,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":2484.547900000005,"event":"thinking","data":{"text":","}}
+{"atMs":2495.894800000009,"event":"thinking","data":{"text":" I"}}
+{"atMs":2507.065100000007,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":2518.0387999999803,"event":"thinking","data":{"text":" consider"}}
+{"atMs":2528.941899999976,"event":"thinking","data":{"text":" if"}}
+{"atMs":2540.3789000000106,"event":"thinking","data":{"text":" the"}}
+{"atMs":2551.440500000026,"event":"thinking","data":{"text":" credentials"}}
+{"atMs":2562.6424000000115,"event":"thinking","data":{"text":" were"}}
+{"atMs":2573.8721999999834,"event":"thinking","data":{"text":" updated"}}
+{"atMs":2584.895499999984,"event":"thinking","data":{"text":" without"}}
+{"atMs":2595.9017999999924,"event":"thinking","data":{"text":" proper"}}
+{"atMs":2606.9370000000345,"event":"thinking","data":{"text":" checks"}}
+{"atMs":2617.867100000032,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":2628.985299999942,"event":"thinking","data":{"text":"Next"}}
+{"atMs":2640.0318999999436,"event":"thinking","data":{"text":","}}
+{"atMs":2651.4457000000402,"event":"thinking","data":{"text":" for"}}
+{"atMs":2662.3686000000453,"event":"thinking","data":{"text":" the"}}
+{"atMs":2673.3586999999825,"event":"thinking","data":{"text":" monitoring"}}
+{"atMs":2684.4079999999376,"event":"thinking","data":{"text":" report"}}
+{"atMs":2695.3808000000427,"event":"thinking","data":{"text":" summary"}}
+{"atMs":2706.3246999999974,"event":"thinking","data":{"text":":"}}
+{"atMs":2717.355199999991,"event":"thinking","data":{"text":" It"}}
+{"atMs":2728.6517999999924,"event":"thinking","data":{"text":" should"}}
+{"atMs":2739.8007000000216,"event":"thinking","data":{"text":" be"}}
+{"atMs":2751.2221000000136,"event":"thinking","data":{"text":" concise"}}
+{"atMs":2762.2726999999722,"event":"thinking","data":{"text":" but"}}
+{"atMs":2773.6437999999616,"event":"thinking","data":{"text":" cover"}}
+{"atMs":2784.744399999967,"event":"thinking","data":{"text":" all"}}
+{"atMs":2795.8048999999883,"event":"thinking","data":{"text":" key"}}
+{"atMs":2807.1119999999646,"event":"thinking","data":{"text":" points"}}
+{"atMs":2818.3220999999903,"event":"thinking","data":{"text":"—"}}
+{"atMs":2829.674800000037,"event":"thinking","data":{"text":"checking"}}
+{"atMs":2843.610400000005,"event":"thinking","data":{"text":" logs"}}
+{"atMs":2854.783700000029,"event":"thinking","data":{"text":","}}
+{"atMs":2870.2112999999663,"event":"thinking","data":{"text":" verifying"}}
+{"atMs":2889.9697999999626,"event":"thinking","data":{"text":" secrets"}}
+{"atMs":2889.972899999935,"event":"thinking","data":{"text":","}}
+{"atMs":2900.959499999997,"event":"thinking","data":{"text":" ensuring"}}
+{"atMs":2912.3155999999726,"event":"thinking","data":{"text":" pre"}}
+{"atMs":2923.6901999999536,"event":"thinking","data":{"text":"-de"}}
+{"atMs":2934.9359000000404,"event":"thinking","data":{"text":"ployment"}}
+{"atMs":2945.907099999953,"event":"thinking","data":{"text":" validation"}}
+{"atMs":2957.231700000004,"event":"thinking","data":{"text":","}}
+{"atMs":2969.0509999999776,"event":"thinking","data":{"text":" and"}}
+{"atMs":2981.8451999999816,"event":"thinking","data":{"text":" documenting"}}
+{"atMs":2994.2998999999836,"event":"thinking","data":{"text":" findings"}}
+{"atMs":3005.878599999938,"event":"thinking","data":{"text":" for"}}
+{"atMs":3017.3983000000007,"event":"thinking","data":{"text":" future"}}
+{"atMs":3028.7955000000075,"event":"thinking","data":{"text":" reference"}}
+{"atMs":3040.0034999999916,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":3051.249599999981,"event":"thinking","data":{"text":"I"}}
+{"atMs":3062.294899999979,"event":"thinking","data":{"text":" also"}}
+{"atMs":3073.4451000000117,"event":"thinking","data":{"text":" need"}}
+{"atMs":3084.4473,"event":"thinking","data":{"text":" to"}}
+{"atMs":3096.410399999935,"event":"thinking","data":{"text":" make"}}
+{"atMs":3107.452900000033,"event":"thinking","data":{"text":" sure"}}
+{"atMs":3118.633599999943,"event":"thinking","data":{"text":" that"}}
+{"atMs":3129.76390000002,"event":"thinking","data":{"text":" each"}}
+{"atMs":3140.854399999953,"event":"thinking","data":{"text":" section"}}
+{"atMs":3151.9780999999493,"event":"thinking","data":{"text":" is"}}
+{"atMs":3163.235400000005,"event":"thinking","data":{"text":" clear"}}
+{"atMs":3174.385200000019,"event":"thinking","data":{"text":" and"}}
+{"atMs":3186.1252000000095,"event":"thinking","data":{"text":" actionable"}}
+{"atMs":3197.608899999992,"event":"thinking","data":{"text":"."}}
+{"atMs":3208.8935000000056,"event":"thinking","data":{"text":" For"}}
+{"atMs":3219.8715000000084,"event":"thinking","data":{"text":" instance"}}
+{"atMs":3231.0551999999443,"event":"thinking","data":{"text":","}}
+{"atMs":3242.2522999999346,"event":"thinking","data":{"text":" in"}}
+{"atMs":3253.3684999999823,"event":"thinking","data":{"text":" the"}}
+{"atMs":3264.4198000000324,"event":"thinking","data":{"text":" RCA"}}
+{"atMs":3275.6849999999395,"event":"thinking","data":{"text":","}}
+{"atMs":3286.8390000000363,"event":"thinking","data":{"text":" suggesting"}}
+{"atMs":3298.3978999999817,"event":"thinking","data":{"text":" steps"}}
+{"atMs":3309.6073000000324,"event":"thinking","data":{"text":" like"}}
+{"atMs":3321.2184000000125,"event":"thinking","data":{"text":" checking"}}
+{"atMs":3332.692599999951,"event":"thinking","data":{"text":" API"}}
+{"atMs":3356.1637999999803,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":3356.1677999999374,"event":"thinking","data":{"text":" or"}}
+{"atMs":3365.7266999999993,"event":"thinking","data":{"text":" DB"}}
+{"atMs":3377.454299999983,"event":"thinking","data":{"text":" connection"}}
+{"atMs":3389.7870999999577,"event":"thinking","data":{"text":" details"}}
+{"atMs":3401.1014999999898,"event":"thinking","data":{"text":" will"}}
+{"atMs":3412.047900000005,"event":"thinking","data":{"text":" help"}}
+{"atMs":3422.896199999959,"event":"thinking","data":{"text":" operators"}}
+{"atMs":3433.6914000000106,"event":"thinking","data":{"text":" take"}}
+{"atMs":3444.549699999974,"event":"thinking","data":{"text":" immediate"}}
+{"atMs":3455.4327999999514,"event":"thinking","data":{"text":" action"}}
+{"atMs":3466.3229000000283,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":3477.300500000012,"event":"thinking","data":{"text":"Finally"}}
+{"atMs":3488.3678000000073,"event":"thinking","data":{"text":","}}
+{"atMs":3499.207700000028,"event":"thinking","data":{"text":" I"}}
+{"atMs":3512.3314000000246,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":3523.7454000000143,"event":"thinking","data":{"text":" format"}}
+{"atMs":3534.580100000021,"event":"thinking","data":{"text":" everything"}}
+{"atMs":3545.707999999984,"event":"thinking","data":{"text":" in"}}
+{"atMs":3556.507100000046,"event":"thinking","data":{"text":" Korean"}}
+{"atMs":3567.559600000037,"event":"thinking","data":{"text":" as"}}
+{"atMs":3578.996299999999,"event":"thinking","data":{"text":" per"}}
+{"atMs":3589.875699999975,"event":"thinking","data":{"text":" the"}}
+{"atMs":3600.664699999965,"event":"thinking","data":{"text":" user"}}
+{"atMs":3611.6038999999873,"event":"thinking","data":{"text":"'s"}}
+{"atMs":3622.741000000038,"event":"thinking","data":{"text":" request"}}
+{"atMs":3634.12910000002,"event":"thinking","data":{"text":","}}
+{"atMs":3645.0605000000214,"event":"thinking","data":{"text":" ensuring"}}
+{"atMs":3655.9679999999935,"event":"thinking","data":{"text":" clarity"}}
+{"atMs":3667.184600000037,"event":"thinking","data":{"text":" and"}}
+{"atMs":3678.4473999999464,"event":"thinking","data":{"text":" structure"}}
+{"atMs":3689.375299999956,"event":"thinking","data":{"text":" without"}}
+{"atMs":3700.184600000037,"event":"thinking","data":{"text":" using"}}
+{"atMs":3711.0879000000423,"event":"thinking","data":{"text":" markdown"}}
+{"atMs":3722.054200000013,"event":"thinking","data":{"text":".\n"}}
+{"atMs":3744.3103999999585,"event":"token","data":{"text":"\n\n"}}
+{"atMs":3755.242899999954,"event":"token","data":{"text":"**"}}
+{"atMs":3766.1086999999825,"event":"token","data":{"text":"1"}}
+{"atMs":3777.4616999999853,"event":"token","data":{"text":"."}}
+{"atMs":3788.4505000000354,"event":"token","data":{"text":" 운영"}}
+{"atMs":3799.2005000000354,"event":"token","data":{"text":"자"}}
+{"atMs":3810.307400000049,"event":"token","data":{"text":"용"}}
+{"atMs":3823.311299999943,"event":"token","data":{"text":" 상"}}
+{"atMs":3834.8170999999857,"event":"token","data":{"text":"세"}}
+{"atMs":3845.8035999999847,"event":"token","data":{"text":" RCA"}}
+{"atMs":3857.1073000000324,"event":"token","data":{"text":" ("}}
+{"atMs":3868.235400000005,"event":"token","data":{"text":"R"}}
+{"atMs":3879.3111999999965,"event":"token","data":{"text":"CA"}}
+{"atMs":3890.112199999974,"event":"token","data":{"text":")**"}}
+{"atMs":3901.1023000000278,"event":"token","data":{"text":"  \n"}}
+{"atMs":3912.0577999999514,"event":"token","data":{"text":"-"}}
+{"atMs":3923.029600000009,"event":"token","data":{"text":" **"}}
+{"atMs":3933.841299999971,"event":"token","data":{"text":"1"}}
+{"atMs":3945.0366999999387,"event":"token","data":{"text":"."}}
+{"atMs":3956.1391000000294,"event":"token","data":{"text":"1"}}
+{"atMs":3967.3558000000194,"event":"token","data":{"text":" payment"}}
+{"atMs":3978.394800000009,"event":"token","data":{"text":"-api"}}
+{"atMs":3989.15009999997,"event":"token","data":{"text":" 배"}}
+{"atMs":4000.2754000000423,"event":"token","data":{"text":"포"}}
+{"atMs":4011.35699999996,"event":"token","data":{"text":" 직"}}
+{"atMs":4022.165900000022,"event":"token","data":{"text":"후"}}
+{"atMs":4033.2683999999426,"event":"token","data":{"text":" 장"}}
+{"atMs":4046.7434999999823,"event":"token","data":{"text":"애"}}
+{"atMs":4057.7948000000324,"event":"token","data":{"text":" 분"}}
+{"atMs":4068.7879999999423,"event":"token","data":{"text":"석"}}
+{"atMs":4079.637800000026,"event":"token","data":{"text":"**"}}
+{"atMs":4090.5527999999467,"event":"token","data":{"text":"  \n"}}
+{"atMs":4101.472300000023,"event":"token","data":{"text":" "}}
+{"atMs":4112.352100000018,"event":"token","data":{"text":" -"}}
+{"atMs":4123.2495000000345,"event":"token","data":{"text":" payment"}}
+{"atMs":4134.170500000007,"event":"token","data":{"text":"-api"}}
+{"atMs":4145.023999999976,"event":"token","data":{"text":" 배"}}
+{"atMs":4156.060100000002,"event":"token","data":{"text":"포"}}
+{"atMs":4166.951800000039,"event":"token","data":{"text":" 후"}}
+{"atMs":4177.9989999999525,"event":"token","data":{"text":"로"}}
+{"atMs":4188.781399999978,"event":"token","data":{"text":" DB"}}
+{"atMs":4199.604700000025,"event":"token","data":{"text":" 인"}}
+{"atMs":4210.505999999936,"event":"token","data":{"text":"증"}}
+{"atMs":4232.295599999954,"event":"token","data":{"text":" 실패"}}
+{"atMs":4243.047999999952,"event":"token","data":{"text":"로"}}
+{"atMs":4253.858499999973,"event":"token","data":{"text":"그"}}
+{"atMs":4264.729999999981,"event":"token","data":{"text":"가"}}
+{"atMs":4277.932700000005,"event":"token","data":{"text":" 확인"}}
+{"atMs":4290.098899999983,"event":"token","data":{"text":"되었다"}}
+{"atMs":4300.99860000005,"event":"token","data":{"text":"."}}
+{"atMs":4311.776700000046,"event":"token","data":{"text":"  \n"}}
+{"atMs":4322.616200000048,"event":"token","data":{"text":" "}}
+{"atMs":4333.493799999938,"event":"token","data":{"text":" -"}}
+{"atMs":4344.474099999992,"event":"token","data":{"text":" Possible"}}
+{"atMs":4355.614100000006,"event":"token","data":{"text":" Reason"}}
+{"atMs":4366.537699999986,"event":"token","data":{"text":":"}}
+{"atMs":4377.888399999938,"event":"token","data":{"text":" API"}}
+{"atMs":4388.63320000004,"event":"token","data":{"text":" Integration"}}
+{"atMs":4399.907699999982,"event":"token","data":{"text":" Error"}}
+{"atMs":4410.839399999939,"event":"token","data":{"text":" or"}}
+{"atMs":4421.977199999965,"event":"token","data":{"text":" mis"}}
+{"atMs":4432.8747999999905,"event":"token","data":{"text":"configuration"}}
+{"atMs":4443.7025999999605,"event":"token","data":{"text":" during"}}
+{"atMs":4454.664499999955,"event":"token","data":{"text":" deployment"}}
+{"atMs":4465.505299999961,"event":"token","data":{"text":"."}}
+{"atMs":4476.4203999999445,"event":"token","data":{"text":"  \n"}}
+{"atMs":4487.94180000003,"event":"token","data":{"text":" "}}
+{"atMs":4498.870600000024,"event":"token","data":{"text":" -"}}
+{"atMs":4509.839999999967,"event":"token","data":{"text":" Investigation"}}
+{"atMs":4520.633700000006,"event":"token","data":{"text":" Steps"}}
+{"atMs":4531.453899999964,"event":"token","data":{"text":":"}}
+{"atMs":4542.39850000001,"event":"token","data":{"text":" API"}}
+{"atMs":4553.320999999996,"event":"token","data":{"text":" endpoint"}}
+{"atMs":4566.8771000000415,"event":"token","data":{"text":" test"}}
+{"atMs":4577.838600000017,"event":"token","data":{"text":","}}
+{"atMs":4588.699799999944,"event":"token","data":{"text":" DB"}}
+{"atMs":4599.586899999995,"event":"token","data":{"text":" connection"}}
+{"atMs":4610.865299999947,"event":"token","data":{"text":" details"}}
+{"atMs":4621.728899999987,"event":"token","data":{"text":" review"}}
+{"atMs":4632.706200000015,"event":"token","data":{"text":","}}
+{"atMs":4643.724300000002,"event":"token","data":{"text":" log"}}
+{"atMs":4654.548999999999,"event":"token","data":{"text":" analysis"}}
+{"atMs":4665.680099999998,"event":"token","data":{"text":" for"}}
+{"atMs":4676.9070000000065,"event":"token","data":{"text":" error"}}
+{"atMs":4687.989199999953,"event":"token","data":{"text":" messages"}}
+{"atMs":4699.549499999965,"event":"token","data":{"text":"."}}
+{"atMs":4710.46239999996,"event":"token","data":{"text":"  \n\n"}}
+{"atMs":4721.269300000044,"event":"token","data":{"text":"-"}}
+{"atMs":4732.220399999991,"event":"token","data":{"text":" **"}}
+{"atMs":4743.052799999947,"event":"token","data":{"text":"1"}}
+{"atMs":4754.260400000028,"event":"token","data":{"text":"."}}
+{"atMs":4765.279399999999,"event":"token","data":{"text":"2"}}
+{"atMs":4776.141599999974,"event":"token","data":{"text":" DB"}}
+{"atMs":4786.98609999998,"event":"token","data":{"text":" 인"}}
+{"atMs":4797.925900000031,"event":"token","data":{"text":"증"}}
+{"atMs":4820.2474999999395,"event":"token","data":{"text":" 실패"}}
+{"atMs":4832.900000000023,"event":"token","data":{"text":" 로"}}
+{"atMs":4844.526599999983,"event":"token","data":{"text":"그"}}
+{"atMs":4855.536500000046,"event":"token","data":{"text":" 분"}}
+{"atMs":4866.413300000015,"event":"token","data":{"text":"석"}}
+{"atMs":4877.185300000012,"event":"token","data":{"text":"**"}}
+{"atMs":4888.137499999953,"event":"token","data":{"text":"  \n"}}
+{"atMs":4899.193399999989,"event":"token","data":{"text":" "}}
+{"atMs":4909.9974999999395,"event":"token","data":{"text":" -"}}
+{"atMs":4921.319699999993,"event":"token","data":{"text":" DB"}}
+{"atMs":4932.495099999942,"event":"token","data":{"text":" 인"}}
+{"atMs":4943.494999999995,"event":"token","data":{"text":"증"}}
+{"atMs":4965.614700000035,"event":"token","data":{"text":" 실패"}}
+{"atMs":4976.852799999993,"event":"token","data":{"text":"로"}}
+{"atMs":4987.986799999955,"event":"token","data":{"text":"그"}}
+{"atMs":4999.0938000000315,"event":"token","data":{"text":"에서"}}
+{"atMs":5010.33189999999,"event":"token","data":{"text":" user"}}
+{"atMs":5021.4828999999445,"event":"token","data":{"text":" credentials"}}
+{"atMs":5032.713099999935,"event":"token","data":{"text":" failed"}}
+{"atMs":5043.823199999984,"event":"token","data":{"text":" to"}}
+{"atMs":5054.924400000018,"event":"token","data":{"text":" authenticate"}}
+{"atMs":5065.804499999969,"event":"token","data":{"text":" with"}}
+{"atMs":5076.665500000003,"event":"token","data":{"text":" database"}}
+{"atMs":5089.477700000047,"event":"token","data":{"text":" occurred"}}
+{"atMs":5100.382499999949,"event":"token","data":{"text":"."}}
+{"atMs":5111.206999999937,"event":"token","data":{"text":"  \n"}}
+{"atMs":5122.464900000021,"event":"token","data":{"text":" "}}
+{"atMs":5133.6245000000345,"event":"token","data":{"text":" -"}}
+{"atMs":5144.570500000031,"event":"token","data":{"text":" Possible"}}
+{"atMs":5155.396899999934,"event":"token","data":{"text":" Reason"}}
+{"atMs":5166.536699999939,"event":"token","data":{"text":":"}}
+{"atMs":5177.6400999999605,"event":"token","data":{"text":" Updated"}}
+{"atMs":5188.585500000045,"event":"token","data":{"text":" credentials"}}
+{"atMs":5199.427000000025,"event":"token","data":{"text":" not"}}
+{"atMs":5210.2964999999385,"event":"token","data":{"text":" properly"}}
+{"atMs":5221.319200000027,"event":"token","data":{"text":" validated"}}
+{"atMs":5232.347300000023,"event":"token","data":{"text":" or"}}
+{"atMs":5243.608800000045,"event":"token","data":{"text":" expired"}}
+{"atMs":5254.769100000034,"event":"token","data":{"text":"."}}
+{"atMs":5265.969799999963,"event":"token","data":{"text":"  \n"}}
+{"atMs":5276.833400000003,"event":"token","data":{"text":" "}}
+{"atMs":5287.848400000017,"event":"token","data":{"text":" -"}}
+{"atMs":5298.751199999941,"event":"token","data":{"text":" Investigation"}}
+{"atMs":5309.873099999968,"event":"token","data":{"text":" Steps"}}
+{"atMs":5320.799400000018,"event":"token","data":{"text":":"}}
+{"atMs":5331.5150999999605,"event":"token","data":{"text":" Check"}}
+{"atMs":5342.549600000028,"event":"token","data":{"text":" if"}}
+{"atMs":5353.679000000004,"event":"token","data":{"text":" secret"}}
+{"atMs":5364.732500000042,"event":"token","data":{"text":" was"}}
+{"atMs":5386.167699999991,"event":"token","data":{"text":" updated"}}
+{"atMs":5387.09990000003,"event":"token","data":{"text":" and"}}
+{"atMs":5398.314899999998,"event":"token","data":{"text":" applied"}}
+{"atMs":5409.680999999982,"event":"token","data":{"text":" to"}}
+{"atMs":5420.635600000038,"event":"token","data":{"text":" both"}}
+{"atMs":5431.6554999999935,"event":"token","data":{"text":" API"}}
+{"atMs":5442.839200000046,"event":"token","data":{"text":" and"}}
+{"atMs":5454.043300000019,"event":"token","data":{"text":" DB"}}
+{"atMs":5465.767699999968,"event":"token","data":{"text":","}}
+{"atMs":5476.729399999953,"event":"token","data":{"text":" verify"}}
+{"atMs":5487.847100000014,"event":"token","data":{"text":" credential"}}
+{"atMs":5498.885600000038,"event":"token","data":{"text":" validity"}}
+{"atMs":5509.890999999945,"event":"token","data":{"text":"."}}
+{"atMs":5520.907699999982,"event":"token","data":{"text":"  \n\n"}}
+{"atMs":5531.940300000017,"event":"token","data":{"text":"-"}}
+{"atMs":5542.93610000005,"event":"token","data":{"text":" **"}}
+{"atMs":5553.9841000000015,"event":"token","data":{"text":"1"}}
+{"atMs":5565.362500000047,"event":"token","data":{"text":"."}}
+{"atMs":5576.43889999995,"event":"token","data":{"text":"3"}}
+{"atMs":5587.588499999954,"event":"token","data":{"text":" Secret"}}
+{"atMs":5598.539800000028,"event":"token","data":{"text":"变更"}}
+{"atMs":5609.73179999995,"event":"token","data":{"text":" 이"}}
+{"atMs":5620.70550000004,"event":"token","data":{"text":"력"}}
+{"atMs":5634.195500000031,"event":"token","data":{"text":" 확인"}}
+{"atMs":5645.243099999963,"event":"token","data":{"text":"**"}}
+{"atMs":5656.3913000000175,"event":"token","data":{"text":"  \n"}}
+{"atMs":5667.433899999945,"event":"token","data":{"text":" "}}
+{"atMs":5678.777699999977,"event":"token","data":{"text":" -"}}
+{"atMs":5689.831699999981,"event":"token","data":{"text":" Secret"}}
+{"atMs":5700.978600000031,"event":"token","data":{"text":" modification"}}
+{"atMs":5712.017800000031,"event":"token","data":{"text":" history"}}
+{"atMs":5722.87639999995,"event":"token","data":{"text":" shows"}}
+{"atMs":5733.895699999994,"event":"token","data":{"text":" that"}}
+{"atMs":5744.958600000013,"event":"token","data":{"text":" the"}}
+{"atMs":5755.942399999942,"event":"token","data":{"text":" secret"}}
+{"atMs":5767.182400000049,"event":"token","data":{"text":" was"}}
+{"atMs":5794.921300000045,"event":"token","data":{"text":" changed"}}
+{"atMs":5794.925000000047,"event":"token","data":{"text":" during"}}
+{"atMs":5800.549299999955,"event":"token","data":{"text":" deployment"}}
+{"atMs":5812.777200000011,"event":"token","data":{"text":"."}}
+{"atMs":5830.616900000023,"event":"token","data":{"text":"  \n"}}
+{"atMs":5845.054999999935,"event":"token","data":{"text":" "}}
+{"atMs":5857.36129999999,"event":"token","data":{"text":" -"}}
+{"atMs":5869.279499999946,"event":"token","data":{"text":" Possible"}}
+{"atMs":5884.283399999957,"event":"token","data":{"text":" Reason"}}
+{"atMs":5899.100699999952,"event":"token","data":{"text":":"}}
+{"atMs":5913.639300000039,"event":"token","data":{"text":" Secret"}}
+{"atMs":5928.299200000009,"event":"token","data":{"text":" was"}}
+{"atMs":5939.694099999964,"event":"token","data":{"text":" altered"}}
+{"atMs":5952.333600000013,"event":"token","data":{"text":" without"}}
+{"atMs":5967.013299999991,"event":"token","data":{"text":" proper"}}
+{"atMs":5978.541199999978,"event":"token","data":{"text":" validation"}}
+{"atMs":5989.298700000043,"event":"token","data":{"text":" or"}}
+{"atMs":6000.250299999956,"event":"token","data":{"text":" rollback"}}
+{"atMs":6011.255899999989,"event":"token","data":{"text":" procedure"}}
+{"atMs":6022.179400000023,"event":"token","data":{"text":"."}}
+{"atMs":6032.972999999998,"event":"token","data":{"text":"  \n"}}
+{"atMs":6043.895000000019,"event":"token","data":{"text":" "}}
+{"atMs":6054.6578000000445,"event":"token","data":{"text":" -"}}
+{"atMs":6065.5768999999855,"event":"token","data":{"text":" Investigation"}}
+{"atMs":6076.437399999937,"event":"token","data":{"text":" Steps"}}
+{"atMs":6087.338499999954,"event":"token","data":{"text":":"}}
+{"atMs":6098.307099999976,"event":"token","data":{"text":" Verify"}}
+{"atMs":6109.1224999999395,"event":"token","data":{"text":" if"}}
+{"atMs":6120.023900000029,"event":"token","data":{"text":" secret"}}
+{"atMs":6131.143799999962,"event":"token","data":{"text":" change"}}
+{"atMs":6142.082599999965,"event":"token","data":{"text":" was"}}
+{"atMs":6153.010499999975,"event":"token","data":{"text":" properly"}}
+{"atMs":6166.380099999951,"event":"token","data":{"text":" validated"}}
+{"atMs":6177.386700000032,"event":"token","data":{"text":" before"}}
+{"atMs":6188.30290000001,"event":"token","data":{"text":" rollback"}}
+{"atMs":6199.028000000049,"event":"token","data":{"text":","}}
+{"atMs":6209.898000000045,"event":"token","data":{"text":" check"}}
+{"atMs":6221.006399999955,"event":"token","data":{"text":" for"}}
+{"atMs":6231.878700000001,"event":"token","data":{"text":" any"}}
+{"atMs":6242.900200000033,"event":"token","data":{"text":" unauthorized"}}
+{"atMs":6253.727199999965,"event":"token","data":{"text":" changes"}}
+{"atMs":6264.498000000021,"event":"token","data":{"text":" in"}}
+{"atMs":6275.507800000021,"event":"token","data":{"text":" logs"}}
+{"atMs":6286.3606000000145,"event":"token","data":{"text":"."}}
+{"atMs":6297.356400000048,"event":"token","data":{"text":"  \n\n"}}
+{"atMs":6308.522400000016,"event":"token","data":{"text":"-"}}
+{"atMs":6319.107799999998,"event":"token","data":{"text":" **"}}
+{"atMs":6330.407699999982,"event":"token","data":{"text":"1"}}
+{"atMs":6341.315599999973,"event":"token","data":{"text":"."}}
+{"atMs":6352.168999999994,"event":"token","data":{"text":"4"}}
+{"atMs":6374.112399999984,"event":"token","data":{"text":" 임"}}
+{"atMs":6384.829999999958,"event":"token","data":{"text":"시"}}
+{"atMs":6395.717300000018,"event":"token","data":{"text":" roll"}}
+{"atMs":6406.6095000000205,"event":"token","data":{"text":" back"}}
+{"atMs":6417.509399999981,"event":"token","data":{"text":"으로"}}
+{"atMs":6428.314000000013,"event":"token","data":{"text":" 서비스"}}
+{"atMs":6450.636399999959,"event":"token","data":{"text":" 복"}}
+{"atMs":6461.349999999977,"event":"token","data":{"text":"구"}}
+{"atMs":6472.171100000036,"event":"token","data":{"text":"**"}}
+{"atMs":6483.228200000012,"event":"token","data":{"text":"  \n"}}
+{"atMs":6494.18319999997,"event":"token","data":{"text":" "}}
+{"atMs":6504.998099999968,"event":"token","data":{"text":" -"}}
+{"atMs":6515.8582999999635,"event":"token","data":{"text":" Service"}}
+{"atMs":6526.65399999998,"event":"token","data":{"text":" recovery"}}
+{"atMs":6537.537999999942,"event":"token","data":{"text":" was"}}
+{"atMs":6548.665000000037,"event":"token","data":{"text":" done"}}
+{"atMs":6559.604799999972,"event":"token","data":{"text":" via"}}
+{"atMs":6570.543799999985,"event":"token","data":{"text":" temporary"}}
+{"atMs":6581.398900000029,"event":"token","data":{"text":" rollback"}}
+{"atMs":6592.272600000026,"event":"token","data":{"text":" after"}}
+{"atMs":6603.304600000032,"event":"token","data":{"text":" deployment"}}
+{"atMs":6614.172900000005,"event":"token","data":{"text":" failure"}}
+{"atMs":6625.08329999994,"event":"token","data":{"text":"."}}
+{"atMs":6636.036599999992,"event":"token","data":{"text":"  \n"}}
+{"atMs":6646.915099999984,"event":"token","data":{"text":" "}}
+{"atMs":6658.055900000036,"event":"token","data":{"text":" -"}}
+{"atMs":6669.032699999982,"event":"token","data":{"text":" Possible"}}
+{"atMs":6679.953600000008,"event":"token","data":{"text":" Reason"}}
+{"atMs":6693.0315999999875,"event":"token","data":{"text":":"}}
+{"atMs":6704.180099999998,"event":"token","data":{"text":" Roll"}}
+{"atMs":6715.805399999954,"event":"token","data":{"text":"back"}}
+{"atMs":6726.651899999939,"event":"token","data":{"text":" procedure"}}
+{"atMs":6737.533700000029,"event":"token","data":{"text":" may"}}
+{"atMs":6748.511300000013,"event":"token","data":{"text":" have"}}
+{"atMs":6759.522400000016,"event":"token","data":{"text":" exposed"}}
+{"atMs":6771.078699999955,"event":"token","data":{"text":" sensitive"}}
+{"atMs":6781.99589999998,"event":"token","data":{"text":" data"}}
+{"atMs":6792.822399999946,"event":"token","data":{"text":" or"}}
+{"atMs":6803.743099999963,"event":"token","data":{"text":" left"}}
+{"atMs":6814.647400000016,"event":"token","data":{"text":" incomplete"}}
+{"atMs":6825.960100000026,"event":"token","data":{"text":" configuration"}}
+{"atMs":6839.098200000008,"event":"token","data":{"text":"."}}
+{"atMs":6850.1857999999775,"event":"token","data":{"text":"  \n"}}
+{"atMs":6861.429800000042,"event":"token","data":{"text":" "}}
+{"atMs":6872.807099999976,"event":"token","data":{"text":" -"}}
+{"atMs":6883.965699999942,"event":"token","data":{"text":" Investigation"}}
+{"atMs":6895.06389999995,"event":"token","data":{"text":" Steps"}}
+{"atMs":6906.098800000036,"event":"token","data":{"text":":"}}
+{"atMs":6916.983400000026,"event":"token","data":{"text":" Confirm"}}
+{"atMs":6927.930599999963,"event":"token","data":{"text":" if"}}
+{"atMs":6938.815199999954,"event":"token","data":{"text":" all"}}
+{"atMs":6949.631500000018,"event":"token","data":{"text":" previous"}}
+{"atMs":6960.49840000004,"event":"token","data":{"text":" states"}}
+{"atMs":6971.44709999999,"event":"token","data":{"text":" were"}}
+{"atMs":6982.913599999971,"event":"token","data":{"text":" restored"}}
+{"atMs":6993.787200000021,"event":"token","data":{"text":" correctly"}}
+{"atMs":7004.673199999961,"event":"token","data":{"text":","}}
+{"atMs":7015.568599999999,"event":"token","data":{"text":" check"}}
+{"atMs":7026.631700000027,"event":"token","data":{"text":" for"}}
+{"atMs":7037.597799999989,"event":"token","data":{"text":" any"}}
+{"atMs":7048.46669999999,"event":"token","data":{"text":" residual"}}
+{"atMs":7059.481700000004,"event":"token","data":{"text":" effects"}}
+{"atMs":7070.5481000000145,"event":"token","data":{"text":" of"}}
+{"atMs":7081.567799999961,"event":"token","data":{"text":" the"}}
+{"atMs":7092.432400000049,"event":"token","data":{"text":" rollback"}}
+{"atMs":7103.392400000012,"event":"token","data":{"text":"."}}
+{"atMs":7114.6777,"event":"token","data":{"text":"  \n\n"}}
+{"atMs":7125.4518999999855,"event":"token","data":{"text":"-"}}
+{"atMs":7136.267299999949,"event":"token","data":{"text":" **"}}
+{"atMs":7149.832599999965,"event":"token","data":{"text":"1"}}
+{"atMs":7162.257800000021,"event":"token","data":{"text":"."}}
+{"atMs":7173.36930000002,"event":"token","data":{"text":"5"}}
+{"atMs":7184.577000000048,"event":"token","data":{"text":" 재"}}
+{"atMs":7195.616900000023,"event":"token","data":{"text":"발"}}
+{"atMs":7207.067599999951,"event":"token","data":{"text":" 방"}}
+{"atMs":7219.699699999997,"event":"token","data":{"text":"지"}}
+{"atMs":7231.439799999935,"event":"token","data":{"text":" untuk"}}
+{"atMs":7242.380000000005,"event":"token","data":{"text":" pre"}}
+{"atMs":7253.36930000002,"event":"token","data":{"text":"-de"}}
+{"atMs":7264.348400000017,"event":"token","data":{"text":"ployment"}}
+{"atMs":7275.497600000002,"event":"token","data":{"text":" secret"}}
+{"atMs":7286.75430000003,"event":"token","data":{"text":" validation"}}
+{"atMs":7297.736900000018,"event":"token","data":{"text":"**"}}
+{"atMs":7309.023199999938,"event":"token","data":{"text":"  \n"}}
+{"atMs":7320.021999999997,"event":"token","data":{"text":" "}}
+{"atMs":7331.040099999984,"event":"token","data":{"text":" -"}}
+{"atMs":7342.038300000015,"event":"token","data":{"text":" Pre"}}
+{"atMs":7352.87360000005,"event":"token","data":{"text":"-de"}}
+{"atMs":7363.873099999968,"event":"token","data":{"text":"ployment"}}
+{"atMs":7374.878900000011,"event":"token","data":{"text":" secret"}}
+{"atMs":7385.770900000003,"event":"token","data":{"text":" validation"}}
+{"atMs":7396.684600000037,"event":"token","data":{"text":" was"}}
+{"atMs":7407.756399999955,"event":"token","data":{"text":" implemented"}}
+{"atMs":7418.953600000008,"event":"token","data":{"text":" to"}}
+{"atMs":7429.8586999999825,"event":"token","data":{"text":" prevent"}}
+{"atMs":7441.295000000042,"event":"token","data":{"text":" recurrence"}}
+{"atMs":7452.199999999953,"event":"token","data":{"text":"."}}
+{"atMs":7463.075899999938,"event":"token","data":{"text":"  \n"}}
+{"atMs":7474.109300000011,"event":"token","data":{"text":" "}}
+{"atMs":7485.137499999953,"event":"token","data":{"text":" -"}}
+{"atMs":7496.482799999998,"event":"token","data":{"text":" Possible"}}
+{"atMs":7508.0938000000315,"event":"token","data":{"text":" Reason"}}
+{"atMs":7519.035900000017,"event":"token","data":{"text":":"}}
+{"atMs":7529.903000000049,"event":"token","data":{"text":" Secret"}}
+{"atMs":7541.120499999961,"event":"token","data":{"text":" change"}}
+{"atMs":7551.978999999934,"event":"token","data":{"text":" history"}}
+{"atMs":7563.236200000043,"event":"token","data":{"text":" shows"}}
+{"atMs":7574.13619999995,"event":"token","data":{"text":" that"}}
+{"atMs":7585.236200000043,"event":"token","data":{"text":" similar"}}
+{"atMs":7596.227199999965,"event":"token","data":{"text":" issues"}}
+{"atMs":7607.356299999985,"event":"token","data":{"text":" may"}}
+{"atMs":7618.185100000002,"event":"token","data":{"text":" occur"}}
+{"atMs":7629.132699999958,"event":"token","data":{"text":" in"}}
+{"atMs":7640.491099999985,"event":"token","data":{"text":" future"}}
+{"atMs":7651.3728999999585,"event":"token","data":{"text":" deployments"}}
+{"atMs":7662.314799999935,"event":"token","data":{"text":" if"}}
+{"atMs":7673.28350000002,"event":"token","data":{"text":" not"}}
+{"atMs":7684.380400000024,"event":"token","data":{"text":" properly"}}
+{"atMs":7695.433100000024,"event":"token","data":{"text":" validated"}}
+{"atMs":7706.290700000012,"event":"token","data":{"text":"."}}
+{"atMs":7717.442099999986,"event":"token","data":{"text":"  \n"}}
+{"atMs":7728.460300000035,"event":"token","data":{"text":" "}}
+{"atMs":7739.5148000000045,"event":"token","data":{"text":" -"}}
+{"atMs":7752.680999999982,"event":"token","data":{"text":" Investigation"}}
+{"atMs":7764.4042999999365,"event":"token","data":{"text":" Steps"}}
+{"atMs":7775.304200000013,"event":"token","data":{"text":":"}}
+{"atMs":7786.343499999959,"event":"token","data":{"text":" Confirm"}}
+{"atMs":7797.199499999988,"event":"token","data":{"text":" if"}}
+{"atMs":7808.132899999968,"event":"token","data":{"text":" pre"}}
+{"atMs":7819.163399999961,"event":"token","data":{"text":"-de"}}
+{"atMs":7830.22239999997,"event":"token","data":{"text":"ployment"}}
+{"atMs":7843.355199999991,"event":"token","data":{"text":" validation"}}
+{"atMs":7854.92359999998,"event":"token","data":{"text":" is"}}
+{"atMs":7865.864199999953,"event":"token","data":{"text":" correctly"}}
+{"atMs":7887.283399999957,"event":"token","data":{"text":" applied"}}
+{"atMs":7888.5429,"event":"token","data":{"text":","}}
+{"atMs":7899.73199999996,"event":"token","data":{"text":" ensure"}}
+{"atMs":7910.806400000001,"event":"token","data":{"text":" it"}}
+{"atMs":7921.8268999999855,"event":"token","data":{"text":" covers"}}
+{"atMs":7933.1271000000415,"event":"token","data":{"text":" all"}}
+{"atMs":7944.303399999975,"event":"token","data":{"text":" necessary"}}
+{"atMs":7955.64439999999,"event":"token","data":{"text":" aspects"}}
+{"atMs":7967.110400000005,"event":"token","data":{"text":" of"}}
+{"atMs":7978.287299999967,"event":"token","data":{"text":" secret"}}
+{"atMs":7989.471200000029,"event":"token","data":{"text":" management"}}
+{"atMs":8000.492300000042,"event":"token","data":{"text":"."}}
+{"atMs":8011.764199999976,"event":"token","data":{"text":"  \n\n"}}
+{"atMs":8022.837999999989,"event":"token","data":{"text":"**"}}
+{"atMs":8033.980100000044,"event":"token","data":{"text":"2"}}
+{"atMs":8045.032499999972,"event":"token","data":{"text":"."}}
+{"atMs":8067.371399999945,"event":"token","data":{"text":" 임"}}
+{"atMs":8078.810100000002,"event":"token","data":{"text":"원"}}
+{"atMs":8090.18590000004,"event":"token","data":{"text":" 보"}}
+{"atMs":8101.535299999989,"event":"token","data":{"text":"고"}}
+{"atMs":8112.776500000036,"event":"token","data":{"text":"용"}}
+{"atMs":8123.874599999981,"event":"token","data":{"text":" "}}
+{"atMs":8134.999700000044,"event":"token","data":{"text":"5"}}
+{"atMs":8146.1267000000225,"event":"token","data":{"text":"줄"}}
+{"atMs":8157.2175999999745,"event":"token","data":{"text":" 요"}}
+{"atMs":8168.446499999962,"event":"token","data":{"text":"약"}}
+{"atMs":8179.909800000023,"event":"token","data":{"text":"**"}}
+{"atMs":8191.179699999979,"event":"token","data":{"text":"  \n"}}
+{"atMs":8202.187200000044,"event":"token","data":{"text":"-"}}
+{"atMs":8213.262499999953,"event":"token","data":{"text":" payment"}}
+{"atMs":8224.418399999966,"event":"token","data":{"text":"-api"}}
+{"atMs":8235.58050000004,"event":"token","data":{"text":" 배"}}
+{"atMs":8246.722300000023,"event":"token","data":{"text":"포"}}
+{"atMs":8257.948100000038,"event":"token","data":{"text":" 후"}}
+{"atMs":8269.398999999976,"event":"token","data":{"text":" DB"}}
+{"atMs":8293.402499999967,"event":"token","data":{"text":" 인"}}
+{"atMs":8294.40419999999,"event":"token","data":{"text":"증"}}
+{"atMs":8322.085699999938,"event":"token","data":{"text":" 실패"}}
+{"atMs":8336.714299999992,"event":"token","data":{"text":"로"}}
+{"atMs":8351.457399999956,"event":"token","data":{"text":"그"}}
+{"atMs":8366.525699999998,"event":"token","data":{"text":"를"}}
+{"atMs":8381.522099999944,"event":"token","data":{"text":" 확인"}}
+{"atMs":8396.47789999994,"event":"token","data":{"text":"했"}}
+{"atMs":8410.35699999996,"event":"token","data":{"text":"지만"}}
+{"atMs":8421.409199999995,"event":"token","data":{"text":" root"}}
+{"atMs":8435.871399999945,"event":"token","data":{"text":" cause"}}
+{"atMs":8450.768900000025,"event":"token","data":{"text":"는"}}
+{"atMs":8462.621799999964,"event":"token","data":{"text":" 아직"}}
+{"atMs":8473.602199999965,"event":"token","data":{"text":" 명"}}
+{"atMs":8484.641999999993,"event":"token","data":{"text":"확"}}
+{"atMs":8495.90300000005,"event":"token","data":{"text":"하지"}}
+{"atMs":8507.207999999984,"event":"token","data":{"text":" 않"}}
+{"atMs":8517.903700000024,"event":"token","data":{"text":"음"}}
+{"atMs":8528.89579999994,"event":"token","data":{"text":"."}}
+{"atMs":8539.931400000001,"event":"token","data":{"text":"  \n"}}
+{"atMs":8550.917999999947,"event":"token","data":{"text":"-"}}
+{"atMs":8561.991900000023,"event":"token","data":{"text":" Secret"}}
+{"atMs":8573.054400000023,"event":"token","data":{"text":"变更"}}
+{"atMs":8584.177000000025,"event":"token","data":{"text":" 이"}}
+{"atMs":8595.051600000006,"event":"token","data":{"text":"력"}}
+{"atMs":8606.05389999994,"event":"token","data":{"text":"이"}}
+{"atMs":8616.999700000044,"event":"token","data":{"text":" موجود"}}
+{"atMs":8628.170999999973,"event":"token","data":{"text":"하며"}}
+{"atMs":8639.233400000026,"event":"token","data":{"text":" 이"}}
+{"atMs":8650.31110000005,"event":"token","data":{"text":"전"}}
+{"atMs":8661.339500000002,"event":"token","data":{"text":" state"}}
+{"atMs":8672.404100000043,"event":"token","data":{"text":" restore"}}
+{"atMs":8683.500699999975,"event":"token","data":{"text":"를"}}
+{"atMs":8694.59759999998,"event":"token","data":{"text":" 통"}}
+{"atMs":8705.554999999935,"event":"token","data":{"text":"한"}}
+{"atMs":8727.83189999999,"event":"token","data":{"text":" 임"}}
+{"atMs":8739.137099999934,"event":"token","data":{"text":"시"}}
+{"atMs":8750.129700000049,"event":"token","data":{"text":" roll"}}
+{"atMs":8761.275999999954,"event":"token","data":{"text":" back"}}
+{"atMs":8772.33620000002,"event":"token","data":{"text":"으로"}}
+{"atMs":8783.203499999945,"event":"token","data":{"text":" 서비스"}}
+{"atMs":8805.461800000048,"event":"token","data":{"text":" 복"}}
+{"atMs":8818.613299999968,"event":"token","data":{"text":"구"}}
+{"atMs":8830.163900000043,"event":"token","data":{"text":"."}}
+{"atMs":8843.082700000028,"event":"token","data":{"text":"  \n"}}
+{"atMs":8854.089399999939,"event":"token","data":{"text":"-"}}
+{"atMs":8865.015699999989,"event":"token","data":{"text":" pre"}}
+{"atMs":8876.031399999978,"event":"token","data":{"text":"-de"}}
+{"atMs":8887.141700000037,"event":"token","data":{"text":"ployment"}}
+{"atMs":8898.361999999965,"event":"token","data":{"text":" secret"}}
+{"atMs":8909.19689999998,"event":"token","data":{"text":" validation"}}
+{"atMs":8920.188399999985,"event":"token","data":{"text":"이"}}
+{"atMs":8931.111900000018,"event":"token","data":{"text":"实施"}}
+{"atMs":8942.553500000038,"event":"token","data":{"text":"되었"}}
+{"atMs":8953.432499999995,"event":"token","data":{"text":"으"}}
+{"atMs":8964.720699999947,"event":"token","data":{"text":"나"}}
+{"atMs":8976.03879999998,"event":"token","data":{"text":" additional"}}
+{"atMs":8986.910999999964,"event":"token","data":{"text":" measures"}}
+{"atMs":8997.807700000005,"event":"token","data":{"text":" may"}}
+{"atMs":9008.878299999982,"event":"token","data":{"text":" be"}}
+{"atMs":9019.877100000042,"event":"token","data":{"text":" required"}}
+{"atMs":9031.057700000005,"event":"token","data":{"text":" to"}}
+{"atMs":9042.238299999968,"event":"token","data":{"text":" prevent"}}
+{"atMs":9053.490699999966,"event":"token","data":{"text":" future"}}
+{"atMs":9064.401100000017,"event":"token","data":{"text":" recurrence"}}
+{"atMs":9075.661300000036,"event":"token","data":{"text":"."}}
+{"atMs":9086.729599999962,"event":"done","data":{}}

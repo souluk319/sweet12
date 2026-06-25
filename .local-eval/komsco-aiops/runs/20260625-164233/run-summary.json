@@ -1,0 +1,121 @@
+{
+  "finishedAt": "2026-06-25T07:54:44.634Z",
+  "runDir": "F:\\AI_Models\\llmfit\\local-llm-lab\\.local-eval\\komsco-aiops\\runs\\20260625-164233",
+  "selectedModels": {
+    "gemma": {
+      "id": "gemma4-12b-it-qat-secondary",
+      "displayName": "Gemma 4 12B IT QAT",
+      "runtime": "ollama",
+      "role": "stress-test",
+      "roles": [
+        "chat",
+        "stress-test"
+      ],
+      "store": "secondary",
+      "ollamaModel": "gemma4:12b-it-qat",
+      "manifestPath": "registry.ollama.ai/library/gemma4/12b-it-qat",
+      "sizeGb": 7.15,
+      "priority": 6,
+      "reason": "12B QAT 후보. 4070 Ti에서 실사용 가능한지 벤치 필요.",
+      "bestUse": "12B급 품질이 필요할 때의 stress-test 후보. 로딩이 길고 VRAM 여유를 크게 요구하므로 단발 고난도 질의에 적합.",
+      "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Gemma-4\\.ollama-models\nOLLAMA_MODEL=gemma4:12b-it-qat",
+      "installed": true,
+      "installable": false,
+      "storePath": "F:\\AI_Models\\Gemma-4\\.ollama-models"
+    },
+    "qwen": {
+      "id": "qwen25-coder-7b",
+      "displayName": "Qwen2.5 Coder 7B",
+      "runtime": "ollama",
+      "role": "coding",
+      "roles": [
+        "coding"
+      ],
+      "store": "primary",
+      "ollamaModel": "qwen2.5-coder:7b",
+      "manifestPath": "registry.ollama.ai/library/qwen2.5-coder/7b",
+      "remoteTag": "qwen2.5-coder:7b",
+      "sizeGb": 4.7,
+      "priority": 9,
+      "reason": "llmfit 기준 4070 Ti 12GB에서 코딩용 Perfect 후보.",
+      "bestUse": "설치 후 코딩 전용 첫 비교 후보. 함수 작성, 테스트 초안, 리팩터링 제안처럼 코드 밀도가 높은 작업.",
+      "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=qwen2.5-coder:7b",
+      "installed": true,
+      "installable": true,
+      "storePath": "F:\\AI_Models\\Ollama"
+    },
+    "deepseek": {
+      "id": "deepseek-r1-7b",
+      "displayName": "DeepSeek R1 Distill Qwen 7B",
+      "runtime": "ollama",
+      "role": "reasoning",
+      "roles": [
+        "reasoning",
+        "coding"
+      ],
+      "store": "primary",
+      "ollamaModel": "deepseek-r1:7b",
+      "manifestPath": "registry.ollama.ai/library/deepseek-r1/7b",
+      "remoteTag": "deepseek-r1:7b",
+      "sizeGb": 4.7,
+      "priority": 8,
+      "reason": "추론 전용 경량 후보. 설치 후 Gemma와 비교.",
+      "bestUse": "설치 후 reasoning 비교군. 원인 분석, 버그 추론, 단계적 의사결정처럼 속도보다 사고 과정이 중요한 작업.",
+      "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=deepseek-r1:7b",
+      "installed": true,
+      "installable": true,
+      "storePath": "F:\\AI_Models\\Ollama"
+    },
+    "baseline": {
+      "id": "gemma4-e4b",
+      "displayName": "Gemma 4 E4B",
+      "runtime": "ollama",
+      "role": "chat",
+      "roles": [
+        "chat",
+        "coding",
+        "documentation"
+      ],
+      "store": "primary",
+      "ollamaModel": "gemma4:e4b",
+      "manifestPath": "registry.ollama.ai/library/gemma4/e4b",
+      "sizeGb": 9.6,
+      "priority": 10,
+      "expectedTps": 107,
+      "reason": "현재 primary Ollama 저장소에서 실측 기준 텍스트 품질/속도 균형이 가장 좋음. 이미지 self-test에서는 첨부 인식 실패가 확인되어 vision 입력은 비활성화.",
+      "bestUse": "개발 기본값 후보. 코드 설명, 리팩터링 방향 잡기, 문서 초안처럼 텍스트 중심 작업에 적합.",
+      "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=gemma4:e4b",
+      "installed": true,
+      "installable": false,
+      "storePath": "F:\\AI_Models\\Ollama"
+    }
+  },
+  "failures": [
+    {
+      "suiteKey": "qwen",
+      "modelId": "qwen35-9b-awq",
+      "displayName": "Qwen3.5 9B AWQ",
+      "stage": "switch",
+      "switchMs": 181878.3493,
+      "error": "Timed out waiting for http://127.0.0.1:8080/v1/models: fetch failed"
+    },
+    {
+      "suiteKey": "qwen",
+      "modelId": "qwen35-9b-awq-quanttrio",
+      "displayName": "QuantTrio Qwen3.5 9B AWQ",
+      "stage": "switch",
+      "switchMs": 181717.56319999998,
+      "error": "Timed out waiting for http://127.0.0.1:8080/v1/models: fetch failed"
+    }
+  ],
+  "reports": [
+    "report/submission-report.html",
+    "report/test-methodology.md",
+    "report/test-result-report.md",
+    "report/scorecard.md",
+    "scoring/scorecard.csv",
+    "report/gb10-application-proposal.md",
+    "report/submission-report.md",
+    "evidence-manifest.sha256"
+  ]
+}

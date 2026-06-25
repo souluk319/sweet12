@@ -1,0 +1,23 @@
+{
+  "id": "gemma4-e4b",
+  "displayName": "Gemma 4 E4B",
+  "runtime": "ollama",
+  "role": "chat",
+  "roles": [
+    "chat",
+    "coding",
+    "documentation"
+  ],
+  "store": "primary",
+  "ollamaModel": "gemma4:e4b",
+  "manifestPath": "registry.ollama.ai/library/gemma4/e4b",
+  "sizeGb": 9.6,
+  "priority": 10,
+  "expectedTps": 107,
+  "reason": "현재 primary Ollama 저장소에서 실측 기준 텍스트 품질/속도 균형이 가장 좋음. 이미지 self-test에서는 첨부 인식 실패가 확인되어 vision 입력은 비활성화.",
+  "bestUse": "개발 기본값 후보. 코드 설명, 리팩터링 방향 잡기, 문서 초안처럼 텍스트 중심 작업에 적합.",
+  "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=gemma4:e4b",
+  "installed": true,
+  "installable": false,
+  "storePath": "F:\\AI_Models\\Ollama"
+}

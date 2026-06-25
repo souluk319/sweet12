@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S06",
+  "scenarioTitle": "장문 보고서 생성",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:44:14.755Z",
+  "finishedAt": "2026-06-25T07:44:29.253Z",
+  "totalMs": 14497.620800000004,
+  "charCount": 1581,
+  "estimatedTokens": 561,
+  "estimatedTps": 38.69600451958296,
+  "eventCount": 732
+}

@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S02",
+  "scenarioTitle": "Evidence 기반 RCA",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:43:09.811Z",
+  "finishedAt": "2026-06-25T07:43:26.523Z",
+  "totalMs": 16712.0838,
+  "charCount": 2207,
+  "estimatedTokens": 715,
+  "estimatedTps": 42.783413998917354,
+  "eventCount": 832
+}

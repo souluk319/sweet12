@@ -1,0 +1,19 @@
+{
+  "id": "qwen35-9b-awq",
+  "displayName": "Qwen3.5 9B AWQ",
+  "runtime": "vllm",
+  "role": "coding",
+  "roles": [
+    "coding",
+    "reasoning"
+  ],
+  "modelDir": "F:\\AI_Models\\Qwen\\models\\Qwen3.5-9B-AWQ",
+  "servedModelName": "qwen3.5-9b-awq",
+  "sizeGb": 12.4,
+  "priority": 9,
+  "reason": "로컬에 이미 있는 Qwen 9B AWQ. vLLM 복구 후 코딩/리뷰 후보.",
+  "bestUse": "코딩/리뷰 품질 후보. vLLM endpoint가 안정적으로 뜨고 Ollama 대비 tok/s 이득이 확인될 때 유지.",
+  "envExample": "LOCAL_LLM_PROVIDER=openai-compatible\nOPENAI_BASE_URL=http://127.0.0.1:8080/v1\nOPENAI_API_KEY=local-vllm\nOPENAI_MODEL=qwen3.5-9b-awq",
+  "installed": true,
+  "installable": false
+}

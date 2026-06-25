@@ -1,0 +1,1228 @@
+{"atMs":263.9257000000216,"event":"thinking","data":{"text":"\nAlright"}}
+{"atMs":274.80790000001434,"event":"thinking","data":{"text":","}}
+{"atMs":285.75740000000224,"event":"thinking","data":{"text":" I"}}
+{"atMs":296.7517999999691,"event":"thinking","data":{"text":"'m"}}
+{"atMs":307.57559999998193,"event":"thinking","data":{"text":" trying"}}
+{"atMs":318.7998999999836,"event":"thinking","data":{"text":" to"}}
+{"atMs":329.9934999999823,"event":"thinking","data":{"text":" figure"}}
+{"atMs":341.0254000000423,"event":"thinking","data":{"text":" out"}}
+{"atMs":352.1485999999568,"event":"thinking","data":{"text":" the"}}
+{"atMs":362.98950000002515,"event":"thinking","data":{"text":" issue"}}
+{"atMs":374.0531999999657,"event":"thinking","data":{"text":" based"}}
+{"atMs":385.7550999999512,"event":"thinking","data":{"text":" on"}}
+{"atMs":396.7271999999648,"event":"thinking","data":{"text":" the"}}
+{"atMs":407.82239999994636,"event":"thinking","data":{"text":" evidence"}}
+{"atMs":419.1380000000354,"event":"thinking","data":{"text":" provided"}}
+{"atMs":429.9235000000335,"event":"thinking","data":{"text":"."}}
+{"atMs":443.4455999999773,"event":"thinking","data":{"text":" So"}}
+{"atMs":454.3920999999391,"event":"thinking","data":{"text":","}}
+{"atMs":465.56180000002496,"event":"thinking","data":{"text":" let"}}
+{"atMs":476.72569999995176,"event":"thinking","data":{"text":"'s"}}
+{"atMs":487.98930000001565,"event":"thinking","data":{"text":" break"}}
+{"atMs":499.06889999995474,"event":"thinking","data":{"text":" it"}}
+{"atMs":510.1640999999363,"event":"thinking","data":{"text":" down"}}
+{"atMs":521.4189000000479,"event":"thinking","data":{"text":" step"}}
+{"atMs":532.6766000000061,"event":"thinking","data":{"text":" by"}}
+{"atMs":544.1561999999685,"event":"thinking","data":{"text":" step"}}
+{"atMs":554.9876999999397,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":566.015999999945,"event":"thinking","data":{"text":"First"}}
+{"atMs":577.2339999999385,"event":"thinking","data":{"text":","}}
+{"atMs":588.3606000000145,"event":"thinking","data":{"text":" looking"}}
+{"atMs":605.530700000003,"event":"thinking","data":{"text":" at"}}
+{"atMs":610.4690999999875,"event":"thinking","data":{"text":" the"}}
+{"atMs":621.7767999999924,"event":"thinking","data":{"text":" logs"}}
+{"atMs":635.2197999999626,"event":"thinking","data":{"text":" from"}}
+{"atMs":646.2622999999439,"event":"thinking","data":{"text":" `"}}
+{"atMs":657.4170999999624,"event":"thinking","data":{"text":"oc"}}
+{"atMs":668.5557999999728,"event":"thinking","data":{"text":" logs"}}
+{"atMs":679.5368999999482,"event":"thinking","data":{"text":"`,"}}
+{"atMs":690.98199999996,"event":"thinking","data":{"text":" there"}}
+{"atMs":702.357799999998,"event":"thinking","data":{"text":" are"}}
+{"atMs":713.4298999999883,"event":"thinking","data":{"text":" two"}}
+{"atMs":724.4954999999609,"event":"thinking","data":{"text":" errors"}}
+{"atMs":735.4568999999901,"event":"thinking","data":{"text":":"}}
+{"atMs":746.4586000000127,"event":"thinking","data":{"text":" one"}}
+{"atMs":757.6189999999478,"event":"thinking","data":{"text":" about"}}
+{"atMs":768.5551999999443,"event":"thinking","data":{"text":" failing"}}
+{"atMs":779.8294999999925,"event":"thinking","data":{"text":" to"}}
+{"atMs":791.0010000000475,"event":"thinking","data":{"text":" connect"}}
+{"atMs":802.0971999999601,"event":"thinking","data":{"text":" to"}}
+{"atMs":813.3613999999361,"event":"thinking","data":{"text":" PostgreSQL"}}
+{"atMs":824.2571999999927,"event":"thinking","data":{"text":" and"}}
+{"atMs":835.1796999999788,"event":"thinking","data":{"text":" another"}}
+{"atMs":846.1574999999721,"event":"thinking","data":{"text":" about"}}
+{"atMs":857.0281999999424,"event":"thinking","data":{"text":" a"}}
+{"atMs":868.0803999999771,"event":"thinking","data":{"text":" password"}}
+{"atMs":879.1489000000292,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":890.1123999999836,"event":"thinking","data":{"text":" failure"}}
+{"atMs":901.1485999999568,"event":"thinking","data":{"text":" for"}}
+{"atMs":912.0344999999506,"event":"thinking","data":{"text":" the"}}
+{"atMs":923.3815999999642,"event":"thinking","data":{"text":" user"}}
+{"atMs":934.2334000000264,"event":"thinking","data":{"text":" \""}}
+{"atMs":945.2754999999888,"event":"thinking","data":{"text":"payment"}}
+{"atMs":956.3327000000281,"event":"thinking","data":{"text":"_app"}}
+{"atMs":967.1896999999881,"event":"thinking","data":{"text":"\"."}}
+{"atMs":978.4070000000065,"event":"thinking","data":{"text":" This"}}
+{"atMs":992.2114000000292,"event":"thinking","data":{"text":" suggests"}}
+{"atMs":1003.123900000006,"event":"thinking","data":{"text":" that"}}
+{"atMs":1014.1223000000464,"event":"thinking","data":{"text":" there"}}
+{"atMs":1025.2402000000002,"event":"thinking","data":{"text":" might"}}
+{"atMs":1036.6206999999704,"event":"thinking","data":{"text":" be"}}
+{"atMs":1047.6753999999491,"event":"thinking","data":{"text":" an"}}
+{"atMs":1058.658599999966,"event":"thinking","data":{"text":" issue"}}
+{"atMs":1069.7674000000115,"event":"thinking","data":{"text":" with"}}
+{"atMs":1080.7508999999845,"event":"thinking","data":{"text":" either"}}
+{"atMs":1091.6744999999646,"event":"thinking","data":{"text":" the"}}
+{"atMs":1102.638099999982,"event":"thinking","data":{"text":" database"}}
+{"atMs":1113.548300000024,"event":"thinking","data":{"text":" connection"}}
+{"atMs":1127.1456999999937,"event":"thinking","data":{"text":" or"}}
+{"atMs":1138.563599999994,"event":"thinking","data":{"text":" the"}}
+{"atMs":1149.6056999999564,"event":"thinking","data":{"text":" credentials"}}
+{"atMs":1160.483200000017,"event":"thinking","data":{"text":" used"}}
+{"atMs":1171.5193999999901,"event":"thinking","data":{"text":" to"}}
+{"atMs":1182.3948000000091,"event":"thinking","data":{"text":" access"}}
+{"atMs":1193.3205000000307,"event":"thinking","data":{"text":" it"}}
+{"atMs":1204.2922999999719,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":1215.2168999999994,"event":"thinking","data":{"text":"Next"}}
+{"atMs":1226.2680999999866,"event":"thinking","data":{"text":","}}
+{"atMs":1237.3410999999614,"event":"thinking","data":{"text":" checking"}}
+{"atMs":1248.5596000000369,"event":"thinking","data":{"text":" the"}}
+{"atMs":1259.5794999999925,"event":"thinking","data":{"text":" rollout"}}
+{"atMs":1270.4747000000207,"event":"thinking","data":{"text":" history"}}
+{"atMs":1281.4969000000274,"event":"thinking","data":{"text":" shows"}}
+{"atMs":1292.3874999999534,"event":"thinking","data":{"text":" that"}}
+{"atMs":1303.3512000000337,"event":"thinking","data":{"text":" changes"}}
+{"atMs":1314.2909999999683,"event":"thinking","data":{"text":" were"}}
+{"atMs":1325.1901999999536,"event":"thinking","data":{"text":" made"}}
+{"atMs":1336.096499999985,"event":"thinking","data":{"text":" on"}}
+{"atMs":1346.9741999999387,"event":"thinking","data":{"text":" lines"}}
+{"atMs":1358.108499999973,"event":"thinking","data":{"text":" "}}
+{"atMs":1369.3663999999408,"event":"thinking","data":{"text":"1"}}
+{"atMs":1380.219000000041,"event":"thinking","data":{"text":"2"}}
+{"atMs":1391.2240000000456,"event":"thinking","data":{"text":" and"}}
+{"atMs":1402.0605000000214,"event":"thinking","data":{"text":" "}}
+{"atMs":1412.856599999941,"event":"thinking","data":{"text":"1"}}
+{"atMs":1423.7569000000367,"event":"thinking","data":{"text":"3"}}
+{"atMs":1434.6546999999555,"event":"thinking","data":{"text":"."}}
+{"atMs":1445.9492999999784,"event":"thinking","data":{"text":" Line"}}
+{"atMs":1456.8077000000048,"event":"thinking","data":{"text":" "}}
+{"atMs":1468.0200000000186,"event":"thinking","data":{"text":"1"}}
+{"atMs":1479.0745999999344,"event":"thinking","data":{"text":"2"}}
+{"atMs":1490.045299999998,"event":"thinking","data":{"text":" updated"}}
+{"atMs":1500.919200000004,"event":"thinking","data":{"text":" the"}}
+{"atMs":1514.2587000000058,"event":"thinking","data":{"text":" image"}}
+{"atMs":1525.034400000004,"event":"thinking","data":{"text":" to"}}
+{"atMs":1536.123799999943,"event":"thinking","data":{"text":" version"}}
+{"atMs":1546.9290999999503,"event":"thinking","data":{"text":" "}}
+{"atMs":1557.8486000000266,"event":"thinking","data":{"text":"2"}}
+{"atMs":1568.7826999999816,"event":"thinking","data":{"text":"."}}
+{"atMs":1579.7942999999505,"event":"thinking","data":{"text":"4"}}
+{"atMs":1590.6796000000322,"event":"thinking","data":{"text":"."}}
+{"atMs":1601.6781999999657,"event":"thinking","data":{"text":"8"}}
+{"atMs":1612.45550000004,"event":"thinking","data":{"text":" of"}}
+{"atMs":1623.4427999999607,"event":"thinking","data":{"text":" payment"}}
+{"atMs":1634.468600000022,"event":"thinking","data":{"text":"-api"}}
+{"atMs":1645.4599000000162,"event":"thinking","data":{"text":","}}
+{"atMs":1656.3392999999924,"event":"thinking","data":{"text":" and"}}
+{"atMs":1667.2460000000428,"event":"thinking","data":{"text":" line"}}
+{"atMs":1678.3828999999678,"event":"thinking","data":{"text":" "}}
+{"atMs":1689.2412999999942,"event":"thinking","data":{"text":"1"}}
+{"atMs":1700.0511999999871,"event":"thinking","data":{"text":"3"}}
+{"atMs":1710.9331000000238,"event":"thinking","data":{"text":" changed"}}
+{"atMs":1721.8915999999736,"event":"thinking","data":{"text":" the"}}
+{"atMs":1732.7811999999685,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":1743.7201999999816,"event":"thinking","data":{"text":" setting"}}
+{"atMs":1754.965199999977,"event":"thinking","data":{"text":" DB"}}
+{"atMs":1765.8251000000164,"event":"thinking","data":{"text":"_SECRET"}}
+{"atMs":1776.7556000000332,"event":"thinking","data":{"text":"_NAME"}}
+{"atMs":1787.8506000000052,"event":"thinking","data":{"text":" to"}}
+{"atMs":1798.9518999999855,"event":"thinking","data":{"text":" \""}}
+{"atMs":1809.8061999999918,"event":"thinking","data":{"text":"payment"}}
+{"atMs":1820.6674000000348,"event":"thinking","data":{"text":"-db"}}
+{"atMs":1831.7606000000378,"event":"thinking","data":{"text":"-secret"}}
+{"atMs":1842.6988999999594,"event":"thinking","data":{"text":"\"."}}
+{"atMs":1853.8625000000466,"event":"thinking","data":{"text":" This"}}
+{"atMs":1865.110299999942,"event":"thinking","data":{"text":" indicates"}}
+{"atMs":1876.0825999999652,"event":"thinking","data":{"text":" that"}}
+{"atMs":1887.3305999999866,"event":"thinking","data":{"text":" the"}}
+{"atMs":1898.5773000000045,"event":"thinking","data":{"text":" secret"}}
+{"atMs":1909.594299999997,"event":"thinking","data":{"text":" name"}}
+{"atMs":1920.4594999999972,"event":"thinking","data":{"text":" was"}}
+{"atMs":1931.4111000000266,"event":"thinking","data":{"text":" updated"}}
+{"atMs":1942.5096999999369,"event":"thinking","data":{"text":" recently"}}
+{"atMs":1953.339799999958,"event":"thinking","data":{"text":","}}
+{"atMs":1964.403799999971,"event":"thinking","data":{"text":" which"}}
+{"atMs":1975.487300000037,"event":"thinking","data":{"text":" could"}}
+{"atMs":1986.9889999999432,"event":"thinking","data":{"text":" be"}}
+{"atMs":1998.0570000000298,"event":"thinking","data":{"text":" a"}}
+{"atMs":2009.277299999958,"event":"thinking","data":{"text":" point"}}
+{"atMs":2020.2772000000114,"event":"thinking","data":{"text":" of"}}
+{"atMs":2031.4146000000183,"event":"thinking","data":{"text":" failure"}}
+{"atMs":2044.9616999999853,"event":"thinking","data":{"text":" if"}}
+{"atMs":2055.6936999999452,"event":"thinking","data":{"text":" the"}}
+{"atMs":2066.474399999948,"event":"thinking","data":{"text":" wrong"}}
+{"atMs":2077.231299999985,"event":"thinking","data":{"text":" secret"}}
+{"atMs":2088.0285999999614,"event":"thinking","data":{"text":" is"}}
+{"atMs":2098.8114999999525,"event":"thinking","data":{"text":" used"}}
+{"atMs":2109.6877000000095,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":2121.0537000000477,"event":"thinking","data":{"text":"Looking"}}
+{"atMs":2132.3427000000374,"event":"thinking","data":{"text":" at"}}
+{"atMs":2143.45689999999,"event":"thinking","data":{"text":" `"}}
+{"atMs":2155.154600000009,"event":"thinking","data":{"text":"oc"}}
+{"atMs":2165.9031999999424,"event":"thinking","data":{"text":" get"}}
+{"atMs":2176.859300000011,"event":"thinking","data":{"text":" pods"}}
+{"atMs":2187.7158000000054,"event":"thinking","data":{"text":"`,"}}
+{"atMs":2198.830799999996,"event":"thinking","data":{"text":" there"}}
+{"atMs":2209.7743000000482,"event":"thinking","data":{"text":"'s"}}
+{"atMs":2220.8902000000235,"event":"thinking","data":{"text":" only"}}
+{"atMs":2231.7086000000127,"event":"thinking","data":{"text":" one"}}
+{"atMs":2242.533199999947,"event":"thinking","data":{"text":" pod"}}
+{"atMs":2253.49589999998,"event":"thinking","data":{"text":" with"}}
+{"atMs":2264.3096999999834,"event":"thinking","data":{"text":" a"}}
+{"atMs":2275.3453000000445,"event":"thinking","data":{"text":" status"}}
+{"atMs":2286.20279999997,"event":"thinking","data":{"text":" of"}}
+{"atMs":2297.144800000009,"event":"thinking","data":{"text":" healthy"}}
+{"atMs":2308.02919999999,"event":"thinking","data":{"text":"."}}
+{"atMs":2319.123099999968,"event":"thinking","data":{"text":" The"}}
+{"atMs":2330.4185999999754,"event":"thinking","data":{"text":" deployment"}}
+{"atMs":2341.6382999999914,"event":"thinking","data":{"text":" seems"}}
+{"atMs":2352.674299999955,"event":"thinking","data":{"text":" fine"}}
+{"atMs":2363.4050999999745,"event":"thinking","data":{"text":","}}
+{"atMs":2376.637400000007,"event":"thinking","data":{"text":" but"}}
+{"atMs":2388.6522000000114,"event":"thinking","data":{"text":" since"}}
+{"atMs":2399.614100000006,"event":"thinking","data":{"text":" the"}}
+{"atMs":2410.834900000016,"event":"thinking","data":{"text":" logs"}}
+{"atMs":2421.5065999999642,"event":"thinking","data":{"text":" are"}}
+{"atMs":2432.415900000022,"event":"thinking","data":{"text":" from"}}
+{"atMs":2443.690799999982,"event":"thinking","data":{"text":" this"}}
+{"atMs":2454.70689999999,"event":"thinking","data":{"text":" pod"}}
+{"atMs":2465.679200000013,"event":"thinking","data":{"text":","}}
+{"atMs":2476.612899999949,"event":"thinking","data":{"text":" it"}}
+{"atMs":2488.350199999986,"event":"thinking","data":{"text":"'s"}}
+{"atMs":2499.385200000019,"event":"thinking","data":{"text":" likely"}}
+{"atMs":2510.4610000000102,"event":"thinking","data":{"text":" where"}}
+{"atMs":2521.4843999999575,"event":"thinking","data":{"text":" the"}}
+{"atMs":2532.590599999996,"event":"thinking","data":{"text":" problem"}}
+{"atMs":2544.0609000000404,"event":"thinking","data":{"text":" lies"}}
+{"atMs":2555.2119999999413,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":2568.7576000000117,"event":"thinking","data":{"text":"Now"}}
+{"atMs":2579.719299999997,"event":"thinking","data":{"text":","}}
+{"atMs":2590.664699999965,"event":"thinking","data":{"text":" considering"}}
+{"atMs":2601.652400000021,"event":"thinking","data":{"text":" possible"}}
+{"atMs":2612.7506000000285,"event":"thinking","data":{"text":" causes"}}
+{"atMs":2623.7787000000244,"event":"thinking","data":{"text":":\n\n"}}
+{"atMs":2634.8676999999443,"event":"thinking","data":{"text":"1"}}
+{"atMs":2645.886999999988,"event":"thinking","data":{"text":"."}}
+{"atMs":2672.2031000000425,"event":"thinking","data":{"text":" **"}}
+{"atMs":2672.2062999999616,"event":"thinking","data":{"text":"Post"}}
+{"atMs":2682.9520000000484,"event":"thinking","data":{"text":"greSQL"}}
+{"atMs":2691.1811000000453,"event":"thinking","data":{"text":" Connection"}}
+{"atMs":2702.4251999999397,"event":"thinking","data":{"text":" Issue"}}
+{"atMs":2713.805799999973,"event":"thinking","data":{"text":"**:"}}
+{"atMs":2725.0783999999985,"event":"thinking","data":{"text":" The"}}
+{"atMs":2736.2822999999626,"event":"thinking","data":{"text":" first"}}
+{"atMs":2747.3861000000034,"event":"thinking","data":{"text":" log"}}
+{"atMs":2758.672499999986,"event":"thinking","data":{"text":" error"}}
+{"atMs":2769.9819000000134,"event":"thinking","data":{"text":" about"}}
+{"atMs":2781.2486999999965,"event":"thinking","data":{"text":" failing"}}
+{"atMs":2792.4895999999717,"event":"thinking","data":{"text":" to"}}
+{"atMs":2803.4865999999456,"event":"thinking","data":{"text":" connect"}}
+{"atMs":2814.589200000046,"event":"thinking","data":{"text":" to"}}
+{"atMs":2826.0252999999793,"event":"thinking","data":{"text":" PostgreSQL"}}
+{"atMs":2837.339399999939,"event":"thinking","data":{"text":" suggests"}}
+{"atMs":2848.4207999999635,"event":"thinking","data":{"text":" that"}}
+{"atMs":2859.5679000000237,"event":"thinking","data":{"text":" the"}}
+{"atMs":2871.091299999971,"event":"thinking","data":{"text":" service"}}
+{"atMs":2882.776199999964,"event":"thinking","data":{"text":" isn"}}
+{"atMs":2894.2387999999337,"event":"thinking","data":{"text":"'t"}}
+{"atMs":2905.3941999999806,"event":"thinking","data":{"text":" running"}}
+{"atMs":2916.6369000000414,"event":"thinking","data":{"text":" or"}}
+{"atMs":2927.7110000000102,"event":"thinking","data":{"text":" there"}}
+{"atMs":2938.737300000037,"event":"thinking","data":{"text":"'s"}}
+{"atMs":2950.383599999943,"event":"thinking","data":{"text":" an"}}
+{"atMs":2961.5805999999866,"event":"thinking","data":{"text":" issue"}}
+{"atMs":2972.7365999999456,"event":"thinking","data":{"text":" with"}}
+{"atMs":2984.3194999999832,"event":"thinking","data":{"text":" its"}}
+{"atMs":2995.622800000012,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":3006.922099999967,"event":"thinking","data":{"text":"."}}
+{"atMs":3018.0609000000404,"event":"thinking","data":{"text":" Maybe"}}
+{"atMs":3028.9640000000363,"event":"thinking","data":{"text":" the"}}
+{"atMs":3040.128700000001,"event":"thinking","data":{"text":" port"}}
+{"atMs":3051.4364999999525,"event":"thinking","data":{"text":" is"}}
+{"atMs":3062.7147000000114,"event":"thinking","data":{"text":" wrong"}}
+{"atMs":3073.708400000003,"event":"thinking","data":{"text":" ("}}
+{"atMs":3085.405299999984,"event":"thinking","data":{"text":"5"}}
+{"atMs":3096.670000000042,"event":"thinking","data":{"text":"4"}}
+{"atMs":3109.633999999962,"event":"thinking","data":{"text":"3"}}
+{"atMs":3123.485299999942,"event":"thinking","data":{"text":"2"}}
+{"atMs":3135.6186000000453,"event":"thinking","data":{"text":" is"}}
+{"atMs":3146.8088999999454,"event":"thinking","data":{"text":" standard"}}
+{"atMs":3157.744900000049,"event":"thinking","data":{"text":" for"}}
+{"atMs":3168.9473999999464,"event":"thinking","data":{"text":" PostgreSQL"}}
+{"atMs":3179.9727999999886,"event":"thinking","data":{"text":","}}
+{"atMs":3190.9601999999722,"event":"thinking","data":{"text":" but"}}
+{"atMs":3202.5622999999905,"event":"thinking","data":{"text":" sometimes"}}
+{"atMs":3213.5577999999514,"event":"thinking","data":{"text":" it"}}
+{"atMs":3224.572700000019,"event":"thinking","data":{"text":"'s"}}
+{"atMs":3235.609199999948,"event":"thinking","data":{"text":" changed"}}
+{"atMs":3246.687900000019,"event":"thinking","data":{"text":"),"}}
+{"atMs":3257.8181999999797,"event":"thinking","data":{"text":" or"}}
+{"atMs":3269.3662000000477,"event":"thinking","data":{"text":" the"}}
+{"atMs":3280.521700000041,"event":"thinking","data":{"text":" host"}}
+{"atMs":3291.5540000000037,"event":"thinking","data":{"text":" name"}}
+{"atMs":3302.5383999999613,"event":"thinking","data":{"text":" doesn"}}
+{"atMs":3314.0775999999605,"event":"thinking","data":{"text":"'t"}}
+{"atMs":3324.9401999999536,"event":"thinking","data":{"text":" match"}}
+{"atMs":3335.97490000003,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":3347.017099999939,"event":"thinking","data":{"text":"2"}}
+{"atMs":3358.020900000003,"event":"thinking","data":{"text":"."}}
+{"atMs":3369.210300000035,"event":"thinking","data":{"text":" **"}}
+{"atMs":3380.2164999999804,"event":"thinking","data":{"text":"Incorrect"}}
+{"atMs":3390.9730999999447,"event":"thinking","data":{"text":" Secret"}}
+{"atMs":3402.0285999999614,"event":"thinking","data":{"text":" Usage"}}
+{"atMs":3413.4930999999633,"event":"thinking","data":{"text":"**:"}}
+{"atMs":3424.4573999999557,"event":"thinking","data":{"text":" The"}}
+{"atMs":3435.563199999975,"event":"thinking","data":{"text":" second"}}
+{"atMs":3446.849799999967,"event":"thinking","data":{"text":" error"}}
+{"atMs":3458.2598,"event":"thinking","data":{"text":" is"}}
+{"atMs":3469.3636000000406,"event":"thinking","data":{"text":" about"}}
+{"atMs":3480.2419000000227,"event":"thinking","data":{"text":" password"}}
+{"atMs":3491.331200000015,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":3502.436400000006,"event":"thinking","data":{"text":" failure"}}
+{"atMs":3513.425900000031,"event":"thinking","data":{"text":"."}}
+{"atMs":3524.7493999999715,"event":"thinking","data":{"text":" This"}}
+{"atMs":3535.746299999999,"event":"thinking","data":{"text":" could"}}
+{"atMs":3546.683699999936,"event":"thinking","data":{"text":" be"}}
+{"atMs":3557.687399999937,"event":"thinking","data":{"text":" because"}}
+{"atMs":3568.621000000043,"event":"thinking","data":{"text":" the"}}
+{"atMs":3579.513399999938,"event":"thinking","data":{"text":" wrong"}}
+{"atMs":3590.552400000044,"event":"thinking","data":{"text":" secret"}}
+{"atMs":3601.5039000000106,"event":"thinking","data":{"text":" was"}}
+{"atMs":3612.3837999999523,"event":"thinking","data":{"text":" used"}}
+{"atMs":3623.3735999999335,"event":"thinking","data":{"text":" to"}}
+{"atMs":3636.5396000000183,"event":"thinking","data":{"text":" access"}}
+{"atMs":3647.9211999999825,"event":"thinking","data":{"text":" the"}}
+{"atMs":3659.256700000027,"event":"thinking","data":{"text":" database"}}
+{"atMs":3683.665799999959,"event":"thinking","data":{"text":"."}}
+{"atMs":3683.673300000024,"event":"thinking","data":{"text":" Since"}}
+{"atMs":3692.7522999999346,"event":"thinking","data":{"text":" the"}}
+{"atMs":3705.4348000000464,"event":"thinking","data":{"text":" config"}}
+{"atMs":3719.9699000000255,"event":"thinking","data":{"text":" changed"}}
+{"atMs":3739.030400000047,"event":"thinking","data":{"text":" the"}}
+{"atMs":3753.987300000037,"event":"thinking","data":{"text":" secret"}}
+{"atMs":3765.790099999984,"event":"thinking","data":{"text":" name"}}
+{"atMs":3779.5670999999857,"event":"thinking","data":{"text":","}}
+{"atMs":3793.812799999956,"event":"thinking","data":{"text":" if"}}
+{"atMs":3808.637800000026,"event":"thinking","data":{"text":" someone"}}
+{"atMs":3823.3706999999704,"event":"thinking","data":{"text":" still"}}
+{"atMs":3838.027299999958,"event":"thinking","data":{"text":" uses"}}
+{"atMs":3849.2663000000175,"event":"thinking","data":{"text":" \""}}
+{"atMs":3860.0834999999497,"event":"thinking","data":{"text":"payment"}}
+{"atMs":3874.0949000000255,"event":"thinking","data":{"text":"-app"}}
+{"atMs":3885.583800000022,"event":"thinking","data":{"text":"\""}}
+{"atMs":3896.456499999971,"event":"thinking","data":{"text":" instead"}}
+{"atMs":3907.431199999992,"event":"thinking","data":{"text":" of"}}
+{"atMs":3918.3512999999803,"event":"thinking","data":{"text":" \""}}
+{"atMs":3929.144100000034,"event":"thinking","data":{"text":"payment"}}
+{"atMs":3940.204299999983,"event":"thinking","data":{"text":"-db"}}
+{"atMs":3951.178100000019,"event":"thinking","data":{"text":"-secret"}}
+{"atMs":3962.3782000000356,"event":"thinking","data":{"text":"\","}}
+{"atMs":3973.2003999999724,"event":"thinking","data":{"text":" it"}}
+{"atMs":3984.1480999999912,"event":"thinking","data":{"text":" would"}}
+{"atMs":3995.186699999962,"event":"thinking","data":{"text":" cause"}}
+{"atMs":4006.1374999999534,"event":"thinking","data":{"text":" this"}}
+{"atMs":4016.969199999934,"event":"thinking","data":{"text":" issue"}}
+{"atMs":4027.781100000022,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":4038.6354000000283,"event":"thinking","data":{"text":"3"}}
+{"atMs":4049.567000000039,"event":"thinking","data":{"text":"."}}
+{"atMs":4060.5533000000287,"event":"thinking","data":{"text":" **"}}
+{"atMs":4071.799699999974,"event":"thinking","data":{"text":"Roll"}}
+{"atMs":4082.60699999996,"event":"thinking","data":{"text":"out"}}
+{"atMs":4093.4433000000427,"event":"thinking","data":{"text":" Impact"}}
+{"atMs":4104.386599999969,"event":"thinking","data":{"text":"**:"}}
+{"atMs":4117.68590000004,"event":"thinking","data":{"text":" The"}}
+{"atMs":4128.4224000000395,"event":"thinking","data":{"text":" rollout"}}
+{"atMs":4139.433699999936,"event":"thinking","data":{"text":" history"}}
+{"atMs":4150.523099999991,"event":"thinking","data":{"text":" shows"}}
+{"atMs":4163.910599999945,"event":"thinking","data":{"text":" that"}}
+{"atMs":4175.023599999957,"event":"thinking","data":{"text":" a"}}
+{"atMs":4185.869900000049,"event":"thinking","data":{"text":" previous"}}
+{"atMs":4196.772899999982,"event":"thinking","data":{"text":" change"}}
+{"atMs":4207.74450000003,"event":"thinking","data":{"text":" might"}}
+{"atMs":4218.66539999994,"event":"thinking","data":{"text":" have"}}
+{"atMs":4229.5156000000425,"event":"thinking","data":{"text":" affected"}}
+{"atMs":4240.473200000008,"event":"thinking","data":{"text":" the"}}
+{"atMs":4251.326600000029,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":4262.198399999994,"event":"thinking","data":{"text":","}}
+{"atMs":4273.097500000033,"event":"thinking","data":{"text":" possibly"}}
+{"atMs":4284.331299999962,"event":"thinking","data":{"text":" breaking"}}
+{"atMs":4295.242599999998,"event":"thinking","data":{"text":" the"}}
+{"atMs":4306.069000000018,"event":"thinking","data":{"text":" setup"}}
+{"atMs":4317.189000000013,"event":"thinking","data":{"text":" for"}}
+{"atMs":4328.147499999963,"event":"thinking","data":{"text":" the"}}
+{"atMs":4338.9179,"event":"thinking","data":{"text":" new"}}
+{"atMs":4349.926800000016,"event":"thinking","data":{"text":" image"}}
+{"atMs":4360.772299999953,"event":"thinking","data":{"text":" version"}}
+{"atMs":4371.771899999934,"event":"thinking","data":{"text":" or"}}
+{"atMs":4382.5932999999495,"event":"thinking","data":{"text":" secret"}}
+{"atMs":4393.403799999971,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":4404.526700000046,"event":"thinking","data":{"text":"To"}}
+{"atMs":4415.393900000025,"event":"thinking","data":{"text":" diagnose"}}
+{"atMs":4426.2345000000205,"event":"thinking","data":{"text":" further"}}
+{"atMs":4437.450300000026,"event":"thinking","data":{"text":","}}
+{"atMs":4448.351200000034,"event":"thinking","data":{"text":" I"}}
+{"atMs":4459.439400000032,"event":"thinking","data":{"text":" should"}}
+{"atMs":4470.627399999998,"event":"thinking","data":{"text":" suggest"}}
+{"atMs":4481.854300000006,"event":"thinking","data":{"text":" running"}}
+{"atMs":4492.786699999939,"event":"thinking","data":{"text":" `"}}
+{"atMs":4504.067700000014,"event":"thinking","data":{"text":"oc"}}
+{"atMs":4514.9207999999635,"event":"thinking","data":{"text":" logs"}}
+{"atMs":4525.787299999967,"event":"thinking","data":{"text":"`"}}
+{"atMs":4536.6716000000015,"event":"thinking","data":{"text":" again"}}
+{"atMs":4547.581200000015,"event":"thinking","data":{"text":" on"}}
+{"atMs":4558.493400000036,"event":"thinking","data":{"text":" the"}}
+{"atMs":4569.3425999999745,"event":"thinking","data":{"text":" same"}}
+{"atMs":4580.293199999956,"event":"thinking","data":{"text":" pod"}}
+{"atMs":4591.258299999987,"event":"thinking","data":{"text":" to"}}
+{"atMs":4602.127499999944,"event":"thinking","data":{"text":" confirm"}}
+{"atMs":4613.537999999942,"event":"thinking","data":{"text":" if"}}
+{"atMs":4624.418199999956,"event":"thinking","data":{"text":" both"}}
+{"atMs":4635.220899999957,"event":"thinking","data":{"text":" errors"}}
+{"atMs":4646.130899999989,"event":"thinking","data":{"text":" persist"}}
+{"atMs":4657.102100000018,"event":"thinking","data":{"text":"."}}
+{"atMs":4668.058599999989,"event":"thinking","data":{"text":" Also"}}
+{"atMs":4678.850300000049,"event":"thinking","data":{"text":","}}
+{"atMs":4692.337500000023,"event":"thinking","data":{"text":" checking"}}
+{"atMs":4703.119399999967,"event":"thinking","data":{"text":" the"}}
+{"atMs":4714.213499999954,"event":"thinking","data":{"text":" status"}}
+{"atMs":4725.268999999971,"event":"thinking","data":{"text":" of"}}
+{"atMs":4736.160700000008,"event":"thinking","data":{"text":" the"}}
+{"atMs":4747.008399999933,"event":"thinking","data":{"text":" PostgreSQL"}}
+{"atMs":4757.815900000045,"event":"thinking","data":{"text":" service"}}
+{"atMs":4768.802299999981,"event":"thinking","data":{"text":" with"}}
+{"atMs":4779.720600000001,"event":"thinking","data":{"text":" `"}}
+{"atMs":4790.592399999965,"event":"thinking","data":{"text":"ps"}}
+{"atMs":4801.4381000000285,"event":"thinking","data":{"text":"ql"}}
+{"atMs":4812.3589999999385,"event":"thinking","data":{"text":" --"}}
+{"atMs":4823.267499999958,"event":"thinking","data":{"text":"version"}}
+{"atMs":4834.571699999971,"event":"thinking","data":{"text":" payment"}}
+{"atMs":4845.524399999995,"event":"thinking","data":{"text":".payment"}}
+{"atMs":4856.465699999942,"event":"thinking","data":{"text":".s"}}
+{"atMs":4867.309499999974,"event":"thinking","data":{"text":"vc"}}
+{"atMs":4878.291800000006,"event":"thinking","data":{"text":"`"}}
+{"atMs":4889.276799999992,"event":"thinking","data":{"text":" can"}}
+{"atMs":4900.132400000002,"event":"thinking","data":{"text":" help"}}
+{"atMs":4910.968600000022,"event":"thinking","data":{"text":" determine"}}
+{"atMs":4921.885600000038,"event":"thinking","data":{"text":" if"}}
+{"atMs":4933.043700000038,"event":"thinking","data":{"text":" it"}}
+{"atMs":4943.887699999963,"event":"thinking","data":{"text":"'s"}}
+{"atMs":4954.79429999995,"event":"thinking","data":{"text":" running"}}
+{"atMs":4965.674899999984,"event":"thinking","data":{"text":" and"}}
+{"atMs":4976.660099999979,"event":"thinking","data":{"text":" healthy"}}
+{"atMs":4987.566299999948,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":4998.425300000003,"event":"thinking","data":{"text":"If"}}
+{"atMs":5009.282600000035,"event":"thinking","data":{"text":" the"}}
+{"atMs":5020.155400000047,"event":"thinking","data":{"text":" database"}}
+{"atMs":5031.152200000011,"event":"thinking","data":{"text":" is"}}
+{"atMs":5042.319299999974,"event":"thinking","data":{"text":" down"}}
+{"atMs":5053.410200000042,"event":"thinking","data":{"text":","}}
+{"atMs":5064.377199999988,"event":"thinking","data":{"text":" that"}}
+{"atMs":5075.226400000043,"event":"thinking","data":{"text":" could"}}
+{"atMs":5086.091000000015,"event":"thinking","data":{"text":" explain"}}
+{"atMs":5096.892499999958,"event":"thinking","data":{"text":" why"}}
+{"atMs":5107.790700000012,"event":"thinking","data":{"text":" the"}}
+{"atMs":5118.799600000028,"event":"thinking","data":{"text":" logs"}}
+{"atMs":5132.044699999969,"event":"thinking","data":{"text":" are"}}
+{"atMs":5142.855800000019,"event":"thinking","data":{"text":" failing"}}
+{"atMs":5160.853499999968,"event":"thinking","data":{"text":"."}}
+{"atMs":5165.41929999995,"event":"thinking","data":{"text":" If"}}
+{"atMs":5176.971999999951,"event":"thinking","data":{"text":" the"}}
+{"atMs":5187.946499999962,"event":"thinking","data":{"text":" secret"}}
+{"atMs":5199.2190999999875,"event":"thinking","data":{"text":" is"}}
+{"atMs":5210.315300000017,"event":"thinking","data":{"text":" wrong"}}
+{"atMs":5223.018700000015,"event":"thinking","data":{"text":","}}
+{"atMs":5234.7974000000395,"event":"thinking","data":{"text":" then"}}
+{"atMs":5245.614999999991,"event":"thinking","data":{"text":" the"}}
+{"atMs":5256.625800000038,"event":"thinking","data":{"text":" authentication"}}
+{"atMs":5270.491000000038,"event":"thinking","data":{"text":" would"}}
+{"atMs":5282.846999999951,"event":"thinking","data":{"text":" fail"}}
+{"atMs":5294.025900000008,"event":"thinking","data":{"text":" as"}}
+{"atMs":5305.311800000025,"event":"thinking","data":{"text":" seen"}}
+{"atMs":5316.5629999999655,"event":"thinking","data":{"text":" in"}}
+{"atMs":5327.668999999994,"event":"thinking","data":{"text":" the"}}
+{"atMs":5338.853200000012,"event":"thinking","data":{"text":" logs"}}
+{"atMs":5349.942399999942,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":5361.1224999999395,"event":"thinking","data":{"text":"Based"}}
+{"atMs":5372.192200000049,"event":"thinking","data":{"text":" on"}}
+{"atMs":5383.512600000016,"event":"thinking","data":{"text":" this"}}
+{"atMs":5394.597500000033,"event":"thinking","data":{"text":","}}
+{"atMs":5405.756300000008,"event":"thinking","data":{"text":" the"}}
+{"atMs":5416.818800000008,"event":"thinking","data":{"text":" immediate"}}
+{"atMs":5427.982599999988,"event":"thinking","data":{"text":" actions"}}
+{"atMs":5439.0167000000365,"event":"thinking","data":{"text":" would"}}
+{"atMs":5450.096600000048,"event":"thinking","data":{"text":" be"}}
+{"atMs":5461.33189999999,"event":"thinking","data":{"text":" to"}}
+{"atMs":5472.364399999962,"event":"thinking","data":{"text":" check"}}
+{"atMs":5483.690999999992,"event":"thinking","data":{"text":" the"}}
+{"atMs":5494.615800000029,"event":"thinking","data":{"text":" PostgreSQL"}}
+{"atMs":5505.634300000034,"event":"thinking","data":{"text":" service"}}
+{"atMs":5516.82640000002,"event":"thinking","data":{"text":" status"}}
+{"atMs":5528.071600000025,"event":"thinking","data":{"text":","}}
+{"atMs":5539.1263000000035,"event":"thinking","data":{"text":" ensure"}}
+{"atMs":5550.089399999939,"event":"thinking","data":{"text":" the"}}
+{"atMs":5561.242300000042,"event":"thinking","data":{"text":" correct"}}
+{"atMs":5572.402099999948,"event":"thinking","data":{"text":" secret"}}
+{"atMs":5583.640999999945,"event":"thinking","data":{"text":" is"}}
+{"atMs":5595.035700000008,"event":"thinking","data":{"text":" used"}}
+{"atMs":5606.099500000011,"event":"thinking","data":{"text":","}}
+{"atMs":5617.198800000013,"event":"thinking","data":{"text":" and"}}
+{"atMs":5628.206499999971,"event":"thinking","data":{"text":" possibly"}}
+{"atMs":5639.229300000006,"event":"thinking","data":{"text":" roll"}}
+{"atMs":5650.388200000045,"event":"thinking","data":{"text":" back"}}
+{"atMs":5661.412299999967,"event":"thinking","data":{"text":" the"}}
+{"atMs":5672.695799999987,"event":"thinking","data":{"text":" configuration"}}
+{"atMs":5683.760200000019,"event":"thinking","data":{"text":" change"}}
+{"atMs":5694.960899999947,"event":"thinking","data":{"text":" if"}}
+{"atMs":5706.3601999999955,"event":"thinking","data":{"text":" it"}}
+{"atMs":5717.77899999998,"event":"thinking","data":{"text":"'s"}}
+{"atMs":5728.851900000009,"event":"thinking","data":{"text":" causing"}}
+{"atMs":5739.912499999977,"event":"thinking","data":{"text":" issues"}}
+{"atMs":5753.549299999955,"event":"thinking","data":{"text":".\n"}}
+{"atMs":5775.746299999999,"event":"token","data":{"text":"\n\n"}}
+{"atMs":5786.779499999946,"event":"token","data":{"text":"**"}}
+{"atMs":5797.7974000000395,"event":"token","data":{"text":"R"}}
+{"atMs":5809.112599999993,"event":"token","data":{"text":"CA"}}
+{"atMs":5820.241900000023,"event":"token","data":{"text":" Report"}}
+{"atMs":5831.353000000003,"event":"token","data":{"text":":"}}
+{"atMs":5842.524100000039,"event":"token","data":{"text":" Payment"}}
+{"atMs":5853.686299999943,"event":"token","data":{"text":" API"}}
+{"atMs":5876.153300000005,"event":"token","data":{"text":" Database"}}
+{"atMs":5876.1554999999935,"event":"token","data":{"text":" Connection"}}
+{"atMs":5887.296300000045,"event":"token","data":{"text":" Issue"}}
+{"atMs":5906.100899999961,"event":"token","data":{"text":"**\n\n"}}
+{"atMs":5921.2343999999575,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":5933.258700000006,"event":"token","data":{"text":"###"}}
+{"atMs":5945.861900000018,"event":"token","data":{"text":" **"}}
+{"atMs":5960.537499999977,"event":"token","data":{"text":"1"}}
+{"atMs":5975.405999999959,"event":"token","data":{"text":"."}}
+{"atMs":5990.199200000032,"event":"token","data":{"text":" Problem"}}
+{"atMs":6004.931899999967,"event":"token","data":{"text":"atic"}}
+{"atMs":6018.373499999987,"event":"token","data":{"text":" Fact"}}
+{"atMs":6029.886300000013,"event":"token","data":{"text":"**\n"}}
+{"atMs":6044.360699999961,"event":"token","data":{"text":"-"}}
+{"atMs":6056.038100000005,"event":"token","data":{"text":" **"}}
+{"atMs":6067.019300000044,"event":"token","data":{"text":"Error"}}
+{"atMs":6077.905700000003,"event":"token","data":{"text":" Logs"}}
+{"atMs":6088.781699999934,"event":"token","data":{"text":"**:"}}
+{"atMs":6099.838499999954,"event":"token","data":{"text":" \n"}}
+{"atMs":6110.738299999968,"event":"token","data":{"text":" "}}
+{"atMs":6123.746099999989,"event":"token","data":{"text":" -"}}
+{"atMs":6135.564000000013,"event":"token","data":{"text":" Failed"}}
+{"atMs":6146.5938000000315,"event":"token","data":{"text":" to"}}
+{"atMs":6157.632499999949,"event":"token","data":{"text":" connect"}}
+{"atMs":6168.5629999999655,"event":"token","data":{"text":" to"}}
+{"atMs":6179.462999999989,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":6190.423999999999,"event":"token","data":{"text":" at"}}
+{"atMs":6201.378799999948,"event":"token","data":{"text":" `"}}
+{"atMs":6212.36950000003,"event":"token","data":{"text":"postgres"}}
+{"atMs":6223.339299999992,"event":"token","data":{"text":".payment"}}
+{"atMs":6234.371799999964,"event":"token","data":{"text":".s"}}
+{"atMs":6245.604900000035,"event":"token","data":{"text":"vc"}}
+{"atMs":6256.5148000000045,"event":"token","data":{"text":":"}}
+{"atMs":6267.459299999988,"event":"token","data":{"text":"5"}}
+{"atMs":6280.815999999992,"event":"token","data":{"text":"4"}}
+{"atMs":6291.668399999966,"event":"token","data":{"text":"3"}}
+{"atMs":6302.60129999998,"event":"token","data":{"text":"2"}}
+{"atMs":6313.606000000029,"event":"token","data":{"text":"`.\n"}}
+{"atMs":6324.5925999999745,"event":"token","data":{"text":" "}}
+{"atMs":6335.513799999957,"event":"token","data":{"text":" -"}}
+{"atMs":6346.562200000044,"event":"token","data":{"text":" Password"}}
+{"atMs":6357.799499999965,"event":"token","data":{"text":" authentication"}}
+{"atMs":6368.852399999974,"event":"token","data":{"text":" failed"}}
+{"atMs":6379.763299999991,"event":"token","data":{"text":" for"}}
+{"atMs":6390.772099999944,"event":"token","data":{"text":" user"}}
+{"atMs":6401.840899999952,"event":"token","data":{"text":" \""}}
+{"atMs":6412.841899999999,"event":"token","data":{"text":"payment"}}
+{"atMs":6423.656799999997,"event":"token","data":{"text":"_app"}}
+{"atMs":6434.971299999976,"event":"token","data":{"text":"\".\n"}}
+{"atMs":6445.832599999965,"event":"token","data":{"text":"  \n"}}
+{"atMs":6456.728899999987,"event":"token","data":{"text":"-"}}
+{"atMs":6468.042200000025,"event":"token","data":{"text":" **"}}
+{"atMs":6479.064299999969,"event":"token","data":{"text":"Secret"}}
+{"atMs":6489.894100000034,"event":"token","data":{"text":" Change"}}
+{"atMs":6500.787099999958,"event":"token","data":{"text":"**:"}}
+{"atMs":6511.768399999943,"event":"token","data":{"text":" The"}}
+{"atMs":6522.691699999967,"event":"token","data":{"text":" configuration"}}
+{"atMs":6533.684800000046,"event":"token","data":{"text":" was"}}
+{"atMs":6544.650299999979,"event":"token","data":{"text":" updated"}}
+{"atMs":6555.582700000028,"event":"token","data":{"text":" with"}}
+{"atMs":6566.901700000046,"event":"token","data":{"text":" `"}}
+{"atMs":6577.798300000024,"event":"token","data":{"text":"DB"}}
+{"atMs":6588.72239999997,"event":"token","data":{"text":"_SECRET"}}
+{"atMs":6599.68889999995,"event":"token","data":{"text":"_NAME"}}
+{"atMs":6610.597799999989,"event":"token","data":{"text":"="}}
+{"atMs":6621.574799999944,"event":"token","data":{"text":"payment"}}
+{"atMs":6632.510899999994,"event":"token","data":{"text":"-db"}}
+{"atMs":6643.465500000049,"event":"token","data":{"text":"-secret"}}
+{"atMs":6654.427099999972,"event":"token","data":{"text":"`.\n\n"}}
+{"atMs":6665.426899999962,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":6676.57070000004,"event":"token","data":{"text":"###"}}
+{"atMs":6687.470399999991,"event":"token","data":{"text":" **"}}
+{"atMs":6698.697399999946,"event":"token","data":{"text":"2"}}
+{"atMs":6709.695999999996,"event":"token","data":{"text":"."}}
+{"atMs":6720.575899999938,"event":"token","data":{"text":" Additional"}}
+{"atMs":6731.463899999973,"event":"token","data":{"text":" Confirmation"}}
+{"atMs":6742.426299999934,"event":"token","data":{"text":" Commands"}}
+{"atMs":6753.403300000005,"event":"token","data":{"text":"**\n"}}
+{"atMs":6764.371500000008,"event":"token","data":{"text":"1"}}
+{"atMs":6775.291699999943,"event":"token","data":{"text":"."}}
+{"atMs":6786.558599999989,"event":"token","data":{"text":" Verify"}}
+{"atMs":6797.73470000003,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":6810.145299999975,"event":"token","data":{"text":" Service"}}
+{"atMs":6821.970699999947,"event":"token","data":{"text":" Status"}}
+{"atMs":6832.98769999994,"event":"token","data":{"text":":\n"}}
+{"atMs":6844.089700000011,"event":"token","data":{"text":"  "}}
+{"atMs":6855.215399999986,"event":"token","data":{"text":" ```"}}
+{"atMs":6866.364799999981,"event":"token","data":{"text":"bash"}}
+{"atMs":6877.508599999943,"event":"token","data":{"text":"\n"}}
+{"atMs":6888.617100000032,"event":"token","data":{"text":"  "}}
+{"atMs":6900.108899999992,"event":"token","data":{"text":" p"}}
+{"atMs":6911.156100000022,"event":"token","data":{"text":"sql"}}
+{"atMs":6922.256599999964,"event":"token","data":{"text":" --"}}
+{"atMs":6933.332500000019,"event":"token","data":{"text":"version"}}
+{"atMs":6944.418399999966,"event":"token","data":{"text":" payment"}}
+{"atMs":6955.479999999981,"event":"token","data":{"text":".payment"}}
+{"atMs":6966.5622999999905,"event":"token","data":{"text":".s"}}
+{"atMs":6977.742100000032,"event":"token","data":{"text":"vc"}}
+{"atMs":6989.478099999949,"event":"token","data":{"text":"\n"}}
+{"atMs":7000.576000000001,"event":"token","data":{"text":"  "}}
+{"atMs":7011.841200000024,"event":"token","data":{"text":" ```\n"}}
+{"atMs":7023.026399999973,"event":"token","data":{"text":"  "}}
+{"atMs":7034.250400000019,"event":"token","data":{"text":" This"}}
+{"atMs":7045.3889999999665,"event":"token","data":{"text":" will"}}
+{"atMs":7056.477199999965,"event":"token","data":{"text":" confirm"}}
+{"atMs":7067.9042999999365,"event":"token","data":{"text":" if"}}
+{"atMs":7079.001900000032,"event":"token","data":{"text":" the"}}
+{"atMs":7090.046699999948,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":7101.199999999953,"event":"token","data":{"text":" service"}}
+{"atMs":7114.511300000013,"event":"token","data":{"text":" is"}}
+{"atMs":7125.456400000025,"event":"token","data":{"text":" running"}}
+{"atMs":7137.312200000044,"event":"token","data":{"text":" and"}}
+{"atMs":7148.456800000044,"event":"token","data":{"text":" healthy"}}
+{"atMs":7159.64599999995,"event":"token","data":{"text":".\n\n"}}
+{"atMs":7170.862100000028,"event":"token","data":{"text":"2"}}
+{"atMs":7181.972300000023,"event":"token","data":{"text":"."}}
+{"atMs":7192.980299999937,"event":"token","data":{"text":" Re"}}
+{"atMs":7204.097500000033,"event":"token","data":{"text":"check"}}
+{"atMs":7215.599799999967,"event":"token","data":{"text":" Database"}}
+{"atMs":7226.601200000034,"event":"token","data":{"text":" Connection"}}
+{"atMs":7237.685199999949,"event":"token","data":{"text":" Logs"}}
+{"atMs":7248.778099999996,"event":"token","data":{"text":":\n"}}
+{"atMs":7259.862899999949,"event":"token","data":{"text":"  "}}
+{"atMs":7270.99179999996,"event":"token","data":{"text":" ```"}}
+{"atMs":7282.064499999979,"event":"token","data":{"text":"bash"}}
+{"atMs":7293.159400000004,"event":"token","data":{"text":"\n"}}
+{"atMs":7304.238200000022,"event":"token","data":{"text":"  "}}
+{"atMs":7315.3597999999765,"event":"token","data":{"text":" oc"}}
+{"atMs":7326.725499999942,"event":"token","data":{"text":" logs"}}
+{"atMs":7337.762299999944,"event":"token","data":{"text":" payment"}}
+{"atMs":7351.525999999954,"event":"token","data":{"text":"-api"}}
+{"atMs":7362.522400000016,"event":"token","data":{"text":"-"}}
+{"atMs":7373.578899999964,"event":"token","data":{"text":"7"}}
+{"atMs":7384.724799999967,"event":"token","data":{"text":"c"}}
+{"atMs":7395.798700000043,"event":"token","data":{"text":"9"}}
+{"atMs":7406.808100000024,"event":"token","data":{"text":"c"}}
+{"atMs":7417.830399999977,"event":"token","data":{"text":"7"}}
+{"atMs":7428.861599999946,"event":"token","data":{"text":"d"}}
+{"atMs":7440.306299999938,"event":"token","data":{"text":"9"}}
+{"atMs":7451.65989999997,"event":"token","data":{"text":"f"}}
+{"atMs":7462.782999999938,"event":"token","data":{"text":"6"}}
+{"atMs":7474.15419999999,"event":"token","data":{"text":"f"}}
+{"atMs":7485.225399999996,"event":"token","data":{"text":"-"}}
+{"atMs":7496.328600000008,"event":"token","data":{"text":"8"}}
+{"atMs":7507.482699999935,"event":"token","data":{"text":"k"}}
+{"atMs":7518.7025999999605,"event":"token","data":{"text":"2"}}
+{"atMs":7529.751099999994,"event":"token","data":{"text":"p"}}
+{"atMs":7540.794800000032,"event":"token","data":{"text":"1"}}
+{"atMs":7552.110800000024,"event":"token","data":{"text":" -"}}
+{"atMs":7563.2175999999745,"event":"token","data":{"text":"n"}}
+{"atMs":7574.260499999975,"event":"token","data":{"text":" payment"}}
+{"atMs":7585.1724000000395,"event":"token","data":{"text":" --"}}
+{"atMs":7596.319499999983,"event":"token","data":{"text":"previous"}}
+{"atMs":7607.303899999941,"event":"token","data":{"text":"\n"}}
+{"atMs":7618.378000000026,"event":"token","data":{"text":"  "}}
+{"atMs":7629.364700000035,"event":"token","data":{"text":" ```\n"}}
+{"atMs":7640.444699999993,"event":"token","data":{"text":"  "}}
+{"atMs":7651.992399999988,"event":"token","data":{"text":" Ensure"}}
+{"atMs":7663.286699999939,"event":"token","data":{"text":" both"}}
+{"atMs":7678.4070000000065,"event":"token","data":{"text":" connection"}}
+{"atMs":7685.799400000018,"event":"token","data":{"text":" errors"}}
+{"atMs":7697.012800000026,"event":"token","data":{"text":" persist"}}
+{"atMs":7708.100399999996,"event":"token","data":{"text":" to"}}
+{"atMs":7719.416899999953,"event":"token","data":{"text":" confirm"}}
+{"atMs":7730.635099999956,"event":"token","data":{"text":" database"}}
+{"atMs":7742.1097999999765,"event":"token","data":{"text":" connectivity"}}
+{"atMs":7753.236499999999,"event":"token","data":{"text":" issues"}}
+{"atMs":7764.689899999998,"event":"token","data":{"text":".\n\n"}}
+{"atMs":7775.844399999944,"event":"token","data":{"text":"3"}}
+{"atMs":7786.892899999977,"event":"token","data":{"text":"."}}
+{"atMs":7798.043300000019,"event":"token","data":{"text":" Validate"}}
+{"atMs":7809.1404999999795,"event":"token","data":{"text":" Secret"}}
+{"atMs":7820.254700000049,"event":"token","data":{"text":" Usage"}}
+{"atMs":7831.327500000014,"event":"token","data":{"text":":\n"}}
+{"atMs":7842.508700000006,"event":"token","data":{"text":"  "}}
+{"atMs":7853.639199999976,"event":"token","data":{"text":" -"}}
+{"atMs":7864.803100000019,"event":"token","data":{"text":" Confirm"}}
+{"atMs":7878.356200000038,"event":"token","data":{"text":" the"}}
+{"atMs":7889.6236999999965,"event":"token","data":{"text":" current"}}
+{"atMs":7900.810700000031,"event":"token","data":{"text":" secret"}}
+{"atMs":7912.801299999934,"event":"token","data":{"text":" in"}}
+{"atMs":7923.9682999999495,"event":"token","data":{"text":" production"}}
+{"atMs":7935.2021999999415,"event":"token","data":{"text":" is"}}
+{"atMs":7946.2341000000015,"event":"token","data":{"text":" \""}}
+{"atMs":7957.234999999986,"event":"token","data":{"text":"payment"}}
+{"atMs":7968.513500000001,"event":"token","data":{"text":"-db"}}
+{"atMs":7979.824299999978,"event":"token","data":{"text":"-secret"}}
+{"atMs":7990.872399999993,"event":"token","data":{"text":"\".\n"}}
+{"atMs":8001.838299999945,"event":"token","data":{"text":"  "}}
+{"atMs":8012.890400000033,"event":"token","data":{"text":" -"}}
+{"atMs":8023.943599999999,"event":"token","data":{"text":" Test"}}
+{"atMs":8035.034100000048,"event":"token","data":{"text":" authentication"}}
+{"atMs":8046.097799999989,"event":"token","data":{"text":" with"}}
+{"atMs":8057.285399999935,"event":"token","data":{"text":" this"}}
+{"atMs":8085.795900000026,"event":"token","data":{"text":" secret"}}
+{"atMs":8085.798700000043,"event":"token","data":{"text":" using"}}
+{"atMs":8090.792000000016,"event":"token","data":{"text":" a"}}
+{"atMs":8104.699999999953,"event":"token","data":{"text":" tool"}}
+{"atMs":8118.946200000006,"event":"token","data":{"text":" like"}}
+{"atMs":8133.046800000011,"event":"token","data":{"text":" `"}}
+{"atMs":8147.037899999996,"event":"token","data":{"text":"ss"}}
+{"atMs":8161.558500000043,"event":"token","data":{"text":"m"}}
+{"atMs":8176.671399999992,"event":"token","data":{"text":"`"}}
+{"atMs":8193.278500000015,"event":"token","data":{"text":" or"}}
+{"atMs":8209.57070000004,"event":"token","data":{"text":" directly"}}
+{"atMs":8224.570599999977,"event":"token","data":{"text":" accessing"}}
+{"atMs":8237.479500000016,"event":"token","data":{"text":" the"}}
+{"atMs":8249.22789999994,"event":"token","data":{"text":" database"}}
+{"atMs":8260.250499999966,"event":"token","data":{"text":".\n\n"}}
+{"atMs":8272.87890000001,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":8284.327700000023,"event":"token","data":{"text":"###"}}
+{"atMs":8295.242899999954,"event":"token","data":{"text":" **"}}
+{"atMs":8306.431299999938,"event":"token","data":{"text":"3"}}
+{"atMs":8317.506900000037,"event":"token","data":{"text":"."}}
+{"atMs":8328.424400000018,"event":"token","data":{"text":" Immediate"}}
+{"atMs":8339.413100000005,"event":"token","data":{"text":" Actions"}}
+{"atMs":8350.33990000002,"event":"token","data":{"text":"**\n"}}
+{"atMs":8361.257800000021,"event":"token","data":{"text":"1"}}
+{"atMs":8372.216099999961,"event":"token","data":{"text":"."}}
+{"atMs":8383.132199999993,"event":"token","data":{"text":" **"}}
+{"atMs":8394.149499999941,"event":"token","data":{"text":"Check"}}
+{"atMs":8407.41929999995,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":8418.656199999969,"event":"token","data":{"text":" Availability"}}
+{"atMs":8429.565199999954,"event":"token","data":{"text":"**"}}
+{"atMs":8440.523999999976,"event":"token","data":{"text":":\n"}}
+{"atMs":8451.487399999984,"event":"token","data":{"text":"  "}}
+{"atMs":8462.534800000023,"event":"token","data":{"text":" -"}}
+{"atMs":8473.514599999995,"event":"token","data":{"text":" If"}}
+{"atMs":8484.47239999997,"event":"token","data":{"text":" the"}}
+{"atMs":8495.448300000047,"event":"token","data":{"text":" service"}}
+{"atMs":8506.362599999993,"event":"token","data":{"text":" is"}}
+{"atMs":8517.599799999967,"event":"token","data":{"text":" down"}}
+{"atMs":8528.821800000034,"event":"token","data":{"text":","}}
+{"atMs":8539.732599999988,"event":"token","data":{"text":" restart"}}
+{"atMs":8550.673999999999,"event":"token","data":{"text":" it"}}
+{"atMs":8561.669200000004,"event":"token","data":{"text":" to"}}
+{"atMs":8572.65009999997,"event":"token","data":{"text":" ensure"}}
+{"atMs":8583.585100000026,"event":"token","data":{"text":" it"}}
+{"atMs":8594.498000000021,"event":"token","data":{"text":"'s"}}
+{"atMs":8605.470300000045,"event":"token","data":{"text":" running"}}
+{"atMs":8616.425599999959,"event":"token","data":{"text":".\n"}}
+{"atMs":8627.394899999956,"event":"token","data":{"text":"   \n"}}
+{"atMs":8638.624599999981,"event":"token","data":{"text":"2"}}
+{"atMs":8649.822700000019,"event":"token","data":{"text":"."}}
+{"atMs":8660.932400000049,"event":"token","data":{"text":" **"}}
+{"atMs":8671.84010000003,"event":"token","data":{"text":"Update"}}
+{"atMs":8682.79449999996,"event":"token","data":{"text":" Configuration"}}
+{"atMs":8693.791499999934,"event":"token","data":{"text":" Saf"}}
+{"atMs":8704.696699999971,"event":"token","data":{"text":"ely"}}
+{"atMs":8715.807599999942,"event":"token","data":{"text":"**"}}
+{"atMs":8726.692299999995,"event":"token","data":{"text":":\n"}}
+{"atMs":8737.72470000002,"event":"token","data":{"text":"  "}}
+{"atMs":8748.733899999992,"event":"token","data":{"text":" -"}}
+{"atMs":8759.658199999947,"event":"token","data":{"text":" Verify"}}
+{"atMs":8770.734599999967,"event":"token","data":{"text":" that"}}
+{"atMs":8781.64419999998,"event":"token","data":{"text":" all"}}
+{"atMs":8792.54740000004,"event":"token","data":{"text":" environments"}}
+{"atMs":8803.49179999996,"event":"token","data":{"text":" ("}}
+{"atMs":8814.466000000015,"event":"token","data":{"text":"development"}}
+{"atMs":8825.411800000002,"event":"token","data":{"text":","}}
+{"atMs":8836.418799999985,"event":"token","data":{"text":" staging"}}
+{"atMs":8847.795399999944,"event":"token","data":{"text":","}}
+{"atMs":8858.693599999999,"event":"token","data":{"text":" production"}}
+{"atMs":8869.774499999941,"event":"token","data":{"text":")"}}
+{"atMs":8880.689600000042,"event":"token","data":{"text":" use"}}
+{"atMs":8891.828199999989,"event":"token","data":{"text":" \""}}
+{"atMs":8902.839799999958,"event":"token","data":{"text":"payment"}}
+{"atMs":8913.823300000047,"event":"token","data":{"text":"-db"}}
+{"atMs":8925.434600000037,"event":"token","data":{"text":"-secret"}}
+{"atMs":8937.295999999973,"event":"token","data":{"text":"\""}}
+{"atMs":8948.257699999958,"event":"token","data":{"text":" for"}}
+{"atMs":8959.238799999934,"event":"token","data":{"text":" authentication"}}
+{"atMs":8970.457700000028,"event":"token","data":{"text":".\n"}}
+{"atMs":8981.402899999986,"event":"token","data":{"text":"  "}}
+{"atMs":8992.278399999952,"event":"token","data":{"text":" -"}}
+{"atMs":9003.24569999997,"event":"token","data":{"text":" Consider"}}
+{"atMs":9014.250400000019,"event":"token","data":{"text":" rolling"}}
+{"atMs":9025.175500000012,"event":"token","data":{"text":" back"}}
+{"atMs":9036.14009999996,"event":"token","data":{"text":" the"}}
+{"atMs":9047.06700000004,"event":"token","data":{"text":" configuration"}}
+{"atMs":9058.032600000035,"event":"token","data":{"text":" change"}}
+{"atMs":9069.59580000001,"event":"token","data":{"text":" if"}}
+{"atMs":9080.519499999937,"event":"token","data":{"text":" issues"}}
+{"atMs":9091.546699999948,"event":"token","data":{"text":" arise"}}
+{"atMs":9102.49569999997,"event":"token","data":{"text":".\n\n"}}
+{"atMs":9114.77529999998,"event":"token","data":{"text":"3"}}
+{"atMs":9126.504599999986,"event":"token","data":{"text":"."}}
+{"atMs":9137.555599999963,"event":"token","data":{"text":" **"}}
+{"atMs":9148.710500000045,"event":"token","data":{"text":"Roll"}}
+{"atMs":9159.684400000027,"event":"token","data":{"text":"back"}}
+{"atMs":9170.75529999996,"event":"token","data":{"text":" Roll"}}
+{"atMs":9181.694000000018,"event":"token","data":{"text":"out"}}
+{"atMs":9192.656799999997,"event":"token","data":{"text":"**"}}
+{"atMs":9203.602599999984,"event":"token","data":{"text":":\n"}}
+{"atMs":9214.51509999996,"event":"token","data":{"text":"  "}}
+{"atMs":9225.46510000003,"event":"token","data":{"text":" -"}}
+{"atMs":9236.429600000032,"event":"token","data":{"text":" If"}}
+{"atMs":9247.373699999996,"event":"token","data":{"text":" the"}}
+{"atMs":9258.3419,"event":"token","data":{"text":" issue"}}
+{"atMs":9269.318599999999,"event":"token","data":{"text":" is"}}
+{"atMs":9280.60289999994,"event":"token","data":{"text":" due"}}
+{"atMs":9291.543700000038,"event":"token","data":{"text":" to"}}
+{"atMs":9302.445399999968,"event":"token","data":{"text":" a"}}
+{"atMs":9313.420799999963,"event":"token","data":{"text":" previous"}}
+{"atMs":9324.358099999954,"event":"token","data":{"text":" rollout"}}
+{"atMs":9335.331299999962,"event":"token","data":{"text":" ("}}
+{"atMs":9346.2169,"event":"token","data":{"text":"e"}}
+{"atMs":9357.267899999977,"event":"token","data":{"text":".g"}}
+{"atMs":9368.20259999996,"event":"token","data":{"text":".,"}}
+{"atMs":9379.39300000004,"event":"token","data":{"text":" image"}}
+{"atMs":9390.454099999974,"event":"token","data":{"text":" update"}}
+{"atMs":9401.763099999982,"event":"token","data":{"text":"),"}}
+{"atMs":9412.79330000002,"event":"token","data":{"text":" consider"}}
+{"atMs":9423.944000000018,"event":"token","data":{"text":" rever"}}
+{"atMs":9434.925599999959,"event":"token","data":{"text":"ting"}}
+{"atMs":9446.001799999969,"event":"token","data":{"text":" changes"}}
+{"atMs":9459.646799999988,"event":"token","data":{"text":" until"}}
+{"atMs":9470.531899999944,"event":"token","data":{"text":" the"}}
+{"atMs":9481.571299999952,"event":"token","data":{"text":" problem"}}
+{"atMs":9492.418199999956,"event":"token","data":{"text":" is"}}
+{"atMs":9503.67790000001,"event":"token","data":{"text":" resolved"}}
+{"atMs":9514.64280000003,"event":"token","data":{"text":".\n\n"}}
+{"atMs":9525.642400000012,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":9536.616700000013,"event":"token","data":{"text":"###"}}
+{"atMs":9547.704900000012,"event":"token","data":{"text":" **"}}
+{"atMs":9558.771799999988,"event":"token","data":{"text":"4"}}
+{"atMs":9569.60580000002,"event":"token","data":{"text":"."}}
+{"atMs":9580.518999999971,"event":"token","data":{"text":" Cont"}}
+{"atMs":9591.540999999968,"event":"token","data":{"text":"ainment"}}
+{"atMs":9602.479900000035,"event":"token","data":{"text":" and"}}
+{"atMs":9613.95160000003,"event":"token","data":{"text":" Mit"}}
+{"atMs":9624.844099999988,"event":"token","data":{"text":"igation"}}
+{"atMs":9635.788100000005,"event":"token","data":{"text":"**\n"}}
+{"atMs":9646.852199999965,"event":"token","data":{"text":"-"}}
+{"atMs":9657.771799999988,"event":"token","data":{"text":" **"}}
+{"atMs":9668.80660000001,"event":"token","data":{"text":"Contain"}}
+{"atMs":9679.70869999996,"event":"token","data":{"text":"ment"}}
+{"atMs":9690.999899999937,"event":"token","data":{"text":"**:"}}
+{"atMs":9702.125899999985,"event":"token","data":{"text":" The"}}
+{"atMs":9713.171899999958,"event":"token","data":{"text":" issue"}}
+{"atMs":9724.330399999977,"event":"token","data":{"text":" likely"}}
+{"atMs":9735.286500000046,"event":"token","data":{"text":" stems"}}
+{"atMs":9746.291699999943,"event":"token","data":{"text":" from"}}
+{"atMs":9757.220300000045,"event":"token","data":{"text":" database"}}
+{"atMs":9768.24549999996,"event":"token","data":{"text":" connectivity"}}
+{"atMs":9779.221400000039,"event":"token","data":{"text":" or"}}
+{"atMs":9790.171600000001,"event":"token","data":{"text":" configuration"}}
+{"atMs":9801.221400000039,"event":"token","data":{"text":" mis"}}
+{"atMs":9812.158599999966,"event":"token","data":{"text":"configuration"}}
+{"atMs":9823.233099999954,"event":"token","data":{"text":".\n"}}
+{"atMs":9834.520600000047,"event":"token","data":{"text":"-"}}
+{"atMs":9845.601599999936,"event":"token","data":{"text":" **"}}
+{"atMs":9856.589500000002,"event":"token","data":{"text":"Mit"}}
+{"atMs":9867.677099999972,"event":"token","data":{"text":"igation"}}
+{"atMs":9878.719599999953,"event":"token","data":{"text":"**"}}
+{"atMs":9889.828800000018,"event":"token","data":{"text":":\n"}}
+{"atMs":9900.890999999945,"event":"token","data":{"text":" "}}
+{"atMs":9911.91260000004,"event":"token","data":{"text":" -"}}
+{"atMs":9922.874100000015,"event":"token","data":{"text":" Implement"}}
+{"atMs":9934.233999999939,"event":"token","data":{"text":" strict"}}
+{"atMs":9945.237199999974,"event":"token","data":{"text":" secret"}}
+{"atMs":9956.356099999975,"event":"token","data":{"text":" validation"}}
+{"atMs":9967.318100000033,"event":"token","data":{"text":" across"}}
+{"atMs":9978.381999999983,"event":"token","data":{"text":" all"}}
+{"atMs":9991.735499999952,"event":"token","data":{"text":" environments"}}
+{"atMs":10002.803199999966,"event":"token","data":{"text":".\n"}}
+{"atMs":10013.79330000002,"event":"token","data":{"text":" "}}
+{"atMs":10024.920199999935,"event":"token","data":{"text":" -"}}
+{"atMs":10036.057499999995,"event":"token","data":{"text":" Ensure"}}
+{"atMs":10047.600899999961,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":10058.674099999946,"event":"token","data":{"text":" services"}}
+{"atMs":10069.910999999964,"event":"token","data":{"text":" are"}}
+{"atMs":10080.945399999968,"event":"token","data":{"text":" consistently"}}
+{"atMs":10092.046100000036,"event":"token","data":{"text":" available"}}
+{"atMs":10103.097300000023,"event":"token","data":{"text":" during"}}
+{"atMs":10114.189999999944,"event":"token","data":{"text":" critical"}}
+{"atMs":10127.643799999962,"event":"token","data":{"text":" operations"}}
+{"atMs":10138.953899999964,"event":"token","data":{"text":".\n\n"}}
+{"atMs":10150.104599999962,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":10162.672099999967,"event":"token","data":{"text":"###"}}
+{"atMs":10176.373099999968,"event":"token","data":{"text":" **"}}
+{"atMs":10184.270499999984,"event":"token","data":{"text":"5"}}
+{"atMs":10195.457999999984,"event":"token","data":{"text":"."}}
+{"atMs":10206.603299999959,"event":"token","data":{"text":" Root"}}
+{"atMs":10217.99040000001,"event":"token","data":{"text":" Cause"}}
+{"atMs":10229.103200000012,"event":"token","data":{"text":" Analysis"}}
+{"atMs":10240.3848,"event":"token","data":{"text":" ("}}
+{"atMs":10251.497399999993,"event":"token","data":{"text":"R"}}
+{"atMs":10263.049899999984,"event":"token","data":{"text":"CA"}}
+{"atMs":10274.484999999986,"event":"token","data":{"text":")"}}
+{"atMs":10285.921800000011,"event":"token","data":{"text":" Structure"}}
+{"atMs":10297.710599999991,"event":"token","data":{"text":"**\n"}}
+{"atMs":10309.017200000002,"event":"token","data":{"text":"```"}}
+{"atMs":10320.785799999954,"event":"token","data":{"text":"json"}}
+{"atMs":10331.753200000036,"event":"token","data":{"text":"\n"}}
+{"atMs":10342.975499999942,"event":"token","data":{"text":"{\n"}}
+{"atMs":10354.077099999995,"event":"token","data":{"text":" "}}
+{"atMs":10365.276799999992,"event":"token","data":{"text":" \""}}
+{"atMs":10376.838899999973,"event":"token","data":{"text":"problem"}}
+{"atMs":10388.03079999995,"event":"token","data":{"text":"\":"}}
+{"atMs":10399.189000000013,"event":"token","data":{"text":" {\n"}}
+{"atMs":10410.309299999964,"event":"token","data":{"text":"   "}}
+{"atMs":10421.446699999971,"event":"token","data":{"text":" \""}}
+{"atMs":10432.610400000005,"event":"token","data":{"text":"description"}}
+{"atMs":10443.889300000039,"event":"token","data":{"text":"\":"}}
+{"atMs":10455.27760000003,"event":"token","data":{"text":" \""}}
+{"atMs":10466.718800000031,"event":"token","data":{"text":"Payment"}}
+{"atMs":10478.246799999964,"event":"token","data":{"text":" API"}}
+{"atMs":10489.369999999995,"event":"token","data":{"text":" service"}}
+{"atMs":10500.281799999997,"event":"token","data":{"text":" is"}}
+{"atMs":10513.99749999994,"event":"token","data":{"text":" unable"}}
+{"atMs":10525.043799999985,"event":"token","data":{"text":" to"}}
+{"atMs":10536.231299999985,"event":"token","data":{"text":" connect"}}
+{"atMs":10547.407899999991,"event":"token","data":{"text":" to"}}
+{"atMs":10558.483000000007,"event":"token","data":{"text":" the"}}
+{"atMs":10569.704799999949,"event":"token","data":{"text":" database"}}
+{"atMs":10593.768799999962,"event":"token","data":{"text":","}}
+{"atMs":10593.771799999988,"event":"token","data":{"text":" resulting"}}
+{"atMs":10603.551399999997,"event":"token","data":{"text":" in"}}
+{"atMs":10614.443800000008,"event":"token","data":{"text":" failed"}}
+{"atMs":10625.443300000043,"event":"token","data":{"text":" authentication"}}
+{"atMs":10636.463800000027,"event":"token","data":{"text":" attempts"}}
+{"atMs":10647.416699999943,"event":"token","data":{"text":".\",\n"}}
+{"atMs":10658.530299999984,"event":"token","data":{"text":"   "}}
+{"atMs":10669.668199999956,"event":"token","data":{"text":" \""}}
+{"atMs":10680.610400000005,"event":"token","data":{"text":"severity"}}
+{"atMs":10691.47809999995,"event":"token","data":{"text":"\":"}}
+{"atMs":10702.953600000008,"event":"token","data":{"text":" \""}}
+{"atMs":10713.80799999996,"event":"token","data":{"text":"High"}}
+{"atMs":10724.749100000015,"event":"token","data":{"text":"\"\n"}}
+{"atMs":10735.713199999998,"event":"token","data":{"text":" "}}
+{"atMs":10746.738099999959,"event":"token","data":{"text":" },\n"}}
+{"atMs":10757.734199999948,"event":"token","data":{"text":" "}}
+{"atMs":10768.72219999996,"event":"token","data":{"text":" \""}}
+{"atMs":10779.70689999999,"event":"token","data":{"text":"root"}}
+{"atMs":10790.637899999972,"event":"token","data":{"text":"C"}}
+{"atMs":10801.663100000005,"event":"token","data":{"text":"aus"}}
+{"atMs":10813.058300000033,"event":"token","data":{"text":"ation"}}
+{"atMs":10824.205599999987,"event":"token","data":{"text":"\":"}}
+{"atMs":10835.113799999934,"event":"token","data":{"text":" [\n"}}
+{"atMs":10845.989199999953,"event":"token","data":{"text":"   "}}
+{"atMs":10856.902200000011,"event":"token","data":{"text":" {\n"}}
+{"atMs":10868.086600000039,"event":"token","data":{"text":"     "}}
+{"atMs":10879.026599999983,"event":"token","data":{"text":" \""}}
+{"atMs":10889.903599999961,"event":"token","data":{"text":"type"}}
+{"atMs":10900.819200000027,"event":"token","data":{"text":"\":"}}
+{"atMs":10911.805999999982,"event":"token","data":{"text":" \""}}
+{"atMs":10923.030099999974,"event":"token","data":{"text":"Post"}}
+{"atMs":10934.012299999944,"event":"token","data":{"text":"greSQL"}}
+{"atMs":10944.994900000049,"event":"token","data":{"text":" Connection"}}
+{"atMs":10956.5294,"event":"token","data":{"text":" Issue"}}
+{"atMs":10967.350399999996,"event":"token","data":{"text":"\",\n"}}
+{"atMs":10978.262299999944,"event":"token","data":{"text":"     "}}
+{"atMs":10989.106900000013,"event":"token","data":{"text":" \""}}
+{"atMs":10999.992300000042,"event":"token","data":{"text":"description"}}
+{"atMs":11011.069600000046,"event":"token","data":{"text":"\":"}}
+{"atMs":11022.258399999933,"event":"token","data":{"text":" \""}}
+{"atMs":11033.163500000024,"event":"token","data":{"text":"Post"}}
+{"atMs":11044.066099999938,"event":"token","data":{"text":"greSQL"}}
+{"atMs":11059.498299999977,"event":"token","data":{"text":" at"}}
+{"atMs":11071.716400000034,"event":"token","data":{"text":" `"}}
+{"atMs":11082.54469999997,"event":"token","data":{"text":"postgres"}}
+{"atMs":11093.548700000043,"event":"token","data":{"text":".payment"}}
+{"atMs":11104.405400000047,"event":"token","data":{"text":".s"}}
+{"atMs":11115.555999999982,"event":"token","data":{"text":"vc"}}
+{"atMs":11128.950199999963,"event":"token","data":{"text":":"}}
+{"atMs":11139.922299999977,"event":"token","data":{"text":"5"}}
+{"atMs":11150.967900000047,"event":"token","data":{"text":"4"}}
+{"atMs":11162.028300000005,"event":"token","data":{"text":"3"}}
+{"atMs":11173.021999999997,"event":"token","data":{"text":"2"}}
+{"atMs":11183.910399999935,"event":"token","data":{"text":"`"}}
+{"atMs":11195.113000000012,"event":"token","data":{"text":" is"}}
+{"atMs":11206.155000000028,"event":"token","data":{"text":" either"}}
+{"atMs":11217.14480000001,"event":"token","data":{"text":" unavailable"}}
+{"atMs":11228.233200000017,"event":"token","data":{"text":" or"}}
+{"atMs":11239.125800000038,"event":"token","data":{"text":" mis"}}
+{"atMs":11250.190500000026,"event":"token","data":{"text":"configured"}}
+{"atMs":11261.200799999991,"event":"token","data":{"text":".\"\n"}}
+{"atMs":11272.238799999934,"event":"token","data":{"text":"   "}}
+{"atMs":11283.156100000022,"event":"token","data":{"text":" },\n"}}
+{"atMs":11294.097300000023,"event":"token","data":{"text":"   "}}
+{"atMs":11305.031799999997,"event":"token","data":{"text":" {\n"}}
+{"atMs":11316.055199999944,"event":"token","data":{"text":"     "}}
+{"atMs":11326.921399999992,"event":"token","data":{"text":" \""}}
+{"atMs":11337.86360000004,"event":"token","data":{"text":"type"}}
+{"atMs":11349.187099999981,"event":"token","data":{"text":"\":"}}
+{"atMs":11360.147200000007,"event":"token","data":{"text":" \""}}
+{"atMs":11371.107100000023,"event":"token","data":{"text":"Incorrect"}}
+{"atMs":11382.072799999965,"event":"token","data":{"text":" Secret"}}
+{"atMs":11393.04859999998,"event":"token","data":{"text":" Usage"}}
+{"atMs":11403.98470000003,"event":"token","data":{"text":"\",\n"}}
+{"atMs":11415.092900000047,"event":"token","data":{"text":"     "}}
+{"atMs":11426.058899999945,"event":"token","data":{"text":" \""}}
+{"atMs":11437.185599999968,"event":"token","data":{"text":"description"}}
+{"atMs":11448.133399999933,"event":"token","data":{"text":"\":"}}
+{"atMs":11459.335199999972,"event":"token","data":{"text":" \""}}
+{"atMs":11470.266100000008,"event":"token","data":{"text":"Database"}}
+{"atMs":11481.282600000035,"event":"token","data":{"text":" authentication"}}
+{"atMs":11492.229700000025,"event":"token","data":{"text":" failed"}}
+{"atMs":11503.137499999953,"event":"token","data":{"text":" due"}}
+{"atMs":11514.064499999979,"event":"token","data":{"text":" to"}}
+{"atMs":11525.010899999994,"event":"token","data":{"text":" incorrect"}}
+{"atMs":11536.001700000023,"event":"token","data":{"text":" secret"}}
+{"atMs":11546.986200000043,"event":"token","data":{"text":" name"}}
+{"atMs":11558.055399999954,"event":"token","data":{"text":" (`"}}
+{"atMs":11571.074599999934,"event":"token","data":{"text":"payment"}}
+{"atMs":11582.86129999999,"event":"token","data":{"text":"_app"}}
+{"atMs":11593.702300000004,"event":"token","data":{"text":"`"}}
+{"atMs":11604.700500000035,"event":"token","data":{"text":" instead"}}
+{"atMs":11615.649399999995,"event":"token","data":{"text":" of"}}
+{"atMs":11626.62639999995,"event":"token","data":{"text":" `"}}
+{"atMs":11637.70570000005,"event":"token","data":{"text":"payment"}}
+{"atMs":11648.707999999984,"event":"token","data":{"text":"-db"}}
+{"atMs":11659.733000000007,"event":"token","data":{"text":"-secret"}}
+{"atMs":11670.675700000022,"event":"token","data":{"text":"`)."}}
+{"atMs":11682.03879999998,"event":"token","data":{"text":"\"\n"}}
+{"atMs":11692.905900000012,"event":"token","data":{"text":"   "}}
+{"atMs":11704.18160000001,"event":"token","data":{"text":" }\n"}}
+{"atMs":11715.387600000016,"event":"token","data":{"text":" "}}
+{"atMs":11726.519499999937,"event":"token","data":{"text":" ],\n"}}
+{"atMs":11737.571800000034,"event":"token","data":{"text":" "}}
+{"atMs":11748.454000000027,"event":"token","data":{"text":" \""}}
+{"atMs":11759.400499999989,"event":"token","data":{"text":"cont"}}
+{"atMs":11770.469999999972,"event":"token","data":{"text":"ainment"}}
+{"atMs":11781.569299999974,"event":"token","data":{"text":"\":"}}
+{"atMs":11792.510800000047,"event":"token","data":{"text":" [\n"}}
+{"atMs":11803.499599999981,"event":"token","data":{"text":"   "}}
+{"atMs":11814.470199999982,"event":"token","data":{"text":" {\n"}}
+{"atMs":11825.41379999998,"event":"token","data":{"text":"     "}}
+{"atMs":11836.427599999937,"event":"token","data":{"text":" \""}}
+{"atMs":11847.475800000015,"event":"token","data":{"text":"type"}}
+{"atMs":11858.67339999997,"event":"token","data":{"text":"\":"}}
+{"atMs":11869.90579999995,"event":"token","data":{"text":" \""}}
+{"atMs":11880.981900000013,"event":"token","data":{"text":"Contain"}}
+{"atMs":11891.945799999987,"event":"token","data":{"text":"ment"}}
+{"atMs":11903.263000000035,"event":"token","data":{"text":"\",\n"}}
+{"atMs":11914.272600000026,"event":"token","data":{"text":"     "}}
+{"atMs":11925.253099999973,"event":"token","data":{"text":" \""}}
+{"atMs":11936.5233,"event":"token","data":{"text":"description"}}
+{"atMs":11947.410299999989,"event":"token","data":{"text":"\":"}}
+{"atMs":11958.738699999987,"event":"token","data":{"text":" \""}}
+{"atMs":11969.70459999994,"event":"token","data":{"text":"The"}}
+{"atMs":11980.58990000002,"event":"token","data":{"text":" issue"}}
+{"atMs":11991.692299999995,"event":"token","data":{"text":" affects"}}
+{"atMs":12002.898000000045,"event":"token","data":{"text":" the"}}
+{"atMs":12014.046600000001,"event":"token","data":{"text":" production"}}
+{"atMs":12025.072999999975,"event":"token","data":{"text":" environment"}}
+{"atMs":12036.046699999948,"event":"token","data":{"text":"'s"}}
+{"atMs":12047.015400000033,"event":"token","data":{"text":" database"}}
+{"atMs":12058.069000000018,"event":"token","data":{"text":" connectivity"}}
+{"atMs":12069.06640000001,"event":"token","data":{"text":" and"}}
+{"atMs":12080.049800000037,"event":"token","data":{"text":" authentication"}}
+{"atMs":12091.038500000024,"event":"token","data":{"text":".\"\n"}}
+{"atMs":12101.9767,"event":"token","data":{"text":"   "}}
+{"atMs":12115.849099999992,"event":"token","data":{"text":" }\n"}}
+{"atMs":12126.795999999973,"event":"token","data":{"text":" "}}
+{"atMs":12137.823100000038,"event":"token","data":{"text":" ],\n"}}
+{"atMs":12148.712900000042,"event":"token","data":{"text":" "}}
+{"atMs":12159.682499999995,"event":"token","data":{"text":" \""}}
+{"atMs":12170.657200000016,"event":"token","data":{"text":"mit"}}
+{"atMs":12181.65830000001,"event":"token","data":{"text":"igation"}}
+{"atMs":12192.571699999971,"event":"token","data":{"text":"\":"}}
+{"atMs":12203.62639999995,"event":"token","data":{"text":" [\n"}}
+{"atMs":12214.958199999994,"event":"token","data":{"text":"   "}}
+{"atMs":12225.986900000018,"event":"token","data":{"text":" {\n"}}
+{"atMs":12236.871999999974,"event":"token","data":{"text":"     "}}
+{"atMs":12247.835399999982,"event":"token","data":{"text":" \""}}
+{"atMs":12258.80819999997,"event":"token","data":{"text":"type"}}
+{"atMs":12269.762699999963,"event":"token","data":{"text":"\":"}}
+{"atMs":12280.79859999998,"event":"token","data":{"text":" \""}}
+{"atMs":12291.910200000042,"event":"token","data":{"text":"Mit"}}
+{"atMs":12303.042499999981,"event":"token","data":{"text":"igation"}}
+{"atMs":12313.970100000035,"event":"token","data":{"text":"\",\n"}}
+{"atMs":12325.266799999983,"event":"token","data":{"text":"     "}}
+{"atMs":12336.139800000004,"event":"token","data":{"text":" \""}}
+{"atMs":12347.168599999975,"event":"token","data":{"text":"description"}}
+{"atMs":12358.059800000046,"event":"token","data":{"text":"\":"}}
+{"atMs":12369.136599999969,"event":"token","data":{"text":" \""}}
+{"atMs":12380.004199999967,"event":"token","data":{"text":"Ensure"}}
+{"atMs":12390.904100000043,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":12401.815799999982,"event":"token","data":{"text":" services"}}
+{"atMs":12412.687399999937,"event":"token","data":{"text":" are"}}
+{"atMs":12423.620400000014,"event":"token","data":{"text":" running"}}
+{"atMs":12434.984399999958,"event":"token","data":{"text":" and"}}
+{"atMs":12445.878299999982,"event":"token","data":{"text":" configured"}}
+{"atMs":12456.882699999958,"event":"token","data":{"text":" correctly"}}
+{"atMs":12467.896899999934,"event":"token","data":{"text":"."}}
+{"atMs":12478.884699999937,"event":"token","data":{"text":" Verify"}}
+{"atMs":12489.75159999996,"event":"token","data":{"text":" all"}}
+{"atMs":12500.718800000031,"event":"token","data":{"text":" environments"}}
+{"atMs":12511.605100000044,"event":"token","data":{"text":" use"}}
+{"atMs":12522.627100000042,"event":"token","data":{"text":" the"}}
+{"atMs":12533.543900000048,"event":"token","data":{"text":" correct"}}
+{"atMs":12544.974999999977,"event":"token","data":{"text":" secret"}}
+{"atMs":12555.963800000027,"event":"token","data":{"text":" for"}}
+{"atMs":12566.831499999971,"event":"token","data":{"text":" authentication"}}
+{"atMs":12577.944499999983,"event":"token","data":{"text":".\"\n"}}
+{"atMs":12589.058300000033,"event":"token","data":{"text":"   "}}
+{"atMs":12600.075700000045,"event":"token","data":{"text":" }\n"}}
+{"atMs":12610.860699999961,"event":"token","data":{"text":" "}}
+{"atMs":12621.763599999947,"event":"token","data":{"text":" ],\n"}}
+{"atMs":12632.674200000009,"event":"token","data":{"text":" "}}
+{"atMs":12643.762299999944,"event":"token","data":{"text":" \""}}
+{"atMs":12657.091000000015,"event":"token","data":{"text":"ca"}}
+{"atMs":12673.964999999967,"event":"token","data":{"text":"usal"}}
+{"atMs":12680.44849999994,"event":"token","data":{"text":"Chain"}}
+{"atMs":12691.956000000006,"event":"token","data":{"text":"\":"}}
+{"atMs":12703.265999999945,"event":"token","data":{"text":" [\n"}}
+{"atMs":12714.389699999942,"event":"token","data":{"text":"   "}}
+{"atMs":12725.795399999944,"event":"token","data":{"text":" {\n"}}
+{"atMs":12736.853999999934,"event":"token","data":{"text":"     "}}
+{"atMs":12747.830799999996,"event":"token","data":{"text":" \""}}
+{"atMs":12759.216099999961,"event":"token","data":{"text":"type"}}
+{"atMs":12770.368499999982,"event":"token","data":{"text":"\":"}}
+{"atMs":12781.406500000041,"event":"token","data":{"text":" \""}}
+{"atMs":12792.544600000023,"event":"token","data":{"text":"C"}}
+{"atMs":12803.597300000023,"event":"token","data":{"text":"ausal"}}
+{"atMs":12814.60010000004,"event":"token","data":{"text":"Link"}}
+{"atMs":12825.671100000036,"event":"token","data":{"text":"\",\n"}}
+{"atMs":12836.814600000042,"event":"token","data":{"text":"     "}}
+{"atMs":12847.781500000041,"event":"token","data":{"text":" \""}}
+{"atMs":12859.187200000044,"event":"token","data":{"text":"description"}}
+{"atMs":12870.39049999998,"event":"token","data":{"text":"\":"}}
+{"atMs":12881.517600000021,"event":"token","data":{"text":" \""}}
+{"atMs":12892.8125,"event":"token","data":{"text":"Post"}}
+{"atMs":12903.861700000009,"event":"token","data":{"text":"greSQL"}}
+{"atMs":12914.917299999972,"event":"token","data":{"text":" connection"}}
+{"atMs":12925.950500000035,"event":"token","data":{"text":" issue"}}
+{"atMs":12936.961699999985,"event":"token","data":{"text":" caused"}}
+{"atMs":12948.134300000034,"event":"token","data":{"text":" by"}}
+{"atMs":12959.164899999974,"event":"token","data":{"text":" incorrect"}}
+{"atMs":12970.527899999986,"event":"token","data":{"text":" secret"}}
+{"atMs":12981.666100000031,"event":"token","data":{"text":" usage"}}
+{"atMs":12992.726200000034,"event":"token","data":{"text":".\"\n"}}
+{"atMs":13003.744199999957,"event":"token","data":{"text":"   "}}
+{"atMs":13014.891399999964,"event":"token","data":{"text":" }\n"}}
+{"atMs":13025.894899999956,"event":"token","data":{"text":" "}}
+{"atMs":13037.088699999964,"event":"token","data":{"text":" ],\n"}}
+{"atMs":13057.072599999956,"event":"token","data":{"text":" "}}
+{"atMs":13059.241900000023,"event":"token","data":{"text":" \""}}
+{"atMs":13073.057299999986,"event":"token","data":{"text":"actions"}}
+{"atMs":13087.183899999945,"event":"token","data":{"text":"\":"}}
+{"atMs":13106.053300000029,"event":"token","data":{"text":" [\n"}}
+{"atMs":13120.983899999992,"event":"token","data":{"text":"   "}}
+{"atMs":13133.603899999987,"event":"token","data":{"text":" {\n"}}
+{"atMs":13146.366099999985,"event":"token","data":{"text":"     "}}
+{"atMs":13161.171600000001,"event":"token","data":{"text":" \""}}
+{"atMs":13175.914800000028,"event":"token","data":{"text":"type"}}
+{"atMs":13190.823399999994,"event":"token","data":{"text":"\":"}}
+{"atMs":13205.78780000005,"event":"token","data":{"text":" \""}}
+{"atMs":13219.336600000039,"event":"token","data":{"text":"Immediate"}}
+{"atMs":13230.81369999994,"event":"token","data":{"text":"\",\n"}}
+{"atMs":13241.935399999958,"event":"token","data":{"text":"     "}}
+{"atMs":13252.765000000014,"event":"token","data":{"text":" \""}}
+{"atMs":13263.783399999957,"event":"token","data":{"text":"command"}}
+{"atMs":13274.645099999965,"event":"token","data":{"text":"\":"}}
+{"atMs":13285.5392,"event":"token","data":{"text":" \""}}
+{"atMs":13296.833199999994,"event":"token","data":{"text":"Check"}}
+{"atMs":13307.720499999938,"event":"token","data":{"text":" PostgreSQL"}}
+{"atMs":13318.565700000036,"event":"token","data":{"text":" service"}}
+{"atMs":13329.492899999954,"event":"token","data":{"text":" status"}}
+{"atMs":13340.427299999981,"event":"token","data":{"text":" with"}}
+{"atMs":13351.328100000042,"event":"token","data":{"text":" `"}}
+{"atMs":13362.34030000004,"event":"token","data":{"text":"ps"}}
+{"atMs":13373.271399999969,"event":"token","data":{"text":"ql"}}
+{"atMs":13384.22239999997,"event":"token","data":{"text":" --"}}
+{"atMs":13395.138000000035,"event":"token","data":{"text":"version"}}
+{"atMs":13406.196400000015,"event":"token","data":{"text":" payment"}}
+{"atMs":13417.3554,"event":"token","data":{"text":".payment"}}
+{"atMs":13428.666800000006,"event":"token","data":{"text":".s"}}
+{"atMs":13439.616900000023,"event":"token","data":{"text":"vc"}}
+{"atMs":13450.727300000028,"event":"token","data":{"text":"`"}}
+{"atMs":13461.77119999996,"event":"token","data":{"text":".\"\n"}}
+{"atMs":13472.701800000039,"event":"token","data":{"text":"   "}}
+{"atMs":13483.972799999989,"event":"token","data":{"text":" },\n"}}
+{"atMs":13494.877699999954,"event":"token","data":{"text":"   "}}
+{"atMs":13505.769300000044,"event":"token","data":{"text":" {\n"}}
+{"atMs":13517.062599999947,"event":"token","data":{"text":"     "}}
+{"atMs":13527.954299999983,"event":"token","data":{"text":" \""}}
+{"atMs":13538.933500000043,"event":"token","data":{"text":"type"}}
+{"atMs":13549.91929999995,"event":"token","data":{"text":"\":"}}
+{"atMs":13560.893799999962,"event":"token","data":{"text":" \""}}
+{"atMs":13571.848499999964,"event":"token","data":{"text":"Short"}}
+{"atMs":13582.795399999944,"event":"token","data":{"text":"-term"}}
+{"atMs":13593.726900000009,"event":"token","data":{"text":"\",\n"}}
+{"atMs":13604.69550000003,"event":"token","data":{"text":"     "}}
+{"atMs":13616.029499999946,"event":"token","data":{"text":" \""}}
+{"atMs":13626.978699999978,"event":"token","data":{"text":"command"}}
+{"atMs":13637.954200000037,"event":"token","data":{"text":"\":"}}
+{"atMs":13648.841400000034,"event":"token","data":{"text":" \""}}
+{"atMs":13659.793900000048,"event":"token","data":{"text":"Verify"}}
+{"atMs":13670.82369999995,"event":"token","data":{"text":" all"}}
+{"atMs":13681.705100000021,"event":"token","data":{"text":" environments"}}
+{"atMs":13692.741099999985,"event":"token","data":{"text":" use"}}
+{"atMs":13706.364900000044,"event":"token","data":{"text":" the"}}
+{"atMs":13717.115499999956,"event":"token","data":{"text":" correct"}}
+{"atMs":13728.476400000043,"event":"token","data":{"text":" secret"}}
+{"atMs":13739.566499999957,"event":"token","data":{"text":" (`"}}
+{"atMs":13750.981200000038,"event":"token","data":{"text":"payment"}}
+{"atMs":13761.872699999949,"event":"token","data":{"text":"-db"}}
+{"atMs":13772.891500000027,"event":"token","data":{"text":"-secret"}}
+{"atMs":13783.841299999971,"event":"token","data":{"text":"`)"}}
+{"atMs":13794.748299999977,"event":"token","data":{"text":" for"}}
+{"atMs":13805.698300000047,"event":"token","data":{"text":" database"}}
+{"atMs":13816.612599999993,"event":"token","data":{"text":" authentication"}}
+{"atMs":13827.63229999994,"event":"token","data":{"text":".\"\n"}}
+{"atMs":13838.832900000038,"event":"token","data":{"text":"   "}}
+{"atMs":13849.813500000047,"event":"token","data":{"text":" }\n"}}
+{"atMs":13860.742800000007,"event":"token","data":{"text":" "}}
+{"atMs":13871.714700000011,"event":"token","data":{"text":" ]\n"}}
+{"atMs":13882.688399999985,"event":"token","data":{"text":"}\n"}}
+{"atMs":13893.590699999942,"event":"token","data":{"text":"``"}}
+{"atMs":13904.58070000005,"event":"token","data":{"text":"`\n\n"}}
+{"atMs":13915.539699999965,"event":"token","data":{"text":"---\n\n"}}
+{"atMs":13926.62520000001,"event":"token","data":{"text":"This"}}
+{"atMs":13940.269499999937,"event":"token","data":{"text":" structured"}}
+{"atMs":13952.488000000012,"event":"token","data":{"text":" approach"}}
+{"atMs":13963.527299999958,"event":"token","data":{"text":" ensures"}}
+{"atMs":13974.60519999999,"event":"token","data":{"text":" a"}}
+{"atMs":13985.820599999977,"event":"token","data":{"text":" systematic"}}
+{"atMs":13996.988499999978,"event":"token","data":{"text":" response"}}
+{"atMs":14008.243400000036,"event":"token","data":{"text":" to"}}
+{"atMs":14019.255800000043,"event":"token","data":{"text":" diagnose"}}
+{"atMs":14030.397299999953,"event":"token","data":{"text":" and"}}
+{"atMs":14041.452199999942,"event":"token","data":{"text":" resolve"}}
+{"atMs":14053.002199999988,"event":"token","data":{"text":" the"}}
+{"atMs":14064.023999999976,"event":"token","data":{"text":" issue"}}
+{"atMs":14075.05819999997,"event":"token","data":{"text":" effectively"}}
+{"atMs":14086.119599999976,"event":"token","data":{"text":"."}}
+{"atMs":14097.418999999994,"event":"done","data":{}}

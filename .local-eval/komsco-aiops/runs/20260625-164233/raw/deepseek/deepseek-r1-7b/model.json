@@ -1,0 +1,22 @@
+{
+  "id": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "role": "reasoning",
+  "roles": [
+    "reasoning",
+    "coding"
+  ],
+  "store": "primary",
+  "ollamaModel": "deepseek-r1:7b",
+  "manifestPath": "registry.ollama.ai/library/deepseek-r1/7b",
+  "remoteTag": "deepseek-r1:7b",
+  "sizeGb": 4.7,
+  "priority": 8,
+  "reason": "추론 전용 경량 후보. 설치 후 Gemma와 비교.",
+  "bestUse": "설치 후 reasoning 비교군. 원인 분석, 버그 추론, 단계적 의사결정처럼 속도보다 사고 과정이 중요한 작업.",
+  "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=deepseek-r1:7b",
+  "installed": true,
+  "installable": true,
+  "storePath": "F:\\AI_Models\\Ollama"
+}

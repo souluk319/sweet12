@@ -1,0 +1,21 @@
+{
+  "id": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "role": "stress-test",
+  "roles": [
+    "chat",
+    "stress-test"
+  ],
+  "store": "secondary",
+  "ollamaModel": "gemma4:12b-it-qat",
+  "manifestPath": "registry.ollama.ai/library/gemma4/12b-it-qat",
+  "sizeGb": 7.15,
+  "priority": 6,
+  "reason": "12B QAT 후보. 4070 Ti에서 실사용 가능한지 벤치 필요.",
+  "bestUse": "12B급 품질이 필요할 때의 stress-test 후보. 로딩이 길고 VRAM 여유를 크게 요구하므로 단발 고난도 질의에 적합.",
+  "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Gemma-4\\.ollama-models\nOLLAMA_MODEL=gemma4:12b-it-qat",
+  "installed": true,
+  "installable": false,
+  "storePath": "F:\\AI_Models\\Gemma-4\\.ollama-models"
+}

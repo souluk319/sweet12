@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S02",
+  "scenarioTitle": "Evidence 기반 RCA",
+  "modelId": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:52:05.869Z",
+  "finishedAt": "2026-06-25T07:52:19.966Z",
+  "totalMs": 14097.457199999946,
+  "charCount": 3342,
+  "estimatedTokens": 937,
+  "estimatedTps": 66.46588719560033,
+  "eventCount": 1228
+}

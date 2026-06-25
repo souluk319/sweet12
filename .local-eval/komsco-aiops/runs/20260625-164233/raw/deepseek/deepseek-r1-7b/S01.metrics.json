@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S01",
+  "scenarioTitle": "한국어 운영 질의",
+  "modelId": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:53.893Z",
+  "finishedAt": "2026-06-25T07:52:05.865Z",
+  "totalMs": 11972.35519999999,
+  "charCount": 981,
+  "estimatedTokens": 302,
+  "estimatedTps": 25.224777828175384,
+  "eventCount": 982
+}

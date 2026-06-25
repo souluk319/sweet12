@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S04",
+  "scenarioTitle": "Linux/Windows/OCP 도구 선택",
+  "modelId": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:52:27.058Z",
+  "finishedAt": "2026-06-25T07:52:40.704Z",
+  "totalMs": 13644.487100000028,
+  "charCount": 2110,
+  "estimatedTokens": 657,
+  "estimatedTps": 48.15131526636854,
+  "eventCount": 1186
+}

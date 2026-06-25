@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S03",
+  "scenarioTitle": "Tool Plan JSON",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:43:26.528Z",
+  "finishedAt": "2026-06-25T07:43:36.228Z",
+  "totalMs": 9698.951200000003,
+  "charCount": 1323,
+  "estimatedTokens": 404,
+  "estimatedTps": 41.65398831989173,
+  "eventCount": 480
+}

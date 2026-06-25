@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S04",
+  "scenarioTitle": "Linux/Windows/OCP 도구 선택",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:43:36.231Z",
+  "finishedAt": "2026-06-25T07:43:58.707Z",
+  "totalMs": 22475.535200000006,
+  "charCount": 2547,
+  "estimatedTokens": 858,
+  "estimatedTps": 38.17484177195477,
+  "eventCount": 1134
+}

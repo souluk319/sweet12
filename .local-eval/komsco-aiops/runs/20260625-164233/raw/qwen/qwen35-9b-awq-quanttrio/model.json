@@ -1,0 +1,19 @@
+{
+  "id": "qwen35-9b-awq-quanttrio",
+  "displayName": "QuantTrio Qwen3.5 9B AWQ",
+  "runtime": "vllm",
+  "role": "coding",
+  "roles": [
+    "coding",
+    "reasoning"
+  ],
+  "modelDir": "F:\\AI_Models\\Qwen\\models\\QuantTrio-Qwen3.5-9B-AWQ",
+  "servedModelName": "Qwen3.5-9B-AWQ",
+  "sizeGb": 12.4,
+  "priority": 8,
+  "reason": "기존 vLLM 스크립트가 가리키던 Qwen AWQ 후보.",
+  "bestUse": "Qwen AWQ 대체 체크포인트. 원본 Qwen3.5 AWQ와 같은 프롬프트로 품질/속도를 비교할 때.",
+  "envExample": "LOCAL_LLM_PROVIDER=openai-compatible\nOPENAI_BASE_URL=http://127.0.0.1:8080/v1\nOPENAI_API_KEY=local-vllm\nOPENAI_MODEL=Qwen3.5-9B-AWQ",
+  "installed": true,
+  "installable": false
+}

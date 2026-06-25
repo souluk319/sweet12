@@ -1,0 +1,409 @@
+{"atMs":270.31870000000345,"event":"token","data":{"text":"{\n"}}
+{"atMs":283.66909999999916,"event":"token","data":{"text":" "}}
+{"atMs":298.07439999998314,"event":"token","data":{"text":" \""}}
+{"atMs":311.2584999999963,"event":"token","data":{"text":"environment"}}
+{"atMs":321.8837999999523,"event":"token","data":{"text":"\":"}}
+{"atMs":332.7488000000012,"event":"token","data":{"text":" \""}}
+{"atMs":347.05729999998584,"event":"token","data":{"text":"oc"}}
+{"atMs":358.08869999996386,"event":"token","data":{"text":"p"}}
+{"atMs":369.11019999999553,"event":"token","data":{"text":"\",\n"}}
+{"atMs":380.6677999999956,"event":"token","data":{"text":" "}}
+{"atMs":392.12409999995725,"event":"token","data":{"text":" \""}}
+{"atMs":403.37079999997513,"event":"token","data":{"text":"risk"}}
+{"atMs":416.24299999995856,"event":"token","data":{"text":"Level"}}
+{"atMs":433.0559999999823,"event":"token","data":{"text":"\":"}}
+{"atMs":444.0418999999529,"event":"token","data":{"text":" \""}}
+{"atMs":455.34009999997215,"event":"token","data":{"text":"low"}}
+{"atMs":466.18109999998705,"event":"token","data":{"text":"\",\n"}}
+{"atMs":481.0207999999984,"event":"token","data":{"text":" "}}
+{"atMs":492.18169999995735,"event":"token","data":{"text":" \""}}
+{"atMs":503.54999999998836,"event":"token","data":{"text":"steps"}}
+{"atMs":514.9694000000018,"event":"token","data":{"text":"\":"}}
+{"atMs":528.086399999971,"event":"token","data":{"text":" [\n"}}
+{"atMs":537.6279999999679,"event":"token","data":{"text":"   "}}
+{"atMs":548.7768999999971,"event":"token","data":{"text":" {\n"}}
+{"atMs":564.0977999999886,"event":"token","data":{"text":"     "}}
+{"atMs":585.7290999999968,"event":"token","data":{"text":" \""}}
+{"atMs":585.732399999979,"event":"token","data":{"text":"order"}}
+{"atMs":601.0105999999796,"event":"token","data":{"text":"\":"}}
+{"atMs":612.9182999999612,"event":"token","data":{"text":" "}}
+{"atMs":628.6247999999905,"event":"token","data":{"text":"1"}}
+{"atMs":651.7275999999838,"event":"token","data":{"text":",\n"}}
+{"atMs":672.4270999999717,"event":"token","data":{"text":"     "}}
+{"atMs":690.2995999999694,"event":"token","data":{"text":" \""}}
+{"atMs":707.3157999999821,"event":"token","data":{"text":"tool"}}
+{"atMs":725.0424999999814,"event":"token","data":{"text":"\":"}}
+{"atMs":742.2170999999507,"event":"token","data":{"text":" \""}}
+{"atMs":758.5060999999987,"event":"token","data":{"text":"kubectl"}}
+{"atMs":772.7021999999997,"event":"token","data":{"text":"\",\n"}}
+{"atMs":786.0567999999621,"event":"token","data":{"text":"     "}}
+{"atMs":798.0270000000019,"event":"token","data":{"text":" \""}}
+{"atMs":813.1601999999839,"event":"token","data":{"text":"command"}}
+{"atMs":824.6012999999803,"event":"token","data":{"text":"\":"}}
+{"atMs":835.452099999995,"event":"token","data":{"text":" \""}}
+{"atMs":846.8246999999974,"event":"token","data":{"text":"get"}}
+{"atMs":858.195000000007,"event":"token","data":{"text":" svc"}}
+{"atMs":869.3285000000033,"event":"token","data":{"text":" web"}}
+{"atMs":880.7194000000018,"event":"token","data":{"text":"-"}}
+{"atMs":893.3160999999964,"event":"token","data":{"text":"frontend"}}
+{"atMs":902.7894999999553,"event":"token","data":{"text":" -"}}
+{"atMs":914.3450999999768,"event":"token","data":{"text":"n"}}
+{"atMs":929.412399999972,"event":"token","data":{"text":" portal"}}
+{"atMs":936.4372999999905,"event":"token","data":{"text":"\",\n"}}
+{"atMs":947.6925999999512,"event":"token","data":{"text":"     "}}
+{"atMs":959.0816999999806,"event":"token","data":{"text":" \""}}
+{"atMs":969.6570999999531,"event":"token","data":{"text":"purpose"}}
+{"atMs":980.8998999999603,"event":"token","data":{"text":"\":"}}
+{"atMs":993.3748999999953,"event":"token","data":{"text":" \""}}
+{"atMs":1003.1453999999794,"event":"token","data":{"text":"서비스"}}
+{"atMs":1014.3390999999829,"event":"token","data":{"text":"의"}}
+{"atMs":1025.1759999999776,"event":"token","data":{"text":" 현재"}}
+{"atMs":1036.2814999999828,"event":"token","data":{"text":" 상태"}}
+{"atMs":1047.5495999999694,"event":"token","data":{"text":"를"}}
+{"atMs":1058.42359999998,"event":"token","data":{"text":" 확인"}}
+{"atMs":1069.3016000000061,"event":"token","data":{"text":"하여"}}
+{"atMs":1091.1598999999696,"event":"token","data":{"text":" 백"}}
+{"atMs":1102.1314999999595,"event":"token","data":{"text":"엔"}}
+{"atMs":1116.1598999999696,"event":"token","data":{"text":"드"}}
+{"atMs":1129.1431999999913,"event":"token","data":{"text":" 서비스"}}
+{"atMs":1138.7673999999533,"event":"token","data":{"text":"가"}}
+{"atMs":1160.749199999962,"event":"token","data":{"text":" 올"}}
+{"atMs":1171.4829000000027,"event":"token","data":{"text":"바"}}
+{"atMs":1182.3018999999622,"event":"token","data":{"text":"르"}}
+{"atMs":1193.0978999999934,"event":"token","data":{"text":"게"}}
+{"atMs":1203.991699999955,"event":"token","data":{"text":" 배"}}
+{"atMs":1214.8229999999749,"event":"token","data":{"text":"포"}}
+{"atMs":1225.6944999999832,"event":"token","data":{"text":"되었"}}
+{"atMs":1236.5382999999565,"event":"token","data":{"text":"는"}}
+{"atMs":1247.4820999999647,"event":"token","data":{"text":"지"}}
+{"atMs":1258.6205999999656,"event":"token","data":{"text":" 확인"}}
+{"atMs":1269.3457000000053,"event":"token","data":{"text":"합니다"}}
+{"atMs":1280.2890999999945,"event":"token","data":{"text":".\",\n"}}
+{"atMs":1291.5394999999553,"event":"token","data":{"text":"     "}}
+{"atMs":1302.425899999973,"event":"token","data":{"text":" \""}}
+{"atMs":1313.4069000000018,"event":"token","data":{"text":"expected"}}
+{"atMs":1324.5333999999566,"event":"token","data":{"text":"Evidence"}}
+{"atMs":1335.4287999999942,"event":"token","data":{"text":"\":"}}
+{"atMs":1346.4427999999607,"event":"token","data":{"text":" \""}}
+{"atMs":1357.5633999999845,"event":"token","data":{"text":"서비스"}}
+{"atMs":1368.422099999967,"event":"token","data":{"text":"가"}}
+{"atMs":1379.3430999999982,"event":"token","data":{"text":" 정"}}
+{"atMs":1390.257500000007,"event":"token","data":{"text":"상"}}
+{"atMs":1401.2662999999593,"event":"token","data":{"text":"적으로"}}
+{"atMs":1416.348799999978,"event":"token","data":{"text":" 실행"}}
+{"atMs":1431.6325999999535,"event":"token","data":{"text":"되고"}}
+{"atMs":1439.311400000006,"event":"token","data":{"text":" 있는"}}
+{"atMs":1450.2639999999665,"event":"token","data":{"text":"지"}}
+{"atMs":1464.1306999999797,"event":"token","data":{"text":","}}
+{"atMs":1478.9623999999603,"event":"token","data":{"text":" 포"}}
+{"atMs":1487.4732999999542,"event":"token","data":{"text":"트"}}
+{"atMs":1498.5565999999526,"event":"token","data":{"text":"와"}}
+{"atMs":1525.0282000000007,"event":"token","data":{"text":" 타"}}
+{"atMs":1535.9025999999722,"event":"token","data":{"text":"겟"}}
+{"atMs":1569.5754999999772,"event":"token","data":{"text":" 레"}}
+{"atMs":1580.9594999999972,"event":"token","data":{"text":"이"}}
+{"atMs":1595.3678999999538,"event":"token","data":{"text":"블"}}
+{"atMs":1603.1839000000036,"event":"token","data":{"text":"이"}}
+{"atMs":1630.143299999996,"event":"token","data":{"text":" 올"}}
+{"atMs":1641.0662000000011,"event":"token","data":{"text":"바"}}
+{"atMs":1653.312799999956,"event":"token","data":{"text":"르"}}
+{"atMs":1667.1140000000014,"event":"token","data":{"text":"게"}}
+{"atMs":1682.71669999999,"event":"token","data":{"text":" 설정"}}
+{"atMs":1697.4790999999968,"event":"token","data":{"text":"되어"}}
+{"atMs":1708.7171999999555,"event":"token","data":{"text":" 있는"}}
+{"atMs":1719.7549,"event":"token","data":{"text":"지"}}
+{"atMs":1730.5191999999806,"event":"token","data":{"text":" 확인"}}
+{"atMs":1741.8987999999663,"event":"token","data":{"text":"됩니다"}}
+{"atMs":1752.8388999999734,"event":"token","data":{"text":".\"\n"}}
+{"atMs":1764.1659999999683,"event":"token","data":{"text":"   "}}
+{"atMs":1775.1229999999632,"event":"token","data":{"text":" },\n"}}
+{"atMs":1786.0038000000059,"event":"token","data":{"text":"   "}}
+{"atMs":1797.1917999999714,"event":"token","data":{"text":" {\n"}}
+{"atMs":1808.153099999996,"event":"token","data":{"text":"     "}}
+{"atMs":1818.9903999999515,"event":"token","data":{"text":" \""}}
+{"atMs":1829.8812000000034,"event":"token","data":{"text":"order"}}
+{"atMs":1840.6965999999666,"event":"token","data":{"text":"\":"}}
+{"atMs":1851.619699999981,"event":"token","data":{"text":" "}}
+{"atMs":1862.5160000000033,"event":"token","data":{"text":"2"}}
+{"atMs":1873.3668999999645,"event":"token","data":{"text":",\n"}}
+{"atMs":1884.2576999999583,"event":"token","data":{"text":"     "}}
+{"atMs":1895.1447000000044,"event":"token","data":{"text":" \""}}
+{"atMs":1906.44789999997,"event":"token","data":{"text":"tool"}}
+{"atMs":1917.2766999999876,"event":"token","data":{"text":"\":"}}
+{"atMs":1928.2673000000068,"event":"token","data":{"text":" \""}}
+{"atMs":1939.1341999999713,"event":"token","data":{"text":"kubectl"}}
+{"atMs":1950.0028999999631,"event":"token","data":{"text":"\",\n"}}
+{"atMs":1960.866699999955,"event":"token","data":{"text":"     "}}
+{"atMs":1971.7497999999905,"event":"token","data":{"text":" \""}}
+{"atMs":1982.5517999999574,"event":"token","data":{"text":"command"}}
+{"atMs":1993.3996000000043,"event":"token","data":{"text":"\":"}}
+{"atMs":2004.2942999999505,"event":"token","data":{"text":" \""}}
+{"atMs":2015.5828999999794,"event":"token","data":{"text":"get"}}
+{"atMs":2026.3812000000034,"event":"token","data":{"text":" endpoints"}}
+{"atMs":2037.2800999999745,"event":"token","data":{"text":" web"}}
+{"atMs":2048.1501999999746,"event":"token","data":{"text":"-"}}
+{"atMs":2059.070699999982,"event":"token","data":{"text":"frontend"}}
+{"atMs":2069.8972999999532,"event":"token","data":{"text":" -"}}
+{"atMs":2080.7474999999977,"event":"token","data":{"text":"n"}}
+{"atMs":2091.6830999999656,"event":"token","data":{"text":" portal"}}
+{"atMs":2102.5455000000075,"event":"token","data":{"text":"\",\n"}}
+{"atMs":2113.382799999963,"event":"token","data":{"text":"     "}}
+{"atMs":2124.61109999998,"event":"token","data":{"text":" \""}}
+{"atMs":2135.50629999995,"event":"token","data":{"text":"purpose"}}
+{"atMs":2146.4372999999905,"event":"token","data":{"text":"\":"}}
+{"atMs":2157.3185999999987,"event":"token","data":{"text":" \""}}
+{"atMs":2168.228199999954,"event":"token","data":{"text":"서비스"}}
+{"atMs":2180.3036999999895,"event":"token","data":{"text":"의"}}
+{"atMs":2205.884999999951,"event":"token","data":{"text":" 엔"}}
+{"atMs":2216.7255000000005,"event":"token","data":{"text":"드"}}
+{"atMs":2230.6120999999694,"event":"token","data":{"text":"포"}}
+{"atMs":2241.979399999953,"event":"token","data":{"text":"인"}}
+{"atMs":2253.16869999998,"event":"token","data":{"text":"트"}}
+{"atMs":2264.8301999999676,"event":"token","data":{"text":"를"}}
+{"atMs":2280.112299999979,"event":"token","data":{"text":" 확인"}}
+{"atMs":2291.608499999973,"event":"token","data":{"text":"하여"}}
+{"atMs":2313.9939000000013,"event":"token","data":{"text":" 백"}}
+{"atMs":2327.095399999991,"event":"token","data":{"text":"엔"}}
+{"atMs":2336.597999999998,"event":"token","data":{"text":"드"}}
+{"atMs":2348.3122999999905,"event":"token","data":{"text":" Pod"}}
+{"atMs":2363.789300000004,"event":"token","data":{"text":"가"}}
+{"atMs":2385.678099999961,"event":"token","data":{"text":" 올"}}
+{"atMs":2397.2621999999974,"event":"token","data":{"text":"바"}}
+{"atMs":2408.691499999957,"event":"token","data":{"text":"르"}}
+{"atMs":2421.859999999986,"event":"token","data":{"text":"게"}}
+{"atMs":2434.8605999999563,"event":"token","data":{"text":" 노"}}
+{"atMs":2459.410799999954,"event":"token","data":{"text":"출"}}
+{"atMs":2475.759399999981,"event":"token","data":{"text":"되고"}}
+{"atMs":2481.7388999999966,"event":"token","data":{"text":" 있는"}}
+{"atMs":2492.401499999978,"event":"token","data":{"text":"지"}}
+{"atMs":2503.801999999967,"event":"token","data":{"text":" 확인"}}
+{"atMs":2515.3899999999558,"event":"token","data":{"text":"합니다"}}
+{"atMs":2530.8747999999905,"event":"token","data":{"text":".\",\n"}}
+{"atMs":2542.2826999999816,"event":"token","data":{"text":"     "}}
+{"atMs":2554.0292999999947,"event":"token","data":{"text":" \""}}
+{"atMs":2566.5342999999993,"event":"token","data":{"text":"expected"}}
+{"atMs":2581.6232999999775,"event":"token","data":{"text":"Evidence"}}
+{"atMs":2597.2243000000017,"event":"token","data":{"text":"\":"}}
+{"atMs":2607.4292999999598,"event":"token","data":{"text":" \""}}
+{"atMs":2618.576000000001,"event":"token","data":{"text":"엔"}}
+{"atMs":2631.715899999952,"event":"token","data":{"text":"드"}}
+{"atMs":2643.180799999973,"event":"token","data":{"text":"포"}}
+{"atMs":2654.6954999999725,"event":"token","data":{"text":"인"}}
+{"atMs":2666.2314999999944,"event":"token","data":{"text":"트"}}
+{"atMs":2681.2404999999562,"event":"token","data":{"text":"에"}}
+{"atMs":2704.1621999999625,"event":"token","data":{"text":" 백"}}
+{"atMs":2719.3545999999624,"event":"token","data":{"text":"엔"}}
+{"atMs":2733.495799999975,"event":"token","data":{"text":"드"}}
+{"atMs":2747.8980999999912,"event":"token","data":{"text":" Pod"}}
+{"atMs":2759.0001000000047,"event":"token","data":{"text":"의"}}
+{"atMs":2770.473799999978,"event":"token","data":{"text":" IP"}}
+{"atMs":2781.8439999999828,"event":"token","data":{"text":"와"}}
+{"atMs":2797.188699999999,"event":"token","data":{"text":" 포"}}
+{"atMs":2808.356299999985,"event":"token","data":{"text":"트"}}
+{"atMs":2819.7324999999837,"event":"token","data":{"text":"가"}}
+{"atMs":2847.2276999999885,"event":"token","data":{"text":" 올"}}
+{"atMs":2855.877899999963,"event":"token","data":{"text":"바"}}
+{"atMs":2867.277699999977,"event":"token","data":{"text":"르"}}
+{"atMs":2881.080799999996,"event":"token","data":{"text":"게"}}
+{"atMs":2892.406399999978,"event":"token","data":{"text":" 포함"}}
+{"atMs":2903.9114999999874,"event":"token","data":{"text":"되어"}}
+{"atMs":2916.294200000004,"event":"token","data":{"text":" 있는"}}
+{"atMs":2931.6475999999675,"event":"token","data":{"text":"지"}}
+{"atMs":2945.4058999999543,"event":"token","data":{"text":" 확인"}}
+{"atMs":2954.1281999999774,"event":"token","data":{"text":"됩니다"}}
+{"atMs":2965.2930999999517,"event":"token","data":{"text":".\"\n"}}
+{"atMs":2981.636599999969,"event":"token","data":{"text":"   "}}
+{"atMs":2993.5263999999734,"event":"token","data":{"text":" },\n"}}
+{"atMs":3003.3649999999907,"event":"token","data":{"text":"   "}}
+{"atMs":3015.1796999999788,"event":"token","data":{"text":" {\n"}}
+{"atMs":3030.8126000000047,"event":"token","data":{"text":"     "}}
+{"atMs":3039.87089999998,"event":"token","data":{"text":" \""}}
+{"atMs":3050.898999999976,"event":"token","data":{"text":"order"}}
+{"atMs":3065.4530999999843,"event":"token","data":{"text":"\":"}}
+{"atMs":3087.520599999989,"event":"token","data":{"text":" "}}
+{"atMs":3087.727899999998,"event":"token","data":{"text":"3"}}
+{"atMs":3100.217799999984,"event":"token","data":{"text":",\n"}}
+{"atMs":3116.4997999999905,"event":"token","data":{"text":"     "}}
+{"atMs":3134.0696999999927,"event":"token","data":{"text":" \""}}
+{"atMs":3155.315499999968,"event":"token","data":{"text":"tool"}}
+{"atMs":3173.248399999982,"event":"token","data":{"text":"\":"}}
+{"atMs":3190.391499999969,"event":"token","data":{"text":" \""}}
+{"atMs":3208.697199999995,"event":"token","data":{"text":"kubectl"}}
+{"atMs":3229.058699999994,"event":"token","data":{"text":"\",\n"}}
+{"atMs":3245.039699999965,"event":"token","data":{"text":"     "}}
+{"atMs":3259.6393999999855,"event":"token","data":{"text":" \""}}
+{"atMs":3275.2332999999635,"event":"token","data":{"text":"command"}}
+{"atMs":3290.427800000005,"event":"token","data":{"text":"\":"}}
+{"atMs":3304.7785999999614,"event":"token","data":{"text":" \""}}
+{"atMs":3317.2478999999585,"event":"token","data":{"text":"get"}}
+{"atMs":3332.1168999999645,"event":"token","data":{"text":" pods"}}
+{"atMs":3347.306099999987,"event":"token","data":{"text":" -"}}
+{"atMs":3358.5924999999697,"event":"token","data":{"text":"n"}}
+{"atMs":3369.654899999965,"event":"token","data":{"text":" portal"}}
+{"atMs":3381.5228999999817,"event":"token","data":{"text":" |"}}
+{"atMs":3397.364100000006,"event":"token","data":{"text":" grep"}}
+{"atMs":3416.419099999999,"event":"token","data":{"text":" web"}}
+{"atMs":3427.956999999995,"event":"token","data":{"text":"-"}}
+{"atMs":3439.7930999999517,"event":"token","data":{"text":"frontend"}}
+{"atMs":3450.891799999983,"event":"token","data":{"text":"\",\n"}}
+{"atMs":3464.672599999991,"event":"token","data":{"text":"     "}}
+{"atMs":3479.6060999999754,"event":"token","data":{"text":" \""}}
+{"atMs":3489.63049999997,"event":"token","data":{"text":"purpose"}}
+{"atMs":3500.955399999977,"event":"token","data":{"text":"\":"}}
+{"atMs":3514.2028999999748,"event":"token","data":{"text":" \""}}
+{"atMs":3526.2157000000007,"event":"token","data":{"text":"백"}}
+{"atMs":3538.2648000000045,"event":"token","data":{"text":"엔"}}
+{"atMs":3550.323399999994,"event":"token","data":{"text":"드"}}
+{"atMs":3564.700599999982,"event":"token","data":{"text":" Pod"}}
+{"atMs":3579.503700000001,"event":"token","data":{"text":"의"}}
+{"atMs":3589.63049999997,"event":"token","data":{"text":" 상태"}}
+{"atMs":3601.1890999999596,"event":"token","data":{"text":"를"}}
+{"atMs":3615.6296999999904,"event":"token","data":{"text":" 확인"}}
+{"atMs":3625.657199999958,"event":"token","data":{"text":"하여"}}
+{"atMs":3636.7287999999826,"event":"token","data":{"text":" Pod"}}
+{"atMs":3648.434799999988,"event":"token","data":{"text":"가"}}
+{"atMs":3663.709199999983,"event":"token","data":{"text":" 정"}}
+{"atMs":3674.3560999999754,"event":"token","data":{"text":"상"}}
+{"atMs":3685.7138999999734,"event":"token","data":{"text":"적으로"}}
+{"atMs":3699.031799999997,"event":"token","data":{"text":" 실행"}}
+{"atMs":3713.707299999951,"event":"token","data":{"text":"되고"}}
+{"atMs":3725.1797999999835,"event":"token","data":{"text":" 있는"}}
+{"atMs":3735.909400000004,"event":"token","data":{"text":"지"}}
+{"atMs":3748.07779999997,"event":"token","data":{"text":" 확인"}}
+{"atMs":3759.600600000005,"event":"token","data":{"text":"합니다"}}
+{"atMs":3772.21669999999,"event":"token","data":{"text":".\",\n"}}
+{"atMs":3789.502600000007,"event":"token","data":{"text":"     "}}
+{"atMs":3802.0320000000065,"event":"token","data":{"text":" \""}}
+{"atMs":3813.7028999999748,"event":"token","data":{"text":"expected"}}
+{"atMs":3826.161699999997,"event":"token","data":{"text":"Evidence"}}
+{"atMs":3836.0495999999694,"event":"token","data":{"text":"\":"}}
+{"atMs":3847.6292999999714,"event":"token","data":{"text":" \""}}
+{"atMs":3863.461099999957,"event":"token","data":{"text":"Pod"}}
+{"atMs":3871.2342000000062,"event":"token","data":{"text":"가"}}
+{"atMs":3882.7220999999554,"event":"token","data":{"text":" Running"}}
+{"atMs":3897.003800000006,"event":"token","data":{"text":" 상태"}}
+{"atMs":3908.01529999997,"event":"token","data":{"text":"인지"}}
+{"atMs":3919.1692999999505,"event":"token","data":{"text":","}}
+{"atMs":3930.8473999999696,"event":"token","data":{"text":" CPU"}}
+{"atMs":3943.4648999999627,"event":"token","data":{"text":"와"}}
+{"atMs":3953.1079000000027,"event":"token","data":{"text":" 메"}}
+{"atMs":3964.5177999999723,"event":"token","data":{"text":"모"}}
+{"atMs":3979.422099999967,"event":"token","data":{"text":"리"}}
+{"atMs":3989.896199999959,"event":"token","data":{"text":" 사용"}}
+{"atMs":4000.9253000000026,"event":"token","data":{"text":"량"}}
+{"atMs":4014.0775999999605,"event":"token","data":{"text":"이"}}
+{"atMs":4027.501499999955,"event":"token","data":{"text":" 적"}}
+{"atMs":4036.5076999999583,"event":"token","data":{"text":"당"}}
+{"atMs":4047.8295999999973,"event":"token","data":{"text":"한"}}
+{"atMs":4063.507099999988,"event":"token","data":{"text":"지"}}
+{"atMs":4072.8671999999788,"event":"token","data":{"text":" 확인"}}
+{"atMs":4083.9981999999727,"event":"token","data":{"text":"됩니다"}}
+{"atMs":4097.752799999958,"event":"token","data":{"text":".\"\n"}}
+{"atMs":4110.372099999979,"event":"token","data":{"text":"   "}}
+{"atMs":4120.01039999997,"event":"token","data":{"text":" },\n"}}
+{"atMs":4131.409499999951,"event":"token","data":{"text":"   "}}
+{"atMs":4146.208799999964,"event":"token","data":{"text":" {\n"}}
+{"atMs":4156.619000000006,"event":"token","data":{"text":"     "}}
+{"atMs":4167.930300000007,"event":"token","data":{"text":" \""}}
+{"atMs":4180.664999999979,"event":"token","data":{"text":"order"}}
+{"atMs":4194.843399999954,"event":"token","data":{"text":"\":"}}
+{"atMs":4203.041499999992,"event":"token","data":{"text":" "}}
+{"atMs":4214.295500000007,"event":"token","data":{"text":"4"}}
+{"atMs":4228.059799999988,"event":"token","data":{"text":",\n"}}
+{"atMs":4236.422399999981,"event":"token","data":{"text":"     "}}
+{"atMs":4247.902000000002,"event":"token","data":{"text":" \""}}
+{"atMs":4263.155299999984,"event":"token","data":{"text":"tool"}}
+{"atMs":4272.88539999997,"event":"token","data":{"text":"\":"}}
+{"atMs":4284.4695000000065,"event":"token","data":{"text":" \""}}
+{"atMs":4297.523799999966,"event":"token","data":{"text":"kubectl"}}
+{"atMs":4315.260099999956,"event":"token","data":{"text":"\",\n"}}
+{"atMs":4326.713799999969,"event":"token","data":{"text":"     "}}
+{"atMs":4338.18399999995,"event":"token","data":{"text":" \""}}
+{"atMs":4349.070399999968,"event":"token","data":{"text":"command"}}
+{"atMs":4363.508299999987,"event":"token","data":{"text":"\":"}}
+{"atMs":4374.376499999955,"event":"token","data":{"text":" \""}}
+{"atMs":4385.614599999972,"event":"token","data":{"text":"describe"}}
+{"atMs":4397.60149999999,"event":"token","data":{"text":" pod"}}
+{"atMs":4409.134999999951,"event":"token","data":{"text":" <"}}
+{"atMs":4424.780700000003,"event":"token","data":{"text":"pod"}}
+{"atMs":4435.95849999995,"event":"token","data":{"text":"-name"}}
+{"atMs":4449.790299999993,"event":"token","data":{"text":">"}}
+{"atMs":4464.697199999995,"event":"token","data":{"text":" -"}}
+{"atMs":4479.987699999998,"event":"token","data":{"text":"n"}}
+{"atMs":4491.086299999966,"event":"token","data":{"text":" portal"}}
+{"atMs":4502.543499999971,"event":"token","data":{"text":"\",\n"}}
+{"atMs":4514.12559999997,"event":"token","data":{"text":"     "}}
+{"atMs":4529.283499999961,"event":"token","data":{"text":" \""}}
+{"atMs":4538.963499999954,"event":"token","data":{"text":"purpose"}}
+{"atMs":4550.0925999999745,"event":"token","data":{"text":"\":"}}
+{"atMs":4564.022799999977,"event":"token","data":{"text":" \""}}
+{"atMs":4576.565499999968,"event":"token","data":{"text":"특"}}
+{"atMs":4586.078699999955,"event":"token","data":{"text":"정"}}
+{"atMs":4597.668999999994,"event":"token","data":{"text":" Pod"}}
+{"atMs":4613.486399999994,"event":"token","data":{"text":"의"}}
+{"atMs":4623.876499999955,"event":"token","data":{"text":" 상"}}
+{"atMs":4635.069900000002,"event":"token","data":{"text":"세"}}
+{"atMs":4647.4450999999535,"event":"token","data":{"text":" 정보"}}
+{"atMs":4661.4589999999735,"event":"token","data":{"text":"를"}}
+{"atMs":4669.661399999983,"event":"token","data":{"text":" 확인"}}
+{"atMs":4681.061099999992,"event":"token","data":{"text":"하여"}}
+{"atMs":4696.051199999987,"event":"token","data":{"text":" Pod"}}
+{"atMs":4705.260499999975,"event":"token","data":{"text":"가"}}
+{"atMs":4716.730699999956,"event":"token","data":{"text":" 정"}}
+{"atMs":4731.096699999995,"event":"token","data":{"text":"상"}}
+{"atMs":4746.705699999991,"event":"token","data":{"text":"적으로"}}
+{"atMs":4757.60699999996,"event":"token","data":{"text":" 실행"}}
+{"atMs":4768.899699999951,"event":"token","data":{"text":"되고"}}
+{"atMs":4780.825599999982,"event":"token","data":{"text":" 있는"}}
+{"atMs":4791.972499999974,"event":"token","data":{"text":"지"}}
+{"atMs":4802.964399999997,"event":"token","data":{"text":","}}
+{"atMs":4814.637400000007,"event":"token","data":{"text":" 에"}}
+{"atMs":4830.17379999999,"event":"token","data":{"text":"러"}}
+{"atMs":4848.933699999994,"event":"token","data":{"text":" 메"}}
+{"atMs":4860.324199999974,"event":"token","data":{"text":"시"}}
+{"atMs":4871.902100000007,"event":"token","data":{"text":"지"}}
+{"atMs":4882.747600000002,"event":"token","data":{"text":"가"}}
+{"atMs":4897.315000000002,"event":"token","data":{"text":" 있는"}}
+{"atMs":4908.978799999983,"event":"token","data":{"text":"지"}}
+{"atMs":4920.1397,"event":"token","data":{"text":" 확인"}}
+{"atMs":4931.435299999954,"event":"token","data":{"text":"합니다"}}
+{"atMs":4956.116299999994,"event":"token","data":{"text":".\",\n"}}
+{"atMs":4956.1201,"event":"token","data":{"text":"     "}}
+{"atMs":4972.378299999982,"event":"token","data":{"text":" \""}}
+{"atMs":4980.829099999974,"event":"token","data":{"text":"expected"}}
+{"atMs":4990.853199999954,"event":"token","data":{"text":"Evidence"}}
+{"atMs":5001.9151999999885,"event":"token","data":{"text":"\":"}}
+{"atMs":5015.59639999998,"event":"token","data":{"text":" \""}}
+{"atMs":5031.690399999963,"event":"token","data":{"text":"Pod"}}
+{"atMs":5042.631599999964,"event":"token","data":{"text":"의"}}
+{"atMs":5054.3275999999605,"event":"token","data":{"text":" 로"}}
+{"atMs":5066.451199999952,"event":"token","data":{"text":"그"}}
+{"atMs":5081.366399999999,"event":"token","data":{"text":"나"}}
+{"atMs":5089.800799999968,"event":"token","data":{"text":" 이"}}
+{"atMs":5101.158100000001,"event":"token","data":{"text":"벤"}}
+{"atMs":5115.2257999999565,"event":"token","data":{"text":"트"}}
+{"atMs":5131.127299999993,"event":"token","data":{"text":"에"}}
+{"atMs":5142.353099999949,"event":"token","data":{"text":" 오"}}
+{"atMs":5154.0380000000005,"event":"token","data":{"text":"류"}}
+{"atMs":5165.703899999964,"event":"token","data":{"text":" 메"}}
+{"atMs":5180.808900000004,"event":"token","data":{"text":"시"}}
+{"atMs":5195.9054999999935,"event":"token","data":{"text":"지"}}
+{"atMs":5202.993599999987,"event":"token","data":{"text":"가"}}
+{"atMs":5214.339099999983,"event":"token","data":{"text":" 없는"}}
+{"atMs":5226.355500000005,"event":"token","data":{"text":"지"}}
+{"atMs":5237.330099999963,"event":"token","data":{"text":" 확인"}}
+{"atMs":5248.470799999952,"event":"token","data":{"text":"됩니다"}}
+{"atMs":5263.298899999994,"event":"token","data":{"text":".\"\n"}}
+{"atMs":5273.012099999993,"event":"token","data":{"text":"   "}}
+{"atMs":5284.124299999967,"event":"token","data":{"text":" }\n"}}
+{"atMs":5298.566399999952,"event":"token","data":{"text":" "}}
+{"atMs":5309.152499999967,"event":"token","data":{"text":" ],\n"}}
+{"atMs":5320.8208999999915,"event":"token","data":{"text":" "}}
+{"atMs":5332.478399999964,"event":"token","data":{"text":" \""}}
+{"atMs":5348.374099999957,"event":"token","data":{"text":"approval"}}
+{"atMs":5358.82859999995,"event":"token","data":{"text":"Required"}}
+{"atMs":5370.12089999998,"event":"token","data":{"text":"\":"}}
+{"atMs":5383.144299999985,"event":"token","data":{"text":" false"}}
+{"atMs":5400.408699999971,"event":"token","data":{"text":"\n"}}
+{"atMs":5421.1924,"event":"token","data":{"text":"}"}}
+{"atMs":5438.016000000003,"event":"done","data":{}}

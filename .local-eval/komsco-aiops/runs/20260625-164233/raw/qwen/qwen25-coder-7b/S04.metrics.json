@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S04",
+  "scenarioTitle": "Linux/Windows/OCP 도구 선택",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:14.017Z",
+  "finishedAt": "2026-06-25T07:51:22.672Z",
+  "totalMs": 8654.561999999976,
+  "charCount": 1588,
+  "estimatedTokens": 543,
+  "estimatedTps": 62.74147669171491,
+  "eventCount": 702
+}

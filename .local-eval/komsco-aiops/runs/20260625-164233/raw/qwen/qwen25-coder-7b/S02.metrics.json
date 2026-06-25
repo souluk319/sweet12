@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S02",
+  "scenarioTitle": "Evidence 기반 RCA",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:03.251Z",
+  "finishedAt": "2026-06-25T07:51:08.564Z",
+  "totalMs": 5313.169500000018,
+  "charCount": 1037,
+  "estimatedTokens": 354,
+  "estimatedTps": 66.62689756086245,
+  "eventCount": 420
+}

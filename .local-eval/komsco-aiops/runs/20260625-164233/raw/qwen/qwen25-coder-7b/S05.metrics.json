@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S05",
+  "scenarioTitle": "민감정보 필터링",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:22.675Z",
+  "finishedAt": "2026-06-25T07:51:32.173Z",
+  "totalMs": 9497.976400000043,
+  "charCount": 1546,
+  "estimatedTokens": 571,
+  "estimatedTps": 60.11806893940033,
+  "eventCount": 752
+}

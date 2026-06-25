@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOMSCO AIOps LLM 로컬 프록시 테스트 결과서</title>
+  <style>
+    :root {
+      --navy: #17375f;
+      --blue: #2f7ec9;
+      --teal: #37b2a8;
+      --red: #e83b3f;
+      --ink: #263244;
+      --muted: #68758a;
+      --line: #d9e2ec;
+      --soft: #f5f8fb;
+      --blue-soft: #eaf6ff;
+      --teal-soft: #e7fbf6;
+      --red-soft: #fff1f1;
+      --gold: #f2b705;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eef3f8;
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .deck {
+      display: grid;
+      gap: 28px;
+      padding: 28px;
+    }
+
+    .page {
+      width: min(1440px, 100%);
+      min-height: 810px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(23, 55, 95, 0.12);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .page-inner {
+      padding: 52px 68px 44px;
+    }
+
+    .title {
+      margin: 0;
+      color: var(--navy);
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 1.08;
+    }
+
+    .subtitle {
+      margin: 18px 0 0;
+      color: var(--blue);
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .rule {
+      height: 5px;
+      background: var(--blue);
+      margin: 18px -68px 18px;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .meta-card {
+      border: 1px solid var(--line);
+      background: var(--soft);
+      border-radius: 10px;
+      padding: 16px 18px;
+      min-height: 86px;
+    }
+
+    .meta-card .k {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .meta-card .v {
+      margin-top: 7px;
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: #f7fafc;
+      border-radius: 999px;
+      padding: 8px 18px;
+      color: var(--ink);
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .pill span {
+      color: var(--blue);
+      padding: 0 7px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .plan-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      min-height: 565px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+
+    .plan-card::before {
+      content: "";
+      display: block;
+      height: 6px;
+      background: var(--blue);
+    }
+
+    .plan-card.teal::before { background: var(--teal); }
+    .plan-card.red::before { background: var(--red); }
+
+    .plan-card header {
+      padding: 18px 20px 8px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .plan-card h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .badge {
+      display: inline-flex;
+      border-radius: 999px;
+      padding: 7px 13px;
+      background: var(--red);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .info-box {
+      margin: 8px 20px;
+      padding: 12px 14px;
+      background: var(--soft);
+      border: 1px solid #e3ebf3;
+      border-radius: 6px;
+    }
+
+    .info-box .label {
+      display: block;
+      color: #68758a;
+      font-size: 15px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    .info-box strong {
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.42;
+    }
+
+    .plan-body {
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
+      padding: 18px 20px 20px;
+    }
+
+    .section-mark {
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 20px;
+      margin: 0 0 6px;
+    }
+
+    .section-mark.warn {
+      color: var(--red);
+      margin-top: 18px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+      color: #566174;
+      font-size: 17px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 18px;
+    }
+
+    .comparison th,
+    .comparison td {
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      vertical-align: middle;
+      text-align: center;
+      word-break: keep-all;
+    }
+
+    .comparison th {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .comparison th:first-child {
+      background: var(--navy);
+      width: 17%;
+    }
+
+    .comparison th.blue { background: var(--blue); }
+    .comparison th.teal { background: var(--teal); }
+    .comparison th.red { background: var(--red); }
+
+    .comparison td:first-child {
+      color: var(--navy);
+      background: #f6f9fc;
+      text-align: left;
+      font-weight: 900;
+    }
+
+    .comparison tr:nth-child(even) td:not(:first-child) {
+      background: #f7f9fb;
+    }
+
+    .callouts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .callout {
+      border: 1px solid var(--line);
+      background: #f8fbfe;
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .callout.red {
+      border-color: #ffadad;
+      background: var(--red-soft);
+      color: #c6262b;
+    }
+
+    .score-layout {
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .score-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 18px;
+    }
+
+    .score-table th,
+    .score-table td {
+      border: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: center;
+    }
+
+    .score-table th {
+      color: #fff;
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .score-table th.metric {
+      width: 25%;
+      background: var(--navy);
+      text-align: left;
+    }
+
+    .score-table th.blue { background: var(--blue); }
+    .score-table th.teal { background: var(--teal); }
+    .score-table th.red { background: var(--red); }
+
+    .score-table td:first-child {
+      text-align: left;
+      color: var(--navy);
+      background: #f6f9fc;
+      font-weight: 900;
+    }
+
+    .stars {
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .stars.blue { color: var(--blue); }
+    .stars.teal { color: var(--teal); }
+    .stars.red { color: var(--red); }
+
+    .recommendation {
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+      border: 1px solid #91cbff;
+      background: var(--blue-soft);
+      min-height: 162px;
+    }
+
+    .recommendation.teal {
+      border-color: #7ee7d8;
+      background: var(--teal-soft);
+    }
+
+    .recommendation.red {
+      border-color: #ffadad;
+      background: var(--red-soft);
+    }
+
+    .recommendation h3 {
+      margin: 0 0 10px;
+      color: var(--blue);
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .recommendation.teal h3 { color: #257b78; }
+    .recommendation.red h3 { color: #c6282d; }
+
+    .recommendation ul {
+      color: #2e394a;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .footnote {
+      margin-top: 22px;
+      padding: 12px 18px;
+      border: 1px solid var(--line);
+      background: #f8fbfe;
+      border-radius: 8px;
+      color: #53627a;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .result-card {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 168px;
+    }
+
+    .result-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.25;
+    }
+
+    .result-card .model {
+      color: var(--muted);
+      min-height: 42px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid #edf2f7;
+      padding-top: 8px;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .metric-row b {
+      color: var(--navy);
+      font-size: 15px;
+    }
+
+    .wide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      margin-top: 16px;
+    }
+
+    .wide-table th,
+    .wide-table td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .wide-table th {
+      background: var(--navy);
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .wide-table td.num,
+    .wide-table th.num {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .notice {
+      border: 1px solid #f4c36a;
+      background: #fff8e8;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 16px;
+      color: #654a0d;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .appendix-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+      background: #fff;
+    }
+
+    .box h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    code {
+      color: #17375f;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 0.92em;
+      background: #f2f6fa;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+      .deck {
+        padding: 0;
+        gap: 0;
+      }
+      .page {
+        width: 297mm;
+        min-height: 210mm;
+        border-radius: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 920px) {
+      .deck { padding: 14px; }
+      .page-inner { padding: 32px 24px; }
+      .rule { margin-left: -24px; margin-right: -24px; }
+      .title { font-size: 34px; }
+      .subtitle { font-size: 18px; }
+      .cards,
+      .meta,
+      .score-layout,
+      .result-grid,
+      .appendix-grid,
+      .callouts {
+        grid-template-columns: 1fr;
+      }
+      .comparison,
+      .score-table,
+      .wide-table {
+        font-size: 14px;
+      }
+      .stars {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">KOMSCO AIOps LLM<br>로컬 프록시 테스트 결과서</h1>
+        <p class="subtitle">GB10 2노드 후보 구성을 SWEET12 로컬 모델로 재현 검증</p>
+        <div class="rule"></div>
+
+        <div class="meta">
+          <div class="meta-card">
+            <div class="k">Run ID</div>
+            <div class="v">20260625-164233</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">Source</div>
+            <div class="v">PDF p.11-13 구성안</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">Harness</div>
+            <div class="v">SWEET12 API</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">Decision</div>
+            <div class="v">2안 Gemma Active-Active</div>
+          </div>
+        </div>
+
+        <div class="center" style="margin-top: 28px;">
+          <div class="pill">비교 기준: 한국어 품질 <span>|</span> 복합 RCA 품질 <span>|</span> Tool Plan <span>|</span> 운영 단순성 <span>|</span> HA</div>
+        </div>
+
+        <div class="cards">
+          <article class="plan-card">
+            <header>
+              <h2>1안 혼합형</h2>
+            </header>
+            <div class="info-box">
+              <span class="label">로컬 테스트 매핑</span>
+              <strong>Gemma 4 12B + Qwen2.5/DeepSeek 역할 분리</strong>
+            </div>
+            <div class="info-box">
+              <span class="label">실측 요약</span>
+              <strong>Gemma 39.54 tok/s · Qwen fallback 63.89 tok/s · DeepSeek 49.36 tok/s</strong>
+            </div>
+            <div class="plan-body">
+              <p class="section-mark">+ 주요 장점</p>
+              <ul>
+                <li>RCA, Tool Plan, 한국어 보고서 역할을 모델별로 분리 가능</li>
+                <li>Qwen fallback은 속도와 JSON 구조화에서 양호</li>
+                <li>DeepSeek는 reasoning 비교군으로 활용 가능</li>
+              </ul>
+              <p class="section-mark warn">- 주의 / 한계</p>
+              <ul>
+                <li>Qwen3.5 AWQ 두 프로필은 vLLM health check 실패</li>
+                <li>라우팅 정책, 모니터링, 장애 시 품질 저하 관리가 필요</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card teal">
+            <header>
+              <h2>2안 Gemma<br>Active-Active</h2>
+            </header>
+            <div class="info-box">
+              <span class="label">로컬 테스트 매핑</span>
+              <strong>Gemma 4 12B IT QAT 동일 모델 2노드 가정</strong>
+            </div>
+            <div class="info-box">
+              <span class="label">실측 요약</span>
+              <strong>평균 16.5s · 39.54 tok/s · 한국어/RCA/Tool Plan 전반 양호</strong>
+            </div>
+            <div class="plan-body">
+              <p class="section-mark">+ 주요 장점</p>
+              <ul>
+                <li>동일 모델 2노드 운영으로 HA와 운영 단순성이 가장 방어 가능</li>
+                <li>Gemma 26B A4B 후보에 가장 가까운 로컬 프록시</li>
+                <li>한국어 보고서와 운영 질의에서 안정적인 문체</li>
+              </ul>
+              <p class="section-mark warn">- 주의 / 한계</p>
+              <ul>
+                <li>Gemma 12B는 로딩과 VRAM 여유율 검증이 중요</li>
+                <li>GB10에서는 Gemma 26B A4B 실제 처리량 재측정 필요</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card red">
+            <header>
+              <h2>3안 대형모델 결합형</h2>
+              <span class="badge">제한</span>
+            </header>
+            <div class="info-box">
+              <span class="label">로컬 테스트 매핑</span>
+              <strong>Qwen Tool Plan -&gt; Gemma 12B 최종 RCA 순차 결합</strong>
+            </div>
+            <div class="info-box">
+              <span class="label">실측 요약</span>
+              <strong>18.4s · 44.94 tok/s · Evidence 일치율은 개선, 운영 복잡도 감점</strong>
+            </div>
+            <div class="plan-body">
+              <p class="section-mark">+ 주요 장점</p>
+              <ul>
+                <li>복합 RCA에서 중간 계획과 최종 보고서 분리 가능</li>
+                <li>Evidence 일치율은 단독 모델 대비 강점</li>
+              </ul>
+              <p class="section-mark warn">- 주의 / 한계</p>
+              <ul>
+                <li>동시 2노드 결합이 아닌 순차 오케스트레이션</li>
+                <li>상시 결합은 지연과 장애면을 키우므로 PoC/복합 RCA에 제한 권장</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="footnote">* 본 테스트는 GB10 대형 모델 직접 실측이 아니라 동일 계열 로컬 스윗스팟 모델 기반 프록시 테스트입니다.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">구성안 상세 비교표</h1>
+        <p class="subtitle">로컬 실측 모델, 예상 운영 특성, 실패 기록을 표로 비교</p>
+        <div class="rule"></div>
+
+        <table class="comparison">
+          <thead>
+            <tr>
+              <th>항목</th>
+              <th class="blue">1안 혼합형</th>
+              <th class="teal">2안 Gemma Active-Active</th>
+              <th class="red">3안 대형모델 결합</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>테스트 모델</td>
+              <td>Gemma 4 12B + Qwen2.5 Coder + DeepSeek R1</td>
+              <td>Gemma 4 12B IT QAT 동일 모델 2노드 가정</td>
+              <td>Qwen2.5 Coder -&gt; Gemma 4 12B 순차 결합</td>
+            </tr>
+            <tr>
+              <td>GB10 후보 프록시</td>
+              <td>역할 분리형 LLM 라우팅</td>
+              <td>Gemma 4 26B A4B Active-Active 프록시</td>
+              <td>Gemma+Qwen 결합형 프록시</td>
+            </tr>
+            <tr>
+              <td>단일 요청 출력 속도</td>
+              <td>Qwen fallback 63.89 tok/s, DeepSeek 49.36 tok/s</td>
+              <td>Gemma 12B 39.54 tok/s</td>
+              <td>순차 결합 44.94 tok/s, 총 18.4s</td>
+            </tr>
+            <tr>
+              <td>서비스 처리량 / 동시성</td>
+              <td>라우팅 비율에 따라 유연하나 운영 정책 필요</td>
+              <td>동일 모델 2노드 독립 요청 처리에 가장 단순</td>
+              <td>모델 수용량/결합 검증 목적, 동시 처리량 이점 제한</td>
+            </tr>
+            <tr>
+              <td>한국어 품질</td>
+              <td>높음</td>
+              <td>높음</td>
+              <td>최종 Gemma 보고서 기준 높음</td>
+            </tr>
+            <tr>
+              <td>복합 RCA 품질</td>
+              <td>상</td>
+              <td>상</td>
+              <td>상, Evidence 일치율 강점</td>
+            </tr>
+            <tr>
+              <td>운영 복잡도</td>
+              <td>중 - 라우터/장애 정책 필요</td>
+              <td>하 - 동일 모델 운영</td>
+              <td>상 - 두 단계 실패면과 지연 증가</td>
+            </tr>
+            <tr>
+              <td>장애 대응성</td>
+              <td>기능 저하형 Failover</td>
+              <td>동일 모델 Active-Active로 무중단 우회 가정</td>
+              <td>결합 구성과 오케스트레이터 의존</td>
+            </tr>
+            <tr>
+              <td>적합한 용도</td>
+              <td>역할 분리 운영형</td>
+              <td>주력 운영형 / HA형</td>
+              <td>복합 RCA PoC / 검증형</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callouts">
+          <div class="callout">1안은 모델별 강점 분리가 가능하나 Qwen3.5 런타임 복구가 선행되어야 함</div>
+          <div class="callout">2안은 운영 단순성, HA, 품질 방어력이 가장 균형적</div>
+          <div class="callout red">3안은 상시 서비스가 아니라 복합 RCA 요청에 제한 적용</div>
+        </div>
+
+        <p class="footnote">* tok/s는 하네스가 SSE 응답 길이와 총 시간을 기반으로 추정한 로컬 프록시 값입니다. GB10 PoC에서 동시성 1/4/8, failover RTO, KV cache 메모리 여유율을 재측정해야 합니다.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">선정 판단표 및 적용 권장</h1>
+        <p class="subtitle">점수는 로컬 SWEET12 실측 결과 기반 5점 만점 상대평가입니다. 별점이 높을수록 유리합니다.</p>
+        <div class="rule"></div>
+
+        <div class="score-layout">
+          <table class="score-table">
+            <thead>
+              <tr>
+                <th class="metric">평가 항목</th>
+                <th class="blue">Gemma 12B</th>
+                <th class="teal">Qwen2.5 Coder<br><small>(Qwen3.5 대체)</small></th>
+                <th class="red">DeepSeek R1</th>
+                <th class="red">결합형</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>한국어 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★★</td></tr>
+              <tr><td>단일 요청 출력 속도</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
+              <tr><td>복합 RCA 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★★</td></tr>
+              <tr><td>Tool Plan 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★☆</td></tr>
+              <tr><td>JSON Schema 유효율</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
+              <tr><td>Evidence 일치율</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★☆</td><td class="stars red">★★★☆☆</td><td class="stars red">★★★★★</td></tr>
+              <tr><td>서비스 처리량 / 동시성</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
+              <tr><td>운영 단순성</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★☆☆☆</td></tr>
+              <tr><td>확장성 / HA</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★☆</td><td class="stars red">★★★★☆</td><td class="stars red">★★★☆☆</td></tr>
+              <tr><td>실운영 적합도</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★☆</td></tr>
+            </tbody>
+          </table>
+
+          <div>
+            <section class="recommendation">
+              <h3>2안 Gemma Active-Active 권장</h3>
+              <ul>
+                <li>Gemma 12B가 품질, RCA, Tool Plan을 모두 방어</li>
+                <li>동일 모델 2노드 운영으로 장애 대응과 운영 단순성이 가장 명확</li>
+                <li>GB10에서는 Gemma 26B A4B 실측으로 최종 확정</li>
+              </ul>
+            </section>
+            <section class="recommendation teal">
+              <h3>1안 혼합형 병행 검토</h3>
+              <ul>
+                <li>Qwen/DeepSeek가 특정 업무에서 강점이 분리될 때 적용</li>
+                <li>Qwen3.5 AWQ 런타임 복구와 라우팅 정책 검증 필요</li>
+              </ul>
+            </section>
+            <section class="recommendation red">
+              <h3>3안 결합형 제한 적용</h3>
+              <ul>
+                <li>Evidence 일치율은 좋지만 순차 지연과 운영 복잡도가 큼</li>
+                <li>기술 검증 또는 복합 RCA 고난도 요청에 한정 권고</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <p class="footnote">PoC 체크포인트: Gemma 26B A4B 실제 처리량, 동시성 1/4/8, Failover RTO, 네트워크 지연, KV cache 포함 메모리 여유율, Tool Call 감사 정책</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">실제 테스트 수행 절차</h1>
+        <p class="subtitle">SWEET12 API만 사용해 모델 전환, health check, SSE 응답 수집, 증적 저장을 자동화</p>
+        <div class="rule"></div>
+
+        <div class="meta">
+          <div class="meta-card">
+            <div class="k">Harness</div>
+            <div class="v">run-komsco-aiops-eval.mjs</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">API Base</div>
+            <div class="v">127.0.0.1:8788</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">Bench API</div>
+            <div class="v">Not used</div>
+          </div>
+          <div class="meta-card">
+            <div class="k">Evidence</div>
+            <div class="v">125 files / SHA256</div>
+          </div>
+        </div>
+
+        <table class="wide-table" style="font-size: 17px;">
+          <thead>
+            <tr>
+              <th style="width: 13%;">단계</th>
+              <th style="width: 23%;">실제 호출/API</th>
+              <th>수행 내용</th>
+              <th style="width: 28%;">저장 증적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Preflight</td>
+              <td><code>GET /api/runtime/status</code></td>
+              <td>테스트 시작 전 active model, endpoint, runtime log 확인</td>
+              <td><code>preflight/runtime-before-stop.json</code></td>
+            </tr>
+            <tr>
+              <td>Cleanup</td>
+              <td><code>POST /api/runtime/stop</code></td>
+              <td>기존 Ollama/vLLM 프로세스 정리 후 깨끗한 상태에서 시작</td>
+              <td><code>preflight/cleanup-results.json</code></td>
+            </tr>
+            <tr>
+              <td>Inventory</td>
+              <td><code>GET /api/models</code></td>
+              <td>모델 registry, 설치 여부, store path, runtime 타입 확인</td>
+              <td><code>preflight/models-response.json</code></td>
+            </tr>
+            <tr>
+              <td>Port/GPU</td>
+              <td>PowerShell, <code>nvidia-smi</code></td>
+              <td><code>11434</code>, <code>8080</code>, <code>8788</code>, <code>5173</code> 포트와 GPU 상태 기록</td>
+              <td><code>preflight/ports-before.txt</code>, <code>gpu-before.txt</code></td>
+            </tr>
+            <tr>
+              <td>Switch</td>
+              <td><code>POST /api/runtime/switch</code></td>
+              <td>후보 모델을 우선순위대로 로딩하고 health check 성공 모델을 선택</td>
+              <td><code>raw/&lt;suite&gt;/&lt;model&gt;/switch-result.json</code></td>
+            </tr>
+            <tr>
+              <td>Chat</td>
+              <td><code>POST /api/chat</code></td>
+              <td>S01-S06 동일 프롬프트 실행, SSE <code>token</code> 이벤트 수집</td>
+              <td><code>prompt.md</code>, <code>response.md</code>, <code>stream-events.ndjson</code>, <code>metrics.json</code></td>
+            </tr>
+            <tr>
+              <td>Hybrid</td>
+              <td><code>switch Qwen</code> -&gt; <code>chat</code> -&gt; <code>switch Gemma</code> -&gt; <code>chat</code></td>
+              <td>Qwen이 중간 Tool Plan을 만들고 Gemma 12B가 최종 한국어 RCA 작성</td>
+              <td><code>raw/hybrid-qwen-to-gemma/</code></td>
+            </tr>
+            <tr>
+              <td>Finalize</td>
+              <td><code>POST /api/runtime/stop</code></td>
+              <td>모든 테스트 후 LLM runtime unload, report/CSV/SHA256 생성</td>
+              <td><code>evidence-manifest.sha256</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="notice">
+          재현 명령: <code>node .local-eval\komsco-aiops\harness\run-komsco-aiops-eval.mjs</code>. 실행 결과는 <code>.local-eval\komsco-aiops\runs\20260625-164233</code> 아래에 저장했다.
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">시나리오와 채점 기준</h1>
+        <p class="subtitle">동일 프롬프트, 동일 파라미터, 동일 산식으로 모델별 응답을 비교</p>
+        <div class="rule"></div>
+
+        <table class="wide-table" style="font-size: 16px;">
+          <thead>
+            <tr>
+              <th style="width: 7%;">ID</th>
+              <th style="width: 18%;">시나리오</th>
+              <th style="width: 10%;" class="num">Temp</th>
+              <th style="width: 12%;" class="num">Max tokens</th>
+              <th>평가 목적</th>
+              <th style="width: 24%;">핵심 확인 항목</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S01</td>
+              <td>한국어 운영 질의</td>
+              <td class="num">0.2</td>
+              <td class="num">1000</td>
+              <td>CrashLoopBackOff 대응 순서와 OCP 명령</td>
+              <td><code>oc get</code>, <code>oc describe</code>, logs, rollout, 안전/위험 조치 구분</td>
+            </tr>
+            <tr>
+              <td>S02</td>
+              <td>Evidence 기반 RCA</td>
+              <td class="num">0.2</td>
+              <td class="num">1400</td>
+              <td>DB 인증 실패, Secret 변경, rollout 이력 기반 RCA</td>
+              <td><code>payment-api</code>, <code>payment-db-secret</code>, <code>DB_SECRET_NAME</code>, 추정/확정 구분</td>
+            </tr>
+            <tr>
+              <td>S03</td>
+              <td>Tool Plan JSON</td>
+              <td class="num">0.0</td>
+              <td class="num">900</td>
+              <td>OCP 503 장애 조사 계획의 JSON Schema 유효성</td>
+              <td><code>environment</code>, <code>riskLevel</code>, <code>steps</code>, <code>command</code>, <code>expectedEvidence</code></td>
+            </tr>
+            <tr>
+              <td>S04</td>
+              <td>OS/OCP 도구 선택</td>
+              <td class="num">0.2</td>
+              <td class="num">1200</td>
+              <td>Linux, Windows, OpenShift 환경별 명령 분기</td>
+              <td><code>top</code>, <code>Get-Process</code>, <code>oc adm top</code>, 선택 이유</td>
+            </tr>
+            <tr>
+              <td>S05</td>
+              <td>민감정보 필터링</td>
+              <td class="num">0.2</td>
+              <td class="num">1100</td>
+              <td>password/token/secret 로그 마스킹과 감사 항목</td>
+              <td>원문 비밀값 노출 시 최대 2점 제한</td>
+            </tr>
+            <tr>
+              <td>S06</td>
+              <td>장문 보고서</td>
+              <td class="num">0.2</td>
+              <td class="num">1400</td>
+              <td>운영자용 상세 RCA와 임원용 5줄 요약</td>
+              <td>대상 독자별 문체, rollback, secret validation, 재발 방지책</td>
+            </tr>
+            <tr>
+              <td>S07</td>
+              <td>Qwen -&gt; Gemma 결합형</td>
+              <td class="num">0.0 / 0.2</td>
+              <td class="num">1000 / 1500</td>
+              <td>중간 Tool Plan과 최종 RCA 분리 효과</td>
+              <td>Qwen intermediate, Gemma final, Evidence 일치율, 순차 지연</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="appendix-grid">
+          <section class="box">
+            <h3>메트릭 산출</h3>
+            <ul>
+              <li>총 응답 시간: <code>/api/chat</code> 요청 시작부터 SSE stream 종료까지</li>
+              <li>TTFT: 첫 <code>token</code> 또는 <code>thinking</code> 이벤트 도착 시각</li>
+              <li>추정 tokens: ASCII 단어, 한글 글자, 기타 문자를 조합한 하네스 근사값</li>
+              <li>추정 tok/s: <code>estimatedTokens / totalSeconds</code></li>
+            </ul>
+          </section>
+          <section class="box">
+            <h3>점수 산식</h3>
+            <ul>
+              <li>시나리오별 필수 키워드, 구조화 여부, 한국어 포함 여부, 응답 길이 검사</li>
+              <li>S03은 JSON parse와 Tool Plan 필드 충족 여부를 별도 평가</li>
+              <li>운영 단순성은 runtime 종류, secondary store, switch 안정성을 반영</li>
+              <li>결합형은 Evidence 일치율을 가산하되 지연과 복잡도를 감점</li>
+            </ul>
+          </section>
+        </div>
+
+        <p class="footnote">토큰 수와 tok/s는 로컬 하네스의 상대 비교용 추정값입니다. GB10 PoC에서는 실제 추론 엔진의 tokenizer, TTFT p50/p95, 동시성 처리량을 별도로 확정해야 합니다.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">실측 모델별 결과 요약</h1>
+        <p class="subtitle">S01-S06 단독 테스트와 S07 순차 결합형의 핵심 메트릭</p>
+        <div class="rule"></div>
+
+        <div class="result-grid">
+          <article class="result-card">
+            <h3>Gemma 4 12B</h3>
+            <div class="model"><code>gemma4:12b-it-qat</code></div>
+            <div class="metric-row"><span>종합</span><b>4.65 / 5</b></div>
+            <div class="metric-row"><span>평균 응답</span><b>16.5s</b></div>
+            <div class="metric-row"><span>추정 속도</span><b>39.54 tok/s</b></div>
+          </article>
+          <article class="result-card">
+            <h3>Qwen2.5 Coder</h3>
+            <div class="model"><code>qwen2.5-coder:7b</code><br>Qwen3.5 fallback</div>
+            <div class="metric-row"><span>종합</span><b>4.65 / 5</b></div>
+            <div class="metric-row"><span>평균 응답</span><b>6.8s</b></div>
+            <div class="metric-row"><span>추정 속도</span><b>63.89 tok/s</b></div>
+          </article>
+          <article class="result-card">
+            <h3>DeepSeek R1</h3>
+            <div class="model"><code>deepseek-r1:7b</code></div>
+            <div class="metric-row"><span>종합</span><b>4.35 / 5</b></div>
+            <div class="metric-row"><span>평균 응답</span><b>11.4s</b></div>
+            <div class="metric-row"><span>추정 속도</span><b>49.36 tok/s</b></div>
+          </article>
+          <article class="result-card">
+            <h3>Gemma E4B</h3>
+            <div class="model"><code>gemma4:e4b</code><br>속도 기준선</div>
+            <div class="metric-row"><span>종합</span><b>3.93 / 5</b></div>
+            <div class="metric-row"><span>평균 응답</span><b>8.3s</b></div>
+            <div class="metric-row"><span>추정 속도</span><b>75.14 tok/s</b></div>
+          </article>
+          <article class="result-card">
+            <h3>Qwen -&gt; Gemma</h3>
+            <div class="model"><code>qwen2.5-coder:7b</code> -&gt; <code>gemma4:12b-it-qat</code></div>
+            <div class="metric-row"><span>종합</span><b>4.01 / 5</b></div>
+            <div class="metric-row"><span>총 소요</span><b>18.4s</b></div>
+            <div class="metric-row"><span>추정 속도</span><b>44.94 tok/s</b></div>
+          </article>
+        </div>
+
+        <table class="wide-table">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>모델</th>
+              <th class="num">한국어</th>
+              <th class="num">RCA</th>
+              <th class="num">Tool Plan</th>
+              <th class="num">운영 단순성</th>
+              <th class="num">실운영 적합도</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gemma 대표</td>
+              <td>Gemma 4 12B IT QAT</td>
+              <td class="num">5.00</td>
+              <td class="num">5.00</td>
+              <td class="num">5.00</td>
+              <td class="num">4.30</td>
+              <td class="num">4.65</td>
+              <td>Gemma 26B A4B 프록시. 최종 권장안의 기준 모델.</td>
+            </tr>
+            <tr>
+              <td>Qwen 후보</td>
+              <td>Qwen2.5 Coder 7B</td>
+              <td class="num">4.79</td>
+              <td class="num">4.69</td>
+              <td class="num">4.70</td>
+              <td class="num">4.60</td>
+              <td class="num">4.65</td>
+              <td>Qwen3.5 AWQ 실패 후 fallback. 속도와 JSON은 양호.</td>
+            </tr>
+            <tr>
+              <td>DeepSeek 후보</td>
+              <td>DeepSeek R1 Distill Qwen 7B</td>
+              <td class="num">4.10</td>
+              <td class="num">4.55</td>
+              <td class="num">4.08</td>
+              <td class="num">4.60</td>
+              <td class="num">4.35</td>
+              <td>Reasoning 비교군. 민감정보 필터링과 Evidence 일치율은 감점.</td>
+            </tr>
+            <tr>
+              <td>결합형</td>
+              <td>Qwen2.5 Coder -&gt; Gemma 12B</td>
+              <td class="num">4.64</td>
+              <td class="num">4.73</td>
+              <td class="num">4.08</td>
+              <td class="num">2.20</td>
+              <td class="num">4.01</td>
+              <td>Evidence 일치율은 강점. 지연과 운영 복잡도 때문에 제한 적용.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="notice">
+          Qwen3.5 9B AWQ 및 QuantTrio Qwen3.5 9B AWQ는 vLLM endpoint <code>127.0.0.1:8080/v1/models</code> health check timeout으로 실측에서 제외했습니다. 이 실패 자체는 운영성 감점 근거입니다.
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <h1 class="title">증적 및 제출 파일</h1>
+        <p class="subtitle">원본 응답, 메트릭, 로그, SHA256 manifest까지 재현 가능한 로컬 증적</p>
+        <div class="rule"></div>
+
+        <div class="appendix-grid">
+          <section class="box">
+            <h3>주요 제출 산출물</h3>
+            <ul>
+              <li><a href="submission-report.md">submission-report.md</a> - 통합 제출본</li>
+              <li><a href="test-methodology.md">test-methodology.md</a> - 실제 테스트 수행 방법</li>
+              <li><a href="test-result-report.md">test-result-report.md</a> - 테스트 결과서</li>
+              <li><a href="scorecard.md">scorecard.md</a> - 선정 판단표</li>
+              <li><a href="../scoring/scorecard.csv">scorecard.csv</a> - 평가 점수 CSV</li>
+              <li><a href="gb10-application-proposal.md">gb10-application-proposal.md</a> - GB10 적용 제안서</li>
+              <li><a href="../evidence-manifest.sha256">evidence-manifest.sha256</a> - 파일별 SHA256</li>
+            </ul>
+          </section>
+
+          <section class="box">
+            <h3>실행 환경 기록</h3>
+            <ul>
+              <li>SWEET12 commit: <code>4ab893688e8a48247eff40c93bd7b35530b6d0fe</code></li>
+              <li>원본 PDF SHA256: <code>078657e7c8e589d793e9a84639e1810aaed2f7d2917f9fd7eb555191919b7f2d</code></li>
+              <li>런타임 방식: 모델을 하나씩 전환해 단독 실행</li>
+              <li>테스트 후 상태: SWEET12 runtime <code>idle</code>, active model 없음</li>
+            </ul>
+          </section>
+        </div>
+
+        <table class="wide-table">
+          <thead>
+            <tr>
+              <th>시나리오</th>
+              <th>설명</th>
+              <th>Gemma 12B</th>
+              <th>Qwen fallback</th>
+              <th>DeepSeek R1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S01</td>
+              <td>한국어 운영 질의</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S01.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S01.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S01.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S02</td>
+              <td>Evidence 기반 RCA</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S02.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S02.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S02.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S03</td>
+              <td>Tool Plan JSON</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S03.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S03.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S03.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S04</td>
+              <td>Linux/Windows/OCP 도구 선택</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S04.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S04.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S04.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S05</td>
+              <td>민감정보 필터링</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S05.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S05.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S05.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S06</td>
+              <td>장문 보고서 생성</td>
+              <td><a href="../raw/gemma/gemma4-12b-it-qat-secondary/S06.response.md">response</a></td>
+              <td><a href="../raw/qwen/qwen25-coder-7b/S06.response.md">response</a></td>
+              <td><a href="../raw/deepseek/deepseek-r1-7b/S06.response.md">response</a></td>
+            </tr>
+            <tr>
+              <td>S07</td>
+              <td>Qwen -&gt; Gemma 결합형</td>
+              <td colspan="3"><a href="../raw/hybrid-qwen-to-gemma/S07.intermediate-qwen.response.md">Qwen intermediate</a> · <a href="../raw/hybrid-qwen-to-gemma/S07.final-gemma.response.md">Gemma final</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="footnote">이 HTML은 원본 PDF p.11-13의 가로 슬라이드형 비교표 구조를 따르되, 로컬 실측 결과와 fallback/실패 기록을 반영한 제출용 요약본입니다.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

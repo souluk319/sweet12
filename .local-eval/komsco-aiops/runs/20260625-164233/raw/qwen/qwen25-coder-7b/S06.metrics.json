@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S06",
+  "scenarioTitle": "장문 보고서 생성",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:32.176Z",
+  "finishedAt": "2026-06-25T07:51:35.268Z",
+  "totalMs": 3090.1648999999743,
+  "charCount": 525,
+  "estimatedTokens": 189,
+  "estimatedTps": 61.161784602498585,
+  "eventCount": 241
+}

@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S05",
+  "scenarioTitle": "민감정보 필터링",
+  "modelId": "gemma4-12b-it-qat-secondary",
+  "displayName": "Gemma 4 12B IT QAT",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:43:58.712Z",
+  "finishedAt": "2026-06-25T07:44:14.752Z",
+  "totalMs": 16039.909599999999,
+  "charCount": 1760,
+  "estimatedTokens": 598,
+  "estimatedTps": 37.28200562925866,
+  "eventCount": 808
+}

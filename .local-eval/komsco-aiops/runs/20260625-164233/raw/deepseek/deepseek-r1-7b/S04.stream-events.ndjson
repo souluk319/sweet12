@@ -1,0 +1,1186 @@
+{"atMs":218.25390000001062,"event":"thinking","data":{"text":"\nAlright"}}
+{"atMs":228.84129999997094,"event":"thinking","data":{"text":","}}
+{"atMs":239.764899999951,"event":"thinking","data":{"text":" I"}}
+{"atMs":250.89919999998529,"event":"thinking","data":{"text":" need"}}
+{"atMs":261.91379999998026,"event":"thinking","data":{"text":" to"}}
+{"atMs":272.9307999999728,"event":"thinking","data":{"text":" help"}}
+{"atMs":283.9181999999564,"event":"thinking","data":{"text":" the"}}
+{"atMs":295.01639999996405,"event":"thinking","data":{"text":" user"}}
+{"atMs":306.0005999999121,"event":"thinking","data":{"text":" investigate"}}
+{"atMs":317.3222999999998,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":328.23869999998715,"event":"thinking","data":{"text":" usage"}}
+{"atMs":339.2912999999244,"event":"thinking","data":{"text":" spikes"}}
+{"atMs":350.20659999991767,"event":"thinking","data":{"text":" in"}}
+{"atMs":361.2674999999581,"event":"thinking","data":{"text":" three"}}
+{"atMs":372.3136999999406,"event":"thinking","data":{"text":" different"}}
+{"atMs":383.2770999999484,"event":"thinking","data":{"text":" environments"}}
+{"atMs":394.23789999994915,"event":"thinking","data":{"text":":"}}
+{"atMs":405.2969999999041,"event":"thinking","data":{"text":" R"}}
+{"atMs":416.51859999995213,"event":"thinking","data":{"text":"HEL"}}
+{"atMs":427.86349999997765,"event":"thinking","data":{"text":" server"}}
+{"atMs":439.04589999991003,"event":"thinking","data":{"text":","}}
+{"atMs":450.0015999999596,"event":"thinking","data":{"text":" Windows"}}
+{"atMs":463.2518999999156,"event":"thinking","data":{"text":" Server"}}
+{"atMs":474.078199999989,"event":"thinking","data":{"text":","}}
+{"atMs":485.0193999999901,"event":"thinking","data":{"text":" and"}}
+{"atMs":495.7572999999393,"event":"thinking","data":{"text":" Open"}}
+{"atMs":506.88139999995474,"event":"thinking","data":{"text":"Shift"}}
+{"atMs":517.6792000000132,"event":"thinking","data":{"text":" Pod"}}
+{"atMs":528.5558999999193,"event":"thinking","data":{"text":"."}}
+{"atMs":539.9582999999402,"event":"thinking","data":{"text":" The"}}
+{"atMs":550.8784999999916,"event":"thinking","data":{"text":" user"}}
+{"atMs":561.9120999999577,"event":"thinking","data":{"text":" wants"}}
+{"atMs":572.8515999999363,"event":"thinking","data":{"text":" me"}}
+{"atMs":583.9137999999803,"event":"thinking","data":{"text":" to"}}
+{"atMs":595.0788000000175,"event":"thinking","data":{"text":" come"}}
+{"atMs":605.952399999951,"event":"thinking","data":{"text":" up"}}
+{"atMs":616.9337999999989,"event":"thinking","data":{"text":" with"}}
+{"atMs":627.8754999999655,"event":"thinking","data":{"text":" five"}}
+{"atMs":638.8445999999531,"event":"thinking","data":{"text":" commands"}}
+{"atMs":650.3133999999845,"event":"thinking","data":{"text":" for"}}
+{"atMs":661.6266999999061,"event":"thinking","data":{"text":" each"}}
+{"atMs":672.6609000000171,"event":"thinking","data":{"text":" environment"}}
+{"atMs":683.702399999951,"event":"thinking","data":{"text":","}}
+{"atMs":694.6993999999249,"event":"thinking","data":{"text":" explain"}}
+{"atMs":705.5897999999579,"event":"thinking","data":{"text":" why"}}
+{"atMs":716.5853999999817,"event":"thinking","data":{"text":" they"}}
+{"atMs":727.6348999999464,"event":"thinking","data":{"text":"'re"}}
+{"atMs":738.45279999997,"event":"thinking","data":{"text":" chosen"}}
+{"atMs":749.5383999999613,"event":"thinking","data":{"text":","}}
+{"atMs":760.7687000000151,"event":"thinking","data":{"text":" list"}}
+{"atMs":771.6527999999234,"event":"thinking","data":{"text":" any"}}
+{"atMs":782.6355999999214,"event":"thinking","data":{"text":" risky"}}
+{"atMs":793.7455999999074,"event":"thinking","data":{"text":" or"}}
+{"atMs":804.7622999999439,"event":"thinking","data":{"text":" heavy"}}
+{"atMs":815.906799999997,"event":"thinking","data":{"text":" commands"}}
+{"atMs":826.6946999999927,"event":"thinking","data":{"text":" separately"}}
+{"atMs":837.7370999999112,"event":"thinking","data":{"text":","}}
+{"atMs":848.6599999999162,"event":"thinking","data":{"text":" and"}}
+{"atMs":859.8377999999793,"event":"thinking","data":{"text":" structure"}}
+{"atMs":870.7140999999829,"event":"thinking","data":{"text":" it"}}
+{"atMs":881.8325999999652,"event":"thinking","data":{"text":" all"}}
+{"atMs":892.8205999999773,"event":"thinking","data":{"text":" into"}}
+{"atMs":903.8696999999229,"event":"thinking","data":{"text":" a"}}
+{"atMs":914.9141999999993,"event":"thinking","data":{"text":" table"}}
+{"atMs":925.9090999999316,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":938.9860999999801,"event":"thinking","data":{"text":"First"}}
+{"atMs":949.6980999999214,"event":"thinking","data":{"text":","}}
+{"atMs":960.8071999999229,"event":"thinking","data":{"text":" I"}}
+{"atMs":971.8981999999378,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":982.6829999999609,"event":"thinking","data":{"text":" start"}}
+{"atMs":996.2086000000127,"event":"thinking","data":{"text":" by"}}
+{"atMs":1006.8928999999771,"event":"thinking","data":{"text":" thinking"}}
+{"atMs":1017.7407999999123,"event":"thinking","data":{"text":" about"}}
+{"atMs":1028.5183999999426,"event":"thinking","data":{"text":" what"}}
+{"atMs":1039.421399999992,"event":"thinking","data":{"text":" kind"}}
+{"atMs":1050.2452999999514,"event":"thinking","data":{"text":" of"}}
+{"atMs":1061.0346999999601,"event":"thinking","data":{"text":" commands"}}
+{"atMs":1071.830399999977,"event":"thinking","data":{"text":" are"}}
+{"atMs":1082.9155000000028,"event":"thinking","data":{"text":" useful"}}
+{"atMs":1093.9715999999316,"event":"thinking","data":{"text":" for"}}
+{"atMs":1104.798199999961,"event":"thinking","data":{"text":" monitoring"}}
+{"atMs":1115.8061999999918,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":1126.607299999916,"event":"thinking","data":{"text":" usage"}}
+{"atMs":1137.6313999999547,"event":"thinking","data":{"text":" in"}}
+{"atMs":1148.39169999992,"event":"thinking","data":{"text":" each"}}
+{"atMs":1159.4751999999862,"event":"thinking","data":{"text":" system"}}
+{"atMs":1170.1907999999821,"event":"thinking","data":{"text":"."}}
+{"atMs":1180.986900000018,"event":"thinking","data":{"text":" For"}}
+{"atMs":1192.112599999993,"event":"thinking","data":{"text":" R"}}
+{"atMs":1202.9020000000019,"event":"thinking","data":{"text":"HEL"}}
+{"atMs":1213.8009999999776,"event":"thinking","data":{"text":","}}
+{"atMs":1224.6204000000143,"event":"thinking","data":{"text":" which"}}
+{"atMs":1235.4015999999829,"event":"thinking","data":{"text":" is"}}
+{"atMs":1246.3639999999432,"event":"thinking","data":{"text":" based"}}
+{"atMs":1257.1807999999728,"event":"thinking","data":{"text":" on"}}
+{"atMs":1268.2693999999901,"event":"thinking","data":{"text":" CentOS"}}
+{"atMs":1279.278799999971,"event":"thinking","data":{"text":","}}
+{"atMs":1290.1594999999506,"event":"thinking","data":{"text":" I"}}
+{"atMs":1301.4915999999503,"event":"thinking","data":{"text":" know"}}
+{"atMs":1312.331200000015,"event":"thinking","data":{"text":" that"}}
+{"atMs":1323.3534999999683,"event":"thinking","data":{"text":" ps"}}
+{"atMs":1334.5217999999877,"event":"thinking","data":{"text":" and"}}
+{"atMs":1345.542599999928,"event":"thinking","data":{"text":" top"}}
+{"atMs":1356.512299999944,"event":"thinking","data":{"text":" are"}}
+{"atMs":1370.078899999964,"event":"thinking","data":{"text":" commonly"}}
+{"atMs":1382.2835000000196,"event":"thinking","data":{"text":" used"}}
+{"atMs":1393.0771999999415,"event":"thinking","data":{"text":" tools"}}
+{"atMs":1404.496999999974,"event":"thinking","data":{"text":"."}}
+{"atMs":1415.3636999999871,"event":"thinking","data":{"text":" So"}}
+{"atMs":1426.341299999971,"event":"thinking","data":{"text":","}}
+{"atMs":1437.2290999999968,"event":"thinking","data":{"text":" I"}}
+{"atMs":1447.985400000005,"event":"thinking","data":{"text":" can"}}
+{"atMs":1458.952399999951,"event":"thinking","data":{"text":" include"}}
+{"atMs":1475.121999999974,"event":"thinking","data":{"text":" '"}}
+{"atMs":1481.3493000000017,"event":"thinking","data":{"text":"ps"}}
+{"atMs":1492.781799999997,"event":"thinking","data":{"text":" -"}}
+{"atMs":1504.17089999991,"event":"thinking","data":{"text":"ef"}}
+{"atMs":1517.2810999999056,"event":"thinking","data":{"text":" |"}}
+{"atMs":1529.1882999999216,"event":"thinking","data":{"text":" grep"}}
+{"atMs":1540.3366999999853,"event":"thinking","data":{"text":" -"}}
+{"atMs":1551.5573999999324,"event":"thinking","data":{"text":"i"}}
+{"atMs":1562.8699999999953,"event":"thinking","data":{"text":" \""}}
+{"atMs":1574.139599999995,"event":"thinking","data":{"text":"cpu"}}
+{"atMs":1585.158999999985,"event":"thinking","data":{"text":"\"'"}}
+{"atMs":1596.1681999999564,"event":"thinking","data":{"text":" to"}}
+{"atMs":1607.1407999999356,"event":"thinking","data":{"text":" list"}}
+{"atMs":1618.2729999999283,"event":"thinking","data":{"text":" running"}}
+{"atMs":1629.5506999999052,"event":"thinking","data":{"text":" processes"}}
+{"atMs":1640.6124999999302,"event":"thinking","data":{"text":" using"}}
+{"atMs":1651.5819999999367,"event":"thinking","data":{"text":" CPUs"}}
+{"atMs":1662.5647999999346,"event":"thinking","data":{"text":" over"}}
+{"atMs":1673.532899999991,"event":"thinking","data":{"text":" a"}}
+{"atMs":1684.6871999999275,"event":"thinking","data":{"text":" threshold"}}
+{"atMs":1695.7058999999426,"event":"thinking","data":{"text":" and"}}
+{"atMs":1706.6461000000127,"event":"thinking","data":{"text":" '"}}
+{"atMs":1717.735699999961,"event":"thinking","data":{"text":"top"}}
+{"atMs":1728.6726999999955,"event":"thinking","data":{"text":"'"}}
+{"atMs":1739.7907999999588,"event":"thinking","data":{"text":" with"}}
+{"atMs":1750.7689999999711,"event":"thinking","data":{"text":" different"}}
+{"atMs":1761.7179999999935,"event":"thinking","data":{"text":" intervals"}}
+{"atMs":1772.8606000000145,"event":"thinking","data":{"text":" to"}}
+{"atMs":1784.0310999999056,"event":"thinking","data":{"text":" monitor"}}
+{"atMs":1795.0660999999382,"event":"thinking","data":{"text":" overall"}}
+{"atMs":1806.1291999999667,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":1817.154899999965,"event":"thinking","data":{"text":" usage"}}
+{"atMs":1828.2646999999415,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":1839.5801999999676,"event":"thinking","data":{"text":"Next"}}
+{"atMs":1850.6224999999395,"event":"thinking","data":{"text":","}}
+{"atMs":1861.6973999999464,"event":"thinking","data":{"text":" for"}}
+{"atMs":1886.4732000000076,"event":"thinking","data":{"text":" Windows"}}
+{"atMs":1886.4759999999078,"event":"thinking","data":{"text":" Server"}}
+{"atMs":1894.8474999999162,"event":"thinking","data":{"text":","}}
+{"atMs":1909.7320999999065,"event":"thinking","data":{"text":" since"}}
+{"atMs":1927.1628999999957,"event":"thinking","data":{"text":" it"}}
+{"atMs":1939.4196999999695,"event":"thinking","data":{"text":"'s"}}
+{"atMs":1954.1071999999695,"event":"thinking","data":{"text":" an"}}
+{"atMs":1968.6779999999562,"event":"thinking","data":{"text":" Active"}}
+{"atMs":1983.3659999999218,"event":"thinking","data":{"text":" Directory"}}
+{"atMs":1997.8556000000099,"event":"thinking","data":{"text":" environment"}}
+{"atMs":2010.8962999999058,"event":"thinking","data":{"text":","}}
+{"atMs":2023.3766999999061,"event":"thinking","data":{"text":" listing"}}
+{"atMs":2037.7700999999652,"event":"thinking","data":{"text":" all"}}
+{"atMs":2051.67089999991,"event":"thinking","data":{"text":" services"}}
+{"atMs":2063.3323999999557,"event":"thinking","data":{"text":" might"}}
+{"atMs":2074.3523999999743,"event":"thinking","data":{"text":" be"}}
+{"atMs":2085.2208999999566,"event":"thinking","data":{"text":" important"}}
+{"atMs":2096.0445999999065,"event":"thinking","data":{"text":"."}}
+{"atMs":2106.9409999999916,"event":"thinking","data":{"text":" Using"}}
+{"atMs":2117.8005999999586,"event":"thinking","data":{"text":" '"}}
+{"atMs":2128.6415999999736,"event":"thinking","data":{"text":"services"}}
+{"atMs":2139.418699999922,"event":"thinking","data":{"text":".m"}}
+{"atMs":2150.3585999999195,"event":"thinking","data":{"text":"sc"}}
+{"atMs":2161.5283000000054,"event":"thinking","data":{"text":"'"}}
+{"atMs":2172.5498999999836,"event":"thinking","data":{"text":" or"}}
+{"atMs":2183.285900000017,"event":"thinking","data":{"text":" the"}}
+{"atMs":2194.1759999999776,"event":"thinking","data":{"text":" command"}}
+{"atMs":2204.869799999986,"event":"thinking","data":{"text":" line"}}
+{"atMs":2215.8234999999404,"event":"thinking","data":{"text":" equivalent"}}
+{"atMs":2226.6078999999445,"event":"thinking","data":{"text":" '"}}
+{"atMs":2237.619399999967,"event":"thinking","data":{"text":"services"}}
+{"atMs":2248.5029999999097,"event":"thinking","data":{"text":" /"}}
+{"atMs":2259.2485999999335,"event":"thinking","data":{"text":"all"}}
+{"atMs":2270.6091000000015,"event":"thinking","data":{"text":"'"}}
+{"atMs":2281.4189999999944,"event":"thinking","data":{"text":" can"}}
+{"atMs":2292.34309999994,"event":"thinking","data":{"text":" help"}}
+{"atMs":2303.1915999999037,"event":"thinking","data":{"text":" identify"}}
+{"atMs":2313.9645999999484,"event":"thinking","data":{"text":" which"}}
+{"atMs":2324.8351999999722,"event":"thinking","data":{"text":" services"}}
+{"atMs":2335.872699999949,"event":"thinking","data":{"text":" are"}}
+{"atMs":2346.8429999999935,"event":"thinking","data":{"text":" running"}}
+{"atMs":2357.6056999999564,"event":"thinking","data":{"text":"."}}
+{"atMs":2368.487199999974,"event":"thinking","data":{"text":" Also"}}
+{"atMs":2379.559099999955,"event":"thinking","data":{"text":","}}
+{"atMs":2390.376099999994,"event":"thinking","data":{"text":" checking"}}
+{"atMs":2401.1637999999803,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":2412.0719999999274,"event":"thinking","data":{"text":"-intensive"}}
+{"atMs":2422.9233999999706,"event":"thinking","data":{"text":" processes"}}
+{"atMs":2433.8545999999624,"event":"thinking","data":{"text":" like"}}
+{"atMs":2444.62089999998,"event":"thinking","data":{"text":" SQL"}}
+{"atMs":2455.4769000000088,"event":"thinking","data":{"text":" servers"}}
+{"atMs":2466.3129999999655,"event":"thinking","data":{"text":" is"}}
+{"atMs":2477.269299999927,"event":"thinking","data":{"text":" crucial"}}
+{"atMs":2488.3646999999182,"event":"thinking","data":{"text":" because"}}
+{"atMs":2499.312799999956,"event":"thinking","data":{"text":" they"}}
+{"atMs":2510.154499999946,"event":"thinking","data":{"text":" can"}}
+{"atMs":2520.931899999967,"event":"thinking","data":{"text":" cause"}}
+{"atMs":2531.721900000004,"event":"thinking","data":{"text":" significant"}}
+{"atMs":2542.6217999999644,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":2553.4128999999957,"event":"thinking","data":{"text":" usage"}}
+{"atMs":2564.3264999999665,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":2575.1008000000147,"event":"thinking","data":{"text":"For"}}
+{"atMs":2588.4465999999084,"event":"thinking","data":{"text":" Open"}}
+{"atMs":2599.4991000000155,"event":"thinking","data":{"text":"Shift"}}
+{"atMs":2610.3743999999715,"event":"thinking","data":{"text":" Pod"}}
+{"atMs":2621.1796999999788,"event":"thinking","data":{"text":","}}
+{"atMs":2632.028699999908,"event":"thinking","data":{"text":" which"}}
+{"atMs":2642.953499999945,"event":"thinking","data":{"text":" uses"}}
+{"atMs":2653.7679999999236,"event":"thinking","data":{"text":" container"}}
+{"atMs":2664.5577999999514,"event":"thinking","data":{"text":"ized"}}
+{"atMs":2675.3392999999924,"event":"thinking","data":{"text":" environments"}}
+{"atMs":2686.3053000000073,"event":"thinking","data":{"text":","}}
+{"atMs":2697.087999999989,"event":"thinking","data":{"text":" listing"}}
+{"atMs":2708.5113999999594,"event":"thinking","data":{"text":" running"}}
+{"atMs":2719.324799999944,"event":"thinking","data":{"text":" pods"}}
+{"atMs":2730.3256999999285,"event":"thinking","data":{"text":" with"}}
+{"atMs":2741.18479999993,"event":"thinking","data":{"text":" their"}}
+{"atMs":2752.3388999999734,"event":"thinking","data":{"text":" resource"}}
+{"atMs":2763.162299999967,"event":"thinking","data":{"text":" us"}}
+{"atMs":2774.308299999917,"event":"thinking","data":{"text":"ages"}}
+{"atMs":2785.365600000019,"event":"thinking","data":{"text":" using"}}
+{"atMs":2796.4525999999605,"event":"thinking","data":{"text":" '"}}
+{"atMs":2807.4496999999974,"event":"thinking","data":{"text":"kubectl"}}
+{"atMs":2818.9042999999365,"event":"thinking","data":{"text":" get"}}
+{"atMs":2829.7437999999383,"event":"thinking","data":{"text":" pods"}}
+{"atMs":2840.932700000005,"event":"thinking","data":{"text":" -"}}
+{"atMs":2851.973299999954,"event":"thinking","data":{"text":"l"}}
+{"atMs":2862.954700000002,"event":"thinking","data":{"text":" state"}}
+{"atMs":2874.1647999999113,"event":"thinking","data":{"text":"="}}
+{"atMs":2885.2287999999244,"event":"thinking","data":{"text":"Running"}}
+{"atMs":2896.242899999954,"event":"thinking","data":{"text":"'"}}
+{"atMs":2907.17089999991,"event":"thinking","data":{"text":" makes"}}
+{"atMs":2918.379799999995,"event":"thinking","data":{"text":" sense"}}
+{"atMs":2931.2460999999894,"event":"thinking","data":{"text":"."}}
+{"atMs":2943.238000000012,"event":"thinking","data":{"text":" Checking"}}
+{"atMs":2954.1352999999654,"event":"thinking","data":{"text":" CPU"}}
+{"atMs":2965.4462999999523,"event":"thinking","data":{"text":" and"}}
+{"atMs":2976.558699999936,"event":"thinking","data":{"text":" memory"}}
+{"atMs":2987.7339999999385,"event":"thinking","data":{"text":" us"}}
+{"atMs":2998.8408000000054,"event":"thinking","data":{"text":"ages"}}
+{"atMs":3009.8362999999663,"event":"thinking","data":{"text":" per"}}
+{"atMs":3020.9772999999113,"event":"thinking","data":{"text":" pod"}}
+{"atMs":3032.416099999915,"event":"thinking","data":{"text":" with"}}
+{"atMs":3043.4634999999544,"event":"thinking","data":{"text":" '"}}
+{"atMs":3054.5002000000095,"event":"thinking","data":{"text":"kubectl"}}
+{"atMs":3065.510200000019,"event":"thinking","data":{"text":" get"}}
+{"atMs":3076.5008999999845,"event":"thinking","data":{"text":" pods"}}
+{"atMs":3087.622399999993,"event":"thinking","data":{"text":" -"}}
+{"atMs":3098.6080000000075,"event":"thinking","data":{"text":"l"}}
+{"atMs":3111.946099999943,"event":"thinking","data":{"text":" state"}}
+{"atMs":3122.907499999972,"event":"thinking","data":{"text":"="}}
+{"atMs":3134.0638000000035,"event":"thinking","data":{"text":"Running"}}
+{"atMs":3145.3893999999855,"event":"thinking","data":{"text":" --"}}
+{"atMs":3156.400900000008,"event":"thinking","data":{"text":"output"}}
+{"atMs":3167.2391999999527,"event":"thinking","data":{"text":" json"}}
+{"atMs":3178.3963999999687,"event":"thinking","data":{"text":"path"}}
+{"atMs":3189.323999999906,"event":"thinking","data":{"text":" {\""}}
+{"atMs":3200.165500000003,"event":"thinking","data":{"text":"-"}}
+{"atMs":3211.260799999931,"event":"thinking","data":{"text":" ."}}
+{"atMs":3222.100199999986,"event":"thinking","data":{"text":"values"}}
+{"atMs":3233.1326000000117,"event":"thinking","data":{"text":".items"}}
+{"atMs":3244.251500000013,"event":"thinking","data":{"text":"['"}}
+{"atMs":3255.377899999963,"event":"thinking","data":{"text":"Pod"}}
+{"atMs":3266.2350999999326,"event":"thinking","data":{"text":"CPU"}}
+{"atMs":3277.579999999958,"event":"thinking","data":{"text":"Share"}}
+{"atMs":3288.6445999999996,"event":"thinking","data":{"text":"Usage"}}
+{"atMs":3299.610699999961,"event":"thinking","data":{"text":"']"}}
+{"atMs":3310.6302999999607,"event":"thinking","data":{"text":"\"}"}}
+{"atMs":3321.566799999913,"event":"thinking","data":{"text":"'"}}
+{"atMs":3332.611799999955,"event":"thinking","data":{"text":" is"}}
+{"atMs":3343.4345999999205,"event":"thinking","data":{"text":" also"}}
+{"atMs":3354.432700000005,"event":"thinking","data":{"text":" necessary"}}
+{"atMs":3365.1853999999585,"event":"thinking","data":{"text":" to"}}
+{"atMs":3376.0407000000123,"event":"thinking","data":{"text":" pinpoint"}}
+{"atMs":3386.8925999999046,"event":"thinking","data":{"text":" where"}}
+{"atMs":3397.7280999999493,"event":"thinking","data":{"text":" the"}}
+{"atMs":3408.6021000000183,"event":"thinking","data":{"text":" spike"}}
+{"atMs":3419.4941999999573,"event":"thinking","data":{"text":" is"}}
+{"atMs":3430.4435999999987,"event":"thinking","data":{"text":" happening"}}
+{"atMs":3441.264599999995,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":3452.1666999999434,"event":"thinking","data":{"text":"Now"}}
+{"atMs":3463.252099999925,"event":"thinking","data":{"text":","}}
+{"atMs":3474.0222000000067,"event":"thinking","data":{"text":" I"}}
+{"atMs":3484.8428999999305,"event":"thinking","data":{"text":" need"}}
+{"atMs":3495.66539999994,"event":"thinking","data":{"text":" to"}}
+{"atMs":3506.888099999982,"event":"thinking","data":{"text":" consider"}}
+{"atMs":3517.754399999976,"event":"thinking","data":{"text":" which"}}
+{"atMs":3528.5222000000067,"event":"thinking","data":{"text":" commands"}}
+{"atMs":3539.4009999999544,"event":"thinking","data":{"text":" are"}}
+{"atMs":3550.16810000001,"event":"thinking","data":{"text":" risky"}}
+{"atMs":3561.0815999999177,"event":"thinking","data":{"text":" or"}}
+{"atMs":3572.294899999979,"event":"thinking","data":{"text":" heavy"}}
+{"atMs":3583.1845999999205,"event":"thinking","data":{"text":"."}}
+{"atMs":3594.0087999999523,"event":"thinking","data":{"text":" For"}}
+{"atMs":3604.940100000007,"event":"thinking","data":{"text":" R"}}
+{"atMs":3615.7975999999326,"event":"thinking","data":{"text":"HEL"}}
+{"atMs":3626.6445999999996,"event":"thinking","data":{"text":","}}
+{"atMs":3640.000400000019,"event":"thinking","data":{"text":" using"}}
+{"atMs":3650.912699999986,"event":"thinking","data":{"text":" ps"}}
+{"atMs":3661.8987999999663,"event":"thinking","data":{"text":" on"}}
+{"atMs":3672.7929000000004,"event":"thinking","data":{"text":" root"}}
+{"atMs":3683.657200000016,"event":"thinking","data":{"text":" might"}}
+{"atMs":3694.7729999999283,"event":"thinking","data":{"text":" be"}}
+{"atMs":3705.7762999999104,"event":"thinking","data":{"text":" risky"}}
+{"atMs":3716.745099999942,"event":"thinking","data":{"text":" if"}}
+{"atMs":3727.5158999999985,"event":"thinking","data":{"text":" not"}}
+{"atMs":3738.3810999999987,"event":"thinking","data":{"text":" done"}}
+{"atMs":3749.262999999919,"event":"thinking","data":{"text":" carefully"}}
+{"atMs":3760.089500000002,"event":"thinking","data":{"text":" because"}}
+{"atMs":3771.0233000000007,"event":"thinking","data":{"text":" it"}}
+{"atMs":3781.920199999935,"event":"thinking","data":{"text":" can"}}
+{"atMs":3793.015699999989,"event":"thinking","data":{"text":" access"}}
+{"atMs":3803.954299999983,"event":"thinking","data":{"text":" all"}}
+{"atMs":3814.772400000016,"event":"thinking","data":{"text":" processes"}}
+{"atMs":3825.705299999914,"event":"thinking","data":{"text":"."}}
+{"atMs":3836.5366999999387,"event":"thinking","data":{"text":" In"}}
+{"atMs":3847.436299999943,"event":"thinking","data":{"text":" Windows"}}
+{"atMs":3858.5357000000076,"event":"thinking","data":{"text":","}}
+{"atMs":3869.3607999999076,"event":"thinking","data":{"text":" accessing"}}
+{"atMs":3880.2043999999296,"event":"thinking","data":{"text":" SQL"}}
+{"atMs":3891.083699999959,"event":"thinking","data":{"text":" servers"}}
+{"atMs":3902.3299000000115,"event":"thinking","data":{"text":" directly"}}
+{"atMs":3913.499899999937,"event":"thinking","data":{"text":" could"}}
+{"atMs":3924.5300999999745,"event":"thinking","data":{"text":" expose"}}
+{"atMs":3937.957999999984,"event":"thinking","data":{"text":" sensitive"}}
+{"atMs":3948.7716999999247,"event":"thinking","data":{"text":" data"}}
+{"atMs":3966.9431999999797,"event":"thinking","data":{"text":","}}
+{"atMs":3970.7992000000086,"event":"thinking","data":{"text":" so"}}
+{"atMs":3982.627600000007,"event":"thinking","data":{"text":" that"}}
+{"atMs":3993.5172999999486,"event":"thinking","data":{"text":"'s"}}
+{"atMs":4004.7179999999935,"event":"thinking","data":{"text":" a"}}
+{"atMs":4015.7465000000084,"event":"thinking","data":{"text":" risk"}}
+{"atMs":4026.8138000000035,"event":"thinking","data":{"text":"."}}
+{"atMs":4038.072700000019,"event":"thinking","data":{"text":" For"}}
+{"atMs":4049.017799999914,"event":"thinking","data":{"text":" Open"}}
+{"atMs":4060.0248999999603,"event":"thinking","data":{"text":"Shift"}}
+{"atMs":4071.110999999917,"event":"thinking","data":{"text":","}}
+{"atMs":4082.2136000000173,"event":"thinking","data":{"text":" running"}}
+{"atMs":4093.296399999992,"event":"thinking","data":{"text":" k"}}
+{"atMs":4104.284799999907,"event":"thinking","data":{"text":"ubectl"}}
+{"atMs":4115.619499999913,"event":"thinking","data":{"text":" commands"}}
+{"atMs":4126.604999999981,"event":"thinking","data":{"text":" in"}}
+{"atMs":4137.510200000019,"event":"thinking","data":{"text":" production"}}
+{"atMs":4148.517499999958,"event":"thinking","data":{"text":" without"}}
+{"atMs":4162.089399999939,"event":"thinking","data":{"text":" proper"}}
+{"atMs":4173.126199999941,"event":"thinking","data":{"text":" permissions"}}
+{"atMs":4184.101799999946,"event":"thinking","data":{"text":" is"}}
+{"atMs":4195.1565999999875,"event":"thinking","data":{"text":" a"}}
+{"atMs":4206.326999999932,"event":"thinking","data":{"text":" big"}}
+{"atMs":4217.393099999987,"event":"thinking","data":{"text":" risk"}}
+{"atMs":4228.677399999928,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":4242.34719999996,"event":"thinking","data":{"text":"I"}}
+{"atMs":4254.674899999984,"event":"thinking","data":{"text":" should"}}
+{"atMs":4266.005099999951,"event":"thinking","data":{"text":" structure"}}
+{"atMs":4277.047199999914,"event":"thinking","data":{"text":" this"}}
+{"atMs":4288.166199999978,"event":"thinking","data":{"text":" information"}}
+{"atMs":4299.145900000003,"event":"thinking","data":{"text":" into"}}
+{"atMs":4310.075799999991,"event":"thinking","data":{"text":" tables"}}
+{"atMs":4321.185999999987,"event":"thinking","data":{"text":" for"}}
+{"atMs":4332.550699999905,"event":"thinking","data":{"text":" each"}}
+{"atMs":4343.6557999999495,"event":"thinking","data":{"text":" environment"}}
+{"atMs":4371.642599999905,"event":"thinking","data":{"text":" with"}}
+{"atMs":4371.645599999931,"event":"thinking","data":{"text":" the"}}
+{"atMs":4376.739599999972,"event":"thinking","data":{"text":" commands"}}
+{"atMs":4387.90399999998,"event":"thinking","data":{"text":" and"}}
+{"atMs":4399.054899999988,"event":"thinking","data":{"text":" their"}}
+{"atMs":4409.789099999936,"event":"thinking","data":{"text":" purposes"}}
+{"atMs":4420.648699999903,"event":"thinking","data":{"text":"."}}
+{"atMs":4431.621700000018,"event":"thinking","data":{"text":" Also"}}
+{"atMs":4442.881599999964,"event":"thinking","data":{"text":","}}
+{"atMs":4453.652799999923,"event":"thinking","data":{"text":" I"}}
+{"atMs":4464.593200000003,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":4475.4824999999255,"event":"thinking","data":{"text":" make"}}
+{"atMs":4486.340899999952,"event":"thinking","data":{"text":" sure"}}
+{"atMs":4497.272999999928,"event":"thinking","data":{"text":" to"}}
+{"atMs":4508.162999999942,"event":"thinking","data":{"text":" note"}}
+{"atMs":4519.03899999999,"event":"thinking","data":{"text":" any"}}
+{"atMs":4529.956000000006,"event":"thinking","data":{"text":" assumptions"}}
+{"atMs":4540.979899999918,"event":"thinking","data":{"text":" if"}}
+{"atMs":4552.051399999997,"event":"thinking","data":{"text":" some"}}
+{"atMs":4563.069299999974,"event":"thinking","data":{"text":" environments"}}
+{"atMs":4573.9061999999685,"event":"thinking","data":{"text":" aren"}}
+{"atMs":4584.755999999936,"event":"thinking","data":{"text":"'t"}}
+{"atMs":4595.742099999916,"event":"thinking","data":{"text":" covered"}}
+{"atMs":4606.601999999955,"event":"thinking","data":{"text":" yet"}}
+{"atMs":4617.558799999999,"event":"thinking","data":{"text":","}}
+{"atMs":4628.308099999907,"event":"thinking","data":{"text":" like"}}
+{"atMs":4639.348200000008,"event":"thinking","data":{"text":" not"}}
+{"atMs":4650.4843999999575,"event":"thinking","data":{"text":" having"}}
+{"atMs":4661.571899999981,"event":"thinking","data":{"text":" access"}}
+{"atMs":4672.394899999956,"event":"thinking","data":{"text":" logs"}}
+{"atMs":4683.394099999918,"event":"thinking","data":{"text":" for"}}
+{"atMs":4694.263299999991,"event":"thinking","data":{"text":" R"}}
+{"atMs":4707.878999999957,"event":"thinking","data":{"text":"HEL"}}
+{"atMs":4718.647599999909,"event":"thinking","data":{"text":" or"}}
+{"atMs":4729.548699999927,"event":"thinking","data":{"text":" network"}}
+{"atMs":4740.483899999992,"event":"thinking","data":{"text":" issues"}}
+{"atMs":4751.370200000005,"event":"thinking","data":{"text":" affecting"}}
+{"atMs":4762.745200000005,"event":"thinking","data":{"text":" Windows"}}
+{"atMs":4773.719199999934,"event":"thinking","data":{"text":".\n\n"}}
+{"atMs":4784.541199999978,"event":"thinking","data":{"text":"Finally"}}
+{"atMs":4795.3877999999095,"event":"thinking","data":{"text":","}}
+{"atMs":4806.344199999934,"event":"thinking","data":{"text":" I"}}
+{"atMs":4817.168599999975,"event":"thinking","data":{"text":"'ll"}}
+{"atMs":4828.060899999924,"event":"thinking","data":{"text":" summarize"}}
+{"atMs":4838.965199999977,"event":"thinking","data":{"text":" the"}}
+{"atMs":4849.953899999964,"event":"thinking","data":{"text":" findings"}}
+{"atMs":4860.821599999908,"event":"thinking","data":{"text":" by"}}
+{"atMs":4872.425500000012,"event":"thinking","data":{"text":" highlighting"}}
+{"atMs":4883.21379999991,"event":"thinking","data":{"text":" that"}}
+{"atMs":4894.1538999999175,"event":"thinking","data":{"text":" each"}}
+{"atMs":4905.027599999914,"event":"thinking","data":{"text":" environment"}}
+{"atMs":4916.022099999944,"event":"thinking","data":{"text":" has"}}
+{"atMs":4929.26939999999,"event":"thinking","data":{"text":" specific"}}
+{"atMs":4940.368799999938,"event":"thinking","data":{"text":" commands"}}
+{"atMs":4951.410199999926,"event":"thinking","data":{"text":" tailored"}}
+{"atMs":4962.326999999932,"event":"thinking","data":{"text":" to"}}
+{"atMs":4973.21259999997,"event":"thinking","data":{"text":" its"}}
+{"atMs":4984.570399999968,"event":"thinking","data":{"text":" architecture"}}
+{"atMs":4995.410299999989,"event":"thinking","data":{"text":" and"}}
+{"atMs":5006.338400000008,"event":"thinking","data":{"text":" potential"}}
+{"atMs":5017.315999999992,"event":"thinking","data":{"text":" risks"}}
+{"atMs":5028.174499999965,"event":"thinking","data":{"text":" associated"}}
+{"atMs":5038.945999999996,"event":"thinking","data":{"text":" with"}}
+{"atMs":5049.9218999999575,"event":"thinking","data":{"text":" each"}}
+{"atMs":5060.810599999968,"event":"thinking","data":{"text":" command"}}
+{"atMs":5071.717799999984,"event":"thinking","data":{"text":".\n"}}
+{"atMs":5093.834999999963,"event":"token","data":{"text":"\n\n"}}
+{"atMs":5104.605299999937,"event":"token","data":{"text":"###"}}
+{"atMs":5115.50549999997,"event":"token","data":{"text":" CPU"}}
+{"atMs":5126.557299999986,"event":"token","data":{"text":" 사용"}}
+{"atMs":5137.538499999908,"event":"token","data":{"text":"률"}}
+{"atMs":5159.350199999986,"event":"token","data":{"text":" 급"}}
+{"atMs":5170.2953999999445,"event":"token","data":{"text":"증"}}
+{"atMs":5181.26099999994,"event":"token","data":{"text":" 원"}}
+{"atMs":5192.272200000007,"event":"token","data":{"text":"인"}}
+{"atMs":5203.256999999983,"event":"token","data":{"text":" 조"}}
+{"atMs":5214.470399999991,"event":"token","data":{"text":"사"}}
+{"atMs":5225.363599999924,"event":"token","data":{"text":"\n\n"}}
+{"atMs":5238.02099999995,"event":"token","data":{"text":"####"}}
+{"atMs":5249.656699999934,"event":"token","data":{"text":" "}}
+{"atMs":5260.5138999999035,"event":"token","data":{"text":"1"}}
+{"atMs":5271.331399999908,"event":"token","data":{"text":"."}}
+{"atMs":5282.366999999969,"event":"token","data":{"text":" R"}}
+{"atMs":5293.308499999926,"event":"token","data":{"text":"HEL"}}
+{"atMs":5304.240499999956,"event":"token","data":{"text":" ("}}
+{"atMs":5315.646299999906,"event":"token","data":{"text":"Cent"}}
+{"atMs":5326.475800000015,"event":"token","data":{"text":"OS"}}
+{"atMs":5337.392799999914,"event":"token","data":{"text":")"}}
+{"atMs":5348.269099999918,"event":"token","data":{"text":"сер"}}
+{"atMs":5359.202899999917,"event":"token","data":{"text":"버"}}
+{"atMs":5370.084299999988,"event":"token","data":{"text":"\n"}}
+{"atMs":5381.040899999905,"event":"token","data":{"text":"-"}}
+{"atMs":5392.055599999963,"event":"token","data":{"text":" **"}}
+{"atMs":5402.94319999998,"event":"token","data":{"text":"목"}}
+{"atMs":5413.819199999911,"event":"token","data":{"text":"적"}}
+{"atMs":5424.853299999959,"event":"token","data":{"text":"**:"}}
+{"atMs":5435.725699999952,"event":"token","data":{"text":" CPU"}}
+{"atMs":5446.585399999982,"event":"token","data":{"text":" 사용"}}
+{"atMs":5457.562399999937,"event":"token","data":{"text":"량"}}
+{"atMs":5468.410799999954,"event":"token","data":{"text":"이"}}
+{"atMs":5490.378499999992,"event":"token","data":{"text":" 급"}}
+{"atMs":5501.255599999917,"event":"token","data":{"text":"증"}}
+{"atMs":5512.107299999916,"event":"token","data":{"text":"하는"}}
+{"atMs":5523.078199999989,"event":"token","data":{"text":" 원"}}
+{"atMs":5534.062099999981,"event":"token","data":{"text":"인"}}
+{"atMs":5544.9383999999845,"event":"token","data":{"text":"을"}}
+{"atMs":5556.182299999986,"event":"token","data":{"text":" 파"}}
+{"atMs":5566.951999999932,"event":"token","data":{"text":"악"}}
+{"atMs":5577.814699999988,"event":"token","data":{"text":"하기"}}
+{"atMs":5588.766499999911,"event":"token","data":{"text":" 위해"}}
+{"atMs":5599.66810000001,"event":"token","data":{"text":" Processes"}}
+{"atMs":5610.577500000014,"event":"token","data":{"text":"를"}}
+{"atMs":5621.435999999987,"event":"token","data":{"text":" 확인"}}
+{"atMs":5632.625299999956,"event":"token","data":{"text":"하고"}}
+{"atMs":5643.442199999932,"event":"token","data":{"text":" CPU"}}
+{"atMs":5654.401100000017,"event":"token","data":{"text":" 사용"}}
+{"atMs":5665.277499999967,"event":"token","data":{"text":"량"}}
+{"atMs":5676.219799999963,"event":"token","data":{"text":"이"}}
+{"atMs":5709.010399999912,"event":"token","data":{"text":" 높"}}
+{"atMs":5719.83349999995,"event":"token","data":{"text":"은"}}
+{"atMs":5730.640799999936,"event":"token","data":{"text":" Processes"}}
+{"atMs":5742.077500000014,"event":"token","data":{"text":"를"}}
+{"atMs":5752.868399999919,"event":"token","data":{"text":" 찾"}}
+{"atMs":5765.678699999931,"event":"token","data":{"text":"는"}}
+{"atMs":5777.354599999962,"event":"token","data":{"text":"다"}}
+{"atMs":5788.167599999928,"event":"token","data":{"text":".\n"}}
+{"atMs":5798.979999999981,"event":"token","data":{"text":"-"}}
+{"atMs":5809.866199999931,"event":"token","data":{"text":" **"}}
+{"atMs":5820.727799999993,"event":"token","data":{"text":"명"}}
+{"atMs":5831.6731000000145,"event":"token","data":{"text":"령"}}
+{"atMs":5842.487199999974,"event":"token","data":{"text":"**"}}
+{"atMs":5853.621399999945,"event":"token","data":{"text":":\n"}}
+{"atMs":5864.618699999992,"event":"token","data":{"text":" "}}
+{"atMs":5875.432799999951,"event":"token","data":{"text":" -"}}
+{"atMs":5886.332199999946,"event":"token","data":{"text":" `"}}
+{"atMs":5897.133499999996,"event":"token","data":{"text":"ps"}}
+{"atMs":5908.0320000000065,"event":"token","data":{"text":" -"}}
+{"atMs":5919.471199999913,"event":"token","data":{"text":"ef"}}
+{"atMs":5931.261799999978,"event":"token","data":{"text":" |"}}
+{"atMs":5942.004099999904,"event":"token","data":{"text":" grep"}}
+{"atMs":5953.010899999994,"event":"token","data":{"text":" -"}}
+{"atMs":5964.2014999999665,"event":"token","data":{"text":"i"}}
+{"atMs":5975.112299999921,"event":"token","data":{"text":" \""}}
+{"atMs":5986.166899999953,"event":"token","data":{"text":"cpu"}}
+{"atMs":5997.106599999941,"event":"token","data":{"text":"\"`\n"}}
+{"atMs":6007.9841000000015,"event":"token","data":{"text":"   "}}
+{"atMs":6018.832300000009,"event":"token","data":{"text":" -"}}
+{"atMs":6029.7341000000015,"event":"token","data":{"text":" `"}}
+{"atMs":6040.495499999961,"event":"token","data":{"text":"ps"}}
+{"atMs":6051.574399999925,"event":"token","data":{"text":"`"}}
+{"atMs":6062.672199999914,"event":"token","data":{"text":"는"}}
+{"atMs":6073.94439999992,"event":"token","data":{"text":" Processes"}}
+{"atMs":6085.004299999913,"event":"token","data":{"text":" List"}}
+{"atMs":6095.988899999997,"event":"token","data":{"text":"를"}}
+{"atMs":6107.057799999951,"event":"token","data":{"text":" 보"}}
+{"atMs":6118.055999999982,"event":"token","data":{"text":"여"}}
+{"atMs":6129.083699999959,"event":"token","data":{"text":"주"}}
+{"atMs":6140.074900000007,"event":"token","data":{"text":"며"}}
+{"atMs":6151.117599999998,"event":"token","data":{"text":","}}
+{"atMs":6162.357299999916,"event":"token","data":{"text":" `"}}
+{"atMs":6173.777599999914,"event":"token","data":{"text":"grep"}}
+{"atMs":6184.602100000018,"event":"token","data":{"text":" -"}}
+{"atMs":6195.707500000019,"event":"token","data":{"text":"i"}}
+{"atMs":6206.548399999971,"event":"token","data":{"text":" \""}}
+{"atMs":6217.757400000002,"event":"token","data":{"text":"cpu"}}
+{"atMs":6228.753299999982,"event":"token","data":{"text":"\"`"}}
+{"atMs":6239.3896999999415,"event":"token","data":{"text":"는"}}
+{"atMs":6250.461499999976,"event":"token","data":{"text":" CPUs"}}
+{"atMs":6261.410599999945,"event":"token","data":{"text":"가"}}
+{"atMs":6297.031299999915,"event":"token","data":{"text":" 높"}}
+{"atMs":6307.782299999963,"event":"token","data":{"text":"은"}}
+{"atMs":6318.706999999937,"event":"token","data":{"text":" Processes"}}
+{"atMs":6329.44709999999,"event":"token","data":{"text":"를"}}
+{"atMs":6340.281099999906,"event":"token","data":{"text":" 찾"}}
+{"atMs":6351.097499999916,"event":"token","data":{"text":"는"}}
+{"atMs":6361.999899999937,"event":"token","data":{"text":"다"}}
+{"atMs":6372.6711999999825,"event":"token","data":{"text":".\n"}}
+{"atMs":6383.561299999943,"event":"token","data":{"text":" "}}
+{"atMs":6394.794099999941,"event":"token","data":{"text":" -"}}
+{"atMs":6405.561400000006,"event":"token","data":{"text":" `"}}
+{"atMs":6416.339199999929,"event":"token","data":{"text":"top"}}
+{"atMs":6427.2167999999365,"event":"token","data":{"text":"`\n"}}
+{"atMs":6438.1731000000145,"event":"token","data":{"text":"   "}}
+{"atMs":6448.988699999987,"event":"token","data":{"text":" -"}}
+{"atMs":6459.860299999942,"event":"token","data":{"text":" `"}}
+{"atMs":6474.602799999993,"event":"token","data":{"text":"top"}}
+{"atMs":6490.3421999999555,"event":"token","data":{"text":"`"}}
+{"atMs":6493.407399999909,"event":"token","data":{"text":"는"}}
+{"atMs":6504.641199999955,"event":"token","data":{"text":" Current"}}
+{"atMs":6515.672799999942,"event":"token","data":{"text":" System"}}
+{"atMs":6526.670500000007,"event":"token","data":{"text":"-wide"}}
+{"atMs":6537.642099999939,"event":"token","data":{"text":" CPU"}}
+{"atMs":6548.85560000001,"event":"token","data":{"text":","}}
+{"atMs":6559.930199999944,"event":"token","data":{"text":" RAM"}}
+{"atMs":6571.0599999999395,"event":"token","data":{"text":","}}
+{"atMs":6582.167399999918,"event":"token","data":{"text":" Swap"}}
+{"atMs":6593.1243999999715,"event":"token","data":{"text":" us"}}
+{"atMs":6604.450799999991,"event":"token","data":{"text":"ages"}}
+{"atMs":6615.630399999907,"event":"token","data":{"text":"를"}}
+{"atMs":6626.4682999999495,"event":"token","data":{"text":" 보"}}
+{"atMs":6637.482799999998,"event":"token","data":{"text":"여"}}
+{"atMs":6648.60129999998,"event":"token","data":{"text":"준"}}
+{"atMs":6659.438699999941,"event":"token","data":{"text":"다"}}
+{"atMs":6670.443099999917,"event":"token","data":{"text":"."}}
+{"atMs":6681.677799999947,"event":"token","data":{"text":" Interval"}}
+{"atMs":6692.65149999992,"event":"token","data":{"text":"을"}}
+{"atMs":6703.652799999923,"event":"token","data":{"text":" "}}
+{"atMs":6714.694199999911,"event":"token","data":{"text":"5"}}
+{"atMs":6725.8585999999195,"event":"token","data":{"text":"분"}}
+{"atMs":6737.0138999999035,"event":"token","data":{"text":","}}
+{"atMs":6747.820599999977,"event":"token","data":{"text":" "}}
+{"atMs":6758.882499999949,"event":"token","data":{"text":"1"}}
+{"atMs":6770.312099999981,"event":"token","data":{"text":"5"}}
+{"atMs":6781.376500000013,"event":"token","data":{"text":"분"}}
+{"atMs":6792.516499999911,"event":"token","data":{"text":","}}
+{"atMs":6803.273399999947,"event":"token","data":{"text":" "}}
+{"atMs":6814.343499999959,"event":"token","data":{"text":"3"}}
+{"atMs":6827.9525999999605,"event":"token","data":{"text":"0"}}
+{"atMs":6838.949900000007,"event":"token","data":{"text":"분"}}
+{"atMs":6850.015599999926,"event":"token","data":{"text":"으로"}}
+{"atMs":6870.429999999935,"event":"token","data":{"text":" 설정"}}
+{"atMs":6880.4533999999985,"event":"token","data":{"text":"한다"}}
+{"atMs":6883.394199999981,"event":"token","data":{"text":".\n"}}
+{"atMs":6895.105699999956,"event":"token","data":{"text":" "}}
+{"atMs":6913.3582999999635,"event":"token","data":{"text":" -"}}
+{"atMs":6927.557199999923,"event":"token","data":{"text":" `"}}
+{"atMs":6940.659400000004,"event":"token","data":{"text":"top"}}
+{"atMs":6955.339700000011,"event":"token","data":{"text":" -"}}
+{"atMs":6970.01370000001,"event":"token","data":{"text":"n"}}
+{"atMs":6984.676299999934,"event":"token","data":{"text":" "}}
+{"atMs":6999.344199999934,"event":"token","data":{"text":"2"}}
+{"atMs":7013.679399999906,"event":"token","data":{"text":" |"}}
+{"atMs":7025.586599999922,"event":"token","data":{"text":" grep"}}
+{"atMs":7039.653500000015,"event":"token","data":{"text":" -"}}
+{"atMs":7052.3106999999145,"event":"token","data":{"text":"i"}}
+{"atMs":7063.720699999947,"event":"token","data":{"text":" \""}}
+{"atMs":7074.533199999947,"event":"token","data":{"text":"R"}}
+{"atMs":7085.335699999938,"event":"token","data":{"text":"HEL"}}
+{"atMs":7096.179000000004,"event":"token","data":{"text":"\"`\n"}}
+{"atMs":7109.268199999933,"event":"token","data":{"text":"   "}}
+{"atMs":7121.293999999994,"event":"token","data":{"text":" -"}}
+{"atMs":7132.419699999969,"event":"token","data":{"text":" `"}}
+{"atMs":7143.50549999997,"event":"token","data":{"text":"top"}}
+{"atMs":7154.382600000012,"event":"token","data":{"text":"`"}}
+{"atMs":7165.302499999991,"event":"token","data":{"text":"를"}}
+{"atMs":7176.117599999998,"event":"token","data":{"text":" "}}
+{"atMs":7187.05979999993,"event":"token","data":{"text":"2"}}
+{"atMs":7197.97100000002,"event":"token","data":{"text":"개"}}
+{"atMs":7208.773899999913,"event":"token","data":{"text":"의"}}
+{"atMs":7219.705099999905,"event":"token","data":{"text":"窗口"}}
+{"atMs":7230.58349999995,"event":"token","data":{"text":"로"}}
+{"atMs":7241.445199999958,"event":"token","data":{"text":" 나"}}
+{"atMs":7252.697999999975,"event":"token","data":{"text":"누"}}
+{"atMs":7263.745200000005,"event":"token","data":{"text":"고"}}
+{"atMs":7274.433699999936,"event":"token","data":{"text":","}}
+{"atMs":7285.346599999932,"event":"token","data":{"text":" R"}}
+{"atMs":7296.2807999999495,"event":"token","data":{"text":"HEL"}}
+{"atMs":7307.133399999933,"event":"token","data":{"text":"进程"}}
+{"atMs":7317.946299999952,"event":"token","data":{"text":"에"}}
+{"atMs":7328.929399999906,"event":"token","data":{"text":" 집"}}
+{"atMs":7339.882899999968,"event":"token","data":{"text":"중"}}
+{"atMs":7353.427799999947,"event":"token","data":{"text":"하여"}}
+{"atMs":7364.468899999978,"event":"token","data":{"text":" CPU"}}
+{"atMs":7375.503499999992,"event":"token","data":{"text":" 사용"}}
+{"atMs":7386.539899999974,"event":"token","data":{"text":"량"}}
+{"atMs":7397.514899999951,"event":"token","data":{"text":"을"}}
+{"atMs":7408.399399999995,"event":"token","data":{"text":" 파"}}
+{"atMs":7419.167499999981,"event":"token","data":{"text":"악"}}
+{"atMs":7430.062900000019,"event":"token","data":{"text":"한다"}}
+{"atMs":7440.904099999927,"event":"token","data":{"text":".\n"}}
+{"atMs":7451.771999999997,"event":"token","data":{"text":" "}}
+{"atMs":7462.690199999954,"event":"token","data":{"text":" -"}}
+{"atMs":7473.903599999961,"event":"token","data":{"text":" `"}}
+{"atMs":7484.7470999999205,"event":"token","data":{"text":"ps"}}
+{"atMs":7495.719899999909,"event":"token","data":{"text":" aux"}}
+{"atMs":7506.692899999907,"event":"token","data":{"text":" |"}}
+{"atMs":7517.570399999968,"event":"token","data":{"text":" grep"}}
+{"atMs":7528.508099999977,"event":"token","data":{"text":" -"}}
+{"atMs":7539.364399999962,"event":"token","data":{"text":"i"}}
+{"atMs":7550.343599999906,"event":"token","data":{"text":" \""}}
+{"atMs":7561.109599999967,"event":"token","data":{"text":"R"}}
+{"atMs":7572.330499999924,"event":"token","data":{"text":"HEL"}}
+{"atMs":7583.555899999919,"event":"token","data":{"text":"\"`\n"}}
+{"atMs":7594.637499999953,"event":"token","data":{"text":"   "}}
+{"atMs":7605.643399999943,"event":"token","data":{"text":" -"}}
+{"atMs":7616.669899999979,"event":"token","data":{"text":" Processes"}}
+{"atMs":7627.685499999905,"event":"token","data":{"text":" List"}}
+{"atMs":7638.751099999994,"event":"token","data":{"text":"에서"}}
+{"atMs":7649.77079999994,"event":"token","data":{"text":" R"}}
+{"atMs":7660.799899999984,"event":"token","data":{"text":"HEL"}}
+{"atMs":7672.010299999965,"event":"token","data":{"text":"进程"}}
+{"atMs":7683.1243999999715,"event":"token","data":{"text":"만"}}
+{"atMs":7694.481900000013,"event":"token","data":{"text":"을"}}
+{"atMs":7705.511300000013,"event":"token","data":{"text":" 선"}}
+{"atMs":7716.5098,"event":"token","data":{"text":"정"}}
+{"atMs":7727.537799999933,"event":"token","data":{"text":"하여"}}
+{"atMs":7738.650599999935,"event":"token","data":{"text":" CPU"}}
+{"atMs":7749.88069999998,"event":"token","data":{"text":" 사용"}}
+{"atMs":7760.853099999949,"event":"token","data":{"text":"량"}}
+{"atMs":7771.927299999981,"event":"token","data":{"text":"을"}}
+{"atMs":7782.916800000006,"event":"token","data":{"text":" 확인"}}
+{"atMs":7794.303699999931,"event":"token","data":{"text":"한다"}}
+{"atMs":7805.40009999997,"event":"token","data":{"text":".\n"}}
+{"atMs":7816.359499999904,"event":"token","data":{"text":" "}}
+{"atMs":7827.4054999999935,"event":"token","data":{"text":" -"}}
+{"atMs":7838.496899999911,"event":"token","data":{"text":" `"}}
+{"atMs":7849.557199999923,"event":"token","data":{"text":"sudo"}}
+{"atMs":7860.582199999946,"event":"token","data":{"text":" su"}}
+{"atMs":7871.914699999965,"event":"token","data":{"text":" -"}}
+{"atMs":7884.943699999945,"event":"token","data":{"text":"r"}}
+{"atMs":7895.873900000006,"event":"token","data":{"text":" |"}}
+{"atMs":7907.343799999915,"event":"token","data":{"text":" grep"}}
+{"atMs":7918.372399999993,"event":"token","data":{"text":" -"}}
+{"atMs":7932.168899999931,"event":"token","data":{"text":"i"}}
+{"atMs":7943.004399999976,"event":"token","data":{"text":" \""}}
+{"atMs":7954.185300000012,"event":"token","data":{"text":"cpu"}}
+{"atMs":7965.520000000019,"event":"token","data":{"text":"\"`\n"}}
+{"atMs":7976.722799999989,"event":"token","data":{"text":"   "}}
+{"atMs":7987.631099999999,"event":"token","data":{"text":" -"}}
+{"atMs":7999.072199999937,"event":"token","data":{"text":" root"}}
+{"atMs":8010.171699999948,"event":"token","data":{"text":" shell"}}
+{"atMs":8021.240299999947,"event":"token","data":{"text":"을"}}
+{"atMs":8032.532999999938,"event":"token","data":{"text":"Spawn"}}
+{"atMs":8043.570199999958,"event":"token","data":{"text":"하고"}}
+{"atMs":8054.668999999994,"event":"token","data":{"text":","}}
+{"atMs":8065.922399999923,"event":"token","data":{"text":" CPUs"}}
+{"atMs":8077.030700000003,"event":"token","data":{"text":"가"}}
+{"atMs":8110.334799999953,"event":"token","data":{"text":" 높"}}
+{"atMs":8121.710499999928,"event":"token","data":{"text":"은"}}
+{"atMs":8132.677099999972,"event":"token","data":{"text":" Processes"}}
+{"atMs":8143.650299999979,"event":"token","data":{"text":"를"}}
+{"atMs":8154.677999999956,"event":"token","data":{"text":" 찾"}}
+{"atMs":8165.849799999967,"event":"token","data":{"text":"는"}}
+{"atMs":8176.902999999933,"event":"token","data":{"text":"다"}}
+{"atMs":8188.008900000015,"event":"token","data":{"text":".\n\n"}}
+{"atMs":8199.048899999936,"event":"token","data":{"text":"-"}}
+{"atMs":8210.127499999944,"event":"token","data":{"text":" **"}}
+{"atMs":8221.233799999929,"event":"token","data":{"text":"ris"}}
+{"atMs":8232.655199999921,"event":"token","data":{"text":"ks"}}
+{"atMs":8243.711499999976,"event":"token","data":{"text":"/"}}
+{"atMs":8254.873099999968,"event":"token","data":{"text":" heavyweight"}}
+{"atMs":8265.911599999992,"event":"token","data":{"text":" commands"}}
+{"atMs":8277.042999999947,"event":"token","data":{"text":"**"}}
+{"atMs":8288.243999999948,"event":"token","data":{"text":":\n"}}
+{"atMs":8299.291399999987,"event":"token","data":{"text":" "}}
+{"atMs":8310.321200000006,"event":"token","data":{"text":" -"}}
+{"atMs":8321.409199999995,"event":"token","data":{"text":" `"}}
+{"atMs":8332.473499999964,"event":"token","data":{"text":"sudo"}}
+{"atMs":8343.886100000003,"event":"token","data":{"text":" su"}}
+{"atMs":8355.02469999995,"event":"token","data":{"text":" -"}}
+{"atMs":8366.057900000014,"event":"token","data":{"text":"r"}}
+{"atMs":8377.120099999942,"event":"token","data":{"text":" |"}}
+{"atMs":8388.196499999962,"event":"token","data":{"text":" grep"}}
+{"atMs":8399.36129999999,"event":"token","data":{"text":" -"}}
+{"atMs":8412.554599999916,"event":"token","data":{"text":"i"}}
+{"atMs":8423.57349999994,"event":"token","data":{"text":" \""}}
+{"atMs":8434.700599999982,"event":"token","data":{"text":"cpu"}}
+{"atMs":8445.79429999995,"event":"token","data":{"text":"\"`"}}
+{"atMs":8456.932599999942,"event":"token","data":{"text":":"}}
+{"atMs":8468.147499999963,"event":"token","data":{"text":" root"}}
+{"atMs":8479.214399999939,"event":"token","data":{"text":" shell"}}
+{"atMs":8490.371700000018,"event":"token","data":{"text":"을"}}
+{"atMs":8501.346799999941,"event":"token","data":{"text":"Spawn"}}
+{"atMs":8512.40579999995,"event":"token","data":{"text":"하면"}}
+{"atMs":8523.384299999918,"event":"token","data":{"text":" System"}}
+{"atMs":8534.466099999961,"event":"token","data":{"text":"-wide"}}
+{"atMs":8545.607699999935,"event":"token","data":{"text":" Processes"}}
+{"atMs":8556.961199999903,"event":"token","data":{"text":"에"}}
+{"atMs":8579.013799999957,"event":"token","data":{"text":" 액"}}
+{"atMs":8590.073999999906,"event":"token","data":{"text":"세"}}
+{"atMs":8601.320699999924,"event":"token","data":{"text":"스"}}
+{"atMs":8612.37249999994,"event":"token","data":{"text":"할"}}
+{"atMs":8623.40169999993,"event":"token","data":{"text":" 수"}}
+{"atMs":8634.399099999922,"event":"token","data":{"text":" 있다"}}
+{"atMs":8645.50020000001,"event":"token","data":{"text":"."}}
+{"atMs":8656.634499999927,"event":"token","data":{"text":" System"}}
+{"atMs":8668.060799999977,"event":"token","data":{"text":"-wide"}}
+{"atMs":8679.163899999927,"event":"token","data":{"text":" Processes"}}
+{"atMs":8690.296399999992,"event":"token","data":{"text":"를"}}
+{"atMs":8701.506500000018,"event":"token","data":{"text":" manip"}}
+{"atMs":8712.604199999943,"event":"token","data":{"text":"ول"}}
+{"atMs":8723.595099999919,"event":"token","data":{"text":"ировать"}}
+{"atMs":8734.646899999934,"event":"token","data":{"text":" risk"}}
+{"atMs":8745.978499999968,"event":"token","data":{"text":".\n"}}
+{"atMs":8757.264099999913,"event":"token","data":{"text":" "}}
+{"atMs":8768.380799999926,"event":"token","data":{"text":" -"}}
+{"atMs":8779.656499999925,"event":"token","data":{"text":" `"}}
+{"atMs":8790.816299999948,"event":"token","data":{"text":"ps"}}
+{"atMs":8801.811999999918,"event":"token","data":{"text":" aux"}}
+{"atMs":8812.973099999945,"event":"token","data":{"text":" |"}}
+{"atMs":8824.04310000001,"event":"token","data":{"text":" grep"}}
+{"atMs":8835.129199999967,"event":"token","data":{"text":" -"}}
+{"atMs":8846.27529999998,"event":"token","data":{"text":"i"}}
+{"atMs":8857.30290000001,"event":"token","data":{"text":" \""}}
+{"atMs":8868.501799999969,"event":"token","data":{"text":"R"}}
+{"atMs":8879.646100000013,"event":"token","data":{"text":"HEL"}}
+{"atMs":8890.772999999928,"event":"token","data":{"text":"\"`"}}
+{"atMs":8901.824599999934,"event":"token","data":{"text":":"}}
+{"atMs":8913.162699999986,"event":"token","data":{"text":" R"}}
+{"atMs":8924.234699999914,"event":"token","data":{"text":"HEL"}}
+{"atMs":8937.597899999935,"event":"token","data":{"text":"进程"}}
+{"atMs":8948.627699999954,"event":"token","data":{"text":"에"}}
+{"atMs":8967.59289999993,"event":"token","data":{"text":" 집"}}
+{"atMs":8971.424400000018,"event":"token","data":{"text":"중"}}
+{"atMs":8984.714299999992,"event":"token","data":{"text":"하지"}}
+{"atMs":8994.602399999974,"event":"token","data":{"text":"만"}}
+{"atMs":9005.98339999991,"event":"token","data":{"text":","}}
+{"atMs":9017.176399999997,"event":"token","data":{"text":" Processes"}}
+{"atMs":9028.454299999983,"event":"token","data":{"text":" List"}}
+{"atMs":9039.885599999921,"event":"token","data":{"text":"에서"}}
+{"atMs":9051.062399999937,"event":"token","data":{"text":" System"}}
+{"atMs":9062.343400000012,"event":"token","data":{"text":"-wide"}}
+{"atMs":9073.648099999991,"event":"token","data":{"text":" Processes"}}
+{"atMs":9084.984999999986,"event":"token","data":{"text":"除外"}}
+{"atMs":9096.212499999907,"event":"token","data":{"text":" risk"}}
+{"atMs":9107.587699999916,"event":"token","data":{"text":".\n\n"}}
+{"atMs":9118.84289999993,"event":"token","data":{"text":"####"}}
+{"atMs":9130.15579999995,"event":"token","data":{"text":" "}}
+{"atMs":9141.359999999986,"event":"token","data":{"text":"2"}}
+{"atMs":9152.744299999904,"event":"token","data":{"text":"."}}
+{"atMs":9164.205899999943,"event":"token","data":{"text":" Windows"}}
+{"atMs":9175.46669999999,"event":"token","data":{"text":" Server"}}
+{"atMs":9186.597999999998,"event":"token","data":{"text":"\n"}}
+{"atMs":9197.639699999942,"event":"token","data":{"text":"-"}}
+{"atMs":9208.840299999923,"event":"token","data":{"text":" **"}}
+{"atMs":9219.873900000006,"event":"token","data":{"text":"목"}}
+{"atMs":9231.19279999996,"event":"token","data":{"text":"적"}}
+{"atMs":9242.362599999993,"event":"token","data":{"text":"**:"}}
+{"atMs":9253.635200000019,"event":"token","data":{"text":" CPU"}}
+{"atMs":9264.923299999908,"event":"token","data":{"text":" 사용"}}
+{"atMs":9276.106199999922,"event":"token","data":{"text":"량"}}
+{"atMs":9287.453099999926,"event":"token","data":{"text":"이"}}
+{"atMs":9309.816699999967,"event":"token","data":{"text":" 급"}}
+{"atMs":9321.24589999998,"event":"token","data":{"text":"증"}}
+{"atMs":9332.432599999942,"event":"token","data":{"text":"하는"}}
+{"atMs":9343.56979999994,"event":"token","data":{"text":" 원"}}
+{"atMs":9355.010499999975,"event":"token","data":{"text":"인"}}
+{"atMs":9366.281599999988,"event":"token","data":{"text":"을"}}
+{"atMs":9389.485299999942,"event":"token","data":{"text":" 파"}}
+{"atMs":9389.488299999968,"event":"token","data":{"text":"악"}}
+{"atMs":9400.327099999995,"event":"token","data":{"text":"하기"}}
+{"atMs":9416.958799999906,"event":"token","data":{"text":" 위해"}}
+{"atMs":9433.295599999954,"event":"token","data":{"text":" Services"}}
+{"atMs":9447.950399999972,"event":"token","data":{"text":","}}
+{"atMs":9460.706999999937,"event":"token","data":{"text":" CPU"}}
+{"atMs":9473.856599999941,"event":"token","data":{"text":"-"}}
+{"atMs":9488.606499999994,"event":"token","data":{"text":" Dem"}}
+{"atMs":9503.735400000005,"event":"token","data":{"text":"anding"}}
+{"atMs":9518.743799999938,"event":"token","data":{"text":" Processes"}}
+{"atMs":9533.824799999944,"event":"token","data":{"text":","}}
+{"atMs":9548.941499999957,"event":"token","data":{"text":" SQL"}}
+{"atMs":9560.657599999919,"event":"token","data":{"text":" Server"}}
+{"atMs":9571.705899999943,"event":"token","data":{"text":" us"}}
+{"atMs":9582.817899999907,"event":"token","data":{"text":"ages"}}
+{"atMs":9594.150199999916,"event":"token","data":{"text":"를"}}
+{"atMs":9605.182299999986,"event":"token","data":{"text":" 확인"}}
+{"atMs":9616.278799999971,"event":"token","data":{"text":"한다"}}
+{"atMs":9627.221399999922,"event":"token","data":{"text":".\n"}}
+{"atMs":9638.183699999936,"event":"token","data":{"text":"-"}}
+{"atMs":9649.428399999975,"event":"token","data":{"text":" **"}}
+{"atMs":9660.512199999997,"event":"token","data":{"text":"명"}}
+{"atMs":9671.802099999972,"event":"token","data":{"text":"령"}}
+{"atMs":9682.900499999989,"event":"token","data":{"text":"**"}}
+{"atMs":9693.951000000001,"event":"token","data":{"text":":\n"}}
+{"atMs":9705.03879999998,"event":"token","data":{"text":" "}}
+{"atMs":9716.23629999999,"event":"token","data":{"text":" -"}}
+{"atMs":9727.340899999952,"event":"token","data":{"text":" `"}}
+{"atMs":9738.529899999965,"event":"token","data":{"text":"services"}}
+{"atMs":9749.499699999928,"event":"token","data":{"text":".m"}}
+{"atMs":9761.063499999931,"event":"token","data":{"text":"sc"}}
+{"atMs":9772.19869999995,"event":"token","data":{"text":"`"}}
+{"atMs":9783.284299999941,"event":"token","data":{"text":" or"}}
+{"atMs":9794.450599999982,"event":"token","data":{"text":" `"}}
+{"atMs":9805.566499999957,"event":"token","data":{"text":"cmd"}}
+{"atMs":9816.713899999973,"event":"token","data":{"text":" /"}}
+{"atMs":9827.828399999999,"event":"token","data":{"text":"c"}}
+{"atMs":9838.912299999967,"event":"token","data":{"text":" \""}}
+{"atMs":9850.174299999955,"event":"token","data":{"text":"services"}}
+{"atMs":9861.383799999952,"event":"token","data":{"text":" /"}}
+{"atMs":9872.684000000008,"event":"token","data":{"text":"all"}}
+{"atMs":9883.77629999991,"event":"token","data":{"text":"\"`\n"}}
+{"atMs":9894.913499999908,"event":"token","data":{"text":"   "}}
+{"atMs":9905.972299999907,"event":"token","data":{"text":" -"}}
+{"atMs":9917.026100000017,"event":"token","data":{"text":" Services"}}
+{"atMs":9929.35129999998,"event":"token","data":{"text":" List"}}
+{"atMs":9941.178499999922,"event":"token","data":{"text":"를"}}
+{"atMs":9952.226900000009,"event":"token","data":{"text":" 보"}}
+{"atMs":9963.328299999936,"event":"token","data":{"text":"여"}}
+{"atMs":9974.74749999994,"event":"token","data":{"text":"주"}}
+{"atMs":9985.820299999905,"event":"token","data":{"text":"며"}}
+{"atMs":9996.975999999908,"event":"token","data":{"text":","}}
+{"atMs":10012.38229999994,"event":"token","data":{"text":" CPU"}}
+{"atMs":10024.71989999991,"event":"token","data":{"text":" Dem"}}
+{"atMs":10035.76549999998,"event":"token","data":{"text":"anding"}}
+{"atMs":10046.849899999914,"event":"token","data":{"text":" Services"}}
+{"atMs":10057.877600000007,"event":"token","data":{"text":"를"}}
+{"atMs":10069.05859999999,"event":"token","data":{"text":" 찾"}}
+{"atMs":10080.437399999937,"event":"token","data":{"text":"는"}}
+{"atMs":10091.476199999917,"event":"token","data":{"text":"다"}}
+{"atMs":10102.582999999984,"event":"token","data":{"text":".\n"}}
+{"atMs":10113.521599999978,"event":"token","data":{"text":" "}}
+{"atMs":10124.51119999995,"event":"token","data":{"text":" -"}}
+{"atMs":10135.561600000015,"event":"token","data":{"text":" `"}}
+{"atMs":10146.691099999938,"event":"token","data":{"text":"top"}}
+{"atMs":10157.663199999952,"event":"token","data":{"text":"`\n"}}
+{"atMs":10168.664899999974,"event":"token","data":{"text":"   "}}
+{"atMs":10179.775900000008,"event":"token","data":{"text":" -"}}
+{"atMs":10191.042499999981,"event":"token","data":{"text":" `"}}
+{"atMs":10202.037799999933,"event":"token","data":{"text":"top"}}
+{"atMs":10213.082500000019,"event":"token","data":{"text":"`"}}
+{"atMs":10224.104500000016,"event":"token","data":{"text":"는"}}
+{"atMs":10235.1017,"event":"token","data":{"text":" Current"}}
+{"atMs":10246.398699999903,"event":"token","data":{"text":" System"}}
+{"atMs":10257.46379999991,"event":"token","data":{"text":"-wide"}}
+{"atMs":10268.413100000005,"event":"token","data":{"text":" CPU"}}
+{"atMs":10279.533799999976,"event":"token","data":{"text":","}}
+{"atMs":10290.487599999993,"event":"token","data":{"text":" RAM"}}
+{"atMs":10302.004099999904,"event":"token","data":{"text":","}}
+{"atMs":10312.825100000016,"event":"token","data":{"text":" Swap"}}
+{"atMs":10323.898399999947,"event":"token","data":{"text":" us"}}
+{"atMs":10334.987099999911,"event":"token","data":{"text":"ages"}}
+{"atMs":10345.889699999942,"event":"token","data":{"text":"를"}}
+{"atMs":10356.84169999999,"event":"token","data":{"text":" 보"}}
+{"atMs":10367.905900000012,"event":"token","data":{"text":"여"}}
+{"atMs":10379.06959999993,"event":"token","data":{"text":"준"}}
+{"atMs":10389.971399999922,"event":"token","data":{"text":"다"}}
+{"atMs":10401.22789999994,"event":"token","data":{"text":"."}}
+{"atMs":10412.217399999965,"event":"token","data":{"text":" Interval"}}
+{"atMs":10423.241500000004,"event":"token","data":{"text":"을"}}
+{"atMs":10434.18479999993,"event":"token","data":{"text":" "}}
+{"atMs":10445.2892,"event":"token","data":{"text":"5"}}
+{"atMs":10456.261699999915,"event":"token","data":{"text":"분"}}
+{"atMs":10467.33779999998,"event":"token","data":{"text":","}}
+{"atMs":10478.361199999927,"event":"token","data":{"text":" "}}
+{"atMs":10489.38029999996,"event":"token","data":{"text":"1"}}
+{"atMs":10500.511799999978,"event":"token","data":{"text":"5"}}
+{"atMs":10511.815799999982,"event":"token","data":{"text":"분"}}
+{"atMs":10522.99729999993,"event":"token","data":{"text":","}}
+{"atMs":10535.58719999995,"event":"token","data":{"text":" "}}
+{"atMs":10547.34719999996,"event":"token","data":{"text":"3"}}
+{"atMs":10558.438599999994,"event":"token","data":{"text":"0"}}
+{"atMs":10569.60859999992,"event":"token","data":{"text":"분"}}
+{"atMs":10580.560899999924,"event":"token","data":{"text":"으로"}}
+{"atMs":10591.550300000003,"event":"token","data":{"text":" 설정"}}
+{"atMs":10602.570399999968,"event":"token","data":{"text":"한다"}}
+{"atMs":10613.49139999994,"event":"token","data":{"text":".\n"}}
+{"atMs":10624.888899999904,"event":"token","data":{"text":" "}}
+{"atMs":10635.787199999904,"event":"token","data":{"text":" -"}}
+{"atMs":10646.80429999996,"event":"token","data":{"text":" `"}}
+{"atMs":10657.932900000014,"event":"token","data":{"text":"net"}}
+{"atMs":10668.925500000012,"event":"token","data":{"text":"sh"}}
+{"atMs":10680.046499999939,"event":"token","data":{"text":" win"}}
+{"atMs":10690.932099999976,"event":"token","data":{"text":"server"}}
+{"atMs":10702.118699999992,"event":"token","data":{"text":" query"}}
+{"atMs":10713.15169999993,"event":"token","data":{"text":" -"}}
+{"atMs":10724.223899999983,"event":"token","data":{"text":"v"}}
+{"atMs":10735.605699999956,"event":"token","data":{"text":" service"}}
+{"atMs":10746.70849999995,"event":"token","data":{"text":" /"}}
+{"atMs":10757.614399999962,"event":"token","data":{"text":"show"}}
+{"atMs":10768.74609999999,"event":"token","data":{"text":" name"}}
+{"atMs":10779.773399999947,"event":"token","data":{"text":","}}
+{"atMs":10790.782000000007,"event":"token","data":{"text":"version"}}
+{"atMs":10801.979799999972,"event":"token","data":{"text":","}}
+{"atMs":10812.820499999914,"event":"token","data":{"text":"process"}}
+{"atMs":10823.926499999943,"event":"token","data":{"text":"es"}}
+{"atMs":10834.990899999975,"event":"token","data":{"text":",c"}}
+{"atMs":10846.151399999973,"event":"token","data":{"text":"ost"}}
+{"atMs":10857.161199999973,"event":"token","data":{"text":"s"}}
+{"atMs":10868.283999999985,"event":"token","data":{"text":",d"}}
+{"atMs":10879.415299999993,"event":"token","data":{"text":"omain"}}
+{"atMs":10890.272200000007,"event":"token","data":{"text":"`\n"}}
+{"atMs":10901.371700000018,"event":"token","data":{"text":"   "}}
+{"atMs":10912.41149999993,"event":"token","data":{"text":" -"}}
+{"atMs":10925.913899999927,"event":"token","data":{"text":" CPU"}}
+{"atMs":10936.794099999941,"event":"token","data":{"text":" Dem"}}
+{"atMs":10948.108699999982,"event":"token","data":{"text":"anding"}}
+{"atMs":10959.092699999921,"event":"token","data":{"text":" Services"}}
+{"atMs":10970.129199999967,"event":"token","data":{"text":"의"}}
+{"atMs":10981.082599999965,"event":"token","data":{"text":" CPU"}}
+{"atMs":10992.213699999964,"event":"token","data":{"text":" usage"}}
+{"atMs":11003.343200000003,"event":"token","data":{"text":"를"}}
+{"atMs":11014.472699999926,"event":"token","data":{"text":" 파"}}
+{"atMs":11025.424400000018,"event":"token","data":{"text":"악"}}
+{"atMs":11036.36699999997,"event":"token","data":{"text":"하기"}}
+{"atMs":11047.307700000005,"event":"token","data":{"text":" 위해"}}
+{"atMs":11060.54859999998,"event":"token","data":{"text":" network"}}
+{"atMs":11071.695999999996,"event":"token","data":{"text":" services"}}
+{"atMs":11083.633299999987,"event":"token","data":{"text":"를"}}
+{"atMs":11094.749599999981,"event":"token","data":{"text":" 보"}}
+{"atMs":11105.823999999906,"event":"token","data":{"text":"여"}}
+{"atMs":11116.851799999946,"event":"token","data":{"text":"준"}}
+{"atMs":11127.886300000013,"event":"token","data":{"text":"다"}}
+{"atMs":11138.928599999985,"event":"token","data":{"text":".\n"}}
+{"atMs":11150.12069999997,"event":"token","data":{"text":" "}}
+{"atMs":11161.107399999979,"event":"token","data":{"text":" -"}}
+{"atMs":11172.450799999991,"event":"token","data":{"text":" `"}}
+{"atMs":11183.50689999992,"event":"token","data":{"text":"cmd"}}
+{"atMs":11194.535999999964,"event":"token","data":{"text":"let"}}
+{"atMs":11205.529699999955,"event":"token","data":{"text":" Get"}}
+{"atMs":11216.667000000016,"event":"token","data":{"text":"-"}}
+{"atMs":11227.78879999998,"event":"token","data":{"text":"Service"}}
+{"atMs":11238.890199999907,"event":"token","data":{"text":"Details"}}
+{"atMs":11249.863799999934,"event":"token","data":{"text":" -"}}
+{"atMs":11260.86699999997,"event":"token","data":{"text":"Name"}}
+{"atMs":11271.882499999949,"event":"token","data":{"text":" \""}}
+{"atMs":11283.28509999998,"event":"token","data":{"text":"SqlServer"}}
+{"atMs":11294.415299999993,"event":"token","data":{"text":"\""}}
+{"atMs":11305.321699999971,"event":"token","data":{"text":" |"}}
+{"atMs":11316.332799999975,"event":"token","data":{"text":" Select"}}
+{"atMs":11327.348299999954,"event":"token","data":{"text":"-"}}
+{"atMs":11338.429399999906,"event":"token","data":{"text":"Object"}}
+{"atMs":11349.518700000015,"event":"token","data":{"text":" -"}}
+{"atMs":11360.565899999929,"event":"token","data":{"text":"Property"}}
+{"atMs":11371.673699999927,"event":"token","data":{"text":" Value"}}
+{"atMs":11382.794099999941,"event":"token","data":{"text":",C"}}
+{"atMs":11394.088499999954,"event":"token","data":{"text":"PU"}}
+{"atMs":11405.103299999959,"event":"token","data":{"text":"`\n"}}
+{"atMs":11416.087899999926,"event":"token","data":{"text":"   "}}
+{"atMs":11427.184200000018,"event":"token","data":{"text":" -"}}
+{"atMs":11438.442899999907,"event":"token","data":{"text":" SQL"}}
+{"atMs":11449.684099999955,"event":"token","data":{"text":" Server"}}
+{"atMs":11460.773999999976,"event":"token","data":{"text":"의"}}
+{"atMs":11472.05799999996,"event":"token","data":{"text":" CPU"}}
+{"atMs":11487.00689999992,"event":"token","data":{"text":" usage"}}
+{"atMs":11494.671800000011,"event":"token","data":{"text":"를"}}
+{"atMs":11506.152499999967,"event":"token","data":{"text":" 파"}}
+{"atMs":11517.033699999913,"event":"token","data":{"text":"악"}}
+{"atMs":11528.178199999966,"event":"token","data":{"text":"하기"}}
+{"atMs":11539.754699999932,"event":"token","data":{"text":" 위해"}}
+{"atMs":11551.083199999994,"event":"token","data":{"text":" cmd"}}
+{"atMs":11562.181299999938,"event":"token","data":{"text":"lets"}}
+{"atMs":11573.326799999923,"event":"token","data":{"text":"를"}}
+{"atMs":11584.433099999907,"event":"token","data":{"text":" 사용"}}
+{"atMs":11597.775399999926,"event":"token","data":{"text":"한다"}}
+{"atMs":11609.164499999955,"event":"token","data":{"text":".\n"}}
+{"atMs":11620.246599999955,"event":"token","data":{"text":" "}}
+{"atMs":11631.306699999957,"event":"token","data":{"text":" -"}}
+{"atMs":11642.44439999992,"event":"token","data":{"text":" `"}}
+{"atMs":11653.425599999959,"event":"token","data":{"text":"w"}}
+{"atMs":11664.623699999996,"event":"token","data":{"text":"mic"}}
+{"atMs":11675.756999999983,"event":"token","data":{"text":" process"}}
+{"atMs":11686.860299999942,"event":"token","data":{"text":" /"}}
+{"atMs":11697.99979999999,"event":"token","data":{"text":"where"}}
+{"atMs":11709.175699999905,"event":"token","data":{"text":" name"}}
+{"atMs":11720.334999999963,"event":"token","data":{"text":" contains"}}
+{"atMs":11731.642400000012,"event":"token","data":{"text":" '"}}
+{"atMs":11742.719399999944,"event":"token","data":{"text":"SQL"}}
+{"atMs":11753.850099999923,"event":"token","data":{"text":"'"}}
+{"atMs":11765.379799999995,"event":"token","data":{"text":" |"}}
+{"atMs":11776.54859999998,"event":"token","data":{"text":" select"}}
+{"atMs":11787.657000000007,"event":"token","data":{"text":" performance"}}
+{"atMs":11798.622600000002,"event":"token","data":{"text":","}}
+{"atMs":11809.826599999913,"event":"token","data":{"text":"cpu"}}
+{"atMs":11821.327199999942,"event":"token","data":{"text":"percentage"}}
+{"atMs":11832.464599999948,"event":"token","data":{"text":",n"}}
+{"atMs":11843.66830000002,"event":"token","data":{"text":"ice"}}
+{"atMs":11854.904800000018,"event":"token","data":{"text":",p"}}
+{"atMs":11866.136999999988,"event":"token","data":{"text":"id"}}
+{"atMs":11893.113000000012,"event":"token","data":{"text":"`\n\n"}}
+{"atMs":11893.11540000001,"event":"token","data":{"text":"-"}}
+{"atMs":11899.90539999993,"event":"token","data":{"text":" **"}}
+{"atMs":11913.197799999965,"event":"token","data":{"text":"ris"}}
+{"atMs":11924.418899999931,"event":"token","data":{"text":"ks"}}
+{"atMs":11937.846599999932,"event":"token","data":{"text":"/"}}
+{"atMs":11949.786199999973,"event":"token","data":{"text":" heavyweight"}}
+{"atMs":11960.865999999922,"event":"token","data":{"text":" commands"}}
+{"atMs":11971.940899999929,"event":"token","data":{"text":"**"}}
+{"atMs":11983.205099999905,"event":"token","data":{"text":":\n"}}
+{"atMs":11994.030499999993,"event":"token","data":{"text":" "}}
+{"atMs":12005.340499999933,"event":"token","data":{"text":" -"}}
+{"atMs":12016.543699999922,"event":"token","data":{"text":" `"}}
+{"atMs":12027.803399999975,"event":"token","data":{"text":"net"}}
+{"atMs":12039.095299999928,"event":"token","data":{"text":"sh"}}
+{"atMs":12050.13439999998,"event":"token","data":{"text":" win"}}
+{"atMs":12061.177599999937,"event":"token","data":{"text":"server"}}
+{"atMs":12072.152099999948,"event":"token","data":{"text":" query"}}
+{"atMs":12083.112599999993,"event":"token","data":{"text":" -"}}
+{"atMs":12094.21649999998,"event":"token","data":{"text":"v"}}
+{"atMs":12105.217300000018,"event":"token","data":{"text":" service"}}
+{"atMs":12118.915799999959,"event":"token","data":{"text":" /"}}
+{"atMs":12129.864100000006,"event":"token","data":{"text":"show"}}
+{"atMs":12140.845199999982,"event":"token","data":{"text":" name"}}
+{"atMs":12151.921699999948,"event":"token","data":{"text":","}}
+{"atMs":12162.864300000016,"event":"token","data":{"text":"version"}}
+{"atMs":12174.07389999996,"event":"token","data":{"text":","}}
+{"atMs":12185.077399999951,"event":"token","data":{"text":"process"}}
+{"atMs":12195.918199999956,"event":"token","data":{"text":"es"}}
+{"atMs":12206.99159999995,"event":"token","data":{"text":",c"}}
+{"atMs":12217.939899999998,"event":"token","data":{"text":"ost"}}
+{"atMs":12229.099099999992,"event":"token","data":{"text":"s"}}
+{"atMs":12239.951499999966,"event":"token","data":{"text":",d"}}
+{"atMs":12251.155099999974,"event":"token","data":{"text":"omain"}}
+{"atMs":12262.503299999982,"event":"token","data":{"text":"`:"}}
+{"atMs":12273.564899999998,"event":"token","data":{"text":" SQL"}}
+{"atMs":12284.563800000004,"event":"token","data":{"text":" Server"}}
+{"atMs":12295.584599999944,"event":"token","data":{"text":" Dem"}}
+{"atMs":12306.604699999909,"event":"token","data":{"text":"anding"}}
+{"atMs":12317.449199999915,"event":"token","data":{"text":" Processes"}}
+{"atMs":12328.403399999952,"event":"token","data":{"text":"를"}}
+{"atMs":12339.451399999904,"event":"token","data":{"text":" 보"}}
+{"atMs":12350.52919999999,"event":"token","data":{"text":"여"}}
+{"atMs":12361.78859999997,"event":"token","data":{"text":"주"}}
+{"atMs":12372.846299999976,"event":"token","data":{"text":"며"}}
+{"atMs":12383.922099999967,"event":"token","data":{"text":","}}
+{"atMs":12394.951599999913,"event":"token","data":{"text":" sensitive"}}
+{"atMs":12405.854199999943,"event":"token","data":{"text":" data"}}
+{"atMs":12416.897499999963,"event":"token","data":{"text":" exposure"}}
+{"atMs":12427.854399999953,"event":"token","data":{"text":" risk"}}
+{"atMs":12438.848200000008,"event":"token","data":{"text":".\n"}}
+{"atMs":12449.814599999925,"event":"token","data":{"text":" "}}
+{"atMs":12460.847699999926,"event":"token","data":{"text":" -"}}
+{"atMs":12472.094500000007,"event":"token","data":{"text":" `"}}
+{"atMs":12483.221499999985,"event":"token","data":{"text":"cmd"}}
+{"atMs":12494.240899999975,"event":"token","data":{"text":"let"}}
+{"atMs":12505.327199999942,"event":"token","data":{"text":" Get"}}
+{"atMs":12516.442599999951,"event":"token","data":{"text":"-"}}
+{"atMs":12527.409199999995,"event":"token","data":{"text":"Service"}}
+{"atMs":12538.398099999991,"event":"token","data":{"text":"Details"}}
+{"atMs":12549.322700000019,"event":"token","data":{"text":" -"}}
+{"atMs":12560.292199999909,"event":"token","data":{"text":"Name"}}
+{"atMs":12571.210199999972,"event":"token","data":{"text":" \""}}
+{"atMs":12582.479799999972,"event":"token","data":{"text":"SqlServer"}}
+{"atMs":12593.459700000007,"event":"token","data":{"text":"\""}}
+{"atMs":12604.422900000005,"event":"token","data":{"text":" |"}}
+{"atMs":12615.521399999969,"event":"token","data":{"text":" Select"}}
+{"atMs":12626.536599999992,"event":"token","data":{"text":"-"}}
+{"atMs":12637.456200000015,"event":"token","data":{"text":"Object"}}
+{"atMs":12651.05589999992,"event":"token","data":{"text":" -"}}
+{"atMs":12661.984799999977,"event":"token","data":{"text":"Property"}}
+{"atMs":12673.140999999945,"event":"token","data":{"text":" Value"}}
+{"atMs":12684.47219999996,"event":"token","data":{"text":",C"}}
+{"atMs":12695.750099999947,"event":"token","data":{"text":"PU"}}
+{"atMs":12706.736199999927,"event":"token","data":{"text":"`:"}}
+{"atMs":12717.810300000012,"event":"token","data":{"text":" SQL"}}
+{"atMs":12728.848200000008,"event":"token","data":{"text":" Server"}}
+{"atMs":12739.807399999932,"event":"token","data":{"text":"의"}}
+{"atMs":12750.68069999991,"event":"token","data":{"text":" CPU"}}
+{"atMs":12761.732299999916,"event":"token","data":{"text":" usage"}}
+{"atMs":12772.665799999959,"event":"token","data":{"text":"를"}}
+{"atMs":12783.589899999904,"event":"token","data":{"text":" 파"}}
+{"atMs":12794.701699999976,"event":"token","data":{"text":"악"}}
+{"atMs":12806.13870000001,"event":"token","data":{"text":"하는"}}
+{"atMs":12828.321499999962,"event":"token","data":{"text":" 데"}}
+{"atMs":12839.029499999946,"event":"token","data":{"text":" System"}}
+{"atMs":12850.01079999993,"event":"token","data":{"text":" Services"}}
+{"atMs":12861.097699999926,"event":"token","data":{"text":" API"}}
+{"atMs":12874.602599999984,"event":"token","data":{"text":" risk"}}
+{"atMs":12886.656099999906,"event":"token","data":{"text":".\n\n"}}
+{"atMs":12897.64969999995,"event":"token","data":{"text":"####"}}
+{"atMs":12908.951499999966,"event":"token","data":{"text":" "}}
+{"atMs":12920.143500000006,"event":"token","data":{"text":"3"}}
+{"atMs":12933.071699999971,"event":"token","data":{"text":"."}}
+{"atMs":12944.662499999977,"event":"token","data":{"text":" Open"}}
+{"atMs":12955.751999999979,"event":"token","data":{"text":"Shift"}}
+{"atMs":12966.979399999953,"event":"token","data":{"text":" Pod"}}
+{"atMs":12978.057499999995,"event":"token","data":{"text":"\n"}}
+{"atMs":12989.07899999991,"event":"token","data":{"text":"-"}}
+{"atMs":13000.032499999972,"event":"token","data":{"text":" **"}}
+{"atMs":13011.145299999975,"event":"token","data":{"text":"목"}}
+{"atMs":13022.57759999996,"event":"token","data":{"text":"적"}}
+{"atMs":13033.792799999937,"event":"token","data":{"text":"**:"}}
+{"atMs":13044.662599999923,"event":"token","data":{"text":" CPU"}}
+{"atMs":13055.791899999953,"event":"token","data":{"text":" 사용"}}
+{"atMs":13066.860400000005,"event":"token","data":{"text":"률"}}
+{"atMs":13077.812900000019,"event":"token","data":{"text":"이"}}
+{"atMs":13099.978200000012,"event":"token","data":{"text":" 급"}}
+{"atMs":13110.866700000013,"event":"token","data":{"text":"증"}}
+{"atMs":13121.845199999982,"event":"token","data":{"text":"하는"}}
+{"atMs":13133.270499999984,"event":"token","data":{"text":"Pod"}}
+{"atMs":13144.26000000001,"event":"token","data":{"text":"와"}}
+{"atMs":13155.085499999928,"event":"token","data":{"text":" resource"}}
+{"atMs":13166.111199999927,"event":"token","data":{"text":" us"}}
+{"atMs":13180.000999999931,"event":"token","data":{"text":"ages"}}
+{"atMs":13190.9044,"event":"token","data":{"text":"를"}}
+{"atMs":13201.896399999969,"event":"token","data":{"text":" 파"}}
+{"atMs":13212.901599999983,"event":"token","data":{"text":"악"}}
+{"atMs":13223.886899999925,"event":"token","data":{"text":"하기"}}
+{"atMs":13235.209399999934,"event":"token","data":{"text":" 위해"}}
+{"atMs":13246.135499999975,"event":"token","data":{"text":" Pod"}}
+{"atMs":13257.529600000009,"event":"token","data":{"text":" List"}}
+{"atMs":13268.612800000003,"event":"token","data":{"text":","}}
+{"atMs":13280.191099999938,"event":"token","data":{"text":" pod"}}
+{"atMs":13291.31779999996,"event":"token","data":{"text":" CPU"}}
+{"atMs":13302.281399999978,"event":"token","data":{"text":"/M"}}
+{"atMs":13313.279499999946,"event":"token","data":{"text":"EM"}}
+{"atMs":13324.642899999977,"event":"token","data":{"text":" usage"}}
+{"atMs":13335.503599999938,"event":"token","data":{"text":","}}
+{"atMs":13346.915799999959,"event":"token","data":{"text":" container"}}
+{"atMs":13357.850800000015,"event":"token","data":{"text":" Dem"}}
+{"atMs":13368.88439999998,"event":"token","data":{"text":"ands"}}
+{"atMs":13379.843200000003,"event":"token","data":{"text":","}}
+{"atMs":13390.799400000018,"event":"token","data":{"text":" network"}}
+{"atMs":13401.903599999961,"event":"token","data":{"text":" Dem"}}
+{"atMs":13412.906799999997,"event":"token","data":{"text":"ands"}}
+{"atMs":13423.854999999981,"event":"token","data":{"text":","}}
+{"atMs":13435.012699999963,"event":"token","data":{"text":" scheduled"}}
+{"atMs":13445.95419999992,"event":"token","data":{"text":" pods"}}
+{"atMs":13457.205199999968,"event":"token","data":{"text":" status"}}
+{"atMs":13468.1679,"event":"token","data":{"text":"를"}}
+{"atMs":13479.076899999985,"event":"token","data":{"text":" 확인"}}
+{"atMs":13490.132699999958,"event":"token","data":{"text":"한다"}}
+{"atMs":13501.130000000005,"event":"token","data":{"text":".\n"}}
+{"atMs":13512.164400000009,"event":"token","data":{"text":"-"}}
+{"atMs":13523.08169999998,"event":"token","data":{"text":" **"}}
+{"atMs":13534.078099999926,"event":"token","data":{"text":"명"}}
+{"atMs":13545.102100000018,"event":"token","data":{"text":"령"}}
+{"atMs":13556.088600000017,"event":"token","data":{"text":"**"}}
+{"atMs":13567.24709999992,"event":"token","data":{"text":":\n"}}
+{"atMs":13578.322799999965,"event":"token","data":{"text":" "}}
+{"atMs":13589.270199999912,"event":"token","data":{"text":" -"}}
+{"atMs":13600.337100000004,"event":"token","data":{"text":" `"}}
+{"atMs":13611.287199999904,"event":"token","data":{"text":"kubectl"}}
+{"atMs":13622.261100000003,"event":"token","data":{"text":" get"}}
+{"atMs":13633.259699999937,"event":"token","data":{"text":" pods"}}
+{"atMs":13644.243299999973,"event":"token","data":{"text":" -"}}
+{"atMs":13644.449900000007,"event":"done","data":{}}

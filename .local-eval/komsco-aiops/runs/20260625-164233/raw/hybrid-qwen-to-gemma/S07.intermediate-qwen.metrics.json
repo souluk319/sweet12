@@ -1,0 +1,8 @@
+{
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "ttftMs": 205.1174999999348,
+  "totalMs": 3530.43610000005,
+  "charCount": 792,
+  "estimatedTokens": 251
+}

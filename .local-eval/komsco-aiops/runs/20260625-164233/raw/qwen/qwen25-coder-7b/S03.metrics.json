@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S03",
+  "scenarioTitle": "Tool Plan JSON",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:51:08.574Z",
+  "finishedAt": "2026-06-25T07:51:14.012Z",
+  "totalMs": 5438.1020000000135,
+  "charCount": 1105,
+  "estimatedTokens": 358,
+  "estimatedTps": 65.83179204803425,
+  "eventCount": 409
+}

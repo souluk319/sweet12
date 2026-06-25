@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S01",
+  "scenarioTitle": "한국어 운영 질의",
+  "modelId": "gemma4-e4b",
+  "displayName": "Gemma 4 E4B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:53:38.054Z",
+  "finishedAt": "2026-06-25T07:53:48.586Z",
+  "totalMs": 10531.632699999958,
+  "charCount": 2291,
+  "estimatedTokens": 796,
+  "estimatedTps": 75.58182312985555,
+  "eventCount": 990
+}

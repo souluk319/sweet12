@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S01",
+  "scenarioTitle": "한국어 운영 질의",
+  "modelId": "qwen25-coder-7b",
+  "displayName": "Qwen2.5 Coder 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:50:54.632Z",
+  "finishedAt": "2026-06-25T07:51:03.247Z",
+  "totalMs": 8615.12950000004,
+  "charCount": 1650,
+  "estimatedTokens": 576,
+  "estimatedTps": 66.85912266321677,
+  "eventCount": 721
+}

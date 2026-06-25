@@ -1,0 +1,14 @@
+{
+  "scenarioId": "S03",
+  "scenarioTitle": "Tool Plan JSON",
+  "modelId": "deepseek-r1-7b",
+  "displayName": "DeepSeek R1 Distill Qwen 7B",
+  "runtime": "ollama",
+  "startedAt": "2026-06-25T07:52:19.970Z",
+  "finishedAt": "2026-06-25T07:52:27.055Z",
+  "totalMs": 7085.064999999944,
+  "charCount": 1047,
+  "estimatedTokens": 297,
+  "estimatedTps": 41.91916376208297,
+  "eventCount": 566
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "cmd": "taskkill",
+    "args": [
+      "/IM",
+      "ollama.exe",
+      "/F",
+      "/T"
+    ],
+    "result": {
+      "error": "taskkill exited 128: ����: ���μ��� \"ollama.exe\"��(��) ã�� �� �����ϴ�.\r\n"
+    }
+  },
+  {
+    "cmd": "taskkill",
+    "args": [
+      "/IM",
+      "ollama app.exe",
+      "/F",
+      "/T"
+    ],
+    "result": {
+      "error": "taskkill exited 128: ����: ���μ��� \"ollama app.exe\"��(��) ã�� �� �����ϴ�.\r\n"
+    }
+  },
+  {
+    "cmd": "taskkill",
+    "args": [
+      "/IM",
+      "llama-server.exe",
+      "/F",
+      "/T"
+    ],
+    "result": {
+      "error": "taskkill exited 128: ����: ���μ��� \"llama-server.exe\"��(��) ã�� �� �����ϴ�.\r\n"
+    }
+  },
+  {
+    "cmd": "wsl.exe",
+    "args": [
+      "-d",
+      "Ubuntu-24.04",
+      "--",
+      "bash",
+      "-lc",
+      "pkill -f 'vllm|api_server|EngineCore' || true"
+    ],
+    "result": {
+      "error": "wsl.exe exited 15: "
+    }
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "runId": "20260625-164233",
+  "startedAt": "2026-06-25T07:42:33.022Z",
+  "operator": "codex",
+  "sourcePdf": "F:\\[Downloads Backup]\\[2020] Downloads\\Komsco_ai_agent_final.pdf",
+  "sourcePdfSha256": "078657e7c8e589d793e9a84639e1810aaed2f7d2917f9fd7eb555191919b7f2d",
+  "sweet12Commit": "4ab893688e8a48247eff40c93bd7b35530b6d0fe",
+  "apiBaseUrl": "http://127.0.0.1:8788",
+  "modelPlan": {
+    "gemma": {
+      "label": "Gemma 4 12B",
+      "candidates": [
+        "gemma4-12b-it-qat-secondary",
+        "gemma4-12b-it-q4-secondary",
+        "gemma4-e4b"
+      ],
+      "role": "한국어 운영 응답, 보고서 문체, Gemma 26B A4B 프록시"
+    },
+    "qwen": {
+      "label": "Qwen3.5",
+      "candidates": [
+        "qwen35-9b-awq",
+        "qwen35-9b-awq-quanttrio",
+        "qwen25-coder-7b"
+      ],
+      "role": "Tool Plan, 명령 추론, agentic reasoning"
+    },
+    "deepseek": {
+      "label": "DeepSeek R1",
+      "candidates": [
+        "deepseek-r1-7b"
+      ],
+      "role": "복합 RCA reasoning 비교"
+    },
+    "gemmaBaseline": {
+      "label": "Gemma 4 E4B Baseline",
+      "candidates": [
+        "gemma4-e4b"
+      ],
+      "role": "Gemma 12B 대비 속도 기준선"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S01",
+      "title": "한국어 운영 질의",
+      "scoring": "한국어 품질, OCP 용어 정확성, 조치 순서 실무성"
+    },
+    {
+      "id": "S02",
+      "title": "Evidence 기반 RCA",
+      "scoring": "Evidence 일치율, RCA 품질, 추정/확정 구분"
+    },
+    {
+      "id": "S03",
+      "title": "Tool Plan JSON",
+      "scoring": "JSON Schema 유효율, Tool Plan 품질, Tool Call 정확도"
+    },
+    {
+      "id": "S04",
+      "title": "Linux/Windows/OCP 도구 선택",
+      "scoring": "OS-aware Tool Reasoning, 명령 정확성, 설명 품질"
+    },
+    {
+      "id": "S05",
+      "title": "민감정보 필터링",
+      "scoring": "민감정보 식별/마스킹, 감사로그 관점, Evidence 일치율"
+    },
+    {
+      "id": "S06",
+      "title": "장문 보고서 생성",
+      "scoring": "장문 구조화, 대상 독자별 문체, 재발 방지책 구체성"
+    }
+  ],
+  "assumptions": [
+    "Gemma 4 12B is a local proxy for Gemma 4 26B A4B on GB10.",
+    "Qwen3.6 local runtime is not registered in SWEET12; Qwen3.5 AWQ is the primary Qwen representative.",
+    "Gemma+Qwen combination is tested sequentially, not as simultaneous two-node inference."
+  ]
+}
