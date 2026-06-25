@@ -304,7 +304,7 @@
 
     .score-layout {
       display: grid;
-      grid-template-columns: 1.45fr 0.95fr;
+      grid-template-columns: 1.55fr 0.85fr;
       gap: 14px;
       align-items: start;
     }
@@ -319,18 +319,26 @@
     .score-table th,
     .score-table td {
       border: 1px solid var(--line);
-      padding: 11px 12px;
+      padding: 9px 8px;
       text-align: center;
     }
 
     .score-table th {
       color: #fff;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 900;
     }
 
+    .score-table th small {
+      display: block;
+      margin-top: 3px;
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
     .score-table th.metric {
-      width: 25%;
+      width: 24%;
       background: var(--navy);
       text-align: left;
     }
@@ -347,10 +355,27 @@
     }
 
     .stars {
-      font-size: 25px;
-      letter-spacing: 1px;
+      font-size: inherit;
+      letter-spacing: 0;
       font-weight: 900;
+      white-space: normal;
+      line-height: 1.05;
+    }
+
+    .starline {
+      display: block;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 1;
       white-space: nowrap;
+    }
+
+    .score-tag {
+      display: block;
+      margin-top: 4px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 900;
     }
 
     .stars.blue { color: var(--blue); }
@@ -585,7 +610,7 @@
           </div>
           <div class="meta-card">
             <div class="k">Decision</div>
-            <div class="v">2안 Gemma Active-Active</div>
+            <div class="v">2안 우선 PoC</div>
           </div>
         </div>
 
@@ -600,11 +625,11 @@
             </header>
             <div class="info-box">
               <span class="label">로컬 테스트 매핑</span>
-              <strong>Gemma 4 12B + Qwen2.5/DeepSeek 역할 분리</strong>
+              <strong>Gemma 12B 보고서 + Qwen/DeepSeek 분석 역할 분리</strong>
             </div>
             <div class="info-box">
-              <span class="label">실측 요약</span>
-              <strong>Gemma 39.54 tok/s · Qwen fallback 63.89 tok/s · DeepSeek 49.36 tok/s</strong>
+              <span class="label">로컬 추정 속도</span>
+              <strong>Gemma 39.54 · Qwen fallback 63.89 · DeepSeek 49.36 tok/s</strong>
             </div>
             <div class="plan-body">
               <p class="section-mark">+ 주요 장점</p>
@@ -627,17 +652,17 @@
             </header>
             <div class="info-box">
               <span class="label">로컬 테스트 매핑</span>
-              <strong>Gemma 4 12B IT QAT 동일 모델 2노드 가정</strong>
+              <strong>Gemma 4 12B 단일노드 실측 -> 동일 모델 2노드 구성으로 외삽</strong>
             </div>
             <div class="info-box">
-              <span class="label">실측 요약</span>
-              <strong>평균 16.5s · 39.54 tok/s · 한국어/RCA/Tool Plan 전반 양호</strong>
+              <span class="label">로컬 실측 요약</span>
+              <strong>평균 16.5s · 39.54 tok/s · S01~S06 전반 균형적</strong>
             </div>
             <div class="plan-body">
               <p class="section-mark">+ 주요 장점</p>
               <ul>
-                <li>동일 모델 2노드 운영으로 HA와 운영 단순성이 가장 방어 가능</li>
-                <li>Gemma 26B A4B 후보에 가장 가까운 로컬 프록시</li>
+                <li>동일 모델 2노드 구성이므로 운영 절차와 장애 대응 설계가 가장 단순</li>
+                <li>Gemma 26B A4B 후보에 가장 가까운 로컬 프록시로 사용</li>
                 <li>한국어 보고서와 운영 질의에서 안정적인 문체</li>
               </ul>
               <p class="section-mark warn">- 주의 / 한계</p>
@@ -655,11 +680,11 @@
             </header>
             <div class="info-box">
               <span class="label">로컬 테스트 매핑</span>
-              <strong>Qwen Tool Plan -&gt; Gemma 12B 최종 RCA 순차 결합</strong>
+              <strong>Qwen fallback Tool Plan -&gt; Gemma 12B 최종 RCA 순차 결합</strong>
             </div>
             <div class="info-box">
-              <span class="label">실측 요약</span>
-              <strong>18.4s · 44.94 tok/s · Evidence 일치율은 개선, 운영 복잡도 감점</strong>
+              <span class="label">로컬 실측 요약</span>
+              <strong>18.4s · Evidence 일치율 강점 · 순차 지연/운영 복잡도 감점</strong>
             </div>
             <div class="plan-body">
               <p class="section-mark">+ 주요 장점</p>
@@ -754,9 +779,9 @@
         </table>
 
         <div class="callouts">
-          <div class="callout">1안은 모델별 강점 분리가 가능하나 Qwen3.5 런타임 복구가 선행되어야 함</div>
-          <div class="callout">2안은 운영 단순성, HA, 품질 방어력이 가장 균형적</div>
-          <div class="callout red">3안은 상시 서비스가 아니라 복합 RCA 요청에 제한 적용</div>
+          <div class="callout">1안은 모델별 강점 분리가 가능하지만 Qwen3.5 런타임 복구와 라우팅 정책 검증이 선행되어야 함</div>
+          <div class="callout">2안은 로컬 Gemma 12B 결과를 GB10 동일 모델 2노드 구성으로 외삽하는 우선 PoC안</div>
+          <div class="callout red">3안은 동시 분산 추론 실측이 아니라 순차 결합 테스트이므로 복합 RCA 요청에 제한 적용</div>
         </div>
 
         <p class="footnote">* tok/s는 하네스가 SSE 응답 길이와 총 시간을 기반으로 추정한 로컬 프록시 값입니다. GB10 PoC에서 동시성 1/4/8, failover RTO, KV cache 메모리 여유율을 재측정해야 합니다.</p>
@@ -766,7 +791,7 @@
     <section class="page">
       <div class="page-inner">
         <h1 class="title">선정 판단표 및 적용 권장</h1>
-        <p class="subtitle">점수는 로컬 SWEET12 실측 결과 기반 5점 만점 상대평가입니다. 별점이 높을수록 유리합니다.</p>
+        <p class="subtitle">점수는 로컬 SWEET12 단일노드 실측 기반 5점 만점 상대평가입니다. 별점과 숫자를 함께 표기했습니다.</p>
         <div class="rule"></div>
 
         <div class="score-layout">
@@ -775,46 +800,46 @@
               <tr>
                 <th class="metric">평가 항목</th>
                 <th class="blue">Gemma 12B</th>
-                <th class="teal">Qwen2.5 Coder<br><small>(Qwen3.5 대체)</small></th>
+                <th class="teal">Qwen 축<br><small>Qwen3.5 실패 -> 2.5 Coder</small></th>
                 <th class="red">DeepSeek R1</th>
                 <th class="red">결합형</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>한국어 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★★</td></tr>
-              <tr><td>단일 요청 출력 속도</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
-              <tr><td>복합 RCA 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★★</td></tr>
-              <tr><td>Tool Plan 품질</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★☆</td></tr>
-              <tr><td>JSON Schema 유효율</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
-              <tr><td>Evidence 일치율</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★☆</td><td class="stars red">★★★☆☆</td><td class="stars red">★★★★★</td></tr>
-              <tr><td>서비스 처리량 / 동시성</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★★★☆</td></tr>
-              <tr><td>운영 단순성</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★★</td><td class="stars red">★★☆☆☆</td></tr>
-              <tr><td>확장성 / HA</td><td class="stars blue">★★★★☆</td><td class="stars teal">★★★★☆</td><td class="stars red">★★★★☆</td><td class="stars red">★★★☆☆</td></tr>
-              <tr><td>실운영 적합도</td><td class="stars blue">★★★★★</td><td class="stars teal">★★★★★</td><td class="stars red">★★★★☆</td><td class="stars red">★★★★☆</td></tr>
+              <tr><td>한국어 품질</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">4.79</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.10</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">4.64</span></td></tr>
+              <tr><td>단일 요청 출력 속도</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.20</span></td></tr>
+              <tr><td>복합 RCA 품질</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">4.69</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">4.55</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">4.73</span></td></tr>
+              <tr><td>Tool Plan 품질</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">4.70</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.08</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.08</span></td></tr>
+              <tr><td>JSON Schema 유효율</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.40</span></td></tr>
+              <tr><td>Evidence 일치율</td><td class="stars blue"><span class="starline">★★★★☆</span><span class="score-tag">3.50</span></td><td class="stars teal"><span class="starline">★★★★☆</span><span class="score-tag">4.30</span></td><td class="stars red"><span class="starline">★★★☆☆</span><span class="score-tag">3.05</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td></tr>
+              <tr><td>서비스 처리량 / 동시성</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">4.85</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">5.00</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.00</span></td></tr>
+              <tr><td>운영 단순성</td><td class="stars blue"><span class="starline">★★★★☆</span><span class="score-tag">4.30</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">4.60</span></td><td class="stars red"><span class="starline">★★★★★</span><span class="score-tag">4.60</span></td><td class="stars red"><span class="starline">★★☆☆☆</span><span class="score-tag">2.20</span></td></tr>
+              <tr><td>확장성 / HA</td><td class="stars blue"><span class="starline">★★★★☆</span><span class="score-tag">4.20</span></td><td class="stars teal"><span class="starline">★★★★☆</span><span class="score-tag">3.80</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">3.80</span></td><td class="stars red"><span class="starline">★★★☆☆</span><span class="score-tag">2.80</span></td></tr>
+              <tr><td>실운영 적합도</td><td class="stars blue"><span class="starline">★★★★★</span><span class="score-tag">4.65</span></td><td class="stars teal"><span class="starline">★★★★★</span><span class="score-tag">4.65</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.35</span></td><td class="stars red"><span class="starline">★★★★☆</span><span class="score-tag">4.01</span></td></tr>
             </tbody>
           </table>
 
           <div>
             <section class="recommendation">
-              <h3>2안 Gemma Active-Active 권장</h3>
+              <h3>2안 Gemma Active-Active 우선 PoC</h3>
               <ul>
-                <li>Gemma 12B가 품질, RCA, Tool Plan을 모두 방어</li>
-                <li>동일 모델 2노드 운영으로 장애 대응과 운영 단순성이 가장 명확</li>
-                <li>GB10에서는 Gemma 26B A4B 실측으로 최종 확정</li>
+                <li>로컬 단일모델 테스트에서 Gemma 12B가 S01~S06을 가장 균형적으로 충족</li>
+                <li>동일 계열 모델 2노드 구성으로 운영 절차와 HA 설계 근거가 명확</li>
+                <li>최종 확정은 GB10에서 Gemma 26B A4B 처리량과 failover를 실측한 뒤 진행</li>
               </ul>
             </section>
             <section class="recommendation teal">
               <h3>1안 혼합형 병행 검토</h3>
               <ul>
-                <li>Qwen/DeepSeek가 특정 업무에서 강점이 분리될 때 적용</li>
-                <li>Qwen3.5 AWQ 런타임 복구와 라우팅 정책 검증 필요</li>
+                <li>Qwen3.5 런타임 복구 후 Tool Plan/RCA에서 명확한 우위가 나오면 적용</li>
+                <li>모델 라우팅, 장애 시 fallback, 감사 로그 정책 검증 필요</li>
               </ul>
             </section>
             <section class="recommendation red">
               <h3>3안 결합형 제한 적용</h3>
               <ul>
-                <li>Evidence 일치율은 좋지만 순차 지연과 운영 복잡도가 큼</li>
-                <li>기술 검증 또는 복합 RCA 고난도 요청에 한정 권고</li>
+                <li>S07에서 Evidence 일치율은 좋았지만 순차 지연과 운영 복잡도가 큼</li>
+                <li>상시 서비스가 아니라 기술 검증 또는 복합 RCA 고난도 요청에 한정</li>
               </ul>
             </section>
           </div>
@@ -1034,7 +1059,7 @@
           </article>
           <article class="result-card">
             <h3>Qwen2.5 Coder</h3>
-            <div class="model"><code>qwen2.5-coder:7b</code><br>Qwen3.5 fallback</div>
+            <div class="model"><code>qwen2.5-coder:7b</code><br>Qwen3.5 AWQ 실패 후 fallback</div>
             <div class="metric-row"><span>종합</span><b>4.65 / 5</b></div>
             <div class="metric-row"><span>평균 응답</span><b>6.8s</b></div>
             <div class="metric-row"><span>추정 속도</span><b>63.89 tok/s</b></div>
@@ -1084,7 +1109,7 @@
               <td class="num">5.00</td>
               <td class="num">4.30</td>
               <td class="num">4.65</td>
-              <td>Gemma 26B A4B 프록시. 최종 권장안의 기준 모델.</td>
+              <td>Gemma 26B A4B 계열 프록시. GB10 26B 실측 전까지의 우선 기준.</td>
             </tr>
             <tr>
               <td>Qwen 후보</td>
@@ -1094,7 +1119,7 @@
               <td class="num">4.70</td>
               <td class="num">4.60</td>
               <td class="num">4.65</td>
-              <td>Qwen3.5 AWQ 실패 후 fallback. 속도와 JSON은 양호.</td>
+              <td>Qwen3.5 AWQ 2종 실패 후 fallback. Qwen3.5 점수가 아니라 Qwen 축 임시 대체값.</td>
             </tr>
             <tr>
               <td>DeepSeek 후보</td>
@@ -1114,7 +1139,7 @@
               <td class="num">4.08</td>
               <td class="num">2.20</td>
               <td class="num">4.01</td>
-              <td>Evidence 일치율은 강점. 지연과 운영 복잡도 때문에 제한 적용.</td>
+              <td>S07 순차 결합 기준. Evidence 일치율은 강점이나 동시 2노드 결합 실측은 아님.</td>
             </tr>
           </tbody>
         </table>

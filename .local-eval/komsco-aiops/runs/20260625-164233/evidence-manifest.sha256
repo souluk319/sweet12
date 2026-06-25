@@ -3,7 +3,6 @@
 01930b051cba25c5239bedfde3b285be04ac601976fcfa2f38c2364c2dc5506d  raw/gemma/gemma4-12b-it-qat-secondary/S04.prompt.md
 01930b051cba25c5239bedfde3b285be04ac601976fcfa2f38c2364c2dc5506d  raw/qwen/qwen25-coder-7b/S04.prompt.md
 02e12064f13f09c451ef30e5f87a0c4a49f4c7550bfebb3ce44cd1e52a447712  raw/qwen/qwen25-coder-7b/S03.stream-events.ndjson
-048e42d32c725a48e8cb4a207cab435bdcf450c859e2c30b0fc79e1e65e0be4f  report/submission-report.html
 0a34ccd8141cb360b9db57079d29916384f501a9ee6e5108a7819211495af88b  raw/gemma/gemma4-12b-it-qat-secondary/switch-result.json
 0c0a1562022b640d30e1fce33bb49a6d9772154d6272c2593fef38c1414b243b  raw/deepseek/deepseek-r1-7b/S05.prompt.md
 0c0a1562022b640d30e1fce33bb49a6d9772154d6272c2593fef38c1414b243b  raw/gemma/gemma4-12b-it-qat-secondary/S05.prompt.md
@@ -66,6 +65,7 @@
 7cef26dbfbe3da366449479edcef07db54daac3da66cfd9c6ba49a431eddccfe  raw/deepseek/deepseek-r1-7b/S05.metrics.json
 7d26c4a8930e02f47a8d70ee2091450166aea0bb9863e123aefc9d58de4958c1  raw/qwen/qwen35-9b-awq-quanttrio/model.json
 7da44b8efbdb2c7be4d853524ed05ed7328b8b2f26212c231868b4636c92b15d  raw/hybrid-qwen-to-gemma/S07.intermediate-qwen.metrics.json
+82f654fce712f9a4964933f951a57db6f512ddf57b1c092f1f792dc7fd8900a8  report/submission-report.html
 831e95ffe58819ea4ba8d2967472a9750c531cc989c71f5dd60d8874c4b73015  raw/gemma-e4b-baseline/gemma4-e4b/S03.metrics.json
 862983a481847688740ad0bee7742583b61c177586bb9fb818e5dff080f5d972  raw/deepseek/deepseek-r1-7b/S06.response.md
 8682fd869dd10498441ea3b3c683ab5b956b2f2c50fd0bc71170c24ba298e5bf  raw/qwen/qwen25-coder-7b/S06.response.md
