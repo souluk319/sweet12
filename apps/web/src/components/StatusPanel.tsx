@@ -124,6 +124,18 @@ function RuntimeCommandHeader({
   const target = loading ? "scanning stores" : runtime.activeModelName ?? selectedModel?.displayName ?? "no target";
   const engine = loading ? "scanner" : runtime.runtime ?? selectedModel?.runtime ?? "none";
   const disk = loading ? "scan" : diskFree === null ? "-" : `${diskFree}GB`;
+  const speed = selectedModel?.bench?.avgTps ?? selectedModel?.expectedTps ?? 0;
+  const speedLabel = selectedModel?.bench ? `${selectedModel.bench.avgTps.toFixed(0)} t/s` : selectedModel?.expectedTps ? `~${selectedModel.expectedTps}` : "-";
+  const traceMode = loading ? "scan" : displayStatus === "ready" ? "live" : selectedModel?.installed ? "armed" : displayStatus;
+  const stateLevel = displayStatus === "ready" ? 88 : ["starting", "warming", "benchmarking", "installing"].includes(displayStatus) ? 70 : displayStatus === "failed" ? 18 : selectedModel?.installed ? 48 : 28;
+  const traceValues = [
+    stateLevel,
+    Math.max(14, Math.min(94, speed * 0.54 || stateLevel * 0.72)),
+    loading ? 44 : gpuUsed ?? 18,
+    diskFree === null ? 38 : Math.max(18, Math.min(94, diskFree / 2)),
+    Math.max(16, Math.min(92, stateLevel * 0.82 + (selectedModel?.installed ? 12 : 0)))
+  ];
+  const tracePoints = traceValues.map((value, index) => `${10 + index * 37},${40 - value * 0.32}`).join(" ");
 
   return (
     <div
@@ -152,6 +164,20 @@ function RuntimeCommandHeader({
         <CommandSignal label="engine" value={engine} active={engine !== "none"} />
         <CommandSignal label="disk" value={disk} active={loading || diskFree !== null} warn={diskLow} />
         <CommandSignal label="gpu" value={loading ? "scan" : gpuUsed === undefined ? "-" : `${gpuUsed}%`} active={loading || gpuUsed !== undefined} />
+      </div>
+      <div className="mt-2 grid grid-cols-[minmax(0,1fr)_64px] items-end gap-2" data-testid="runtime-signal-trace">
+        <div className="relative h-9 overflow-hidden rounded-md border border-cyan-300/12 bg-slate-950/42">
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.055)_1px,transparent_1px)] bg-[length:22px_18px]" />
+          <svg className="relative h-full w-full" viewBox="0 0 158 44" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points={tracePoints} fill="none" stroke="rgba(252,211,77,0.24)" strokeWidth="5.2" strokeLinecap="round" strokeLinejoin="round" />
+            <polyline points={tracePoints} fill="none" stroke="rgba(103,232,249,0.86)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        <div className="rounded-md border border-white/10 bg-white/[0.04] px-2 py-1 text-right">
+          <div className="truncate text-[9px] font-black uppercase tracking-[0.12em] text-cyan-100/45">trace</div>
+          <div className="truncate text-[11px] font-black text-white">{traceMode}</div>
+          <div className="truncate text-[10px] font-bold text-slate-500">{speedLabel}</div>
+        </div>
       </div>
     </div>
   );

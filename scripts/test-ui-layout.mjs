@@ -60,6 +60,9 @@ try {
         runtimeCommandConsoleVisible:
           window.innerWidth < 1024 ||
           Boolean(document.querySelector('[data-testid="runtime-command-console"]')?.textContent?.match(/command console|Runtime Control Plane|target|engine|gpu/i)),
+        runtimeSignalTraceVisible:
+          window.innerWidth < 1024 ||
+          Boolean(document.querySelector('[data-testid="runtime-signal-trace"]')?.textContent?.match(/trace|armed|live|scan|t\/s|~/i)),
         premiumSurfacesVisible:
           document.querySelectorAll(".surface-premium").length >= (window.innerWidth < 1024 ? 2 : 3) &&
           Boolean(document.querySelector(".game-mode-button")) &&
@@ -264,6 +267,7 @@ try {
       !closedState.headerLoadoutVisible ||
       !closedState.runtimeCoreSignalRailVisible ||
       !closedState.runtimeCommandConsoleVisible ||
+      !closedState.runtimeSignalTraceVisible ||
       !closedState.premiumSurfacesVisible ||
       !closedState.sweet12WordmarkVisible ||
       !closedState.mobileSignalRailVisible ||
