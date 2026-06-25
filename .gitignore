@@ -1,0 +1,12 @@
+node_modules/
+apps/*/node_modules/
+apps/*/dist/
+test-artifacts/
+.env
+.env.*
+*.log
+*.tsbuildinfo
+playwright-report/
+coverage/
+.DS_Store
+Thumbs.db

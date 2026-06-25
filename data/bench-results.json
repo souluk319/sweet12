@@ -1,0 +1,48 @@
+{
+  "gemma4-e2b": {
+    "updatedAt": "2026-06-24T01:33:57.617Z",
+    "runs": [
+      {
+        "outputTokens": 178,
+        "totalMs": 1635.2295000000158,
+        "tps": 154.9994731759479
+      },
+      {
+        "outputTokens": 95,
+        "totalMs": 1089.314000000013,
+        "tps": 163.45379591331098
+      },
+      {
+        "outputTokens": 60,
+        "totalMs": 839.8891000000294,
+        "tps": 161.0141746145052
+      }
+    ],
+    "avgTps": 159.82248123458805,
+    "avgTotalMs": 1188.1442000000195,
+    "avgOutputTokens": 111
+  },
+  "translategemma-4b": {
+    "updatedAt": "2026-06-24T01:34:43.142Z",
+    "runs": [
+      {
+        "outputTokens": 212,
+        "totalMs": 2356.986900000018,
+        "tps": 117.18708974154167
+      },
+      {
+        "outputTokens": 166,
+        "totalMs": 1776.2894000000088,
+        "tps": 125.16701502305789
+      },
+      {
+        "outputTokens": 179,
+        "totalMs": 1934.8114999999525,
+        "tps": 122.67222598005856
+      }
+    ],
+    "avgTps": 121.67544358155271,
+    "avgTotalMs": 2022.6959333333264,
+    "avgOutputTokens": 185.66666666666666
+  }
+}

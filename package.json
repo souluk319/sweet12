@@ -1,0 +1,19 @@
+{
+  "name": "local-llm-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/server",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "node scripts/start-dev.mjs",
+    "build": "npm run build --workspace apps/server && npm run build --workspace apps/web",
+    "typecheck": "npm run typecheck --workspace apps/server && npm run typecheck --workspace apps/web",
+    "test:ui": "node scripts/test-ui-layout.mjs && node scripts/test-loading-state.mjs && node scripts/test-settings-panel.mjs && node scripts/test-attachment-flow.mjs && node scripts/test-text-file-flow.mjs && node scripts/test-markdown-rendering.mjs && node scripts/test-chat-error-card.mjs && node scripts/test-streaming-placeholder.mjs && node scripts/test-runtime-handoff.mjs && node scripts/test-composer-shortcuts.mjs && node scripts/test-mobile-message-actions.mjs && node scripts/test-runtime-log-rendering.mjs && node scripts/test-drop-overlay.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
