@@ -156,6 +156,10 @@ try {
       commandDeckVisible: Boolean(document.querySelector('[data-testid="selector-command-deck"]')?.textContent?.match(/Spotlight picks|Filter models|Coding/i)),
       selectorTitleBarVisible: Boolean(document.querySelector('[data-testid="selector-title-bar"]')?.textContent?.match(/LLM 선택|selected target|installed/i)),
       selectorSurfacePolished: Boolean(document.querySelector(".selector-preview-hero-surface")) && Boolean(document.querySelector(".model-card-premium")),
+      selectorConsoleSurfaceVisible:
+        Boolean(document.querySelector(".selector-shell")) &&
+        Boolean(document.querySelector(".selector-command-surface")) &&
+        (window.innerWidth < 1024 || Boolean(document.querySelector(".selector-preview-rail"))),
       previewActionReadable: (() => {
         const action = [...document.querySelectorAll('[data-testid="selector-preview-primary-action"]')].find((element) => element.getClientRects().length > 0);
         const rect = action?.getBoundingClientRect();
@@ -279,6 +283,7 @@ try {
       !openState.commandDeckVisible ||
       !openState.selectorTitleBarVisible ||
       !openState.selectorSurfacePolished ||
+      !openState.selectorConsoleSurfaceVisible ||
       !openState.previewActionReadable ||
       !openState.modelCardActionsReadable ||
       !selectorShortcutState.opened ||

@@ -129,6 +129,55 @@ textarea {
     rgba(2, 6, 23, 0.78);
 }
 
+.selector-shell {
+  background:
+    linear-gradient(126deg, rgba(6, 78, 59, 0.2), rgba(15, 23, 42, 0.82) 34%, rgba(17, 24, 39, 0.94) 58%, rgba(49, 46, 129, 0.22)),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.94), rgba(2, 6, 23, 0.98));
+}
+
+.selector-shell::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(103, 232, 249, 0.1) 0 1px, transparent 1px),
+    linear-gradient(rgba(148, 163, 184, 0.045) 0 1px, transparent 1px),
+    linear-gradient(116deg, transparent 0 20%, rgba(252, 211, 77, 0.045) 30%, transparent 42%),
+    linear-gradient(252deg, transparent 0 48%, rgba(167, 139, 250, 0.065) 62%, transparent 78%);
+  background-size: 32px 32px, 32px 32px, auto, auto;
+  opacity: 0.74;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.32));
+}
+
+.selector-shell > * {
+  position: relative;
+  z-index: 1;
+}
+
+.selector-command-surface {
+  background:
+    linear-gradient(135deg, rgba(8, 145, 178, 0.16), rgba(15, 23, 42, 0.94) 44%, rgba(6, 78, 59, 0.13)),
+    rgba(2, 6, 23, 0.96);
+}
+
+.selector-command-surface::after {
+  position: absolute;
+  inset: auto 0 0;
+  pointer-events: none;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.5), rgba(252, 211, 77, 0.22), transparent);
+}
+
+.selector-preview-rail {
+  background:
+    linear-gradient(180deg, rgba(8, 47, 73, 0.2), rgba(15, 23, 42, 0.12) 38%, rgba(49, 46, 129, 0.13)),
+    linear-gradient(90deg, rgba(103, 232, 249, 0.07), transparent 22%),
+    rgba(255, 255, 255, 0.025);
+}
+
 .selector-preview-hero-surface {
   background:
     linear-gradient(135deg, rgba(20, 184, 166, 0.13), rgba(15, 23, 42, 0.74) 42%, rgba(217, 119, 6, 0.08) 68%, rgba(79, 70, 229, 0.13)),

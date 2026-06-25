@@ -342,7 +342,7 @@ export default function App() {
         {selectorOpen && (
           <div className="fixed inset-0 z-40 bg-slate-950/95 px-3 py-3" onClick={() => setSelectorOpen(false)}>
             <section
-              className="surface-premium mx-auto flex h-[min(760px,calc(100vh-24px))] max-w-[1180px] flex-col overflow-hidden rounded-lg border border-white/10 bg-slate-950/95 ring-1 ring-cyan-300/10"
+              className="selector-shell surface-premium mx-auto flex h-[min(760px,calc(100vh-24px))] max-w-[1180px] flex-col overflow-hidden rounded-lg border border-white/10 bg-slate-950/95 ring-1 ring-cyan-300/10"
               onClick={(event) => event.stopPropagation()}
             >
               <SelectorTitleBar
@@ -358,7 +358,7 @@ export default function App() {
 
               <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px]">
                 <div className="min-h-0 overflow-y-auto scroll-py-4 px-3 pb-3">
-                  <div className="sticky top-0 z-20 -mx-3 border-b border-white/10 bg-slate-950/94 px-3 pb-3 pt-3 shadow-[0_18px_36px_rgba(0,0,0,0.28)] backdrop-blur-xl" data-testid="selector-command-deck">
+                  <div className="selector-command-surface sticky top-0 z-20 -mx-3 border-b border-white/10 bg-slate-950/94 px-3 pb-3 pt-3 shadow-[0_18px_36px_rgba(0,0,0,0.28)] backdrop-blur-xl" data-testid="selector-command-deck">
                     <DeckSummaryBar summary={deckSummary} />
                     <RoleRail role={role} onRole={setRole} />
                     <div className="mt-2 flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.045] px-3">
@@ -444,7 +444,7 @@ export default function App() {
                 </div>
 
                 {selectedModel && (
-                  <aside className="hidden min-h-0 overflow-y-auto border-l border-white/10 bg-white/[0.025] p-3 lg:block">
+                  <aside className="selector-preview-rail hidden min-h-0 overflow-y-auto border-l border-white/10 bg-white/[0.025] p-3 lg:block">
                     {filteredModels.length === 0 ? (
                       <SelectorPreviewEmpty query={query} roleLabel={roleLabel} onClear={() => {
                         setQuery("");
