@@ -173,6 +173,24 @@ textarea {
   animation: panel-scan 22s linear infinite;
 }
 
+.stage-runway::after {
+  position: absolute;
+  inset: 46% 0 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(103, 232, 249, 0.12) 28%, rgba(252, 211, 77, 0.055) 48%, rgba(167, 139, 250, 0.12) 72%, transparent 100%),
+    repeating-linear-gradient(90deg, transparent 0 38px, rgba(148, 163, 184, 0.08) 39px, transparent 40px),
+    linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.22) 42%, rgba(2, 6, 23, 0.52) 100%);
+  opacity: 0.52;
+  mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.82) 28%, rgba(0, 0, 0, 0.28) 100%);
+}
+
+.stage-runway > * {
+  position: relative;
+  z-index: 1;
+}
+
 .control-grid-theme-coding {
   background:
     linear-gradient(135deg, rgba(6, 78, 59, 0.16), rgba(6, 78, 59, 0) 36%),
