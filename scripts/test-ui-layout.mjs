@@ -62,6 +62,7 @@ try {
           document.querySelectorAll(".surface-premium").length >= (window.innerWidth < 1024 ? 2 : 3) &&
           Boolean(document.querySelector(".game-mode-button")) &&
           (window.innerWidth < 1024 || Boolean(document.querySelector(".command-console-surface"))),
+        sweet12WordmarkVisible: Boolean(document.querySelector(".sweet12-wordmark")?.textContent?.match(/SWEET12/)),
         mobileSignalRailVisible: window.innerWidth >= 640 || Boolean(document.querySelector('[data-testid="mobile-signal-rail"]')?.textContent?.match(/VRAM|FIT|STATE/i)),
         mobileStageCapsuleVisible: window.innerWidth >= 640 || Boolean(document.querySelector('[data-testid="mobile-stage-capsule"]')?.textContent?.match(/fit|Quick actions|Gemma|Qwen/i)),
         mobileRoutePanelVisible:
@@ -256,6 +257,7 @@ try {
       !closedState.runtimeCoreSignalRailVisible ||
       !closedState.runtimeCommandConsoleVisible ||
       !closedState.premiumSurfacesVisible ||
+      !closedState.sweet12WordmarkVisible ||
       !closedState.mobileSignalRailVisible ||
       !closedState.mobileStageCapsuleVisible ||
       !closedState.mobileRoutePanelVisible ||

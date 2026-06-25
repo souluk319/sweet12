@@ -115,6 +115,13 @@ textarea {
     0 0 0 1px rgba(253, 230, 138, 0.18) inset;
 }
 
+.sweet12-wordmark {
+  background: linear-gradient(90deg, #ffffff 0%, #bbf7d0 36%, #67e8f9 68%, #c4b5fd 100%);
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 14px rgba(103, 232, 249, 0.18));
+}
+
 .command-console-surface {
   border-color: rgba(125, 211, 252, 0.24);
   background:
