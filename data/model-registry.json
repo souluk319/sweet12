@@ -37,6 +37,22 @@
       "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=qwen2.5vl:7b"
     },
     {
+      "id": "gemma4-e4b-it-qat-mobile-gguf",
+      "displayName": "Gemma 4 E4B IT QAT Mobile GGUF",
+      "runtime": "ollama",
+      "role": "vision",
+      "roles": ["vision", "chat", "quick", "mobile"],
+      "store": "primary",
+      "ollamaModel": "hf.co/unsloth/gemma-4-E4B-it-qat-mobile-GGUF:UD-Q2_K_XL",
+      "manifestPath": "hf.co/unsloth/gemma-4-E4B-it-qat-mobile-GGUF/UD-Q2_K_XL",
+      "remoteTag": "hf.co/unsloth/gemma-4-E4B-it-qat-mobile-GGUF:UD-Q2_K_XL",
+      "sizeGb": 3.92,
+      "priority": 11,
+      "reason": "Hugging Face 원본 카드 기준 Mobile-optimized(wNa8o8) QAT 계열. base model도 google/gemma-4-E4B-it-qat-mobile-transformers로 일반 IT QAT GGUF와 분리되어 있음.",
+      "bestUse": "밈펫/모바일 온디바이스 후보 검증용. 텍스트+이미지 중심의 가벼운 멀티모달 대화, UI/이미지 설명, 모바일 배포 감각 테스트에 적합.",
+      "envExample": "LOCAL_LLM_PROVIDER=ollama\nOLLAMA_BASE_URL=http://127.0.0.1:11434\nOLLAMA_MODELS=F:\\AI_Models\\Ollama\nOLLAMA_MODEL=hf.co/unsloth/gemma-4-E4B-it-qat-mobile-GGUF:UD-Q2_K_XL"
+    },
+    {
       "id": "gemma4-e2b",
       "displayName": "Gemma 4 E2B",
       "runtime": "ollama",

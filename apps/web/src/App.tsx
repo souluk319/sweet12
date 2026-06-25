@@ -78,6 +78,7 @@ export default function App() {
 
   useLayoutEffect(() => {
     if (!selectorOpen) return;
+    if (!window.matchMedia("(min-width: 640px)").matches) return;
     let secondFrame = 0;
     const timers: number[] = [];
     const focusSearch = () => {
@@ -103,7 +104,7 @@ export default function App() {
     const needle = query.trim().toLowerCase();
     return models.filter(
       (model) =>
-        model.roles.includes(role) &&
+        (Boolean(needle) || model.roles.includes(role)) &&
         (!needle || `${model.displayName} ${model.reason} ${model.bestUse} ${model.ollamaModel ?? ""}`.toLowerCase().includes(needle))
     );
   }, [modelsData, role, query]);
@@ -340,9 +341,9 @@ export default function App() {
         {toast && <div className="mb-3 shrink-0 rounded-md border border-rose-400/25 bg-rose-950/70 px-4 py-2 text-sm font-semibold text-rose-100 shadow-lg shadow-rose-950/25">{toast}</div>}
 
         {selectorOpen && (
-          <div className="fixed inset-0 z-40 bg-slate-950/95 px-3 py-3" onClick={() => setSelectorOpen(false)}>
+          <div className="fixed inset-0 z-40 overflow-hidden overscroll-contain bg-slate-950/95 p-0 sm:px-3 sm:py-3" onClick={() => setSelectorOpen(false)}>
             <section
-              className="selector-shell surface-premium mx-auto flex h-[min(760px,calc(100vh-24px))] max-w-[1180px] flex-col overflow-hidden rounded-lg border border-white/10 bg-slate-950/95 ring-1 ring-cyan-300/10"
+              className="selector-shell surface-premium mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-[1180px] flex-col overflow-hidden rounded-none border-0 border-white/10 bg-slate-950/95 ring-1 ring-cyan-300/10 sm:h-[min(760px,calc(100vh-24px))] sm:max-h-[calc(100vh-24px)] sm:rounded-lg sm:border"
               onClick={(event) => event.stopPropagation()}
             >
               <SelectorTitleBar
@@ -357,7 +358,7 @@ export default function App() {
               />
 
               <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px]">
-                <div className="min-h-0 overflow-y-auto scroll-py-4 px-3 pb-3">
+                <div className="min-h-0 overflow-y-auto overscroll-contain scroll-py-4 px-3 pb-3">
                   <div className="selector-command-surface sticky top-0 z-20 -mx-3 border-b border-white/10 bg-slate-950/94 px-3 pb-3 pt-3 shadow-[0_18px_36px_rgba(0,0,0,0.28)] backdrop-blur-xl" data-testid="selector-command-deck">
                     <DeckSummaryBar summary={deckSummary} />
                     <RoleRail role={role} onRole={setRole} />
@@ -365,7 +366,6 @@ export default function App() {
                       <Search className="h-4 w-4 text-cyan-200/70" />
                       <input
                         ref={selectorSearchRef}
-                        autoFocus
                         value={query}
                         onChange={(event) => setQuery(event.target.value)}
                         placeholder="Filter models"

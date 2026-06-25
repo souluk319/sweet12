@@ -28,6 +28,10 @@ Ollama/vLLM 후보 모델을 한 화면에서 고르고, 하나의 런타임만 
 
 ![Mobile dashboard](docs/screenshots/dashboard-mobile.png)
 
+### Mobile Model Selector
+
+![Mobile model selector](docs/screenshots/model-selector-mobile.png)
+
 ## Stack
 
 - React + Vite + TypeScript

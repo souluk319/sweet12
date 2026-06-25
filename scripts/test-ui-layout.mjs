@@ -93,8 +93,15 @@ try {
     const selectorShortcutState = await page.evaluate(() => ({
       opened: Boolean(document.querySelector('[data-testid="selector-title-bar"]')),
       searchFocused: document.activeElement === document.querySelector('[data-testid="selector-search-input"]'),
+      focusExpected: window.innerWidth >= 640,
       shortcutAffordanceVisible: window.innerWidth < 768 || Boolean(document.querySelector('[data-testid="selector-shortcut-affordance"]')?.getClientRects().length),
-      shortcutA11yBound: document.querySelector('header button[aria-keyshortcuts~="Control+K"]')?.getAttribute("aria-keyshortcuts")?.includes("Meta+K") ?? false
+      shortcutA11yBound: document.querySelector('header button[aria-keyshortcuts~="Control+K"]')?.getAttribute("aria-keyshortcuts")?.includes("Meta+K") ?? false,
+      mobileViewportContained: (() => {
+        if (window.innerWidth >= 640) return true;
+        const rect = document.querySelector(".selector-shell")?.getBoundingClientRect();
+        return Boolean(rect && rect.top >= -1 && rect.left >= -1 && rect.right <= window.innerWidth + 1 && rect.bottom <= window.innerHeight + 1 && rect.height >= window.innerHeight - 2);
+      })(),
+      mobileKeyboardSafe: window.innerWidth >= 640 || document.activeElement !== document.querySelector('[data-testid="selector-search-input"]')
     }));
     await page.keyboard.press("Escape");
     await page.waitForFunction(() => !document.querySelector('[data-testid="selector-title-bar"]'), undefined, { timeout: 10_000 });
@@ -293,9 +300,11 @@ try {
       !openState.previewActionReadable ||
       !openState.modelCardActionsReadable ||
       !selectorShortcutState.opened ||
-      !selectorShortcutState.searchFocused ||
+      selectorShortcutState.searchFocused !== selectorShortcutState.focusExpected ||
       !selectorShortcutState.shortcutAffordanceVisible ||
       !selectorShortcutState.shortcutA11yBound ||
+      !selectorShortcutState.mobileViewportContained ||
+      !selectorShortcutState.mobileKeyboardSafe ||
       !selectorShortcutState.closedWithEscape ||
       !emptySearchState.emptyVisible ||
       !emptySearchState.previewEmptyVisible ||
