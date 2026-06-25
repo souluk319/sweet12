@@ -9,10 +9,10 @@ cd /d "%APP_DIR%"
 
 call :check_api
 if errorlevel 1 (
-  echo Starting Local LLM Lab...
-  start "Local LLM Lab Dev Server" cmd /k "cd /d ""%APP_DIR%"" && npm run dev"
+  echo Starting SWEET12...
+  start "SWEET12 Dev Server" cmd /k "cd /d ""%APP_DIR%"" && npm run dev"
 ) else (
-  echo Local LLM Lab is already running.
+  echo SWEET12 is already running.
 )
 
 echo Waiting for dashboard...

@@ -1368,7 +1368,7 @@ function RouteTrace({
 function PromptActionDock({ prompts, onPrompt, compact = false }: { prompts: string[]; onPrompt: (prompt: string) => void; compact?: boolean }) {
   if (compact) {
     return (
-      <div className="mt-2 grid grid-cols-[108px_minmax(0,1fr)_58px] items-center gap-2" data-testid="prompt-action-dock">
+      <div className="mt-2 grid grid-cols-[128px_minmax(0,1fr)_58px] items-center gap-2" data-testid="prompt-action-dock">
         <div className="flex min-w-0 items-center gap-1.5 text-[10px] font-black uppercase tracking-[0.13em] text-cyan-100/65">
           <Sparkles className="h-3.5 w-3.5 shrink-0" />
           <span className="truncate">Quick actions</span>

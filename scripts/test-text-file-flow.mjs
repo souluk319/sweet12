@@ -5,7 +5,7 @@ import { chromium } from "playwright";
 const appUrl = process.env.LOCAL_LLM_LAB_URL ?? "http://127.0.0.1:5173/";
 const outDir = path.resolve("test-artifacts");
 const filePath = path.join(outDir, "text-attachment-smoke.txt");
-const marker = "local-llm-lab text attachment smoke marker";
+const marker = "sweet12 text attachment smoke marker";
 
 fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(filePath, `${marker}\nsecond line: composer must remain editable after file attach\n`, "utf8");

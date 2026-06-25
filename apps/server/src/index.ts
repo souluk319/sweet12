@@ -88,5 +88,5 @@ app.use((error: unknown, _req: Request, res: Response, next: NextFunction) => {
 });
 
 app.listen(port, "127.0.0.1", () => {
-  console.log(`Local LLM Lab server listening on http://127.0.0.1:${port}`);
+  console.log(`SWEET12 server listening on http://127.0.0.1:${port}`);
 });

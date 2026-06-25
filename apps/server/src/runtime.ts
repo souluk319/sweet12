@@ -235,7 +235,7 @@ async function startVllm(model: ModelProfile): Promise<void> {
       "--tensor-parallel-size 1 --quantization awq --dtype half --gpu-memory-utilization 0.98 " +
       "--cpu-offload-gb 8 --swap-space 16 --kv-cache-dtype fp8 --block-size 8 --max-model-len 1024 " +
       "--max-num-seqs 1 --enforce-eager --disable-log-stats --language-model-only " +
-      "> /mnt/f/AI_Models/Qwen/logs/local-llm-lab-vllm.log 2>&1 & echo $! > /mnt/f/AI_Models/Qwen/logs/vllm.pid"
+      "> /mnt/f/AI_Models/Qwen/logs/sweet12-vllm.log 2>&1 & echo $! > /mnt/f/AI_Models/Qwen/logs/vllm.pid"
   ].join(" && ");
 
   pushLog(`Starting vLLM model=${modelDir}`);

@@ -42,7 +42,7 @@ Ollama/vLLM 후보 모델을 한 화면에서 고르고, 하나의 런타임만 
 Windows에서는 배치 파일을 실행하면 dev server를 띄우고 브라우저까지 엽니다.
 
 ```bat
-Start Local LLM Lab.bat
+Start SWEET12.bat
 ```
 
 수동 실행:
