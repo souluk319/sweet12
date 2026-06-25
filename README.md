@@ -1,10 +1,10 @@
-# Sweet12
+# SWEET12
 
 12GB VRAM 환경에서 스윗하게 돌아가는 로컬 LLM 모음 런처 대시보드입니다.
 
 Ollama/vLLM 후보 모델을 한 화면에서 고르고, 하나의 런타임만 장착해서 테스트 채팅을 돌리고, 게임할 때는 바로 언로드할 수 있게 만든 로컬 LLM 실험실입니다. 기본 목표는 RTX 4070 Ti 같은 12GB VRAM PC에서 “돌아가긴 하는 모델”이 아니라 실제 개발 작업에 기분 좋게 쓰는 스윗스팟을 찾는 것입니다.
 
-![Sweet12 dashboard](docs/screenshots/dashboard-desktop.png)
+![SWEET12 dashboard](docs/screenshots/dashboard-desktop.png)
 
 ## What It Does
 

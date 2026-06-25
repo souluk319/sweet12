@@ -253,8 +253,8 @@ export default function App() {
               <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-amber-300 ring-2 ring-slate-950" />
             </div>
             <div className="min-w-0">
-              <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-cyan-200/70">Local LLM Lab</div>
-              <h1 className="truncate text-base font-bold tracking-normal text-white">스윗스팟 런처</h1>
+              <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-cyan-200/70">12GB VRAM Sweet Spot</div>
+              <h1 className="truncate text-base font-bold tracking-normal text-white">SWEET12</h1>
             </div>
             <div className="ml-2 hidden min-w-0 items-center gap-1.5 sm:flex">
               <TopSignal icon={HardDrive} label="F:" value={modelsLoading ? "scan" : diskFree === null ? "-" : `${diskFree}GB`} meter={diskGauge} tone={modelsData?.disk.lowSpace ? "rose" : "cyan"} />
