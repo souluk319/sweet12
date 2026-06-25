@@ -41,6 +41,7 @@ try {
         gameModeDockVisible: window.innerWidth < 1024 || Boolean(document.querySelector('[data-testid="game-mode-dock"]')?.textContent?.match(/Game Mode Bay|Clear runtimes|Already clear/i)),
         roleSkinApplied: Boolean(document.querySelector('[class*="control-grid-theme-"]')) && Boolean(document.querySelector('[class*="model-stage-shell-"]')),
         stageRunwayVisible: Boolean(document.querySelector(".stage-runway")),
+        stageFloorVisible: Boolean(document.querySelector(".stage-floor")),
         promptActionDockVisible: Boolean(document.querySelector('[data-testid="prompt-action-dock"]')?.textContent?.match(/Quick actions|draft only/i)),
         agentRouteVisible: window.innerWidth < 640 || Boolean(document.querySelector('[data-testid="agent-route-board"]')?.textContent?.match(/Agent route|command path|input|answer/i)),
         routeTraceVisible:
@@ -253,6 +254,7 @@ try {
       !closedState.gameModeDockVisible ||
       !closedState.roleSkinApplied ||
       !closedState.stageRunwayVisible ||
+      !closedState.stageFloorVisible ||
       !closedState.promptActionDockVisible ||
       !closedState.agentRouteVisible ||
       !closedState.routeTraceVisible ||

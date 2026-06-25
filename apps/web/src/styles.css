@@ -222,6 +222,35 @@ textarea {
   animation: panel-scan 22s linear infinite;
 }
 
+.stage-floor::before {
+  position: absolute;
+  inset: 38% 0 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(
+      88deg,
+      transparent 0 12%,
+      rgba(103, 232, 249, 0.1) 12.4%,
+      transparent 12.9% 28%,
+      rgba(148, 163, 184, 0.075) 28.4%,
+      transparent 29% 50%,
+      rgba(252, 211, 77, 0.055) 50.4%,
+      transparent 51% 71%,
+      rgba(167, 139, 250, 0.08) 71.4%,
+      transparent 72% 88%,
+      rgba(103, 232, 249, 0.1) 88.4%,
+      transparent 89%
+    ),
+    repeating-linear-gradient(0deg, transparent 0 28px, rgba(148, 163, 184, 0.075) 29px, transparent 30px),
+    linear-gradient(180deg, transparent 0%, rgba(8, 13, 20, 0.2) 34%, rgba(2, 6, 23, 0.74) 100%);
+  opacity: 0.78;
+  transform: perspective(860px) rotateX(58deg) scaleY(1.28);
+  transform-origin: bottom center;
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.78) 28%, rgba(0, 0, 0, 0.22) 100%);
+  animation: runway-scan 16s linear infinite;
+}
+
 .stage-runway::after {
   position: absolute;
   inset: 46% 0 0;
@@ -497,9 +526,19 @@ textarea {
   }
 }
 
+@keyframes runway-scan {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  to {
+    background-position: 44px 0, 0 60px, 0 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .lab-shell::before,
   .control-grid,
+  .stage-floor::before,
   .status-pulse::after,
   .handoff-line > div,
   .runtime-orb-active::before,

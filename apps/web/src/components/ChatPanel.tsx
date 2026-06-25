@@ -517,7 +517,7 @@ export function ChatPanel({
         </div>
       )}
 
-      <div ref={scrollRef} onScroll={updateStickToBottom} className={cn("stage-runway control-grid relative min-h-0 flex-1 space-y-3 overflow-y-auto p-4", `control-grid-theme-${role}`)}>
+      <div ref={scrollRef} onScroll={updateStickToBottom} className={cn("stage-runway stage-floor control-grid relative min-h-0 flex-1 space-y-3 overflow-y-auto p-4", `control-grid-theme-${role}`)}>
         {showRuntimeHud && <RuntimeHandoff runtime={runtime} selectedModel={selectedModel} />}
         {messages.length === 0 && (
           <ModelLaunchStage
