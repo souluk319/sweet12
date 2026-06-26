@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KOMSCO AIOps GB10 LLM 구성안 기술 검토서</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #0d1728;
+      --muted: #5f6b7a;
+      --line: #d8e0eb;
+      --soft: #f5f7fb;
+      --panel: #ffffff;
+      --navy: #101a33;
+      --blue: #2557d6;
+      --green: #087f5b;
+      --amber: #a86200;
+      --red: #b42318;
+      --violet: #5b3cc4;
+      --shadow: 0 18px 48px rgba(19, 32, 56, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      color: var(--ink);
+      background: #eef2f7;
+      line-height: 1.58;
+    }
+    .page {
+      width: min(1180px, calc(100% - 36px));
+      margin: 28px auto 56px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(16, 26, 51, 0.08);
+    }
+    .hero {
+      padding: 44px 48px 38px;
+      color: #fff;
+      background:
+        linear-gradient(125deg, rgba(16, 26, 51, 0.97), rgba(29, 59, 118, 0.93)),
+        radial-gradient(circle at 80% 10%, rgba(46, 213, 190, 0.3), transparent 34%);
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0;
+      color: #d8e7ff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .hero p {
+      width: min(880px, 100%);
+      margin: 0;
+      color: #dfe8f8;
+      font-size: 18px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .hero-stat {
+      min-height: 102px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .hero-stat strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .hero-stat span {
+      display: block;
+      margin-top: 6px;
+      color: #cad7eb;
+      font-size: 13px;
+    }
+    main { padding: 38px 48px 50px; }
+    section { margin-top: 38px; }
+    section:first-child { margin-top: 0; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: 0;
+      color: var(--navy);
+    }
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 18px;
+      color: var(--navy);
+    }
+    p { margin: 8px 0; }
+    .lead {
+      font-size: 17px;
+      color: #263448;
+    }
+    .callout {
+      padding: 18px 20px;
+      border-left: 5px solid var(--blue);
+      background: #f3f7ff;
+      margin: 18px 0;
+    }
+    .warning { border-left-color: var(--amber); background: #fff8eb; }
+    .danger { border-left-color: var(--red); background: #fff3f0; }
+    .ok { border-left-color: var(--green); background: #eefbf6; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 18px;
+    }
+    .card h3 { margin-top: 0; }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 2px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #17304f;
+      background: #e8eef9;
+    }
+    .badge.green { color: #075f46; background: #dff7ed; }
+    .badge.amber { color: #8a4f00; background: #fff0cf; }
+    .badge.red { color: #8f1d14; background: #ffe1dc; }
+    .badge.violet { color: #3f2a91; background: #ece7ff; }
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 4px;
+      table-layout: fixed;
+    }
+    .matrix th,
+    .matrix td {
+      border: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .matrix th {
+      color: #182338;
+      background: #eef3fa;
+      font-size: 13px;
+    }
+    .matrix td { font-size: 14px; }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(90px, 1fr));
+      gap: 8px;
+      align-items: stretch;
+      margin-top: 16px;
+    }
+    .node {
+      min-height: 72px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .node.dark {
+      color: #fff;
+      border-color: #243654;
+      background: var(--navy);
+    }
+    .node.blue {
+      color: #fff;
+      border-color: #2557d6;
+      background: var(--blue);
+    }
+    .node.green {
+      color: #fff;
+      border-color: #087f5b;
+      background: var(--green);
+    }
+    .plan {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr 1.2fr;
+      gap: 0;
+      border: 1px solid var(--line);
+      margin-top: 14px;
+    }
+    .plan > div {
+      padding: 15px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      min-height: 78px;
+    }
+    .plan > div:nth-child(3n) { border-right: 0; }
+    .plan .head {
+      font-weight: 800;
+      color: #fff;
+      background: var(--navy);
+    }
+    .small { color: var(--muted); font-size: 13px; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 4px 0; }
+    .decision {
+      display: grid;
+      grid-template-columns: 1.1fr 1.3fr 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .decision .card {
+      border-top: 5px solid var(--blue);
+    }
+    .decision .card:nth-child(2) { border-top-color: var(--green); }
+    .decision .card:nth-child(3) { border-top-color: var(--violet); }
+    .source-list a { color: #244fbd; text-decoration: none; }
+    .source-list a:hover { text-decoration: underline; }
+    .footer-note {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; }
+      .page { width: 100%; margin: 0; box-shadow: none; border: 0; }
+      .hero { color: #111; background: #fff; border-bottom: 2px solid #111; }
+      .hero p, .eyebrow, .hero-stat span { color: #333; }
+      .hero-stat { border-color: #999; background: #fff; }
+      a { color: #111; }
+    }
+    @media (max-width: 900px) {
+      .page { width: 100%; margin: 0; border: 0; }
+      .hero, main { padding-left: 22px; padding-right: 22px; }
+      .hero-grid, .grid-2, .grid-3, .decision { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr 1fr; }
+      .plan { grid-template-columns: 1fr; }
+      .plan > div { border-right: 0; }
+      .matrix { table-layout: auto; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header class="hero">
+      <div class="eyebrow">KOMSCO AIOps Architecture Study · 2026-06-26</div>
+      <h1>Dell Pro Max GB10 2노드 기반 LLM 구성안 기술 검토서</h1>
+      <p>원문 PDF의 의도를 단순 모델 점수표가 아니라 OpenShift Lightspeed, AI Gateway, RAG, Tool Adapter, RBAC, 감사 체계를 포함한 AIOps 운영 아키텍처로 재구성한 산출물입니다.</p>
+      <div class="hero-grid">
+        <div class="hero-stat"><strong>GB10 x2</strong><span>128GB unified memory 기반 2노드 설계</span></div>
+        <div class="hero-stat"><strong>4 Configs</strong><span>혼합형, Active-Active, 결합형, 대형 검증형</span></div>
+        <div class="hero-stat"><strong>Evidence First</strong><span>공식 출처, 원문 가설, 로컬 실험, PoC 필요 분리</span></div>
+        <div class="hero-stat"><strong>No Fake Score</strong><span>GB10 미실측 항목은 점수 대신 검증 항목으로 처리</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Executive Summary</h2>
+        <p class="lead">권장 기본안은 <strong>역할 분리형 혼합 구성</strong>입니다. GB10 #1은 Qwen3.6 27B 또는 Mistral Small 4 계열을 Tool Plan/RCA reasoning 전용으로 두고, GB10 #2는 Gemma 4 26B A4B를 빠른 한국어 운영 질의, 요약, 최종 보고서 정리에 사용합니다.</p>
+        <div class="callout ok">
+          운영 안정성과 HA가 최우선이면 Gemma 4 26B A4B 동일 모델 Active-Active로 먼저 시작하는 것이 더 현실적입니다. 복합 RCA는 별도 reasoning lane으로 승격시키면 됩니다.
+        </div>
+        <div class="callout warning">
+          원문 PDF의 tok/s와 별점은 사전 아키텍처 가설입니다. 본 문서는 GB10 2노드 실측 없이 성능 점수를 확정하지 않습니다.
+        </div>
+      </section>
+
+      <section>
+        <h2>Evidence Classification</h2>
+        <table class="matrix">
+          <thead>
+            <tr><th>등급</th><th>의미</th><th>문서 내 사용 방식</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="badge green">공식 근거</span></td><td>Dell, NVIDIA, Red Hat, Hugging Face 모델카드</td><td>하드웨어 스펙, 모델 구조, 컨텍스트, 라이선스, 모델 용도</td></tr>
+            <tr><td><span class="badge violet">원문 가설</span></td><td>KOMSCO PDF의 구성안과 판단표</td><td>아키텍처 방향과 비교 축으로 사용하되 확정 점수로 쓰지 않음</td></tr>
+            <tr><td><span class="badge amber">로컬 실험</span></td><td>SWEET12 12GB VRAM PC에서 수행한 프록시 테스트</td><td>하네스 재사용 가능성과 프록시 모델 경향만 반영</td></tr>
+            <tr><td><span class="badge red">PoC 필요</span></td><td>GB10 2노드에서 미측정</td><td>TTFT, 동시성, failover, TP/EP, KV cache 여유율</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Original PDF Intent</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>시스템 방향</h3>
+            <ul>
+              <li>기존 OpenShift 환경 보존</li>
+              <li>OpenShift Lightspeed API/UX를 사내형으로 확장</li>
+              <li>Console Dynamic Plugin + AI Gateway로 단일 진입점 구성</li>
+              <li>RBAC, 감사, 민감정보 필터링, RAG를 Gateway에서 처리</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Agentic Model 역할</h3>
+            <ul>
+              <li>OS Context Classifier: OpenShift/Linux/Windows 분류</li>
+              <li>Tool Router: 필요한 조회 도구 선택</li>
+              <li>Evidence Planner: Event, Log, Metric, Alert 수집 순서 계획</li>
+              <li>RCA Reasoner와 JSON Formatter: Lightspeed 전달용 Context 생성</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flow" aria-label="architecture flow">
+          <div class="node dark">OpenShift Console User</div>
+          <div class="node">Dynamic Plugin</div>
+          <div class="node blue">AI Gateway</div>
+          <div class="node">Tool Plan JSON</div>
+          <div class="node">OS-aware Adapter</div>
+          <div class="node">Evidence + RAG</div>
+          <div class="node green">RCA / Lightspeed Answer</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Hardware Baseline</h2>
+        <table class="matrix">
+          <thead>
+            <tr><th>항목</th><th>Dell Pro Max with GB10 공식 페이지 기준</th><th>설계 영향</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Processor</td><td>NVIDIA GB10 Grace Blackwell Superchip</td><td>로컬 개발 PC보다 큰 모델 검증 가능</td></tr>
+            <tr><td>Memory</td><td>128GB LPDDR5x unified memory</td><td>26B, 27B, 일부 100B+ quant 후보의 PoC 가능성</td></tr>
+            <tr><td>Compute</td><td>FP4 1 PFLOP로 제시</td><td>NVFP4/quant별 throughput 실측 필요</td></tr>
+            <tr><td>Networking</td><td>ConnectX-7 SmartNIC</td><td>2노드 통신 가능. 단 TP/EP 효율은 별도 검증 필요</td></tr>
+            <tr><td>Software</td><td>NVIDIA DGX OS stack</td><td>컨테이너 추론 서버, 드라이버, 모델 캐시 표준화에 유리</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Model Family Fit</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Gemma 4 26B A4B</h3>
+            <div class="badge-row"><span class="badge green">공식 확인</span><span class="badge">256K</span><span class="badge">3.8B active</span></div>
+            <p>텍스트/이미지 입력, 140개 이상 언어, function-calling, agentic workflow, coding을 표방합니다. 빠른 운영 질의, 로그 요약, 한국어 보고서 정리에 적합합니다.</p>
+          </div>
+          <div class="card">
+            <h3>Qwen3.6 27B</h3>
+            <div class="badge-row"><span class="badge green">공식 확인</span><span class="badge">262K</span><span class="badge">Agentic Coding</span></div>
+            <p>repository-level reasoning과 agentic coding 개선을 명시합니다. Tool Plan JSON, 복합 RCA, OS 진단 절차 생성에 적합한 후보입니다.</p>
+          </div>
+          <div class="card">
+            <h3>Mistral Small 4</h3>
+            <div class="badge-row"><span class="badge amber">원문 후보</span><span class="badge red">추가 검증</span></div>
+            <p>원문은 119B, 6.5B active/token 후보로 제시합니다. 접근 권한, 라이선스, quant, GB10 엔진 지원을 먼저 확인해야 합니다.</p>
+          </div>
+          <div class="card">
+            <h3>DeepSeek R1 Distill</h3>
+            <div class="badge-row"><span class="badge green">공식 확인</span><span class="badge amber">프록시 테스트</span></div>
+            <p>reasoning baseline으로 유용합니다. 로컬 7B distill은 응답 가능했지만 GB10 주력 후보의 최종 성능을 대체하지는 않습니다.</p>
+          </div>
+          <div class="card">
+            <h3>Nemotron Ultra 253B</h3>
+            <div class="badge-row"><span class="badge green">공식 확인</span><span class="badge">128K</span><span class="badge red">검증형</span></div>
+            <p>reasoning, RAG, tool calling post-training을 명시합니다. 주력 운영보다는 대형모델 검증 트랙 후보입니다.</p>
+          </div>
+          <div class="card">
+            <h3>Llama 4 Maverick</h3>
+            <div class="badge-row"><span class="badge green">공식 식별</span><span class="badge red">gated</span></div>
+            <p>접근 승인과 라이선스 조건 확인이 필요합니다. 2노드 분산 추론 검증 후보로만 다루는 것이 안전합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Local Harness Evidence</h2>
+        <table class="matrix">
+          <thead>
+            <tr><th>모델</th><th>결과</th><th>해석</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Gemma 4 12B IT QAT</td><td>7개 시나리오 평균 추정 39.5 tok/s</td><td>로컬 12GB VRAM에서 실제 구동. Gemma 계열 실험 하네스 유효</td></tr>
+            <tr><td>Gemma 4 E4B</td><td>2개 시나리오 평균 추정 75.1 tok/s</td><td>빠른 baseline. GB10 후보 직접 대체는 아님</td></tr>
+            <tr><td>Qwen3.5 9B AWQ</td><td>vLLM health check timeout</td><td>Qwen 계열은 GB10에서 엔진/quant 조합 검증 우선</td></tr>
+            <tr><td>Qwen2.5 Coder 7B</td><td>7개 시나리오 평균 추정 63.9 tok/s</td><td>프록시. Qwen3.6 27B의 품질/성능을 증명하지 않음</td></tr>
+            <tr><td>DeepSeek R1 7B</td><td>6개 시나리오 평균 추정 49.4 tok/s</td><td>reasoning baseline으로 참고 가능</td></tr>
+          </tbody>
+        </table>
+        <div class="callout danger">
+          이 로컬 실험으로 GB10 2노드 처리량, failover RTO, 분산 추론 효율, Gemma 26B/Qwen3.6 실제 성능은 확정할 수 없습니다.
+        </div>
+      </section>
+
+      <section>
+        <h2>Recommended Configurations</h2>
+        <div class="plan">
+          <div class="head">구성안</div><div class="head">노드 배치</div><div class="head">적용 판단</div>
+          <div><strong>1안 역할 분리형 혼합</strong><br><span class="small">기본 권장</span></div>
+          <div>GB10 #1: Qwen3.6 또는 Mistral<br>GB10 #2: Gemma 4 26B A4B</div>
+          <div>Tool Plan/RCA와 빠른 한국어 응답을 분리. 품질과 속도 균형이 좋지만 운영 복잡도 증가</div>
+          <div><strong>2안 Gemma Active-Active</strong><br><span class="small">운영 안정성 우선</span></div>
+          <div>GB10 #1: Gemma 4 26B A4B<br>GB10 #2: Gemma 4 26B A4B</div>
+          <div>HA와 처리량, 운영 단순성에 유리. 복합 RCA는 별도 승격 경로 필요</div>
+          <div><strong>3안 Planner -> Reporter</strong><br><span class="small">복합 RCA 제한 적용</span></div>
+          <div>Qwen/Mistral: Tool Plan<br>Gemma: 최종 한국어 보고서</div>
+          <div>복잡한 장애 분석에서 품질 개선 가능. latency와 가용성 복잡도 증가</div>
+          <div><strong>4안 대형모델 분산 추론</strong><br><span class="small">검증 트랙</span></div>
+          <div>GB10 #1 + #2: TP/EP 분산<br>Llama 4 Maverick, Nemotron Ultra 등</div>
+          <div>기술 검증/벤치마크 용도. 주력 운영 서비스로는 비추천</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Decision</h2>
+        <div class="decision">
+          <div class="card">
+            <h3>추천 기본 경로</h3>
+            <p><strong>1안 역할 분리형</strong>을 목표 아키텍처로 둔다. 복합 RCA와 Tool Plan 정확도가 사업 핵심이기 때문이다.</p>
+          </div>
+          <div class="card">
+            <h3>운영 시작 경로</h3>
+            <p><strong>2안 Gemma Active-Active</strong>로 Gateway, RBAC, RAG, Tool Adapter를 먼저 안정화할 수 있다.</p>
+          </div>
+          <div class="card">
+            <h3>검증 제한 경로</h3>
+            <p><strong>4안 대형모델 결합</strong>은 PoC/벤치마크 트랙으로 분리한다. 주력 서비스 선정표에 섞지 않는다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PoC Test Matrix</h2>
+        <table class="matrix">
+          <thead>
+            <tr><th>ID</th><th>목적</th><th>측정 지표</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>S01</td><td>한국어 운영 질의</td><td>정확도, 문장 품질, 불필요한 추론 억제</td></tr>
+            <tr><td>S02</td><td>Evidence 기반 RCA</td><td>증거 일치율, root cause 우선순위, 조치안</td></tr>
+            <tr><td>S03</td><td>Tool Plan JSON</td><td>JSON Schema 유효율, tool 선택 정확도, 위험 작업 차단</td></tr>
+            <tr><td>S04</td><td>Linux/Windows/OCP 분기</td><td>OS Context Classifier 정확도</td></tr>
+            <tr><td>S05</td><td>민감정보 필터링</td><td>secret/token/password 마스킹</td></tr>
+            <tr><td>S06</td><td>장문 RCA 보고서</td><td>운영자용 상세, 임원용 요약 분리</td></tr>
+            <tr><td>S07</td><td>Planner -> Reporter</td><td>단독 모델 대비 품질 개선</td></tr>
+            <tr><td>S08</td><td>동시성 1/4/8</td><td>TTFT p50/p95, decode tok/s, E2E latency</td></tr>
+            <tr><td>S09</td><td>Failover</td><td>RTO, 세션 손실, fallback 품질</td></tr>
+            <tr><td>S10</td><td>24h soak</td><td>memory leak, KV cache pressure, 장기 안정성</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>RAG Store Recommendation</h2>
+        <p>원문 PDF의 PostgreSQL + pgvector 기본안은 Dell Pro Max GB10 단일 장비 또는 소규모 2노드 구성에서 타당합니다. 문서 chunk, embedding, ACL metadata, evidence metadata를 한 DB에 두고 AI Gateway에서 권한 필터와 감사 로그를 통제하는 방식이 운영 부담이 가장 낮습니다.</p>
+        <table class="matrix">
+          <thead>
+            <tr><th>저장소</th><th>권장 수준</th><th>사유</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>PostgreSQL + pgvector</td><td>기본안</td><td>SQL, metadata, ACL, vector를 함께 관리하기 쉬움</td></tr>
+            <tr><td>Qdrant</td><td>성능 병목 시 대안</td><td>전용 vector 검색 성능이 필요할 때 검토</td></tr>
+            <tr><td>OpenSearch</td><td>기존 클러스터 있을 때</td><td>BM25 + vector hybrid가 필요할 때 유리</td></tr>
+            <tr><td>Milvus</td><td>대규모 전용</td><td>소규모 GB10 배치에는 운영 비용이 큼</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Final Recommendation Text</h2>
+        <div class="callout">
+          KOMSCO AIOps Agentic Model은 OpenShift Lightspeed를 대체하는 단순 챗봇이 아니라, 사내 증적과 운영 도구를 안전하게 연결하는 AI Gateway 중심 운영 분석 계층으로 설계해야 합니다. GB10 2노드 환경에서는 동일 모델 Active-Active로 운영 기반을 먼저 안정화하고, 복합 RCA와 Tool Plan이 필요한 요청만 Qwen/Mistral 계열 reasoning lane으로 승격하는 하이브리드 구성이 가장 현실적입니다.
+        </div>
+      </section>
+
+      <section class="source-list">
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://www.dell.com/en-us/lp/dell-pro-max-nvidia-ai-dev">Dell Pro Max NVIDIA AI developer page</a></li>
+          <li><a href="https://www.nvidia.com/en-us/products/workstations/dgx-spark/">NVIDIA DGX Spark product page</a></li>
+          <li><a href="https://huggingface.co/google/gemma-4-26B-A4B-it">Google Gemma 4 26B A4B model card</a></li>
+          <li><a href="https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4">NVIDIA Gemma 4 26B A4B NVFP4 model card</a></li>
+          <li><a href="https://huggingface.co/Qwen/Qwen3.6-27B">Qwen3.6 27B model card</a></li>
+          <li><a href="https://huggingface.co/Qwen/Qwen3.5-35B-A3B">Qwen3.5 35B A3B model card</a></li>
+          <li><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B">DeepSeek R1 Distill Qwen 7B model card</a></li>
+          <li><a href="https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1">NVIDIA Nemotron Ultra 253B model card</a></li>
+          <li><a href="https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct">Meta Llama 4 Maverick model card</a></li>
+          <li><a href="https://docs.redhat.com/en/documentation/red_hat_openshift_lightspeed">Red Hat OpenShift Lightspeed documentation</a></li>
+          <li><a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html/web_console/dynamic-plugins">OpenShift Console Dynamic Plugins documentation</a></li>
+          <li><a href="https://github.com/pgvector/pgvector">pgvector project</a></li>
+        </ul>
+      </section>
+
+      <p class="footer-note">로컬 원문 변환본과 SWEET12 실험 로그는 작업 PC에 보관되어 있으며, 원문 PDF 전체 내용은 GitHub 산출물에 포함하지 않았습니다.</p>
+    </main>
+  </article>
+</body>
+</html>
+
