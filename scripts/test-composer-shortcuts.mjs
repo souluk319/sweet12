@@ -50,6 +50,21 @@ try {
   await page.route("**/api/runtime/status", async (route) => {
     await route.fulfill({ contentType: "application/json", body: JSON.stringify(readyRuntime) });
   });
+  await page.route("**/api/home-server/status", async (route) => {
+    await route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({
+        status: "idle",
+        message: "RCA/RAG backend is not running",
+        chatModel: "gemma4:12b-it-qat",
+        embedModel: "embeddinggemma:latest",
+        chatEndpoint: "http://127.0.0.1:11434",
+        embedEndpoint: "http://127.0.0.1:11435",
+        apiKeyRequired: false,
+        logs: []
+      })
+    });
+  });
   await page.route("**/api/install/jobs", async (route) => {
     await route.fulfill({ contentType: "application/json", body: JSON.stringify({ jobs: [] }) });
   });

@@ -1,4 +1,4 @@
-import type { ChatMessage, InstallJob, ModelsResponse, RuntimeState } from "../types";
+import type { ChatMessage, HomeServerState, InstallJob, ModelsResponse, RuntimeState } from "../types";
 
 export async function fetchModels(): Promise<ModelsResponse> {
   const response = await fetch("/api/models");
@@ -10,6 +10,26 @@ export async function fetchRuntime(): Promise<RuntimeState> {
   const response = await fetch("/api/runtime/status");
   if (!response.ok) throw new Error("Failed to load runtime state");
   return response.json() as Promise<RuntimeState>;
+}
+
+export async function fetchHomeServerStatus(): Promise<HomeServerState> {
+  const response = await fetch("/api/home-server/status");
+  if (!response.ok) throw new Error("Failed to load home-server profile");
+  return response.json() as Promise<HomeServerState>;
+}
+
+export async function startHomeServerProfile(): Promise<HomeServerState> {
+  const response = await fetch("/api/home-server/start", { method: "POST" });
+  const parsed = await response.json();
+  if (!response.ok) throw new Error(parsed.error ?? "Home-server profile start failed");
+  return parsed as HomeServerState;
+}
+
+export async function stopHomeServerProfile(): Promise<HomeServerState> {
+  const response = await fetch("/api/home-server/stop", { method: "POST" });
+  const parsed = await response.json();
+  if (!response.ok) throw new Error(parsed.error ?? "Home-server profile stop failed");
+  return parsed as HomeServerState;
 }
 
 export async function fetchInstallJobs(): Promise<InstallJob[]> {

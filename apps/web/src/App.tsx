@@ -1,9 +1,22 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Boxes, BrainCircuit, ChevronDown, Code2, Download, Gamepad2, Gauge, HardDrive, Keyboard, Languages, MessageSquare, Play, Power, RefreshCcw, Search, Sparkles, TimerReset, X } from "lucide-react";
-import { apiMessages, fetchInstallJobs, fetchModels, fetchRuntime, installModel, runBench, stopRuntime, streamChat, switchModel } from "./lib/api";
+import {
+  apiMessages,
+  fetchHomeServerStatus,
+  fetchInstallJobs,
+  fetchModels,
+  fetchRuntime,
+  installModel,
+  runBench,
+  startHomeServerProfile as apiStartHomeServerProfile,
+  stopHomeServerProfile as apiStopHomeServerProfile,
+  stopRuntime,
+  streamChat,
+  switchModel
+} from "./lib/api";
 import { cn } from "./lib/cn";
 import { getModelScore } from "./lib/modelScore";
-import type { ChatAttachment, ChatMessage, InstallJob, ModelsResponse, ModelView, RuntimeState } from "./types";
+import type { ChatAttachment, ChatMessage, HomeServerState, InstallJob, ModelsResponse, ModelView, RuntimeState } from "./types";
 import { ModelCard } from "./components/ModelCard";
 import { ChatPanel } from "./components/ChatPanel";
 import { StatusPanel } from "./components/StatusPanel";
@@ -25,9 +38,21 @@ const emptyRuntime: RuntimeState = {
   logs: []
 };
 
+const emptyHomeServer: HomeServerState = {
+  status: "idle",
+  message: "RCA/RAG backend is not running",
+  chatModel: "gemma4:12b-it-qat",
+  embedModel: "embeddinggemma:latest",
+  chatEndpoint: "http://127.0.0.1:11434",
+  embedEndpoint: "http://127.0.0.1:11435",
+  apiKeyRequired: false,
+  logs: []
+};
+
 export default function App() {
   const [modelsData, setModelsData] = useState<ModelsResponse>();
   const [runtime, setRuntime] = useState<RuntimeState>(emptyRuntime);
+  const [homeServer, setHomeServer] = useState<HomeServerState>(emptyHomeServer);
   const [jobs, setJobs] = useState<InstallJob[]>([]);
   const [role, setRole] = useState("coding");
   const [query, setQuery] = useState("");
@@ -46,9 +71,10 @@ export default function App() {
   const selectorSearchRef = useRef<HTMLInputElement>(null);
 
   async function refresh() {
-    const [models, currentRuntime, installJobs] = await Promise.all([fetchModels(), fetchRuntime(), fetchInstallJobs()]);
+    const [models, currentRuntime, currentHomeServer, installJobs] = await Promise.all([fetchModels(), fetchRuntime(), fetchHomeServerStatus(), fetchInstallJobs()]);
     setModelsData(models);
     setRuntime(currentRuntime);
+    setHomeServer(currentHomeServer);
     setJobs(installJobs);
   }
 
@@ -137,6 +163,9 @@ export default function App() {
   const selectorLabel = modelsLoading ? "모델 저장소 스캔 중" : selectedModel?.displayName ?? runtime.activeModelName ?? "LLM 선택";
   const scoreTone = selectedScore?.tone === "emerald" ? "emerald" : selectedScore?.tone === "amber" ? "amber" : selectedScore?.tone === "slate" ? "violet" : "cyan";
   const headerBenchLabel = selectedModel?.bench ? `${selectedModel.bench.avgTps.toFixed(0)} t/s` : selectedModel?.expectedTps ? `~${selectedModel.expectedTps}` : "-";
+  const homeServerBusy = ["stopping", "starting", "warming"].includes(homeServer.status);
+  const homeServerReady = homeServer.status === "ready";
+  const homeServerLabel = homeServerReady ? "RCA/RAG ready" : homeServerBusy ? homeServer.status : "RCA/RAG";
 
   async function action(work: () => Promise<unknown>) {
     try {
@@ -234,6 +263,16 @@ export default function App() {
     void action(stopRuntime);
   }
 
+  function toggleHomeServerProfile() {
+    stopGenerating();
+    setSelectorOpen(false);
+    void action(async () => {
+      const next = homeServerReady ? await apiStopHomeServerProfile() : await apiStartHomeServerProfile();
+      setHomeServer(next);
+      if (!homeServerReady) setRuntime(emptyRuntime);
+    });
+  }
+
   async function regenerate() {
     const lastUserIndex = [...messages].reverse().findIndex((message) => message.role === "user");
     if (lastUserIndex < 0) return;
@@ -307,6 +346,24 @@ export default function App() {
                 <span className="hidden sm:inline">{selectorStatus}</span>
                 <ChevronDown className="h-4 w-4 transition group-hover:text-cyan-200" />
               </span>
+            </button>
+            <button
+              type="button"
+              title="Gemma 4 12B QAT chat + EmbeddingGemma embedding endpoints for RCA AIOps/RAG"
+              aria-label="Toggle RCA AIOps and RAG home-server profile"
+              disabled={homeServerBusy}
+              onClick={toggleHomeServerProfile}
+              className={cn(
+                "inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border px-3 text-sm font-bold transition disabled:cursor-wait disabled:opacity-50",
+                homeServerReady
+                  ? "border-emerald-300/28 bg-emerald-300/14 text-emerald-100 hover:bg-emerald-300/20"
+                  : "border-cyan-300/24 bg-cyan-300/10 text-cyan-100 hover:bg-cyan-300/16"
+              )}
+              data-testid="home-server-toggle"
+            >
+              <BrainCircuit className={cn("h-4 w-4", homeServerBusy && "animate-pulse")} />
+              <span className="hidden md:inline">{homeServerLabel}</span>
+              <span className={cn("h-2 w-2 rounded-full", homeServerReady ? "bg-emerald-300" : homeServerBusy ? "bg-amber-300 status-pulse" : "bg-slate-500")} />
             </button>
             <button
               type="button"
@@ -506,6 +563,9 @@ export default function App() {
               sending={sending}
               loading={modelsLoading}
               onStop={() => void action(stopRuntime)}
+              homeServer={homeServer}
+              onStartHomeServer={toggleHomeServerProfile}
+              onStopHomeServer={() => void action(apiStopHomeServerProfile)}
             />
           </div>
         </div>
@@ -521,6 +581,9 @@ export default function App() {
             sending={sending}
             loading={modelsLoading}
             onStop={() => void action(stopRuntime)}
+            homeServer={homeServer}
+            onStartHomeServer={toggleHomeServerProfile}
+            onStopHomeServer={() => void action(apiStopHomeServerProfile)}
             onClose={() => setMobileConsoleOpen(false)}
           />
         )}
@@ -1173,6 +1236,7 @@ function PreviewChip({ icon: Icon, label, value }: { icon: typeof HardDrive; lab
 function MobileConsoleDrawer({
   data,
   runtime,
+  homeServer,
   jobs,
   selectedModel,
   messages,
@@ -1180,10 +1244,13 @@ function MobileConsoleDrawer({
   sending,
   loading,
   onStop,
+  onStartHomeServer,
+  onStopHomeServer,
   onClose
 }: {
   data?: ModelsResponse;
   runtime: RuntimeState;
+  homeServer?: HomeServerState;
   jobs: InstallJob[];
   selectedModel?: ModelView;
   messages: ChatMessage[];
@@ -1191,6 +1258,8 @@ function MobileConsoleDrawer({
   sending: boolean;
   loading: boolean;
   onStop: () => void;
+  onStartHomeServer?: () => void;
+  onStopHomeServer?: () => void;
   onClose: () => void;
 }) {
   return (
@@ -1211,7 +1280,20 @@ function MobileConsoleDrawer({
           </button>
         </div>
         <div className="min-h-0 flex-1">
-          <StatusPanel data={data} runtime={runtime} jobs={jobs} selectedModel={selectedModel} messages={messages} attachments={attachments} sending={sending} loading={loading} onStop={onStop} />
+          <StatusPanel
+            data={data}
+            runtime={runtime}
+            jobs={jobs}
+            selectedModel={selectedModel}
+            messages={messages}
+            attachments={attachments}
+            sending={sending}
+            loading={loading}
+            onStop={onStop}
+            homeServer={homeServer}
+            onStartHomeServer={onStartHomeServer}
+            onStopHomeServer={onStopHomeServer}
+          />
         </div>
       </section>
     </div>

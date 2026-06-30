@@ -16,6 +16,7 @@ Ollama/vLLM 후보 모델을 한 화면에서 고르고, 하나의 런타임만 
 - 멀티모달 모델용 입력 UI: image/audio/file 버튼과 모델 capability 표시
 - 마크다운/GFM 렌더링: 표, 코드블록, 체크박스 목록
 - Game mode: 로컬 LLM 런타임 언로드로 VRAM을 게임에 돌려줌
+- RCA/RAG home-server profile: Gemma 4 12B QAT chat endpoint와 EmbeddingGemma embed endpoint를 분리 구동
 - F: 드라이브 여유 공간, VRAM, 설치 상태, 벤치 결과 표시
 
 ## Product Captures
@@ -93,6 +94,42 @@ F:\AI_Models\Gemma-4\.ollama-models
 - vLLM: `127.0.0.1:8080` OpenAI-compatible endpoint
 - 모델은 한 번에 하나만 active
 - 게임 전에는 Game mode로 런타임 언로드
+
+## Home Server RCA/RAG Profile
+
+헤더의 `RCA/RAG` 버튼은 일반 테스트 채팅 런타임을 내리고, 홈서버 백엔드용으로 두 Ollama endpoint를 분리해서 올립니다.
+
+- Chat: `gemma4:12b-it-qat` on `http://127.0.0.1:11434`
+- Embed: `embeddinggemma:latest` on `http://127.0.0.1:11435`
+- Gemma chat 요청은 기본 `think:false`
+- bulk indexing과 chat은 서버 큐에서 직렬 처리
+- embed keep-alive는 짧게, chat keep-alive는 길게 유지
+- VRAM이 `11500MiB`를 넘으면 경고하고 EmbeddingGemma unload를 요청
+
+외부에서 ngrok 같은 gateway로 열 때는 API key를 환경변수로 걸 수 있습니다.
+
+```powershell
+$env:SWEET12_GATEWAY_API_KEY="change-this-key"
+npm run dev
+```
+
+보호되는 외부용 endpoint:
+
+```text
+POST /api/home-server/chat
+POST /api/home-server/embed
+POST /api/home-server/rag/query
+```
+
+호출 예시:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8788/api/home-server/chat `
+  -Method POST `
+  -Headers @{ Authorization = "Bearer change-this-key" } `
+  -ContentType "application/json" `
+  -Body '{"prompt":"RCA 보고서 초안을 작성해줘","maxTokens":800}'
+```
 
 ## Sweet Spot Models
 

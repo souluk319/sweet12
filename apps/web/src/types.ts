@@ -67,6 +67,32 @@ export interface RuntimeState {
   logs: string[];
 }
 
+export type HomeServerStatus = "idle" | "stopping" | "starting" | "warming" | "ready" | "failed";
+
+export interface HomeServerState {
+  status: HomeServerStatus;
+  message: string;
+  chatModel: string;
+  embedModel: string;
+  chatEndpoint: string;
+  embedEndpoint: string;
+  chatPid?: number;
+  embedPid?: number;
+  startedAt?: string;
+  lastError?: string;
+  currentTask?: "chat" | "embedding" | "rag" | "maintenance";
+  apiKeyRequired: boolean;
+  vram?: {
+    totalMb?: number;
+    usedMb?: number;
+    freeMb?: number;
+    utilization?: number;
+    warning: boolean;
+    thresholdMb: number;
+  };
+  logs: string[];
+}
+
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";

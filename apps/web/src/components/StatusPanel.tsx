@@ -1,6 +1,6 @@
-import { Boxes, Copy, Gamepad2, Gauge, HardDrive, MessageSquare, Paperclip, Sparkles, Terminal, User, Zap } from "lucide-react";
+import { Boxes, BrainCircuit, Copy, Database, Gamepad2, Gauge, HardDrive, MessageSquare, Paperclip, ShieldCheck, Sparkles, Terminal, User, Zap } from "lucide-react";
 import type { ReactNode } from "react";
-import type { ChatAttachment, ChatMessage, InstallJob, ModelView, ModelsResponse, RuntimeState } from "../types";
+import type { ChatAttachment, ChatMessage, HomeServerState, InstallJob, ModelView, ModelsResponse, RuntimeState } from "../types";
 import { cn } from "../lib/cn";
 import { ModelScorePanel } from "./ModelScorePanel";
 
@@ -16,9 +16,12 @@ interface Props {
   sending: boolean;
   loading?: boolean;
   onStop: () => void;
+  homeServer?: HomeServerState;
+  onStartHomeServer?: () => void;
+  onStopHomeServer?: () => void;
 }
 
-export function StatusPanel({ data, runtime, jobs, selectedModel, messages, attachments, sending, loading = false, onStop }: Props) {
+export function StatusPanel({ data, runtime, jobs, selectedModel, messages, attachments, sending, loading = false, onStop, homeServer, onStartHomeServer, onStopHomeServer }: Props) {
   const gpuUsed = data?.gpu.usedMb && data.gpu.totalMb ? Math.round((data.gpu.usedMb / data.gpu.totalMb) * 100) : undefined;
   const diskFree = data?.disk.freeGb ?? null;
   const benchLabel = selectedModel?.bench ? `${selectedModel.bench.avgTps.toFixed(0)} t/s` : selectedModel?.expectedTps ? `~${selectedModel.expectedTps}` : "-";
@@ -26,13 +29,14 @@ export function StatusPanel({ data, runtime, jobs, selectedModel, messages, atta
   const stateDot =
     displayStatus === "ready" ? "bg-emerald-300 text-emerald-300" : displayStatus === "failed" ? "bg-rose-400 text-rose-400" : displayStatus === "idle" ? "bg-slate-500 text-slate-500" : displayStatus === "scanning" ? "bg-cyan-300 text-cyan-300" : "bg-amber-300 text-amber-300";
   const animatedState = loading || ["ready", "starting", "warming", "installing", "benchmarking"].includes(runtime.status);
+  const mergedLogs = [...runtime.logs.map((line) => `[runtime] ${line}`), ...(homeServer?.logs ?? []).map((line) => `[home] ${line}`)].slice(-180);
 
   async function copyEnv() {
     if (selectedModel?.envExample) await navigator.clipboard?.writeText(selectedModel.envExample);
   }
 
   async function copyLogs() {
-    await navigator.clipboard?.writeText(runtime.logs.join("\n"));
+    await navigator.clipboard?.writeText(mergedLogs.join("\n"));
   }
 
   return (
@@ -51,6 +55,7 @@ export function StatusPanel({ data, runtime, jobs, selectedModel, messages, atta
         />
         <RuntimeCore runtime={runtime} stateDot={stateDot} animated={animatedState} loading={loading} />
         <GameModeDock runtime={runtime} selectedModel={selectedModel} gpuUsed={gpuUsed} loading={loading} onStop={onStop} />
+        {homeServer && <HomeServerDock homeServer={homeServer} onStart={onStartHomeServer} onStop={onStopHomeServer} />}
         {runtime.lastError && <div className="mt-2 max-h-20 overflow-auto rounded-md border border-rose-300/20 bg-rose-950/60 p-2 text-xs leading-5 text-rose-100">{runtime.lastError}</div>}
       </section>
 
@@ -77,14 +82,14 @@ export function StatusPanel({ data, runtime, jobs, selectedModel, messages, atta
             Runtime Log
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="rounded border border-white/10 bg-white/[0.04] px-1.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-slate-400">{runtime.logs.length} events</span>
-            <button type="button" onClick={() => void copyLogs()} disabled={runtime.logs.length === 0} className="inline-flex h-7 items-center gap-1 rounded border border-white/10 bg-white/[0.04] px-2 text-[11px] font-semibold text-slate-300 hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-35">
+            <span className="rounded border border-white/10 bg-white/[0.04] px-1.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-slate-400">{mergedLogs.length} events</span>
+            <button type="button" onClick={() => void copyLogs()} disabled={mergedLogs.length === 0} className="inline-flex h-7 items-center gap-1 rounded border border-white/10 bg-white/[0.04] px-2 text-[11px] font-semibold text-slate-300 hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-35">
               <Copy className="h-3 w-3" />
               Copy
             </button>
           </div>
         </div>
-        <EventStream logs={runtime.logs} />
+        <EventStream logs={mergedLogs} />
       </section>
     </aside>
   );
@@ -349,6 +354,95 @@ function GameModeDock({
       >
         <Gamepad2 className="h-4 w-4" />
         {clear ? "Already clear" : "Clear runtimes for game"}
+      </button>
+    </div>
+  );
+}
+
+function HomeServerDock({
+  homeServer,
+  onStart,
+  onStop
+}: {
+  homeServer: HomeServerState;
+  onStart?: () => void;
+  onStop?: () => void;
+}) {
+  const ready = homeServer.status === "ready";
+  const busy = ["stopping", "starting", "warming"].includes(homeServer.status);
+  const failed = homeServer.status === "failed";
+  const vram = homeServer.vram?.usedMb && homeServer.vram.totalMb ? `${homeServer.vram.usedMb}/${homeServer.vram.totalMb}MiB` : "-";
+  const chatPort = compactEndpoint(homeServer.chatEndpoint);
+  const embedPort = compactEndpoint(homeServer.embedEndpoint);
+  const tone =
+    ready
+      ? "border-emerald-300/24 bg-emerald-300/10 text-emerald-100"
+      : failed
+        ? "border-rose-300/24 bg-rose-300/10 text-rose-100"
+        : busy
+          ? "border-amber-300/24 bg-amber-300/10 text-amber-100"
+          : "border-cyan-300/18 bg-cyan-300/8 text-cyan-100";
+  const dot = ready ? "bg-emerald-300" : failed ? "bg-rose-300" : busy ? "bg-amber-300 status-pulse" : "bg-slate-500";
+  const actionLabel = ready ? "Stop RCA/RAG" : busy ? homeServer.status : "Start RCA/RAG";
+
+  return (
+    <div
+      className="mt-3 overflow-hidden rounded-lg border border-emerald-300/16 bg-[linear-gradient(135deg,rgba(16,185,129,0.12),rgba(15,23,42,0.7)_46%,rgba(14,165,233,0.1))] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
+      data-testid="home-server-dock"
+    >
+      <div className="grid grid-cols-[42px_minmax(0,1fr)] gap-2">
+        <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-emerald-300/20 bg-emerald-300/10 text-emerald-100">
+          <BrainCircuit className="h-5 w-5" />
+        </div>
+        <div className="min-w-0">
+          <div className="flex items-center justify-between gap-2">
+            <div className="truncate text-sm font-bold text-white">Home Server RCA/RAG</div>
+            <span className={cn("inline-flex shrink-0 items-center gap-1.5 rounded border px-2 py-0.5 text-[10px] font-black uppercase tracking-[0.12em]", tone)}>
+              <span className={cn("h-1.5 w-1.5 rounded-full", dot)} />
+              {homeServer.status}
+            </span>
+          </div>
+          <p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-400">{homeServer.message}</p>
+        </div>
+      </div>
+
+      <div className="mt-2 grid grid-cols-2 gap-1.5">
+        <SignalCell label="chat" value={`${homeServer.chatModel} @ ${chatPort}`} />
+        <SignalCell label="embed" value={`${homeServer.embedModel} @ ${embedPort}`} />
+        <SignalCell label="task" value={homeServer.currentTask ?? "standby"} />
+        <SignalCell label="vram" value={vram} />
+      </div>
+
+      <div className="mt-2 grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-1.5 text-[11px]">
+        <div className={cn("min-w-0 rounded-md border px-2 py-1.5", homeServer.apiKeyRequired ? "border-emerald-300/18 bg-emerald-300/10 text-emerald-100" : "border-amber-300/18 bg-amber-300/10 text-amber-100")}>
+          <div className="flex items-center gap-1 text-[10px] font-black uppercase tracking-[0.12em] opacity-70">
+            <ShieldCheck className="h-3 w-3" />
+            gateway key
+          </div>
+          <div className="mt-0.5 truncate font-bold">{homeServer.apiKeyRequired ? "required" : "not set"}</div>
+        </div>
+        <div className={cn("min-w-0 rounded-md border px-2 py-1.5", homeServer.vram?.warning ? "border-rose-300/24 bg-rose-300/10 text-rose-100" : "border-white/10 bg-white/[0.035] text-slate-300")}>
+          <div className="flex items-center gap-1 text-[10px] font-black uppercase tracking-[0.12em] opacity-70">
+            <Database className="h-3 w-3" />
+            embed unload
+          </div>
+          <div className="mt-0.5 truncate font-bold">{homeServer.vram?.warning ? `over ${homeServer.vram.thresholdMb}MiB` : "auto guard"}</div>
+        </div>
+      </div>
+
+      {homeServer.lastError && <div className="mt-2 max-h-16 overflow-auto rounded-md border border-rose-300/20 bg-rose-950/55 px-2 py-1.5 text-xs leading-5 text-rose-100">{homeServer.lastError}</div>}
+
+      <button
+        type="button"
+        onClick={ready ? onStop : onStart}
+        disabled={busy || (!ready && !onStart) || (ready && !onStop)}
+        className={cn(
+          "mt-2 inline-flex h-8 w-full items-center justify-center gap-2 rounded-md border text-sm font-bold transition disabled:cursor-not-allowed disabled:opacity-45",
+          ready ? "border-emerald-300/22 bg-emerald-300/10 text-emerald-100 hover:bg-emerald-300/16" : "border-cyan-300/24 bg-cyan-300/12 text-cyan-100 hover:bg-cyan-300/18"
+        )}
+      >
+        <BrainCircuit className={cn("h-4 w-4", busy && "animate-pulse")} />
+        {actionLabel}
       </button>
     </div>
   );
@@ -661,6 +755,10 @@ function SignalCell({ label, value }: { label: string; value: string }) {
       <div className="truncate font-bold text-slate-100">{value}</div>
     </div>
   );
+}
+
+function compactEndpoint(endpoint: string): string {
+  return endpoint.replace(/^https?:\/\//, "");
 }
 
 function MiniMetric({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
