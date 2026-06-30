@@ -131,6 +131,8 @@ Invoke-RestMethod http://127.0.0.1:8788/api/home-server/chat `
   -Body '{"prompt":"RCA 보고서 초안을 작성해줘","maxTokens":800}'
 ```
 
+회사 PC/AIOps 프로젝트 연동 가이드는 [KUGNUS HOME Company Project Integration Guide](docs/kugnus-home-company-integration.md)를 참고하세요.
+
 ## Sweet Spot Models
 
 레지스트리는 [data/model-registry.json](data/model-registry.json)에 있습니다. 현재 구성은 Gemma 4 계열, Qwen coder/vision 계열, DeepSeek/StarCoder 후보, embedding/translation 모델을 역할별로 다룹니다.
