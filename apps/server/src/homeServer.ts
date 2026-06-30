@@ -6,6 +6,8 @@ import type { ChatMessage, HomeServerState } from "./types.js";
 
 const CHAT_ENDPOINT = "http://127.0.0.1:11434";
 const EMBED_ENDPOINT = "http://127.0.0.1:11435";
+const CHAT_LISTEN = "0.0.0.0:11434";
+const EMBED_LISTEN = "0.0.0.0:11435";
 const CHAT_MODEL = "gemma4:12b-it-qat";
 const EMBED_MODEL = "embeddinggemma:latest";
 const CHAT_STORE = "F:\\AI_Models\\Gemma-4\\.ollama-models";
@@ -146,8 +148,8 @@ export async function startHomeServerProfile(): Promise<HomeServerState> {
       currentTask: "maintenance",
       lastError: undefined
     });
-    chatProcess = startOllamaProcess("chat", "127.0.0.1:11434", CHAT_STORE, "30m");
-    embedProcess = startOllamaProcess("embed", "127.0.0.1:11435", EMBED_STORE, "30s");
+    chatProcess = startOllamaProcess("chat", CHAT_LISTEN, CHAT_STORE, "30m");
+    embedProcess = startOllamaProcess("embed", EMBED_LISTEN, EMBED_STORE, "30s");
     setState({ chatPid: chatProcess.pid, embedPid: embedProcess.pid });
 
     await Promise.all([waitForUrl(`${CHAT_ENDPOINT}/api/tags`, 30000), waitForUrl(`${EMBED_ENDPOINT}/api/tags`, 30000)]);
