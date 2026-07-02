@@ -51,6 +51,7 @@ async function refreshGpuState(): Promise<void> {
 }
 
 export async function getHomeServerState(): Promise<HomeServerState> {
+  await refreshEndpointState().catch(() => undefined);
   await refreshGpuState().catch(() => undefined);
   return state;
 }
@@ -93,6 +94,32 @@ async function waitForUrl(url: string, timeoutMs: number): Promise<void> {
     await delay(750);
   }
   throw new Error(`Timed out waiting for ${url}: ${lastError}`);
+}
+
+async function isUrlReady(url: string): Promise<boolean> {
+  try {
+    const response = await fetch(url);
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
+async function refreshEndpointState(): Promise<void> {
+  const [chatUp, embedUp] = await Promise.all([isUrlReady(`${CHAT_ENDPOINT}/api/tags`), isUrlReady(`${EMBED_ENDPOINT}/api/tags`)]);
+  if (state.status === "ready" && state.chatPid && !chatUp) {
+    setState({ status: "failed", message: "Chat endpoint went down", lastError: "Expected 11434 to be reachable" });
+  }
+  if (state.status === "ready" && state.embedPid && !embedUp) {
+    setState({ status: "failed", message: "Embedding endpoint went down", lastError: "Expected 11435 to be reachable" });
+  }
+  if (state.status === "idle" && (chatUp || embedUp)) {
+    setState({
+      status: "failed",
+      message: "Unmanaged Ollama endpoint detected; start RCA/RAG or Embed only to reset it",
+      lastError: `Untracked endpoints: chat=${chatUp ? "open" : "closed"}, embed=${embedUp ? "open" : "closed"}`
+    });
+  }
 }
 
 async function stopTrackedProcess(child: ChildProcessWithoutNullStreams | undefined): Promise<void> {
