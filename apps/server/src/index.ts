@@ -7,6 +7,7 @@ import {
   embedForHomeServer,
   getHomeServerState,
   ragQueryForHomeServer,
+  startHomeServerEmbedOnly,
   startHomeServerProfile,
   stopHomeServerProfile
 } from "./homeServer.js";
@@ -88,6 +89,15 @@ app.post("/api/home-server/start", async (_req, res) => {
   try {
     await stopRuntime();
     res.json(await startHomeServerProfile());
+  } catch (error) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error), state: await getHomeServerState() });
+  }
+});
+
+app.post("/api/home-server/start-embed", async (_req, res) => {
+  try {
+    await stopRuntime();
+    res.json(await startHomeServerEmbedOnly());
   } catch (error) {
     res.status(500).json({ error: error instanceof Error ? error.message : String(error), state: await getHomeServerState() });
   }

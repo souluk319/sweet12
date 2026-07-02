@@ -25,6 +25,13 @@ export async function startHomeServerProfile(): Promise<HomeServerState> {
   return parsed as HomeServerState;
 }
 
+export async function startHomeServerEmbedOnly(): Promise<HomeServerState> {
+  const response = await fetch("/api/home-server/start-embed", { method: "POST" });
+  const parsed = await response.json();
+  if (!response.ok) throw new Error(parsed.error ?? "EmbeddingGemma start failed");
+  return parsed as HomeServerState;
+}
+
 export async function stopHomeServerProfile(): Promise<HomeServerState> {
   const response = await fetch("/api/home-server/stop", { method: "POST" });
   const parsed = await response.json();

@@ -8,6 +8,7 @@ import {
   fetchRuntime,
   installModel,
   runBench,
+  startHomeServerEmbedOnly as apiStartHomeServerEmbedOnly,
   startHomeServerProfile as apiStartHomeServerProfile,
   stopHomeServerProfile as apiStopHomeServerProfile,
   stopRuntime,
@@ -273,6 +274,16 @@ export default function App() {
     });
   }
 
+  function startEmbeddingOnly() {
+    stopGenerating();
+    setSelectorOpen(false);
+    void action(async () => {
+      const next = await apiStartHomeServerEmbedOnly();
+      setHomeServer(next);
+      setRuntime(emptyRuntime);
+    });
+  }
+
   async function regenerate() {
     const lastUserIndex = [...messages].reverse().findIndex((message) => message.role === "user");
     if (lastUserIndex < 0) return;
@@ -364,6 +375,18 @@ export default function App() {
               <BrainCircuit className={cn("h-4 w-4", homeServerBusy && "animate-pulse")} />
               <span className="hidden md:inline">{homeServerLabel}</span>
               <span className={cn("h-2 w-2 rounded-full", homeServerReady ? "bg-emerald-300" : homeServerBusy ? "bg-amber-300 status-pulse" : "bg-slate-500")} />
+            </button>
+            <button
+              type="button"
+              title="EmbeddingGemma only on port 11435 for external RAG indexing"
+              aria-label="Start EmbeddingGemma only"
+              disabled={homeServerBusy}
+              onClick={startEmbeddingOnly}
+              className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border border-emerald-300/24 bg-emerald-300/10 px-3 text-sm font-bold text-emerald-100 transition hover:bg-emerald-300/16 disabled:cursor-wait disabled:opacity-50"
+              data-testid="home-server-embed-only"
+            >
+              <Search className={cn("h-4 w-4", homeServerBusy && "animate-pulse")} />
+              <span className="hidden xl:inline">Embed only</span>
             </button>
             <button
               type="button"
@@ -565,6 +588,7 @@ export default function App() {
               onStop={() => void action(stopRuntime)}
               homeServer={homeServer}
               onStartHomeServer={toggleHomeServerProfile}
+              onStartHomeServerEmbedOnly={startEmbeddingOnly}
               onStopHomeServer={() => void action(apiStopHomeServerProfile)}
             />
           </div>
@@ -583,6 +607,7 @@ export default function App() {
             onStop={() => void action(stopRuntime)}
             homeServer={homeServer}
             onStartHomeServer={toggleHomeServerProfile}
+            onStartHomeServerEmbedOnly={startEmbeddingOnly}
             onStopHomeServer={() => void action(apiStopHomeServerProfile)}
             onClose={() => setMobileConsoleOpen(false)}
           />
@@ -1245,6 +1270,7 @@ function MobileConsoleDrawer({
   loading,
   onStop,
   onStartHomeServer,
+  onStartHomeServerEmbedOnly,
   onStopHomeServer,
   onClose
 }: {
@@ -1259,6 +1285,7 @@ function MobileConsoleDrawer({
   loading: boolean;
   onStop: () => void;
   onStartHomeServer?: () => void;
+  onStartHomeServerEmbedOnly?: () => void;
   onStopHomeServer?: () => void;
   onClose: () => void;
 }) {
@@ -1292,6 +1319,7 @@ function MobileConsoleDrawer({
             onStop={onStop}
             homeServer={homeServer}
             onStartHomeServer={onStartHomeServer}
+            onStartHomeServerEmbedOnly={onStartHomeServerEmbedOnly}
             onStopHomeServer={onStopHomeServer}
           />
         </div>

@@ -18,10 +18,11 @@ interface Props {
   onStop: () => void;
   homeServer?: HomeServerState;
   onStartHomeServer?: () => void;
+  onStartHomeServerEmbedOnly?: () => void;
   onStopHomeServer?: () => void;
 }
 
-export function StatusPanel({ data, runtime, jobs, selectedModel, messages, attachments, sending, loading = false, onStop, homeServer, onStartHomeServer, onStopHomeServer }: Props) {
+export function StatusPanel({ data, runtime, jobs, selectedModel, messages, attachments, sending, loading = false, onStop, homeServer, onStartHomeServer, onStartHomeServerEmbedOnly, onStopHomeServer }: Props) {
   const gpuUsed = data?.gpu.usedMb && data.gpu.totalMb ? Math.round((data.gpu.usedMb / data.gpu.totalMb) * 100) : undefined;
   const diskFree = data?.disk.freeGb ?? null;
   const benchLabel = selectedModel?.bench ? `${selectedModel.bench.avgTps.toFixed(0)} t/s` : selectedModel?.expectedTps ? `~${selectedModel.expectedTps}` : "-";
@@ -55,7 +56,7 @@ export function StatusPanel({ data, runtime, jobs, selectedModel, messages, atta
         />
         <RuntimeCore runtime={runtime} stateDot={stateDot} animated={animatedState} loading={loading} />
         <GameModeDock runtime={runtime} selectedModel={selectedModel} gpuUsed={gpuUsed} loading={loading} onStop={onStop} />
-        {homeServer && <HomeServerDock homeServer={homeServer} onStart={onStartHomeServer} onStop={onStopHomeServer} />}
+        {homeServer && <HomeServerDock homeServer={homeServer} onStart={onStartHomeServer} onStartEmbedOnly={onStartHomeServerEmbedOnly} onStop={onStopHomeServer} />}
         {runtime.lastError && <div className="mt-2 max-h-20 overflow-auto rounded-md border border-rose-300/20 bg-rose-950/60 p-2 text-xs leading-5 text-rose-100">{runtime.lastError}</div>}
       </section>
 
@@ -362,15 +363,18 @@ function GameModeDock({
 function HomeServerDock({
   homeServer,
   onStart,
+  onStartEmbedOnly,
   onStop
 }: {
   homeServer: HomeServerState;
   onStart?: () => void;
+  onStartEmbedOnly?: () => void;
   onStop?: () => void;
 }) {
   const ready = homeServer.status === "ready";
   const busy = ["stopping", "starting", "warming"].includes(homeServer.status);
   const failed = homeServer.status === "failed";
+  const embedOnly = ready && Boolean(homeServer.embedPid) && !homeServer.chatPid;
   const vram = homeServer.vram?.usedMb && homeServer.vram.totalMb ? `${homeServer.vram.usedMb}/${homeServer.vram.totalMb}MiB` : "-";
   const chatPort = compactEndpoint(homeServer.chatEndpoint);
   const embedPort = compactEndpoint(homeServer.embedEndpoint);
@@ -383,7 +387,7 @@ function HomeServerDock({
           ? "border-amber-300/24 bg-amber-300/10 text-amber-100"
           : "border-cyan-300/18 bg-cyan-300/8 text-cyan-100";
   const dot = ready ? "bg-emerald-300" : failed ? "bg-rose-300" : busy ? "bg-amber-300 status-pulse" : "bg-slate-500";
-  const actionLabel = ready ? "Stop RCA/RAG" : busy ? homeServer.status : "Start RCA/RAG";
+  const actionLabel = ready ? (embedOnly ? "Stop embedder" : "Stop RCA/RAG") : busy ? homeServer.status : "Start RCA/RAG";
 
   return (
     <div
@@ -407,7 +411,7 @@ function HomeServerDock({
       </div>
 
       <div className="mt-2 grid grid-cols-2 gap-1.5">
-        <SignalCell label="chat" value={`${homeServer.chatModel} @ ${chatPort}`} />
+        <SignalCell label="chat" value={embedOnly ? "off" : `${homeServer.chatModel} @ ${chatPort}`} />
         <SignalCell label="embed" value={`${homeServer.embedModel} @ ${embedPort}`} />
         <SignalCell label="task" value={homeServer.currentTask ?? "standby"} />
         <SignalCell label="vram" value={vram} />
@@ -432,18 +436,29 @@ function HomeServerDock({
 
       {homeServer.lastError && <div className="mt-2 max-h-16 overflow-auto rounded-md border border-rose-300/20 bg-rose-950/55 px-2 py-1.5 text-xs leading-5 text-rose-100">{homeServer.lastError}</div>}
 
-      <button
-        type="button"
-        onClick={ready ? onStop : onStart}
-        disabled={busy || (!ready && !onStart) || (ready && !onStop)}
-        className={cn(
-          "mt-2 inline-flex h-8 w-full items-center justify-center gap-2 rounded-md border text-sm font-bold transition disabled:cursor-not-allowed disabled:opacity-45",
-          ready ? "border-emerald-300/22 bg-emerald-300/10 text-emerald-100 hover:bg-emerald-300/16" : "border-cyan-300/24 bg-cyan-300/12 text-cyan-100 hover:bg-cyan-300/18"
-        )}
-      >
-        <BrainCircuit className={cn("h-4 w-4", busy && "animate-pulse")} />
-        {actionLabel}
-      </button>
+      <div className="mt-2 grid grid-cols-2 gap-1.5">
+        <button
+          type="button"
+          onClick={ready ? onStop : onStart}
+          disabled={busy || (!ready && !onStart) || (ready && !onStop)}
+          className={cn(
+            "inline-flex h-8 items-center justify-center gap-2 rounded-md border text-sm font-bold transition disabled:cursor-not-allowed disabled:opacity-45",
+            ready ? "border-emerald-300/22 bg-emerald-300/10 text-emerald-100 hover:bg-emerald-300/16" : "border-cyan-300/24 bg-cyan-300/12 text-cyan-100 hover:bg-cyan-300/18"
+          )}
+        >
+          <BrainCircuit className={cn("h-4 w-4", busy && "animate-pulse")} />
+          {actionLabel}
+        </button>
+        <button
+          type="button"
+          onClick={onStartEmbedOnly}
+          disabled={busy || !onStartEmbedOnly}
+          className="inline-flex h-8 items-center justify-center gap-2 rounded-md border border-emerald-300/22 bg-emerald-300/10 text-sm font-bold text-emerald-100 transition hover:bg-emerald-300/16 disabled:cursor-not-allowed disabled:opacity-45"
+        >
+          <Database className={cn("h-4 w-4", busy && "animate-pulse")} />
+          Embed only
+        </button>
+      </div>
     </div>
   );
 }

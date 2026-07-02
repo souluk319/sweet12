@@ -178,6 +178,43 @@ export async function startHomeServerProfile(): Promise<HomeServerState> {
   return getHomeServerState();
 }
 
+export async function startHomeServerEmbedOnly(): Promise<HomeServerState> {
+  setState({ status: "stopping", message: "Resetting Ollama runtimes for EmbeddingGemma only", lastError: undefined, currentTask: "maintenance" });
+  await stopAllOllamaProcesses();
+  try {
+    setState({
+      status: "starting",
+      message: "Starting EmbeddingGemma endpoint only",
+      startedAt: new Date().toISOString(),
+      currentTask: "maintenance",
+      lastError: undefined
+    });
+    embedProcess = startOllamaProcess("embed", EMBED_LISTEN, EMBED_STORE, "30s");
+    setState({ chatPid: undefined, embedPid: embedProcess.pid });
+
+    await waitForUrl(`${EMBED_ENDPOINT}/api/tags`, 30000);
+
+    setState({ status: "warming", message: "Warming embedding endpoint", currentTask: "embedding" });
+    await generateEmbedding("health check", { keepAlive: "30s", skipQueue: true });
+
+    setState({ status: "ready", message: "EmbeddingGemma endpoint ready; chat model is not loaded", currentTask: undefined });
+    await unloadEmbedModelIfNeeded();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    pushLog(message);
+    await stopAllOllamaProcesses().catch((stopError) => pushLog(`Cleanup warning: ${stopError instanceof Error ? stopError.message : String(stopError)}`));
+    setState({
+      status: "failed",
+      message: "EmbeddingGemma start failed",
+      chatPid: undefined,
+      embedPid: undefined,
+      lastError: message,
+      currentTask: undefined
+    });
+  }
+  return getHomeServerState();
+}
+
 export async function stopHomeServerProfile(): Promise<HomeServerState> {
   setState({ status: "stopping", message: "Stopping RCA/RAG backend", currentTask: "maintenance" });
   await stopAllOllamaProcesses();
@@ -208,6 +245,11 @@ function enqueueHomeTask<T>(task: HomeServerState["currentTask"], work: () => Pr
 
 function assertReady(): void {
   if (state.status !== "ready") throw new Error("RCA/RAG backend is not ready");
+}
+
+function assertChatReady(): void {
+  assertReady();
+  if (!chatProcess || !state.chatPid) throw new Error("Chat model is not loaded; start the full RCA/RAG profile");
 }
 
 async function generateEmbedding(
@@ -276,7 +318,7 @@ export async function chatForHomeServer(request: {
   temperature?: number;
   maxTokens?: number;
 }): Promise<unknown> {
-  assertReady();
+  assertChatReady();
   const messages = request.messages?.length ? request.messages : [{ role: "user" as const, content: request.prompt ?? "" }];
   return chatOnce(messages, { systemPrompt: request.systemPrompt, temperature: request.temperature, maxTokens: request.maxTokens });
 }
@@ -288,7 +330,7 @@ export async function ragQueryForHomeServer(request: {
   temperature?: number;
   maxTokens?: number;
 }): Promise<unknown> {
-  assertReady();
+  assertChatReady();
   if (!request.contexts?.length) throw new Error("RAG query requires contexts until a vector database is connected");
   const contextBlock = request.contexts.map((context, index) => `[context ${index + 1}]\n${context}`).join("\n\n");
   return enqueueHomeTask("rag", () =>
